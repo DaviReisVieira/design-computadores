@@ -1,0 +1,199 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-2/simulation/qsim
+Ememoriarom
+Z1 w1661521472
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^K2eeK[IVbX]]MLcdOEI91
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 GFL[QAd@dAZF:`jjOGn9>2
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3dzZ?YU_4FC5UU0cTXRET1
+!i122 8
+R0
+Z9 8aula01.vho
+Z10 Faula01.vho
+l0
+L37 1
+V<z?F8K0Pk`>iJVhHT3g_Y1
+!s100 K2B9^EBLezEW:k7]cCd><0
+Z11 OV;C;2020.1;71
+32
+Z12 !s110 1661521473
+!i10b 1
+Z13 !s108 1661521473.000000
+Z14 !s90 -work|work|aula01.vho|
+Z15 !s107 aula01.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 10 memoriarom 0 22 <z?F8K0Pk`>iJVhHT3g_Y1
+!i122 8
+l78
+L44 269
+VJUmam9F]7CQF7;RFeOb[11
+!s100 4h=0RC51FB5^YN7LY1@Xz0
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Ememoriarom_vhd_vec_tst
+Z18 w1661521471
+R6
+R7
+!i122 9
+R0
+Z19 8Waveform1.vwf.vht
+Z20 FWaveform1.vwf.vht
+l0
+Z21 L32 1
+VmEe:9HQJU:4H3OjaQI5C`0
+!s100 FTfi564kdA>HJ]]Tc8XQF3
+R11
+32
+R12
+!i10b 1
+R13
+Z22 !s90 -work|work|Waveform1.vwf.vht|
+Z23 !s107 Waveform1.vwf.vht|
+!i113 1
+R16
+R17
+Amemoriarom_arch
+R6
+R7
+DEx4 work 22 memoriarom_vhd_vec_tst 0 22 mEe:9HQJU:4H3OjaQI5C`0
+!i122 9
+l45
+L34 54
+VO6dklSiY<Ui4=YW<LIm@62
+!s100 MFa9_2jnPg_Bj7ek5]26c1
+R11
+32
+R12
+!i10b 1
+R13
+R22
+R23
+!i113 1
+R16
+R17
+Etoplevel
+Z24 w1661532238
+R3
+R5
+R8
+R2
+Z25 DPx6 altera 11 dffeas_pack 0 22 H5F:RRfLz82T3`4>@b7mS3
+R4
+R6
+R7
+Z26 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
+!i122 30
+Z27 dC:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/simulation/qsim
+R9
+R10
+l0
+L39 1
+V<QhZbeM5con5Ej6ODnGH20
+!s100 ZO85^f6Kl59dd3`gS3W]Z2
+R11
+32
+Z28 !s110 1662057808
+!i10b 1
+Z29 !s108 1662057807.000000
+R14
+R15
+!i113 1
+R16
+R17
+Astructure
+R3
+R5
+R8
+R2
+R25
+R4
+R6
+R7
+R26
+DEx4 work 8 toplevel 0 22 <QhZbeM5con5Ej6ODnGH20
+!i122 30
+l140
+L80 780
+VLXQmh8FL72L6S;V@@lNOH3
+!s100 [iC5JV0blB>HRS_;CJIDX3
+R11
+32
+R28
+!i10b 1
+R29
+R14
+R15
+!i113 1
+R16
+R17
+Etoplevel_vhd_vec_tst
+Z30 w1661532237
+R6
+R7
+!i122 31
+R27
+Z31 8Waveform2.vwf.vht
+Z32 FWaveform2.vwf.vht
+l0
+R21
+Vi`cW82E4ohG=CFFdJ4Rgz3
+!s100 HOYZb^>X>O4gVXH@FzMRJ1
+R11
+32
+R28
+!i10b 1
+Z33 !s108 1662057808.000000
+Z34 !s90 -work|work|Waveform2.vwf.vht|
+Z35 !s107 Waveform2.vwf.vht|
+!i113 1
+R16
+R17
+Atoplevel_arch
+R6
+R7
+Z36 DEx4 work 20 toplevel_vhd_vec_tst 0 22 i`cW82E4ohG=CFFdJ4Rgz3
+!i122 31
+l51
+Z37 L34 84
+Z38 Vcfk6YI=IjDCXafij?N:4_1
+Z39 !s100 Q9<GL4MkA?`Iac^[INIe_1
+R11
+32
+R28
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R16
+R17
