@@ -14,7 +14,8 @@ entity TopLevel is
     KEY: in std_logic_vector(3 downto 0);
  --   SW: in std_logic_vector(9 downto 0);
     PC_OUT: out std_logic_vector(larguraEnderecosROM-1 downto 0);
-    LEDR  : out std_logic_vector(9 downto 0)
+    LEDR  : out std_logic_vector(9 downto 0);
+	 REGA_OUT: out std_logic_vector(7 downto 0)
   );
 end entity;
 
@@ -152,7 +153,11 @@ Habilita_RAM <= 	Instrucao(8);
 Endereco_RAM <= 	Instrucao(7 downto 0);
 Entrada_RAM  <=   Saida_REG1;
 
+ROM_MUX <= Instrucao(7 downto 0);
+
 
 PC_OUT <= Endereco_ROM;
+
+REGA_OUT <= Saida_REG1;
 
 end architecture;

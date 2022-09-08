@@ -1,0 +1,28 @@
+Quartus Prime Archive log --	C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/aula4MemoriaRam256.qarlog
+
+Archive:	C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/aula4MemoriaRam256.qar
+Date:		Thu Sep 08 12:43:48 2022
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/TopLevel.vhd
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/ULASomaSub.vhd
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/ULASomaSubPassa.vhd
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/Waveform2.vwf
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/Waveform3.vwf
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/aula01.qpf
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/aula01.qsf
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/conversorHex7Seg.vhd
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/decoderInstru.vhd
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/edgeDetector.vhd
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/memoriaRAM256.vhd
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/memoriaRAM512.vhd
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/memoriaROM.vhd
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/muxGenerico2x1.vhd
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/registradorGenerico.vhd
+C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/somaConstante.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 17 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

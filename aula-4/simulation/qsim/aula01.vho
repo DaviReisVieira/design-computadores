@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
--- DATE "08/26/2022 13:43:58"
+-- DATE "09/08/2022 14:29:23"
 
 -- 
 -- Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -38,11 +38,11 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY 	TopLevel IS
     PORT (
+	SW : IN std_logic_vector(9 DOWNTO 0);
 	CLOCK_50 : IN std_logic;
 	KEY : IN std_logic_vector(3 DOWNTO 0);
-	SW : IN std_logic_vector(9 DOWNTO 0);
-	PC_OUT : OUT std_logic_vector(2 DOWNTO 0);
-	LEDR : OUT std_logic_vector(9 DOWNTO 0)
+	PC_OUT : BUFFER std_logic_vector(2 DOWNTO 0);
+	LEDR : BUFFER std_logic_vector(9 DOWNTO 0)
 	);
 END TopLevel;
 
@@ -53,9 +53,9 @@ END TopLevel;
 -- KEY[3]	=>  Location: PIN_M6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- SW[4]	=>  Location: PIN_AA15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- SW[5]	=>  Location: PIN_AB15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- PC_OUT[0]	=>  Location: PIN_AA12,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- PC_OUT[1]	=>  Location: PIN_P9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- PC_OUT[2]	=>  Location: PIN_AB7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- PC_OUT[0]	=>  Location: PIN_Y11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- PC_OUT[1]	=>  Location: PIN_AA12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- PC_OUT[2]	=>  Location: PIN_P9,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- LEDR[0]	=>  Location: PIN_AA2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 -- LEDR[1]	=>  Location: PIN_AA1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 -- LEDR[2]	=>  Location: PIN_W2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
@@ -87,9 +87,9 @@ SIGNAL devpor : std_logic := '1';
 SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
+SIGNAL ww_SW : std_logic_vector(9 DOWNTO 0);
 SIGNAL ww_CLOCK_50 : std_logic;
 SIGNAL ww_KEY : std_logic_vector(3 DOWNTO 0);
-SIGNAL ww_SW : std_logic_vector(9 DOWNTO 0);
 SIGNAL ww_PC_OUT : std_logic_vector(2 DOWNTO 0);
 SIGNAL ww_LEDR : std_logic_vector(9 DOWNTO 0);
 SIGNAL \CLOCK_50~input_o\ : std_logic;
@@ -102,17 +102,17 @@ SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
 SIGNAL \KEY[0]~input_o\ : std_logic;
 SIGNAL \KEY[0]~inputCLKENA0_outclk\ : std_logic;
 SIGNAL \PC|DOUT[0]~2_combout\ : std_logic;
+SIGNAL \PC|DOUT[0]~DUPLICATE_q\ : std_logic;
 SIGNAL \PC|DOUT[1]~0_combout\ : std_logic;
 SIGNAL \PC|DOUT[1]~DUPLICATE_q\ : std_logic;
 SIGNAL \PC|DOUT[2]~1_combout\ : std_logic;
 SIGNAL \PC|DOUT[2]~DUPLICATE_q\ : std_logic;
+SIGNAL \ROM1|memROM~0_combout\ : std_logic;
 SIGNAL \SW[6]~input_o\ : std_logic;
 SIGNAL \ULA1|Add0~18_cout\ : std_logic;
 SIGNAL \ULA1|Add0~1_sumout\ : std_logic;
 SIGNAL \SW[0]~input_o\ : std_logic;
-SIGNAL \ROM1|memROM~0_combout\ : std_logic;
-SIGNAL \ROM1|memROM~2_combout\ : std_logic;
-SIGNAL \ROM1|memROM~1_combout\ : std_logic;
+SIGNAL \DECODER1|saida[2]~0_combout\ : std_logic;
 SIGNAL \SW[7]~input_o\ : std_logic;
 SIGNAL \ULA1|Add0~2\ : std_logic;
 SIGNAL \ULA1|Add0~5_sumout\ : std_logic;
@@ -130,8 +130,9 @@ SIGNAL \PC|DOUT\ : std_logic_vector(2 DOWNTO 0);
 SIGNAL \REGA|ALT_INV_DOUT\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \PC|ALT_INV_DOUT\ : std_logic_vector(2 DOWNTO 0);
 SIGNAL \ROM1|ALT_INV_memROM~0_combout\ : std_logic;
-SIGNAL \ROM1|ALT_INV_memROM~2_combout\ : std_logic;
 SIGNAL \PC|ALT_INV_DOUT[2]~DUPLICATE_q\ : std_logic;
+SIGNAL \PC|ALT_INV_DOUT[1]~DUPLICATE_q\ : std_logic;
+SIGNAL \PC|ALT_INV_DOUT[0]~DUPLICATE_q\ : std_logic;
 SIGNAL \ALT_INV_SW[9]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW[8]~input_o\ : std_logic;
 SIGNAL \ALT_INV_SW[7]~input_o\ : std_logic;
@@ -139,9 +140,9 @@ SIGNAL \ALT_INV_SW[6]~input_o\ : std_logic;
 
 BEGIN
 
+ww_SW <= SW;
 ww_CLOCK_50 <= CLOCK_50;
 ww_KEY <= KEY;
-ww_SW <= SW;
 PC_OUT <= ww_PC_OUT;
 LEDR <= ww_LEDR;
 ww_devoe <= devoe;
@@ -155,14 +156,15 @@ ww_devpor <= devpor;
 \PC|ALT_INV_DOUT\(1) <= NOT \PC|DOUT\(1);
 \PC|ALT_INV_DOUT\(2) <= NOT \PC|DOUT\(2);
 \ROM1|ALT_INV_memROM~0_combout\ <= NOT \ROM1|memROM~0_combout\;
-\ROM1|ALT_INV_memROM~2_combout\ <= NOT \ROM1|memROM~2_combout\;
 \PC|ALT_INV_DOUT[2]~DUPLICATE_q\ <= NOT \PC|DOUT[2]~DUPLICATE_q\;
+\PC|ALT_INV_DOUT[1]~DUPLICATE_q\ <= NOT \PC|DOUT[1]~DUPLICATE_q\;
+\PC|ALT_INV_DOUT[0]~DUPLICATE_q\ <= NOT \PC|DOUT[0]~DUPLICATE_q\;
 \ALT_INV_SW[9]~input_o\ <= NOT \SW[9]~input_o\;
 \ALT_INV_SW[8]~input_o\ <= NOT \SW[8]~input_o\;
 \ALT_INV_SW[7]~input_o\ <= NOT \SW[7]~input_o\;
 \ALT_INV_SW[6]~input_o\ <= NOT \SW[6]~input_o\;
 
--- Location: IOOBUF_X29_Y0_N36
+-- Location: IOOBUF_X29_Y0_N53
 \PC_OUT[0]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -171,11 +173,11 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \PC|DOUT\(0),
+	i => \PC|DOUT[0]~DUPLICATE_q\,
 	devoe => ww_devoe,
 	o => ww_PC_OUT(0));
 
--- Location: IOOBUF_X29_Y0_N19
+-- Location: IOOBUF_X29_Y0_N36
 \PC_OUT[1]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -188,7 +190,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => ww_PC_OUT(1));
 
--- Location: IOOBUF_X18_Y0_N36
+-- Location: IOOBUF_X29_Y0_N19
 \PC_OUT[2]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -288,7 +290,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \PC|ALT_INV_DOUT[2]~DUPLICATE_q\,
+	i => \ROM1|memROM~0_combout\,
 	devoe => ww_devoe,
 	o => ww_LEDR(6));
 
@@ -301,7 +303,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ROM1|memROM~0_combout\,
+	i => GND,
 	devoe => ww_devoe,
 	o => ww_LEDR(7));
 
@@ -314,7 +316,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ROM1|memROM~1_combout\,
+	i => \DECODER1|saida[2]~0_combout\,
 	devoe => ww_devoe,
 	o => ww_LEDR(8));
 
@@ -327,7 +329,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ROM1|memROM~2_combout\,
+	i => \ROM1|memROM~0_combout\,
 	devoe => ww_devoe,
 	o => ww_LEDR(9));
 
@@ -356,22 +358,7 @@ PORT MAP (
 	inclk => \KEY[0]~input_o\,
 	outclk => \KEY[0]~inputCLKENA0_outclk\);
 
--- Location: MLABCELL_X28_Y4_N15
-\PC|DOUT[0]~2\ : cyclonev_lcell_comb
--- Equation(s):
--- \PC|DOUT[0]~2_combout\ = !\PC|DOUT\(0)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1111111100000000111111110000000011111111000000001111111100000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \PC|ALT_INV_DOUT\(0),
-	combout => \PC|DOUT[0]~2_combout\);
-
--- Location: FF_X28_Y4_N17
+-- Location: FF_X29_Y2_N23
 \PC|DOUT[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -385,7 +372,36 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \PC|DOUT\(0));
 
--- Location: FF_X28_Y4_N53
+-- Location: LABCELL_X29_Y2_N21
+\PC|DOUT[0]~2\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \PC|DOUT[0]~2_combout\ = ( !\PC|DOUT\(0) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1111111111111111000000000000000011111111111111110000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datae => \PC|ALT_INV_DOUT\(0),
+	combout => \PC|DOUT[0]~2_combout\);
+
+-- Location: FF_X29_Y2_N22
+\PC|DOUT[0]~DUPLICATE\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \KEY[0]~inputCLKENA0_outclk\,
+	d => \PC|DOUT[0]~2_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \PC|DOUT[0]~DUPLICATE_q\);
+
+-- Location: FF_X29_Y2_N28
 \PC|DOUT[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -399,10 +415,10 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \PC|DOUT\(1));
 
--- Location: MLABCELL_X28_Y4_N51
+-- Location: LABCELL_X29_Y2_N27
 \PC|DOUT[1]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \PC|DOUT[1]~0_combout\ = ( !\PC|DOUT\(1) & ( \PC|DOUT\(0) ) ) # ( \PC|DOUT\(1) & ( !\PC|DOUT\(0) ) )
+-- \PC|DOUT[1]~0_combout\ = ( !\PC|DOUT\(1) & ( \PC|DOUT[0]~DUPLICATE_q\ ) ) # ( \PC|DOUT\(1) & ( !\PC|DOUT[0]~DUPLICATE_q\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -412,10 +428,10 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	datae => \PC|ALT_INV_DOUT\(1),
-	dataf => \PC|ALT_INV_DOUT\(0),
+	dataf => \PC|ALT_INV_DOUT[0]~DUPLICATE_q\,
 	combout => \PC|DOUT[1]~0_combout\);
 
--- Location: FF_X28_Y4_N52
+-- Location: FF_X29_Y2_N29
 \PC|DOUT[1]~DUPLICATE\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -429,7 +445,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \PC|DOUT[1]~DUPLICATE_q\);
 
--- Location: FF_X28_Y4_N22
+-- Location: FF_X29_Y2_N56
 \PC|DOUT[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -443,24 +459,24 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \PC|DOUT\(2));
 
--- Location: MLABCELL_X28_Y4_N21
+-- Location: LABCELL_X29_Y2_N54
 \PC|DOUT[2]~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \PC|DOUT[2]~1_combout\ = ( \PC|DOUT\(2) & ( \PC|DOUT\(0) & ( !\PC|DOUT\(1) ) ) ) # ( !\PC|DOUT\(2) & ( \PC|DOUT\(0) & ( \PC|DOUT\(1) ) ) ) # ( \PC|DOUT\(2) & ( !\PC|DOUT\(0) ) )
+-- \PC|DOUT[2]~1_combout\ = ( \PC|DOUT\(2) & ( \PC|DOUT[1]~DUPLICATE_q\ & ( !\PC|DOUT\(0) ) ) ) # ( !\PC|DOUT\(2) & ( \PC|DOUT[1]~DUPLICATE_q\ & ( \PC|DOUT\(0) ) ) ) # ( \PC|DOUT\(2) & ( !\PC|DOUT[1]~DUPLICATE_q\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111111111111111100000000111111111111111100000000",
+	lut_mask => "0000000000000000111111111111111100001111000011111111000011110000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \PC|ALT_INV_DOUT\(1),
+	datac => \PC|ALT_INV_DOUT\(0),
 	datae => \PC|ALT_INV_DOUT\(2),
-	dataf => \PC|ALT_INV_DOUT\(0),
+	dataf => \PC|ALT_INV_DOUT[1]~DUPLICATE_q\,
 	combout => \PC|DOUT[2]~1_combout\);
 
--- Location: FF_X28_Y4_N23
+-- Location: FF_X29_Y2_N55
 \PC|DOUT[2]~DUPLICATE\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -474,6 +490,23 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \PC|DOUT[2]~DUPLICATE_q\);
 
+-- Location: LABCELL_X29_Y2_N48
+\ROM1|memROM~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ROM1|memROM~0_combout\ = ( !\PC|DOUT\(2) & ( !\PC|DOUT\(1) & ( !\PC|DOUT\(0) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1111000011110000000000000000000000000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datac => \PC|ALT_INV_DOUT\(0),
+	datae => \PC|ALT_INV_DOUT\(2),
+	dataf => \PC|ALT_INV_DOUT\(1),
+	combout => \ROM1|memROM~0_combout\);
+
 -- Location: IOIBUF_X34_Y0_N52
 \SW[6]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
@@ -485,36 +518,36 @@ PORT MAP (
 	i => ww_SW(6),
 	o => \SW[6]~input_o\);
 
--- Location: MLABCELL_X28_Y4_N30
+-- Location: LABCELL_X29_Y2_N30
 \ULA1|Add0~18\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA1|Add0~18_cout\ = CARRY(( \PC|DOUT[2]~DUPLICATE_q\ ) + ( VCC ) + ( !VCC ))
+-- \ULA1|Add0~18_cout\ = CARRY(( !\ROM1|memROM~0_combout\ ) + ( VCC ) + ( !VCC ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000000000000000000000000111100001111",
+	lut_mask => "0000000000000000000000000000000000000000000000001111000011110000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datac => \PC|ALT_INV_DOUT[2]~DUPLICATE_q\,
+	datac => \ROM1|ALT_INV_memROM~0_combout\,
 	cin => GND,
 	cout => \ULA1|Add0~18_cout\);
 
--- Location: MLABCELL_X28_Y4_N33
+-- Location: LABCELL_X29_Y2_N33
 \ULA1|Add0~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA1|Add0~1_sumout\ = SUM(( \REGA|DOUT\(0) ) + ( !\PC|DOUT\(2) $ (!\SW[6]~input_o\) ) + ( \ULA1|Add0~18_cout\ ))
--- \ULA1|Add0~2\ = CARRY(( \REGA|DOUT\(0) ) + ( !\PC|DOUT\(2) $ (!\SW[6]~input_o\) ) + ( \ULA1|Add0~18_cout\ ))
+-- \ULA1|Add0~1_sumout\ = SUM(( \REGA|DOUT\(0) ) + ( !\ROM1|memROM~0_combout\ $ (\SW[6]~input_o\) ) + ( \ULA1|Add0~18_cout\ ))
+-- \ULA1|Add0~2\ = CARRY(( \REGA|DOUT\(0) ) + ( !\ROM1|memROM~0_combout\ $ (\SW[6]~input_o\) ) + ( \ULA1|Add0~18_cout\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111100000000111100000000000000000000000011111111",
+	lut_mask => "0000000000000000000011111111000000000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datac => \PC|ALT_INV_DOUT\(2),
+	datac => \ROM1|ALT_INV_memROM~0_combout\,
 	datad => \REGA|ALT_INV_DOUT\(0),
 	dataf => \ALT_INV_SW[6]~input_o\,
 	cin => \ULA1|Add0~18_cout\,
@@ -532,58 +565,24 @@ PORT MAP (
 	i => ww_SW(0),
 	o => \SW[0]~input_o\);
 
--- Location: MLABCELL_X28_Y4_N6
-\ROM1|memROM~0\ : cyclonev_lcell_comb
+-- Location: LABCELL_X29_Y2_N12
+\DECODER1|saida[2]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ROM1|memROM~0_combout\ = ( !\PC|DOUT[2]~DUPLICATE_q\ & ( !\PC|DOUT\(1) & ( !\PC|DOUT\(0) ) ) )
+-- \DECODER1|saida[2]~0_combout\ = ( !\PC|DOUT[2]~DUPLICATE_q\ & ( !\PC|DOUT[1]~DUPLICATE_q\ & ( !\PC|DOUT\(0) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "1111111100000000000000000000000000000000000000000000000000000000",
+	lut_mask => "1111000011110000000000000000000000000000000000000000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \PC|ALT_INV_DOUT\(0),
+	datac => \PC|ALT_INV_DOUT\(0),
 	datae => \PC|ALT_INV_DOUT[2]~DUPLICATE_q\,
-	dataf => \PC|ALT_INV_DOUT\(1),
-	combout => \ROM1|memROM~0_combout\);
+	dataf => \PC|ALT_INV_DOUT[1]~DUPLICATE_q\,
+	combout => \DECODER1|saida[2]~0_combout\);
 
--- Location: MLABCELL_X28_Y4_N12
-\ROM1|memROM~2\ : cyclonev_lcell_comb
--- Equation(s):
--- \ROM1|memROM~2_combout\ = ( \PC|DOUT\(1) & ( !\PC|DOUT[2]~DUPLICATE_q\ ) ) # ( !\PC|DOUT\(1) & ( (!\PC|DOUT\(0)) # (!\PC|DOUT[2]~DUPLICATE_q\) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "1111111111001100111111111100110011111111000000001111111100000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datab => \PC|ALT_INV_DOUT\(0),
-	datad => \PC|ALT_INV_DOUT[2]~DUPLICATE_q\,
-	dataf => \PC|ALT_INV_DOUT\(1),
-	combout => \ROM1|memROM~2_combout\);
-
--- Location: MLABCELL_X28_Y4_N54
-\ROM1|memROM~1\ : cyclonev_lcell_comb
--- Equation(s):
--- \ROM1|memROM~1_combout\ = ( !\PC|DOUT[2]~DUPLICATE_q\ & ( \PC|DOUT\(1) ) ) # ( \PC|DOUT[2]~DUPLICATE_q\ & ( !\PC|DOUT\(1) & ( !\PC|DOUT\(0) ) ) ) # ( !\PC|DOUT[2]~DUPLICATE_q\ & ( !\PC|DOUT\(1) & ( \PC|DOUT\(0) ) ) )
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000011111111111111110000000011111111111111110000000000000000",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	datad => \PC|ALT_INV_DOUT\(0),
-	datae => \PC|ALT_INV_DOUT[2]~DUPLICATE_q\,
-	dataf => \PC|ALT_INV_DOUT\(1),
-	combout => \ROM1|memROM~1_combout\);
-
--- Location: FF_X28_Y4_N34
+-- Location: FF_X29_Y2_N34
 \REGA|DOUT[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -594,9 +593,8 @@ PORT MAP (
 	clk => \KEY[0]~inputCLKENA0_outclk\,
 	d => \ULA1|Add0~1_sumout\,
 	asdata => \SW[0]~input_o\,
-	clrn => \ROM1|ALT_INV_memROM~0_combout\,
-	sload => \ROM1|ALT_INV_memROM~2_combout\,
-	ena => \ROM1|memROM~1_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
+	ena => \DECODER1|saida[2]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REGA|DOUT\(0));
@@ -612,20 +610,20 @@ PORT MAP (
 	i => ww_SW(7),
 	o => \SW[7]~input_o\);
 
--- Location: MLABCELL_X28_Y4_N36
+-- Location: LABCELL_X29_Y2_N36
 \ULA1|Add0~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA1|Add0~5_sumout\ = SUM(( \REGA|DOUT\(1) ) + ( !\PC|DOUT[2]~DUPLICATE_q\ $ (!\SW[7]~input_o\) ) + ( \ULA1|Add0~2\ ))
--- \ULA1|Add0~6\ = CARRY(( \REGA|DOUT\(1) ) + ( !\PC|DOUT[2]~DUPLICATE_q\ $ (!\SW[7]~input_o\) ) + ( \ULA1|Add0~2\ ))
+-- \ULA1|Add0~5_sumout\ = SUM(( \REGA|DOUT\(1) ) + ( !\ROM1|memROM~0_combout\ $ (\SW[7]~input_o\) ) + ( \ULA1|Add0~2\ ))
+-- \ULA1|Add0~6\ = CARRY(( \REGA|DOUT\(1) ) + ( !\ROM1|memROM~0_combout\ $ (\SW[7]~input_o\) ) + ( \ULA1|Add0~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111100000000111100000000000000000000000011111111",
+	lut_mask => "0000000000000000000011111111000000000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datac => \PC|ALT_INV_DOUT[2]~DUPLICATE_q\,
+	datac => \ROM1|ALT_INV_memROM~0_combout\,
 	datad => \REGA|ALT_INV_DOUT\(1),
 	dataf => \ALT_INV_SW[7]~input_o\,
 	cin => \ULA1|Add0~2\,
@@ -643,7 +641,7 @@ PORT MAP (
 	i => ww_SW(1),
 	o => \SW[1]~input_o\);
 
--- Location: FF_X28_Y4_N37
+-- Location: FF_X29_Y2_N37
 \REGA|DOUT[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -654,9 +652,8 @@ PORT MAP (
 	clk => \KEY[0]~inputCLKENA0_outclk\,
 	d => \ULA1|Add0~5_sumout\,
 	asdata => \SW[1]~input_o\,
-	clrn => \ROM1|ALT_INV_memROM~0_combout\,
-	sload => \ROM1|ALT_INV_memROM~2_combout\,
-	ena => \ROM1|memROM~1_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
+	ena => \DECODER1|saida[2]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REGA|DOUT\(1));
@@ -672,21 +669,21 @@ PORT MAP (
 	i => ww_SW(8),
 	o => \SW[8]~input_o\);
 
--- Location: MLABCELL_X28_Y4_N39
+-- Location: LABCELL_X29_Y2_N39
 \ULA1|Add0~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA1|Add0~9_sumout\ = SUM(( \REGA|DOUT\(2) ) + ( !\SW[8]~input_o\ $ (!\PC|DOUT\(2)) ) + ( \ULA1|Add0~6\ ))
--- \ULA1|Add0~10\ = CARRY(( \REGA|DOUT\(2) ) + ( !\SW[8]~input_o\ $ (!\PC|DOUT\(2)) ) + ( \ULA1|Add0~6\ ))
+-- \ULA1|Add0~9_sumout\ = SUM(( \REGA|DOUT\(2) ) + ( !\SW[8]~input_o\ $ (\ROM1|memROM~0_combout\) ) + ( \ULA1|Add0~6\ ))
+-- \ULA1|Add0~10\ = CARRY(( \REGA|DOUT\(2) ) + ( !\SW[8]~input_o\ $ (\ROM1|memROM~0_combout\) ) + ( \ULA1|Add0~6\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000110000111100001100000000000000000000000011111111",
+	lut_mask => "0000000000000000001111000011110000000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	datab => \ALT_INV_SW[8]~input_o\,
-	datac => \PC|ALT_INV_DOUT\(2),
+	datac => \ROM1|ALT_INV_memROM~0_combout\,
 	datad => \REGA|ALT_INV_DOUT\(2),
 	cin => \ULA1|Add0~6\,
 	sumout => \ULA1|Add0~9_sumout\,
@@ -703,7 +700,7 @@ PORT MAP (
 	i => ww_SW(2),
 	o => \SW[2]~input_o\);
 
--- Location: FF_X28_Y4_N40
+-- Location: FF_X29_Y2_N41
 \REGA|DOUT[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -714,9 +711,8 @@ PORT MAP (
 	clk => \KEY[0]~inputCLKENA0_outclk\,
 	d => \ULA1|Add0~9_sumout\,
 	asdata => \SW[2]~input_o\,
-	clrn => \ROM1|ALT_INV_memROM~0_combout\,
-	sload => \ROM1|ALT_INV_memROM~2_combout\,
-	ena => \ROM1|memROM~1_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
+	ena => \DECODER1|saida[2]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REGA|DOUT\(2));
@@ -732,20 +728,20 @@ PORT MAP (
 	i => ww_SW(9),
 	o => \SW[9]~input_o\);
 
--- Location: MLABCELL_X28_Y4_N42
+-- Location: LABCELL_X29_Y2_N42
 \ULA1|Add0~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA1|Add0~13_sumout\ = SUM(( \REGA|DOUT\(3) ) + ( !\SW[9]~input_o\ $ (!\PC|DOUT[2]~DUPLICATE_q\) ) + ( \ULA1|Add0~10\ ))
+-- \ULA1|Add0~13_sumout\ = SUM(( \REGA|DOUT\(3) ) + ( !\SW[9]~input_o\ $ (\ROM1|memROM~0_combout\) ) + ( \ULA1|Add0~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000110000111100001100000000000000000000000011111111",
+	lut_mask => "0000000000000000010110100101101000000000000000000000000011111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \ALT_INV_SW[9]~input_o\,
-	datac => \PC|ALT_INV_DOUT[2]~DUPLICATE_q\,
+	dataa => \ALT_INV_SW[9]~input_o\,
+	datac => \ROM1|ALT_INV_memROM~0_combout\,
 	datad => \REGA|ALT_INV_DOUT\(3),
 	cin => \ULA1|Add0~10\,
 	sumout => \ULA1|Add0~13_sumout\);
@@ -761,7 +757,7 @@ PORT MAP (
 	i => ww_SW(3),
 	o => \SW[3]~input_o\);
 
--- Location: FF_X28_Y4_N43
+-- Location: FF_X29_Y2_N43
 \REGA|DOUT[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -772,9 +768,8 @@ PORT MAP (
 	clk => \KEY[0]~inputCLKENA0_outclk\,
 	d => \ULA1|Add0~13_sumout\,
 	asdata => \SW[3]~input_o\,
-	clrn => \ROM1|ALT_INV_memROM~0_combout\,
-	sload => \ROM1|ALT_INV_memROM~2_combout\,
-	ena => \ROM1|memROM~1_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
+	ena => \DECODER1|saida[2]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \REGA|DOUT\(3));
@@ -845,7 +840,7 @@ PORT MAP (
 	i => ww_SW(5),
 	o => \SW[5]~input_o\);
 
--- Location: LABCELL_X43_Y20_N0
+-- Location: LABCELL_X43_Y22_N3
 \~QUARTUS_CREATED_GND~I\ : cyclonev_lcell_comb
 -- Equation(s):
 

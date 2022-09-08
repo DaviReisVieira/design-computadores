@@ -1,5 +1,5 @@
-Analysis & Synthesis report for aula01
-Thu Sep 01 15:41:02 2022
+Analysis & Elaboration report for aula01
+Thu Sep 08 14:14:11 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -7,24 +7,19 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |TopLevel
- 10. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX1
- 11. Parameter Settings for User Entity Instance: registradorGenerico:REGA
- 12. Parameter Settings for User Entity Instance: registradorGenerico:PC
- 13. Parameter Settings for User Entity Instance: somaConstante:incrementaPC
- 14. Parameter Settings for User Entity Instance: ULASomaSub:ULA1
- 15. Parameter Settings for User Entity Instance: memoriaROM:ROM1
- 16. Port Connectivity Checks: "registradorGenerico:PC"
- 17. Post-Synthesis Netlist Statistics for Top Partition
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |TopLevel
+  5. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX1
+  6. Parameter Settings for User Entity Instance: registradorGenerico:REGA
+  7. Parameter Settings for User Entity Instance: registradorGenerico:PC
+  8. Parameter Settings for User Entity Instance: somaConstante:incrementaPC
+  9. Parameter Settings for User Entity Instance: ULASomaSubPassa:ULA1
+ 10. Parameter Settings for User Entity Instance: memoriaROM:ROM1
+ 11. Parameter Settings for User Entity Instance: memoriaRAM256:RAM1
+ 12. Analysis & Elaboration Settings
+ 13. Port Connectivity Checks: "registradorGenerico:PC"
+ 14. Analysis & Elaboration Messages
 
 
 
@@ -48,31 +43,129 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Sep 01 15:41:02 2022       ;
-; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name                   ; aula01                                      ;
-; Top-level Entity Name           ; TopLevel                                    ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 7                                           ;
-; Total pins                      ; 28                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Thu Sep 08 14:14:11 2022       ;
+; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                 ; aula01                                      ;
+; Top-level Entity Name         ; TopLevel                                    ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |TopLevel ;
++---------------------+-------+--------------------------------------------+
+; Parameter Name      ; Value ; Type                                       ;
++---------------------+-------+--------------------------------------------+
+; larguraDados        ; 8     ; Signed Integer                             ;
+; larguraEnderecosROM ; 9     ; Signed Integer                             ;
+; larguraEnderecosRAM ; 8     ; Signed Integer                             ;
+; simulacao           ; true  ; Enumerated                                 ;
++---------------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:MUX1 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; larguradados   ; 8     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenerico:REGA ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenerico:PC ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; larguradados   ; 9     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somaConstante:incrementaPC ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; larguradados   ; 9     ; Signed Integer                                 ;
+; constante      ; 1     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULASomaSubPassa:ULA1 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                           ;
+; largurainstru  ; 2     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoriaROM:ROM1 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; datawidth      ; 13    ; Signed Integer                      ;
+; addrwidth      ; 9     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoriaRAM256:RAM1 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; datawidth      ; 8     ; Signed Integer                         ;
+; addrwidth      ; 8     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -159,283 +252,74 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
-+----------------------------+-------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
-; TopLevel.vhd                     ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd            ;         ;
-; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/ULASomaSub.vhd          ;         ;
-; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/muxGenerico2x1.vhd      ;         ;
-; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/registradorGenerico.vhd ;         ;
-; memoriaROM.vhd                   ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/memoriaROM.vhd          ;         ;
-; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/somaConstante.vhd       ;         ;
-; decoderInstru.vhd                ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/decoderInstru.vhd       ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
-
-
-+------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                            ;
-+---------------------------------------------+--------------------------+
-; Resource                                    ; Usage                    ;
-+---------------------------------------------+--------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 5                        ;
-;                                             ;                          ;
-; Combinational ALUT usage for logic          ; 10                       ;
-;     -- 7 input functions                    ; 0                        ;
-;     -- 6 input functions                    ; 0                        ;
-;     -- 5 input functions                    ; 0                        ;
-;     -- 4 input functions                    ; 0                        ;
-;     -- <=3 input functions                  ; 10                       ;
-;                                             ;                          ;
-; Dedicated logic registers                   ; 7                        ;
-;                                             ;                          ;
-; I/O pins                                    ; 28                       ;
-;                                             ;                          ;
-; Total DSP Blocks                            ; 0                        ;
-;                                             ;                          ;
-; Maximum fan-out node                        ; memoriaROM:ROM1|memROM~0 ;
-; Maximum fan-out                             ; 11                       ;
-; Total fan-out                               ; 93                       ;
-; Average fan-out                             ; 1.27                     ;
-+---------------------------------------------+--------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                              ;
-+-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Entity Name         ; Library Name ;
-+-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+---------------------+--------------+
-; |TopLevel                     ; 10 (0)              ; 7 (0)                     ; 0                 ; 0          ; 28   ; 0            ; |TopLevel                          ; TopLevel            ; work         ;
-;    |ULASomaSub:ULA1|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULASomaSub:ULA1          ; ULASomaSub          ; work         ;
-;    |decoderInstru:DECODER1|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|decoderInstru:DECODER1   ; decoderInstru       ; work         ;
-;    |memoriaROM:ROM1|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|memoriaROM:ROM1          ; memoriaROM          ; work         ;
-;    |registradorGenerico:PC|   ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:PC   ; registradorGenerico ; work         ;
-;    |registradorGenerico:REGA| ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REGA ; registradorGenerico ; work         ;
-+-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 7     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 4     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |TopLevel ;
-+------------------+-------+-----------------------------------------------+
-; Parameter Name   ; Value ; Type                                          ;
-+------------------+-------+-----------------------------------------------+
-; larguraDados     ; 4     ; Signed Integer                                ;
-; larguraEnderecos ; 3     ; Signed Integer                                ;
-; simulacao        ; true  ; Enumerated                                    ;
-+------------------+-------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: muxGenerico2x1:MUX1 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; larguradados   ; 4     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: registradorGenerico:REGA ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: registradorGenerico:PC ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; larguradados   ; 3     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: somaConstante:incrementaPC ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; larguradados   ; 3     ; Signed Integer                                 ;
-; constante      ; 1     ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ULASomaSub:ULA1 ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; larguradados   ; 4     ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: memoriaROM:ROM1 ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; datawidth      ; 4     ; Signed Integer                      ;
-; addrwidth      ; 3     ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +----------------------------------------------------+
 ; Port Connectivity Checks: "registradorGenerico:PC" ;
 +--------+-------+----------+------------------------+
 ; Port   ; Type  ; Severity ; Details                ;
 +--------+-------+----------+------------------------+
 ; enable ; Input ; Info     ; Stuck at VCC           ;
-; rst    ; Input ; Info     ; Stuck at GND           ;
 +--------+-------+----------+------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 7                           ;
-;     ENA SLD           ; 4                           ;
-;     plain             ; 3                           ;
-; arriav_lcell_comb     ; 11                          ;
-;     arith             ; 5                           ;
-;         1 data inputs ; 1                           ;
-;         3 data inputs ; 4                           ;
-;     normal            ; 6                           ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 3                           ;
-; boundary_port         ; 28                          ;
-;                       ;                             ;
-; Max LUT depth         ; 2.40                        ;
-; Average LUT depth     ; 1.38                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Sep 01 15:40:52 2022
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aula01 -c aula01
+    Info: Processing started: Thu Sep 08 14:14:02 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aula01 -c aula01 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file toplevel.vhd
-    Info (12022): Found design unit 1: TopLevel-arquitetura File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 20
-    Info (12023): Found entity 1: TopLevel File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file ulasomasub.vhd
-    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/ULASomaSub.vhd Line: 14
-    Info (12023): Found entity 1: ULASomaSub File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/ULASomaSub.vhd Line: 5
+    Info (12022): Found design unit 1: TopLevel-arquitetura File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/TopLevel.vhd Line: 23
+    Info (12023): Found entity 1: TopLevel File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/TopLevel.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/registradorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: registradorGenerico File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/registradorGenerico.vhd Line: 4
 Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/edgeDetector.vhd Line: 10
-    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/edgeDetector.vhd Line: 23
-    Info (12023): Found entity 1: edgeDetector File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/edgeDetector.vhd Line: 4
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/edgeDetector.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/conversorHex7Seg.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/conversorHex7Seg.vhd Line: 4
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/conversorHex7Seg.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/conversorHex7Seg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file memoriarom.vhd
-    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/memoriaROM.vhd Line: 16
-    Info (12023): Found entity 1: memoriaROM File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/memoriaROM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/memoriaROM.vhd Line: 16
+    Info (12023): Found entity 1: memoriaROM File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/memoriaROM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file decoderinstru.vhd
-    Info (12022): Found design unit 1: decoderInstru-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/decoderInstru.vhd Line: 10
-    Info (12023): Found entity 1: decoderInstru File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/decoderInstru.vhd Line: 4
+    Info (12022): Found design unit 1: decoderInstru-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/decoderInstru.vhd Line: 10
+    Info (12023): Found entity 1: decoderInstru File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/decoderInstru.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file ulasomasubpassa.vhd
+    Info (12022): Found design unit 1: ULASomaSubPassa-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/ULASomaSubPassa.vhd Line: 17
+    Info (12023): Found entity 1: ULASomaSubPassa File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/ULASomaSubPassa.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file memoriaram512.vhd
+    Info (12022): Found design unit 1: memoriaRAM512-rtl File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/memoriaRAM512.vhd Line: 21
+    Info (12023): Found entity 1: memoriaRAM512 File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/memoriaRAM512.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file memoriaram256.vhd
+    Info (12022): Found design unit 1: memoriaRAM256-rtl File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/memoriaRAM256.vhd Line: 21
+    Info (12023): Found entity 1: memoriaRAM256 File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/memoriaRAM256.vhd Line: 5
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX1" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 52
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REGA" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 59
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 63
-Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 66
-Info (12128): Elaborating entity "ULASomaSub" for hierarchy "ULASomaSub:ULA1" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 71
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM1" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 75
-Info (12128): Elaborating entity "decoderInstru" for hierarchy "decoderInstru:DECODER1" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 80
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "memoriaROM:ROM1|memROM" is uninferred due to inappropriate RAM size File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/memoriaROM.vhd Line: 42
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/db/aula01.ram0_memoriaROM_25cbe260.hdl.mif" contains "don't care" values -- overwriting them with 0s
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 15
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 15
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 15
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 6 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 11
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 12
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 12
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 12
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 13
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/TopLevel.vhd Line: 13
-Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 15 input pins
-    Info (21059): Implemented 13 output pins
-    Info (21061): Implemented 10 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4851 megabytes
-    Info: Processing ended: Thu Sep 01 15:41:02 2022
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:22
+Warning (10541): VHDL Signal Declaration warning at TopLevel.vhd(17): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/TopLevel.vhd Line: 17
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhd(34): object "ROM_Mux" assigned a value but never read File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/TopLevel.vhd Line: 34
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX1" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/TopLevel.vhd Line: 82
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REGA" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/TopLevel.vhd Line: 90
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/TopLevel.vhd Line: 98
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/TopLevel.vhd Line: 105
+Info (12128): Elaborating entity "ULASomaSubPassa" for hierarchy "ULASomaSubPassa:ULA1" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/TopLevel.vhd Line: 112
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM1" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/TopLevel.vhd Line: 120
+Info (12128): Elaborating entity "decoderInstru" for hierarchy "decoderInstru:DECODER1" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/TopLevel.vhd Line: 127
+Info (12128): Elaborating entity "memoriaRAM256" for hierarchy "memoriaRAM256:RAM1" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/TopLevel.vhd Line: 132
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4833 megabytes
+    Info: Processing ended: Thu Sep 08 14:14:11 2022
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:21
 
 

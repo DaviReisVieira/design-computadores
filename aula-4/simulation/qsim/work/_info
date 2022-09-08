@@ -102,7 +102,7 @@ R23
 R16
 R17
 Etoplevel
-Z24 w1661532238
+Z24 w1662658163
 R3
 R5
 R8
@@ -112,19 +112,19 @@ R4
 R6
 R7
 Z26 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
-!i122 30
-Z27 dC:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-3/simulation/qsim
+!i122 36
+Z27 dC:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-4/simulation/qsim
 R9
 R10
 l0
 L39 1
-V<QhZbeM5con5Ej6ODnGH20
-!s100 ZO85^f6Kl59dd3`gS3W]Z2
+V@GP^^]jg=flWcI^I]^;801
+!s100 W:hkZDM4L]`DjfALn6T?=3
 R11
 32
-Z28 !s110 1662057808
+Z28 !s110 1662658164
 !i10b 1
-Z29 !s108 1662057807.000000
+Z29 !s108 1662658164.000000
 R14
 R15
 !i113 1
@@ -140,12 +140,12 @@ R4
 R6
 R7
 R26
-DEx4 work 8 toplevel 0 22 <QhZbeM5con5Ej6ODnGH20
-!i122 30
-l140
-L80 780
-VLXQmh8FL72L6S;V@@lNOH3
-!s100 [iC5JV0blB>HRS_;CJIDX3
+DEx4 work 8 toplevel 0 22 @GP^^]jg=flWcI^I]^;801
+!i122 36
+l141
+L80 775
+V`X`MSMLohTHY:4LTfXlk71
+!s100 2GUgekWUR8H<A:[i=>_7I2
 R11
 32
 R28
@@ -157,13 +157,13 @@ R15
 R16
 R17
 Etoplevel_vhd_vec_tst
-Z30 w1661532237
+Z30 w1662658161
 R6
 R7
-!i122 31
+!i122 37
 R27
-Z31 8Waveform2.vwf.vht
-Z32 FWaveform2.vwf.vht
+Z31 8Waveform4.vwf.vht
+Z32 FWaveform4.vwf.vht
 l0
 R21
 Vi`cW82E4ohG=CFFdJ4Rgz3
@@ -172,28 +172,28 @@ R11
 32
 R28
 !i10b 1
-Z33 !s108 1662057808.000000
-Z34 !s90 -work|work|Waveform2.vwf.vht|
-Z35 !s107 Waveform2.vwf.vht|
+R29
+Z33 !s90 -work|work|Waveform4.vwf.vht|
+Z34 !s107 Waveform4.vwf.vht|
 !i113 1
 R16
 R17
 Atoplevel_arch
 R6
 R7
-Z36 DEx4 work 20 toplevel_vhd_vec_tst 0 22 i`cW82E4ohG=CFFdJ4Rgz3
-!i122 31
+Z35 DEx4 work 20 toplevel_vhd_vec_tst 0 22 i`cW82E4ohG=CFFdJ4Rgz3
+!i122 37
 l51
-Z37 L34 84
-Z38 Vcfk6YI=IjDCXafij?N:4_1
-Z39 !s100 Q9<GL4MkA?`Iac^[INIe_1
+Z36 L34 64
+Z37 VlCXKMJ>_c3aX?Ie;GMXWI1
+Z38 !s100 b97LYIEfjLAMn0E4eY8;N0
 R11
 32
 R28
 !i10b 1
+R29
 R33
 R34
-R35
 !i113 1
 R16
 R17
