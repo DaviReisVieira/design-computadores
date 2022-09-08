@@ -4,7 +4,7 @@ use ieee.numeric_std.all;    -- Biblioteca IEEE para funções aritméticas
 
 entity ULASomaSubPassa is
     generic ( 
-		larguraDados : natural := 8 
+		larguraDados : natural := 8; 
 		larguraInstru: natural := 2
 		);
     port (
