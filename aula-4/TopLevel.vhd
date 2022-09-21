@@ -12,10 +12,12 @@ entity TopLevel is
   port   (
     CLOCK_50 : in std_logic;
     KEY: in std_logic_vector(3 downto 0);
- --   SW: in std_logic_vector(9 downto 0);
+    SW: in std_logic_vector(9 downto 0);
     PC_OUT: out std_logic_vector(larguraEnderecosROM-1 downto 0);
     LEDR  : out std_logic_vector(9 downto 0);
-	 REGA_OUT: out std_logic_vector(7 downto 0)
+	  REGA_OUT: out std_logic_vector(7 downto 0);
+    INST_OUT: out std_logic_vector(12 downto 0);
+    ENTRADAB_ULA: out std_logic_vector(7 downto 0)
   );
 end entity;
 
@@ -24,7 +26,7 @@ architecture arquitetura of TopLevel is
 -- Sinais organizados de acordo com a entrada em cada Componente
 	-- ULA:
   signal MUX_ULA_B : 		std_logic_vector (larguraDados-1 downto 0);
-  signal REG1_ULA_A : 		std_logic_vector (larguraDados-1 downto 0);
+  signal REGA_ULA_A : 		std_logic_vector (larguraDados-1 downto 0);
   signal Saida_ULA : 		std_logic_vector (larguraDados-1 downto 0);
   signal Operacao_ULA : 	std_logic_vector (2 - 1 downto 0);
   
@@ -37,9 +39,9 @@ architecture arquitetura of TopLevel is
   
   -- Reg A
   signal Habilita_A : 			std_logic;
-  signal Saida_REG1 : 		std_logic_vector (larguraDados-1 downto 0);
+  signal Saida_REGA : 		std_logic_vector (larguraDados-1 downto 0);
 	   -- Saida_ULA
-		-- REG1_ULA_A
+		-- REGA_ULA_A
   
   
   -- Decoder
@@ -90,9 +92,10 @@ MUX1 :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
 REGA : entity work.registradorGenerico   generic map (larguraDados => larguraDados)
           port map (
 				DIN => Saida_ULA, 
-				DOUT => Saida_REG1, 
+				DOUT => Saida_REGA, 
 				ENABLE => Habilita_A, 
-				CLK => CLK);
+				CLK => CLK,
+        RST => '0');
 
 -- O port map completo do Program Counter.
 PC : entity work.registradorGenerico   generic map (larguraDados => larguraEnderecosROM)
@@ -100,7 +103,8 @@ PC : entity work.registradorGenerico   generic map (larguraDados => larguraEnder
 				DIN => proxPC,
 				DOUT => Endereco_ROM, 
 				ENABLE => '1', 
-				CLK => CLK);
+				CLK => CLK,
+        RST => '0');
 
 incrementaPC :  entity work.somaConstante  generic map (larguraDados => larguraEnderecosROM, constante => 1)
         port map( 
@@ -111,7 +115,7 @@ incrementaPC :  entity work.somaConstante  generic map (larguraDados => larguraE
 -- O port map completo da ULA:
 ULA1 : entity work.ULASomaSubPassa  generic map(larguraDados => larguraDados)
           port map (
-					entradaA => REG1_ULA_A,
+					entradaA => REGA_ULA_A,
 					entradaB => MUX_ULA_B, 
 					saida => Saida_ULA, 
 					seletor => Operacao_ULA);
@@ -129,7 +133,7 @@ DECODER1 : entity work.decoderInstru
 					opcode => Instrucao (12 downto 9),
 					saida => Sinais_Controle);
 
-RAM1: entity work.memoriaRAM256
+RAM1: entity work.memoriaRAM
 		port map (
 			addr     => Endereco_RAM,
 			we			=> Escrever_RAM,
@@ -144,20 +148,25 @@ RAM1: entity work.memoriaRAM256
 selMUX <= 			Sinais_Controle(5);
 Habilita_A <= 		Sinais_Controle(4);
 Operacao_ULA <= 	Sinais_Controle(3 downto 2);
-
-REG1_ULA_A	 <= 	Saida_REG1;
-
 Ler_RAM <= 			Sinais_Controle(1);
 Escrever_RAM <= 	Sinais_Controle(0);
+
+REGA_ULA_A	 <= 	Saida_REGA;
+Entrada_RAM  <=   Saida_REGA;
+
 Habilita_RAM <= 	Instrucao(8);
 Endereco_RAM <= 	Instrucao(7 downto 0);
-Entrada_RAM  <=   Saida_REG1;
 
 ROM_MUX <= Instrucao(7 downto 0);
+
+INST_OUT <= Instrucao;
+ENTRADAB_ULA <= MUX_ULA_B;
+LEDR(7 downto 0) <= Saida_REGA;
+LEDR(9 downto 8) <= Operacao_ULA;
 
 
 PC_OUT <= Endereco_ROM;
 
-REGA_OUT <= Saida_REG1;
+REGA_OUT <= Saida_REGA;
 
 end architecture;

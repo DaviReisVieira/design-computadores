@@ -2,10 +2,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity memoriaRAM512 is
+entity memoriaRAM is
    generic (
          dataWidth: natural := 8;
-         addrWidth: natural := 9
+         addrWidth: natural := 8
     );
     port
     (
@@ -18,7 +18,7 @@ entity memoriaRAM512 is
     );
 end entity;
 
-architecture rtl of memoriaRAM512 is
+architecture rtl of memoriaRAM is
     -- Build a 2-D array type for the RAM
     subtype word_t is std_logic_vector(dataWidth-1 downto 0);
     type memory_t is array((2**addrWidth-1) downto 0) of word_t;

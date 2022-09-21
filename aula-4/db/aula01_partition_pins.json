@@ -16,6 +16,30 @@
 					"strict" : false
 				},
 				{
+					"name" : "PC_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[8]",
+					"strict" : false
+				},
+				{
 					"name" : "LEDR[0]",
 					"strict" : false
 				},
@@ -32,7 +56,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "LEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[5]",
+					"strict" : false
+				},
+				{
 					"name" : "LEDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[7]",
 					"strict" : false
 				},
 				{
@@ -44,39 +80,99 @@
 					"strict" : false
 				},
 				{
+					"name" : "REGA_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "INST_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "INST_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "INST_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "INST_OUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "INST_OUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "INST_OUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "INST_OUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[7]",
+					"strict" : false
+				},
+				{
 					"name" : "KEY[0]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[0]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[1]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[2]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[3]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[6]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[7]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[8]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[9]",
 					"strict" : false
 				}
 			]

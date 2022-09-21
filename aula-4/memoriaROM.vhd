@@ -27,21 +27,29 @@ architecture assincrona of memoriaROM is
   function initMemory
         return blocoMemoria is variable tmp : blocoMemoria := (others => (others => '0'));
   begin
+
+--     LDI $4         ; Acumulador = 4
+-- STA @257       ; Armazena 4 na posição 257
+-- LDI $3         ; Acumulador = 3
+-- STA @256       ; Armazena 3 na posição 256
+-- Soma @256      ; Soma acumulador com conteúdo de 256
       
 		
         tmp(0)  := LDI  & '1' & "00000100";   
         tmp(1)  := STA  & '1' & "00000001";
         tmp(2)  := LDI  & '0' & "00000011";
-        tmp(3)  := STA  & '1' & "00000000";
-        tmp(4)  := SOMA & '1' & "00000000";
-        tmp(5)  := SOMA & '1' & "00000000";
-        tmp(6)  := SOMA & '1' & "00000000";
-        tmp(7)  := SUB  & '1' & "00000001";
-		  tmp(8)	 := NOP  & '0' & "00000000";
-		  tmp(9)	 := NOP  & '0' & "00000000";
-		  tmp(10)	 := NOP  & '0' & "00000000";
-		  tmp(11)	 := NOP  & '0' & "00000000";
-		  tmp(12)	 := NOP  & '0' & "00000000";
+        tmp(3)  := STA  & '1' & "00000000"; -- X
+
+        tmp(4)  := SOMA & '1' & "00000000"; -- 2X  
+        tmp(5)  := SOMA & '1' & "00000000"; -- 3X
+        tmp(6)  := SUB  & '1' & "00000001"; -- 3X - 4
+        
+        tmp(7)	 := NOP  & '0' & "00000000";
+        tmp(8)	 := NOP  & '0' & "00000000";
+        tmp(9)	 := NOP  & '0' & "00000000";
+        tmp(10)	 := NOP  & '0' & "00000000";
+        tmp(11)	 := NOP  & '0' & "00000000";
+        tmp(12)	 := NOP  & '0' & "00000000";
         return tmp;
     end initMemory;
 
