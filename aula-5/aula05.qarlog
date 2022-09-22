@@ -1,0 +1,28 @@
+Quartus Prime Archive log --	C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/aula05.qarlog
+
+Archive:	C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/aula05.qar
+Date:		Thu Sep 22 11:20:25 2022
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/TopLevel.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/ULASomaSubPassa.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/Waveform1.vwf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/aula01.qpf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/aula01.qsf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/conversorHex7Seg.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/decoderInstru.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/edgeDetector.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/flipflopGenerico.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/logicaDesvio.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/memoriaRAM.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/memoriaROM.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/muxGenerico2x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/muxGenerico4x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/registradorGenerico.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/somaConstante.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 17 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
