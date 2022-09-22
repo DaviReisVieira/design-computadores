@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "09/22/2022 01:52:35"
+-- Generated on "09/22/2022 11:11:08"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          TopLevel
 -- 
@@ -39,7 +39,7 @@ SIGNAL ENTRADAB_ULA : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL INST_OUT : STD_LOGIC_VECTOR(12 DOWNTO 0);
 SIGNAL KEY : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL LEDR : STD_LOGIC_VECTOR(9 DOWNTO 0);
-SIGNAL Palavra_Controle : STD_LOGIC_VECTOR(6 DOWNTO 0);
+SIGNAL Palavra_Controle : STD_LOGIC_VECTOR(11 DOWNTO 0);
 SIGNAL PC_OUT : STD_LOGIC_VECTOR(8 DOWNTO 0);
 SIGNAL REGA_OUT : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL SW : STD_LOGIC_VECTOR(9 DOWNTO 0);
@@ -50,7 +50,7 @@ COMPONENT TopLevel
 	INST_OUT : OUT STD_LOGIC_VECTOR(12 DOWNTO 0);
 	KEY : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	LEDR : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
-	Palavra_Controle : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+	Palavra_Controle : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
 	PC_OUT : OUT STD_LOGIC_VECTOR(8 DOWNTO 0);
 	REGA_OUT : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 	SW : IN STD_LOGIC_VECTOR(9 DOWNTO 0)
@@ -76,7 +76,7 @@ t_prcs_KEY_0: PROCESS
 BEGIN
 	KEY(0) <= '1';
 	WAIT FOR 10000 ps;
-	FOR i IN 1 TO 49
+	FOR i IN 1 TO 15
 	LOOP
 		KEY(0) <= '0';
 		WAIT FOR 10000 ps;

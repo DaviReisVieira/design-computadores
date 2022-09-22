@@ -1,7 +1,7 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY flipflopGenerico IS
+ENTITY flipFlopGenerico IS
     PORT (
         DIN : IN std_logic;
         DOUT : OUT std_logic;
@@ -10,7 +10,7 @@ ENTITY flipflopGenerico IS
     );
 END ENTITY;
 
-ARCHITECTURE comportamento OF flipflopGenerico IS
+ARCHITECTURE comportamento OF flipFlopGenerico  IS
 BEGIN
 
     PROCESS (RST, CLK)

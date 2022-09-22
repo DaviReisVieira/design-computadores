@@ -40,6 +40,78 @@
 					"strict" : false
 				},
 				{
+					"name" : "LEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "REGA_OUT[7]",
+					"strict" : false
+				},
+				{
 					"name" : "INST_OUT[0]",
 					"strict" : false
 				},
@@ -52,6 +124,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "INST_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "INST_OUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "INST_OUT[9]",
+					"strict" : false
+				},
+				{
 					"name" : "INST_OUT[10]",
 					"strict" : false
 				},
@@ -60,7 +144,87 @@
 					"strict" : false
 				},
 				{
+					"name" : "INST_OUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADAB_ULA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Palavra_Controle[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Palavra_Controle[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Palavra_Controle[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Palavra_Controle[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Palavra_Controle[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Palavra_Controle[5]",
+					"strict" : false
+				},
+				{
 					"name" : "Palavra_Controle[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Palavra_Controle[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Palavra_Controle[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Palavra_Controle[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Palavra_Controle[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Palavra_Controle[11]",
 					"strict" : false
 				},
 				{
