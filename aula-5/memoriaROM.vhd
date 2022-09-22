@@ -22,34 +22,29 @@ architecture assincrona of memoriaROM is
   constant LDI  : std_logic_vector(3 downto 0) := "0100";
   constant STA  : std_logic_vector(3 downto 0) := "0101";
   constant JMP  : std_logic_vector(3 downto 0) := "0110";
+  constant JEQ  : std_logic_vector(3 downto 0) := "0111";
+  constant CEQ  : std_logic_vector(3 downto 0) := "1000";
 
   type blocoMemoria is array(0 TO 2**addrWidth - 1) of std_logic_vector(dataWidth-1 DOWNTO 0);
 
   function initMemory
         return blocoMemoria is variable tmp : blocoMemoria := (others => (others => '0'));
-  begin
+  begin      
 
---     LDI $4         ; Acumulador = 4
--- STA @257       ; Armazena 4 na posição 257
--- LDI $3         ; Acumulador = 3
--- STA @256       ; Armazena 3 na posição 256
--- Soma @256      ; Soma acumulador com conteúdo de 256
-      
-		
         tmp(0)  := JMP  & '0' & x"04";   
-        tmp(1)  := JMP  & '0' & x"05";   
+        tmp(1)  := JEQ  & '0' & x"09";   
         tmp(2)  := NOP  & '0' & x"00";
         tmp(3)  := NOP  & '0' & x"00";
-        tmp(4)  := JMP & '0' & x"01"; 
-        tmp(5)  := NOP  & '0' & x"00";
-        tmp(6)  := JMP  & '0' & x"06";
+        tmp(4)  := LDI  & '0' & x"05"; 
+        tmp(5)  := STA  & '1' & x"00";
+        tmp(6)  := CEQ  & '1' & x"00";
+        tmp(7)	:= JMP  & '0' & x"01";
+        tmp(8)	:= NOP  & '0' & x"00";
+        tmp(9)	:= LDI  & '0' & x"04";
+        tmp(10)	:= CEQ  & '1' & x"00";
+        tmp(11)	:= JEQ  & '0' & x"03";
+        tmp(12)	:= JMP  & '0' & x"0C";
         
-        tmp(7)	 := NOP  & '0' & "00000000";
-        tmp(8)	 := NOP  & '0' & "00000000";
-        tmp(9)	 := NOP  & '0' & "00000000";
-        tmp(10)	 := NOP  & '0' & "00000000";
-        tmp(11)	 := NOP  & '0' & "00000000";
-        tmp(12)	 := NOP  & '0' & "00000000";
         return tmp;
     end initMemory;
 

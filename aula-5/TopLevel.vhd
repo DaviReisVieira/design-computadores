@@ -18,7 +18,7 @@ entity TopLevel is
 	  REGA_OUT: out std_logic_vector(7 downto 0);
     INST_OUT: out std_logic_vector(12 downto 0);
     ENTRADAB_ULA: out std_logic_vector(7 downto 0);
-    Palavra_Controle: out std_logic_vector(6 downto 0)
+    Palavra_Controle: out std_logic_vector(8 downto 0)
   );
 end entity;
 
@@ -30,6 +30,8 @@ architecture arquitetura of TopLevel is
   signal REGA_ULA_A : 		std_logic_vector (larguraDados-1 downto 0);
   signal Saida_ULA : 		std_logic_vector (larguraDados-1 downto 0);
   signal Operacao_ULA : 	std_logic_vector (2 - 1 downto 0);
+  signal ULA_FLAG_EQ : 		std_logic;
+  signal FLIPFLOP_OUT : 		std_logic;
   
   
   -- MUX:
@@ -47,7 +49,7 @@ architecture arquitetura of TopLevel is
   
   -- Decoder
   signal ROM_OpCode : 		std_logic_vector (3 downto 0);
-  signal Sinais_Controle : std_logic_vector (6 downto 0);
+  signal Sinais_Controle : std_logic_vector (8 downto 0);
   
   
   -- Memória RAM:
@@ -129,7 +131,24 @@ ULA1 : entity work.ULASomaSubPassa  generic map(larguraDados => larguraDados)
 					entradaA => REGA_ULA_A,
 					entradaB => MUX_ULA_B, 
 					saida => Saida_ULA, 
-					seletor => Operacao_ULA);
+					seletor => Operacao_ULA,
+          flagEqual => ULA_FLAG_EQ);
+
+FLIPFLOP1 : ENTITY work.flipFlopGenerico
+          port map(
+          DIN => ULA_FLAG_EQ,
+          DOUT => FLIPFLOP_OUT,
+          ENABLE => Sinais_Controle(2),
+          CLK => CLK,
+          RST => '0');
+
+DESVIO1 : ENTITY work.LogicaDesvio
+PORT MAP(
+        JMP => Sinais_Controle(8),
+        JEQ => Sinais_Controle(7),
+        FLAG_EQ => FLIPFLOP_OUT,
+        Sel => SelMUXproxPC
+);
 
 -- Falta acertar o conteudo da ROM (no arquivo memoriaROM.vhd)
 ROM1 : entity work.memoriaROM   
@@ -156,10 +175,9 @@ RAM1: entity work.memoriaRAM
 
 					
 					
-SelMUXproxPC <= 			Sinais_Controle(6);
-selMUX <= 			Sinais_Controle(5);
-Habilita_A <= 		Sinais_Controle(4);
-Operacao_ULA <= 	Sinais_Controle(3 downto 2);
+selMUX <= 			Sinais_Controle(6);
+Habilita_A <= 		Sinais_Controle(5);
+Operacao_ULA <= 	Sinais_Controle(4 downto 3);
 Ler_RAM <= 			Sinais_Controle(1);
 Escrever_RAM <= 	Sinais_Controle(0);
 
@@ -175,7 +193,7 @@ ROM_MUX <= Instrucao(7 downto 0);
 
 INST_OUT <= Instrucao;
 ENTRADAB_ULA <= MUX_ULA_B;
-LEDR(7 downto 0) <= Saida_REGA;
+LEDR(7 downto 0) <= Saida_ULA;
 LEDR(9 downto 8) <= Operacao_ULA;
 
 
