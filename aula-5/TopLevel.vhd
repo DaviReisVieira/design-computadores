@@ -167,14 +167,12 @@ PORT MAP(
         Sel => SelMUXproxPC
 );
 
--- Falta acertar o conteudo da ROM (no arquivo memoriaROM.vhd)
 ROM1 : entity work.memoriaROM   
           port map (
 					Endereco => Endereco_ROM,
 					Dado => Instrucao);
 			 
 			 
--- Falta acertar o conteudo da ROM (no arquivo memoriaROM.vhd)
 DECODER1 : entity work.decoderInstru
 			 port map (
 					opcode => Instrucao (12 downto 9),
