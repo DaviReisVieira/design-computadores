@@ -94,6 +94,7 @@ MUX1 :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
 			saida_MUX => MUX_ULA_B);
 
 -- O port map completo do MUX.
+-- ALTERAR MUX 4X1
 MUXproxPC :  entity work.muxGenerico2x1  generic map (larguraDados => larguraEnderecosROM)
         port map( 
 			entradaA_MUX => proxPC,
@@ -141,7 +142,8 @@ FLIPFLOP1 : ENTITY work.flipFlopGenerico
           ENABLE => Sinais_Controle(2),
           CLK => CLK,
           RST => '0');
-
+			 
+-- ALTERAR PARA NOVA ENTIDADE COM JSR, RET
 DESVIO1 : ENTITY work.LogicaDesvio
 PORT MAP(
         JMP => Sinais_Controle(8),

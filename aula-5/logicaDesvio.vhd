@@ -5,17 +5,23 @@ USE ieee.numeric_std.ALL;
 ENTITY logicaDesvio IS
 
   PORT (
-    JMP : IN STD_LOGIC;
-    JEQ : IN STD_LOGIC;
+    JMP, JEQ, JSR, RET : IN STD_LOGIC;
     FLAG_EQ : IN STD_LOGIC;
-    Sel : OUT STD_LOGIC
+    Sel : OUT std_logic_vector(1 downto 0);
   );
 END ENTITY;
 ARCHITECTURE arch_name OF logicaDesvio IS
 
+-- CONTROLA A PORTA DO MUX 4X1, CUJA SAÍDA É O ENDEREÇO DA PRÓXIMA INSTRUÇÃO
+-- 00: Próximo PC
+-- 01: Endereço Imediato
+-- 02: Endereço Retorno
+-- 03: Aberto.
+
 BEGIN
-  Sel <= '0' WHEN (JMP = '0' AND JEQ = '0'  AND FLAG_EQ = '0') ELSE
-    '1' WHEN (JMP = '1' AND JEQ = '0' AND FLAG_EQ = '0') ELSE
-    '0' WHEN (JMP = '0' AND JEQ = '1' AND FLAG_EQ = '0') ELSE
-    '1' WHEN (JMP = '0' AND JEQ = '1' AND FLAG_EQ = '1');
+  Sel <= "01" WHEN (JMP = '1' AND RET = '0' AND JSQ = '0' AND JEQ = '0') ELSE 
+			"01" WHEN (JMP = '0' AND RET = '0' AND JSR = '0' AND JEQ = '1' AND FLAG_EQ = '1') ELSE
+			"01" WHEN (JMP = '0' AND RET = '0' AND JSR = '1' AND JEQ = '0') ELSE
+			"10" WHEN (JMP = '0' AND RET = '1' AND JSR = '0' AND JEQ = '0') ELSE
+			"00"
 END ARCHITECTURE;
