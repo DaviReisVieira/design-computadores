@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "09/22/2022 00:50:27"
+-- Generated on "09/16/2022 14:18:34"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          TopLevel
 -- 
@@ -39,7 +39,6 @@ SIGNAL ENTRADAB_ULA : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL INST_OUT : STD_LOGIC_VECTOR(12 DOWNTO 0);
 SIGNAL KEY : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL LEDR : STD_LOGIC_VECTOR(9 DOWNTO 0);
-SIGNAL Palavra_Controle : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL PC_OUT : STD_LOGIC_VECTOR(8 DOWNTO 0);
 SIGNAL REGA_OUT : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL SW : STD_LOGIC_VECTOR(9 DOWNTO 0);
@@ -50,7 +49,6 @@ COMPONENT TopLevel
 	INST_OUT : OUT STD_LOGIC_VECTOR(12 DOWNTO 0);
 	KEY : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	LEDR : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
-	Palavra_Controle : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
 	PC_OUT : OUT STD_LOGIC_VECTOR(8 DOWNTO 0);
 	REGA_OUT : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 	SW : IN STD_LOGIC_VECTOR(9 DOWNTO 0)
@@ -65,7 +63,6 @@ BEGIN
 	INST_OUT => INST_OUT,
 	KEY => KEY,
 	LEDR => LEDR,
-	Palavra_Controle => Palavra_Controle,
 	PC_OUT => PC_OUT,
 	REGA_OUT => REGA_OUT,
 	SW => SW

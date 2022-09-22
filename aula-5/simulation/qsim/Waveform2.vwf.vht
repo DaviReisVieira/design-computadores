@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "09/22/2022 00:50:27"
+-- Generated on "08/26/2022 13:43:57"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          TopLevel
 -- 
@@ -35,24 +35,16 @@ ARCHITECTURE TopLevel_arch OF TopLevel_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL CLOCK_50 : STD_LOGIC;
-SIGNAL ENTRADAB_ULA : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL INST_OUT : STD_LOGIC_VECTOR(12 DOWNTO 0);
 SIGNAL KEY : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL LEDR : STD_LOGIC_VECTOR(9 DOWNTO 0);
-SIGNAL Palavra_Controle : STD_LOGIC_VECTOR(6 DOWNTO 0);
-SIGNAL PC_OUT : STD_LOGIC_VECTOR(8 DOWNTO 0);
-SIGNAL REGA_OUT : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL PC_OUT : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL SW : STD_LOGIC_VECTOR(9 DOWNTO 0);
 COMPONENT TopLevel
 	PORT (
 	CLOCK_50 : IN STD_LOGIC;
-	ENTRADAB_ULA : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-	INST_OUT : OUT STD_LOGIC_VECTOR(12 DOWNTO 0);
 	KEY : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	LEDR : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
-	Palavra_Controle : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
-	PC_OUT : OUT STD_LOGIC_VECTOR(8 DOWNTO 0);
-	REGA_OUT : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	PC_OUT : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
 	SW : IN STD_LOGIC_VECTOR(9 DOWNTO 0)
 	);
 END COMPONENT;
@@ -61,13 +53,9 @@ BEGIN
 	PORT MAP (
 -- list connections between master ports and signals
 	CLOCK_50 => CLOCK_50,
-	ENTRADAB_ULA => ENTRADAB_ULA,
-	INST_OUT => INST_OUT,
 	KEY => KEY,
 	LEDR => LEDR,
-	Palavra_Controle => Palavra_Controle,
 	PC_OUT => PC_OUT,
-	REGA_OUT => REGA_OUT,
 	SW => SW
 	);
 
@@ -75,15 +63,55 @@ BEGIN
 t_prcs_KEY_0: PROCESS
 BEGIN
 	KEY(0) <= '1';
-	WAIT FOR 10000 ps;
+	WAIT FOR 50000 ps;
 	FOR i IN 1 TO 7
 	LOOP
 		KEY(0) <= '0';
-		WAIT FOR 10000 ps;
+		WAIT FOR 50000 ps;
 		KEY(0) <= '1';
-		WAIT FOR 10000 ps;
+		WAIT FOR 50000 ps;
 	END LOOP;
 	KEY(0) <= '0';
 WAIT;
 END PROCESS t_prcs_KEY_0;
+
+-- SW[9]
+t_prcs_SW_9: PROCESS
+BEGIN
+	SW(9) <= '0';
+WAIT;
+END PROCESS t_prcs_SW_9;
+
+-- SW[8]
+t_prcs_SW_8: PROCESS
+BEGIN
+	SW(8) <= '0';
+	WAIT FOR 400000 ps;
+	SW(8) <= '1';
+	WAIT FOR 100000 ps;
+	SW(8) <= '0';
+WAIT;
+END PROCESS t_prcs_SW_8;
+
+-- SW[7]
+t_prcs_SW_7: PROCESS
+BEGIN
+	SW(7) <= '1';
+	WAIT FOR 400000 ps;
+	SW(7) <= '0';
+	WAIT FOR 100000 ps;
+	SW(7) <= '1';
+WAIT;
+END PROCESS t_prcs_SW_7;
+
+-- SW[6]
+t_prcs_SW_6: PROCESS
+BEGIN
+	SW(6) <= '1';
+	WAIT FOR 400000 ps;
+	SW(6) <= '0';
+	WAIT FOR 100000 ps;
+	SW(6) <= '1';
+WAIT;
+END PROCESS t_prcs_SW_6;
 END TopLevel_arch;
