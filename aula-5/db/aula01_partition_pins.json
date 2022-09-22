@@ -184,6 +184,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "Palavra_Controle[1]",
+					"strict" : false
+				},
+				{
 					"name" : "Palavra_Controle[2]",
 					"strict" : false
 				},
@@ -209,6 +213,18 @@
 				},
 				{
 					"name" : "Palavra_Controle[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Palavra_Controle[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Palavra_Controle[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Palavra_Controle[11]",
 					"strict" : false
 				},
 				{

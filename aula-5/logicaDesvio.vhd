@@ -7,7 +7,7 @@ ENTITY logicaDesvio IS
   PORT (
     JMP, JEQ, JSR, RET : IN STD_LOGIC;
     FLAG_EQ : IN STD_LOGIC;
-    Sel : OUT std_logic_vector(1 downto 0);
+    Sel : OUT std_logic_vector(1 downto 0)
   );
 END ENTITY;
 ARCHITECTURE arch_name OF logicaDesvio IS
@@ -19,9 +19,10 @@ ARCHITECTURE arch_name OF logicaDesvio IS
 -- 03: Aberto.
 
 BEGIN
-  Sel <= "01" WHEN (JMP = '1' AND RET = '0' AND JSQ = '0' AND JEQ = '0') ELSE 
-			"01" WHEN (JMP = '0' AND RET = '0' AND JSR = '0' AND JEQ = '1' AND FLAG_EQ = '1') ELSE
-			"01" WHEN (JMP = '0' AND RET = '0' AND JSR = '1' AND JEQ = '0') ELSE
-			"10" WHEN (JMP = '0' AND RET = '1' AND JSR = '0' AND JEQ = '0') ELSE
-			"00"
+Sel <= "00" WHEN (JMP = '0' AND RET = '0' AND JSR = '0' AND JEQ = '0') ELSE
+       "01" WHEN (JMP = '1' AND RET = '0' AND JSR = '0' AND JEQ = '0') ELSE
+       "00" WHEN (JMP = '0' AND RET = '0' AND JSR = '0' AND JEQ = '1' AND FLAG_EQ = '0') ELSE
+       "01" WHEN (JMP = '0' AND RET = '0' AND JSR = '0' AND JEQ = '1' AND FLAG_EQ = '1') ELSE
+       "01" WHEN (JMP = '0' AND RET = '0' AND JSR = '1' AND JEQ = '0') ELSE
+       "10" WHEN (JMP = '0' AND RET = '1' AND JSR = '0' AND JEQ = '0');
 END ARCHITECTURE;

@@ -102,7 +102,7 @@ R23
 R16
 R17
 Etoplevel
-Z24 w1663830039
+Z24 w1663853193
 R3
 R5
 R8
@@ -112,19 +112,19 @@ R4
 R6
 R7
 Z26 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
-!i122 84
+!i122 88
 Z27 dC:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-5/simulation/qsim
 R9
 R10
 l0
 L39 1
-Vk3dAPZ@BPQ9nYV5EUX;[D1
-!s100 T@GE_M=OI`z>[EC7o0DNH1
+Vl]azO?dAPn:>hD_dO@>cg0
+!s100 iZ]`adM6@8M>bFM_?`I==1
 R11
 32
-Z28 !s110 1663830040
+Z28 !s110 1663853195
 !i10b 1
-Z29 !s108 1663830040.000000
+Z29 !s108 1663853195.000000
 R14
 R15
 !i113 1
@@ -140,12 +140,12 @@ R4
 R6
 R7
 R26
-DEx4 work 8 toplevel 0 22 k3dAPZ@BPQ9nYV5EUX;[D1
-!i122 84
-l400
-L128 3800
-VCAfl5VCIIidKLEgAfS5R]2
-!s100 :Ng]@@JDd0T4=?JE@7ahf1
+DEx4 work 8 toplevel 0 22 l]azO?dAPn:>hD_dO@>cg0
+!i122 88
+l431
+L131 4223
+V=8YOMniBl7?<<kbDnJYD=3
+!s100 BnjOoWHVCDkGY1GnF7WeX0
 R11
 32
 R28
@@ -157,10 +157,10 @@ R15
 R16
 R17
 Etoplevel_vhd_vec_tst
-Z30 w1663830038
+Z30 w1663853191
 R6
 R7
-!i122 85
+!i122 89
 R27
 R19
 R20
@@ -170,9 +170,9 @@ Vi`cW82E4ohG=CFFdJ4Rgz3
 !s100 HOYZb^>X>O4gVXH@FzMRJ1
 R11
 32
-Z31 !s110 1663830041
+R28
 !i10b 1
-Z32 !s108 1663830041.000000
+R29
 R22
 R23
 !i113 1
@@ -181,17 +181,17 @@ R17
 Atoplevel_arch
 R6
 R7
-Z33 DEx4 work 20 toplevel_vhd_vec_tst 0 22 i`cW82E4ohG=CFFdJ4Rgz3
-!i122 85
+Z31 DEx4 work 20 toplevel_vhd_vec_tst 0 22 i`cW82E4ohG=CFFdJ4Rgz3
+!i122 89
 l59
-Z34 L34 56
-Z35 Vc`m<kDPP:]b>PU`3@zX_63
-Z36 !s100 0=GTE@oML6C5lBm6Mn0LN2
+Z32 L34 56
+Z33 V4;ik2D65f1HNj7ha^eJJn3
+Z34 !s100 9gc<Yz?d484mAN]RoCd@51
 R11
 32
-R31
+R28
 !i10b 1
-R32
+R29
 R22
 R23
 !i113 1

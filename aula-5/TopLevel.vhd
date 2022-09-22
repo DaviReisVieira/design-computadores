@@ -18,7 +18,7 @@ entity TopLevel is
 	  REGA_OUT: out std_logic_vector(7 downto 0);
     INST_OUT: out std_logic_vector(12 downto 0);
     ENTRADAB_ULA: out std_logic_vector(7 downto 0);
-    Palavra_Controle: out std_logic_vector(8 downto 0)
+    Palavra_Controle: out std_logic_vector(11 downto 0)
   );
 end entity;
 
@@ -49,7 +49,7 @@ architecture arquitetura of TopLevel is
   
   -- Decoder
   signal ROM_OpCode : 		std_logic_vector (3 downto 0);
-  signal Sinais_Controle : std_logic_vector (8 downto 0);
+  signal Sinais_Controle : std_logic_vector (11 downto 0);
   
   
   -- Memória RAM:
@@ -67,7 +67,10 @@ architecture arquitetura of TopLevel is
   -- Program Counter
   signal proxPC : 			std_logic_vector (larguraEnderecosROM -1 downto 0);
   signal MUXproxPC_OUT : std_logic_vector (larguraEnderecosROM -1 downto 0);
-  signal SelMUXproxPC : std_logic;
+  signal SelMUXproxPC : std_logic_vector (1 downto 0);
+
+  -- END RETORNO
+  signal EndRetorno_OUT : std_logic_vector (8 DOWNTO 0);
 
   signal CLK : 					std_logic;
   
@@ -95,10 +98,12 @@ MUX1 :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
 
 -- O port map completo do MUX.
 -- ALTERAR MUX 4X1
-MUXproxPC :  entity work.muxGenerico2x1  generic map (larguraDados => larguraEnderecosROM)
+MUXproxPC :  entity work.muxGenerico4x1  generic map (larguraDados => larguraEnderecosROM)
         port map( 
 			entradaA_MUX => proxPC,
 			entradaB_MUX => Instrucao (8 downto 0),
+			entradaC_MUX => EndRetorno_OUT,
+			entradaD_MUX => "000000000",
 			seletor_MUX => SelMUXproxPC,
 			saida_MUX => MUXproxPC_OUT);
 
@@ -142,11 +147,21 @@ FLIPFLOP1 : ENTITY work.flipFlopGenerico
           ENABLE => Sinais_Controle(2),
           CLK => CLK,
           RST => '0');
-			 
--- ALTERAR PARA NOVA ENTIDADE COM JSR, RET
+
+END_RETORNO : ENTITY work.registradorGenerico GENERIC MAP (larguraDados => 9)
+PORT MAP(
+        DIN => proxPC,
+        DOUT => EndRetorno_OUT,
+        ENABLE => Sinais_Controle(11),
+        CLK => CLK,
+        RST => '0'
+);
+          
 DESVIO1 : ENTITY work.LogicaDesvio
 PORT MAP(
-        JMP => Sinais_Controle(8),
+        JMP => Sinais_Controle(10),
+        RET => Sinais_Controle(9),
+        JSR => Sinais_Controle(8),
         JEQ => Sinais_Controle(7),
         FLAG_EQ => FLIPFLOP_OUT,
         Sel => SelMUXproxPC
