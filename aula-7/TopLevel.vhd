@@ -170,7 +170,7 @@ AND_LEDR9: entity work.and3x1
 	
 			
 hab_RAM <= saida_DECODER1(0);
-hab_LEDS <= saida_DECODER1(4);
+hab_LEDS <= saida_DECODER1(5);
 
 -- LEDS estão conectados às saídas dos FF ou registrador
 
