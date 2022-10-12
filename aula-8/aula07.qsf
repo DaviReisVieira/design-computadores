@@ -275,3 +275,5 @@ set_global_assignment -name VHDL_FILE edgeDetector.vhd
 set_global_assignment -name VHDL_FILE decoderInstru.vhd
 set_global_assignment -name VHDL_FILE conversorHex7Seg.vhd
 set_global_assignment -name VHDL_FILE and4x1.vhd
+set_global_assignment -name VHDL_FILE buffer_3_state_8portas.vhd
+set_global_assignment -name VHDL_FILE buffer_3_state_simples.vhd
