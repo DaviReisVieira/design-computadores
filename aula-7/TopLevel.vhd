@@ -61,6 +61,7 @@ begin
 	signal saida_DECODER1			std_logic_vector(7 downto 0);
 	signal saida_DECODER2			std_logic_vector(7 downto 0);
 	signal hab_RAM 					std_logic;
+	signal hab_LEDS					std_logic;
 	
 	-- enables:
 	signal ENABLE_LEDR07: 			std_logic;
