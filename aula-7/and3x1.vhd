@@ -10,7 +10,7 @@ entity and3x1 is
   );
 end entity;
 
-architecture comportamento of decoder3x8 is
+architecture comportamento of and3x1 is
   begin
     saida <= entradaA AND entradaB AND entradaC;
 end architecture;
