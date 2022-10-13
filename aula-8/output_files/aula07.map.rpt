@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aula07
-Thu Oct 13 12:08:34 2022
+Thu Oct 13 12:54:07 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,53 +13,54 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |TopLevel
- 12. Parameter Settings for User Entity Instance: CPU:CPU
- 13. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1:MUX1
- 14. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico4x1:MUXproxPC
- 15. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:REGA
- 16. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:PC
- 17. Parameter Settings for User Entity Instance: CPU:CPU|somaConstante:incrementaPC
- 18. Parameter Settings for User Entity Instance: CPU:CPU|ULASomaSubPassa:ULA1
- 19. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:END_RETORNO
- 20. Parameter Settings for User Entity Instance: memoriaRAM:RAM64
- 21. Parameter Settings for User Entity Instance: memoriaROM:ROM
- 22. Parameter Settings for User Entity Instance: registradorGenerico:REG_LEDR0_7
- 23. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX0
- 24. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX1
- 25. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX2
- 26. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX3
- 27. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX4
- 28. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX5
- 29. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_5"
- 30. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_4"
- 31. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_3"
- 32. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_2"
- 33. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_1"
- 34. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_0"
- 35. Port Connectivity Checks: "registradorGenerico:REG_HEX5"
- 36. Port Connectivity Checks: "registradorGenerico:REG_HEX4"
- 37. Port Connectivity Checks: "registradorGenerico:REG_HEX3"
- 38. Port Connectivity Checks: "registradorGenerico:REG_HEX2"
- 39. Port Connectivity Checks: "registradorGenerico:REG_HEX1"
- 40. Port Connectivity Checks: "registradorGenerico:REG_HEX0"
- 41. Port Connectivity Checks: "flipFlopGenerico:FLIP_FLOP_LED9"
- 42. Port Connectivity Checks: "flipFlopGenerico:FLIP_FLOP_LED8"
- 43. Port Connectivity Checks: "registradorGenerico:REG_LEDR0_7"
- 44. Port Connectivity Checks: "decoder3x8:DECODER2"
- 45. Port Connectivity Checks: "decoder3x8:DECODER1"
- 46. Port Connectivity Checks: "CPU:CPU|registradorGenerico:END_RETORNO"
- 47. Port Connectivity Checks: "CPU:CPU|flipFlopGenerico:FLIPFLOP1"
- 48. Port Connectivity Checks: "CPU:CPU|registradorGenerico:PC"
- 49. Port Connectivity Checks: "CPU:CPU|registradorGenerico:REGA"
- 50. Port Connectivity Checks: "CPU:CPU|muxGenerico4x1:MUXproxPC"
- 51. Port Connectivity Checks: "CPU:CPU"
- 52. Post-Synthesis Netlist Statistics for Top Partition
- 53. Elapsed Time Per Partition
- 54. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |TopLevel
+ 13. Parameter Settings for User Entity Instance: CPU:CPU
+ 14. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1:MUX1
+ 15. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico4x1:MUXproxPC
+ 16. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:REGA
+ 17. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:PC
+ 18. Parameter Settings for User Entity Instance: CPU:CPU|somaConstante:incrementaPC
+ 19. Parameter Settings for User Entity Instance: CPU:CPU|ULASomaSubPassa:ULA1
+ 20. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:END_RETORNO
+ 21. Parameter Settings for User Entity Instance: memoriaRAM:RAM64
+ 22. Parameter Settings for User Entity Instance: memoriaROM:ROM
+ 23. Parameter Settings for User Entity Instance: registradorGenerico:REG_LEDR0_7
+ 24. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX0
+ 25. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX1
+ 26. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX2
+ 27. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX3
+ 28. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX4
+ 29. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX5
+ 30. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_5"
+ 31. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_4"
+ 32. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_3"
+ 33. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_2"
+ 34. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_1"
+ 35. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_0"
+ 36. Port Connectivity Checks: "registradorGenerico:REG_HEX5"
+ 37. Port Connectivity Checks: "registradorGenerico:REG_HEX4"
+ 38. Port Connectivity Checks: "registradorGenerico:REG_HEX3"
+ 39. Port Connectivity Checks: "registradorGenerico:REG_HEX2"
+ 40. Port Connectivity Checks: "registradorGenerico:REG_HEX1"
+ 41. Port Connectivity Checks: "registradorGenerico:REG_HEX0"
+ 42. Port Connectivity Checks: "flipFlopGenerico:FLIP_FLOP_LED9"
+ 43. Port Connectivity Checks: "flipFlopGenerico:FLIP_FLOP_LED8"
+ 44. Port Connectivity Checks: "registradorGenerico:REG_LEDR0_7"
+ 45. Port Connectivity Checks: "decoder3x8:DECODER2"
+ 46. Port Connectivity Checks: "decoder3x8:DECODER1"
+ 47. Port Connectivity Checks: "CPU:CPU|registradorGenerico:END_RETORNO"
+ 48. Port Connectivity Checks: "CPU:CPU|flipFlopGenerico:FLIPFLOP1"
+ 49. Port Connectivity Checks: "CPU:CPU|registradorGenerico:PC"
+ 50. Port Connectivity Checks: "CPU:CPU|registradorGenerico:REGA"
+ 51. Port Connectivity Checks: "CPU:CPU|muxGenerico4x1:MUXproxPC"
+ 52. Port Connectivity Checks: "CPU:CPU"
+ 53. Post-Synthesis Netlist Statistics for Top Partition
+ 54. Elapsed Time Per Partition
+ 55. Analysis & Synthesis Messages
 
 
 
@@ -86,13 +87,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 13 12:08:34 2022       ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 13 12:54:07 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aula07                                      ;
 ; Top-level Entity Name           ; TopLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 37                                          ;
+; Total registers                 ; 51                                          ;
 ; Total pins                      ; 68                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -241,195 +242,90 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 43           ;
+; Estimate of Logic utilization (ALMs needed) ; 65           ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 70           ;
+; Combinational ALUT usage for logic          ; 104          ;
 ;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 6            ;
-;     -- 5 input functions                    ; 13           ;
-;     -- 4 input functions                    ; 23           ;
-;     -- <=3 input functions                  ; 28           ;
+;     -- 6 input functions                    ; 9            ;
+;     -- 5 input functions                    ; 3            ;
+;     -- 4 input functions                    ; 60           ;
+;     -- <=3 input functions                  ; 32           ;
 ;                                             ;              ;
-; Dedicated logic registers                   ; 37           ;
+; Dedicated logic registers                   ; 51           ;
 ;                                             ;              ;
 ; I/O pins                                    ; 68           ;
 ;                                             ;              ;
 ; Total DSP Blocks                            ; 0            ;
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
-; Maximum fan-out                             ; 37           ;
-; Total fan-out                               ; 434          ;
-; Average fan-out                             ; 1.79         ;
+; Maximum fan-out                             ; 52           ;
+; Total fan-out                               ; 668          ;
+; Average fan-out                             ; 2.30         ;
 +---------------------------------------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                       ;
-+-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                               ; Entity Name         ; Library Name ;
-+-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------+---------------------+--------------+
-; |TopLevel                               ; 70 (0)              ; 37 (0)                    ; 0                 ; 0          ; 68   ; 0            ; |TopLevel                                         ; TopLevel            ; work         ;
-;    |CPU:CPU|                            ; 46 (0)              ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU                                 ; CPU                 ; work         ;
-;       |ULASomaSubPassa:ULA1|            ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|ULASomaSubPassa:ULA1            ; ULASomaSubPassa     ; work         ;
-;       |decoderInstru:DECODER1|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|decoderInstru:DECODER1          ; decoderInstru       ; work         ;
-;       |flipFlopGenerico:FLIPFLOP1|      ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|flipFlopGenerico:FLIPFLOP1      ; flipFlopGenerico    ; work         ;
-;       |logicaDesvio:DESVIO1|            ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|logicaDesvio:DESVIO1            ; logicaDesvio        ; work         ;
-;       |muxGenerico2x1:MUX1|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|muxGenerico2x1:MUX1             ; muxGenerico2x1      ; work         ;
-;       |muxGenerico4x1:MUXproxPC|        ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|muxGenerico4x1:MUXproxPC        ; muxGenerico4x1      ; work         ;
-;       |registradorGenerico:END_RETORNO| ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|registradorGenerico:END_RETORNO ; registradorGenerico ; work         ;
-;       |registradorGenerico:PC|          ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|registradorGenerico:PC          ; registradorGenerico ; work         ;
-;       |registradorGenerico:REGA|        ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|registradorGenerico:REGA        ; registradorGenerico ; work         ;
-;       |somaConstante:incrementaPC|      ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|somaConstante:incrementaPC      ; somaConstante       ; work         ;
-;    |decoder3x8:DECODER2|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|decoder3x8:DECODER2                     ; decoder3x8          ; work         ;
-;    |flipFlopGenerico:FLIP_FLOP_LED8|    ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|flipFlopGenerico:FLIP_FLOP_LED8         ; flipFlopGenerico    ; work         ;
-;    |flipFlopGenerico:FLIP_FLOP_LED9|    ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|flipFlopGenerico:FLIP_FLOP_LED9         ; flipFlopGenerico    ; work         ;
-;    |memoriaROM:ROM|                     ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|memoriaROM:ROM                          ; memoriaROM          ; work         ;
-;    |registradorGenerico:REG_LEDR0_7|    ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_LEDR0_7         ; registradorGenerico ; work         ;
-+-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------+---------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                               ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name         ; Library Name ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
+; |TopLevel                            ; 104 (7)             ; 51 (0)                    ; 0                 ; 0          ; 68   ; 0            ; |TopLevel                                    ; TopLevel            ; work         ;
+;    |CPU:CPU|                         ; 31 (0)              ; 17 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU                            ; CPU                 ; work         ;
+;       |ULASomaSubPassa:ULA1|         ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|ULASomaSubPassa:ULA1       ; ULASomaSubPassa     ; work         ;
+;       |decoderInstru:DECODER1|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|decoderInstru:DECODER1     ; decoderInstru       ; work         ;
+;       |logicaDesvio:DESVIO1|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|logicaDesvio:DESVIO1       ; logicaDesvio        ; work         ;
+;       |muxGenerico2x1:MUX1|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|muxGenerico2x1:MUX1        ; muxGenerico2x1      ; work         ;
+;       |registradorGenerico:PC|       ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|registradorGenerico:PC     ; registradorGenerico ; work         ;
+;       |registradorGenerico:REGA|     ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|registradorGenerico:REGA   ; registradorGenerico ; work         ;
+;       |somaConstante:incrementaPC|   ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|somaConstante:incrementaPC ; somaConstante       ; work         ;
+;    |and4x1:AND_HEX0|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX0                    ; and4x1              ; work         ;
+;    |and4x1:AND_HEX1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX1                    ; and4x1              ; work         ;
+;    |and4x1:AND_HEX2|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX2                    ; and4x1              ; work         ;
+;    |and4x1:AND_HEX3|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX3                    ; and4x1              ; work         ;
+;    |and4x1:AND_HEX4|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX4                    ; and4x1              ; work         ;
+;    |and4x1:AND_HEX5|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX5                    ; and4x1              ; work         ;
+;    |and4x1:AND_LEDR0_7|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_LEDR0_7                 ; and4x1              ; work         ;
+;    |and4x1:AND_SW0_7|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_SW0_7                   ; and4x1              ; work         ;
+;    |conversorHex7Seg:DECODER_7SEG_0| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_0    ; conversorHex7Seg    ; work         ;
+;    |conversorHex7Seg:DECODER_7SEG_1| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_1    ; conversorHex7Seg    ; work         ;
+;    |conversorHex7Seg:DECODER_7SEG_2| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_2    ; conversorHex7Seg    ; work         ;
+;    |conversorHex7Seg:DECODER_7SEG_3| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_3    ; conversorHex7Seg    ; work         ;
+;    |conversorHex7Seg:DECODER_7SEG_4| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_4    ; conversorHex7Seg    ; work         ;
+;    |conversorHex7Seg:DECODER_7SEG_5| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_5    ; conversorHex7Seg    ; work         ;
+;    |flipFlopGenerico:FLIP_FLOP_LED8| ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|flipFlopGenerico:FLIP_FLOP_LED8    ; flipFlopGenerico    ; work         ;
+;    |flipFlopGenerico:FLIP_FLOP_LED9| ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|flipFlopGenerico:FLIP_FLOP_LED9    ; flipFlopGenerico    ; work         ;
+;    |memoriaROM:ROM|                  ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|memoriaROM:ROM                     ; memoriaROM          ; work         ;
+;    |registradorGenerico:REG_HEX0|    ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX0       ; registradorGenerico ; work         ;
+;    |registradorGenerico:REG_HEX1|    ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX1       ; registradorGenerico ; work         ;
+;    |registradorGenerico:REG_HEX2|    ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX2       ; registradorGenerico ; work         ;
+;    |registradorGenerico:REG_HEX3|    ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX3       ; registradorGenerico ; work         ;
+;    |registradorGenerico:REG_HEX4|    ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX4       ; registradorGenerico ; work         ;
+;    |registradorGenerico:REG_HEX5|    ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX5       ; registradorGenerico ; work         ;
+;    |registradorGenerico:REG_LEDR0_7| ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_LEDR0_7    ; registradorGenerico ; work         ;
++--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                    ;
-+-----------------------------------------+---------------------------------------------+
-; Register name                           ; Reason for Removal                          ;
-+-----------------------------------------+---------------------------------------------+
-; registradorGenerico:REG_HEX0|DOUT[0..3] ; Stuck at GND due to stuck port clock_enable ;
-; registradorGenerico:REG_HEX1|DOUT[0..3] ; Stuck at GND due to stuck port clock_enable ;
-; registradorGenerico:REG_HEX2|DOUT[0..3] ; Stuck at GND due to stuck port clock_enable ;
-; registradorGenerico:REG_HEX3|DOUT[0..3] ; Stuck at GND due to stuck port clock_enable ;
-; registradorGenerico:REG_HEX4|DOUT[0..3] ; Stuck at GND due to stuck port clock_enable ;
-; registradorGenerico:REG_HEX5|DOUT[0..3] ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~127                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~63                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~111                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~47                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~95                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~31                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~79                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~15                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~135                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~71                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~119                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~55                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~103                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~39                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~87                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~23                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~128                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~136                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~96                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~104                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~64                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~72                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~32                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~40                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~112                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~120                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~80                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~88                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~48                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~56                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~16                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~24                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~129                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~65                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~113                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~49                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~97                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~33                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~81                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~17                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~137                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~73                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~121                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~57                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~105                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~41                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~89                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~25                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~130                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~138                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~98                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~106                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~66                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~74                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~34                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~42                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~114                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~122                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~82                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~90                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~50                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~58                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~18                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~26                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~131                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~67                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~115                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~51                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~99                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~35                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~83                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~19                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~139                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~75                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~123                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~59                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~107                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~43                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~91                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~27                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~132                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~140                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~100                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~108                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~68                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~76                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~36                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~44                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~116                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~124                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~84                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~92                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~52                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~60                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~20                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~28                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~133                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~69                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~117                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~53                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~101                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~37                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~85                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~21                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~141                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~77                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~125                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~61                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~109                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~45                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~93                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~29                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~134                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~142                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~102                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~110                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~70                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~78                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~38                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~46                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~118                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~126                ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~86                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~94                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~54                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~62                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~22                 ; Stuck at GND due to stuck port clock_enable ;
-; memoriaRAM:RAM64|ram~30                 ; Stuck at GND due to stuck port clock_enable ;
-; Total Number of Removed Registers = 152 ;                                             ;
-+-----------------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; CPU:CPU|logicaDesvio:DESVIO1|Sel[0]                ; GND                 ; yes                    ;
+; Number of user-specified and inferred latches = 1  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                               ;
++----------------------------------------------------+---------------------------------------------+
+; Register name                                      ; Reason for Removal                          ;
++----------------------------------------------------+---------------------------------------------+
+; CPU:CPU|registradorGenerico:END_RETORNO|DOUT[0..8] ; Stuck at GND due to stuck port clock_enable ;
+; CPU:CPU|flipFlopGenerico:FLIPFLOP1|DOUT            ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 10             ;                                             ;
++----------------------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -437,12 +333,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 37    ;
+; Total registers                              ; 51    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 9     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 25    ;
+; Number of registers using Clock Enable       ; 40    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -452,11 +348,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|CPU:CPU|registradorGenerico:REGA|DOUT[6] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TopLevel|CPU:CPU|registradorGenerico:PC|DOUT[4]   ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|CPU:CPU|registradorGenerico:PC|DOUT[0]   ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TopLevel|CPU:CPU|decoderInstru:DECODER1|saida[3]  ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TopLevel|CPU:CPU|logicaDesvio:DESVIO1|Sel[1]      ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|CPU:CPU|registradorGenerico:PC|DOUT[6]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|CPU:CPU|registradorGenerico:REGA|DOUT[1] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TopLevel|CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[3] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |TopLevel|CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[5] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 
 
@@ -878,26 +773,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 37                          ;
-;     ENA               ; 17                          ;
+; arriav_ff             ; 51                          ;
+;     ENA               ; 32                          ;
 ;     ENA SLD           ; 8                           ;
-;     plain             ; 12                          ;
-; arriav_lcell_comb     ; 72                          ;
+;     SLD               ; 9                           ;
+;     plain             ; 2                           ;
+; arriav_lcell_comb     ; 104                         ;
 ;     arith             ; 18                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 13                          ;
-;         4 data inputs ; 4                           ;
-;     normal            ; 54                          ;
-;         0 data inputs ; 2                           ;
-;         2 data inputs ; 7                           ;
+;         1 data inputs ; 9                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 5                           ;
+;     normal            ; 86                          ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 6                           ;
 ;         3 data inputs ; 7                           ;
-;         4 data inputs ; 19                          ;
-;         5 data inputs ; 13                          ;
-;         6 data inputs ; 6                           ;
+;         4 data inputs ; 60                          ;
+;         5 data inputs ; 3                           ;
+;         6 data inputs ; 9                           ;
 ; boundary_port         ; 68                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.30                        ;
-; Average LUT depth     ; 3.45                        ;
+; Max LUT depth         ; 6.70                        ;
+; Average LUT depth     ; 2.91                        ;
 +-----------------------+-----------------------------+
 
 
@@ -916,7 +813,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Oct 13 12:08:20 2022
+    Info: Processing started: Thu Oct 13 12:53:55 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aula07 -c aula07
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1007,76 +904,20 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "DATA_IN[2]" into a selector File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/muxGenerico2x1.vhd Line: 10
     Warning (13048): Converted tri-state node "DATA_IN[1]" into a selector File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/muxGenerico2x1.vhd Line: 10
     Warning (13048): Converted tri-state node "DATA_IN[0]" into a selector File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/muxGenerico2x1.vhd Line: 10
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
-    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 17
+Warning (14025): LATCH primitive "CPU:CPU|logicaDesvio:DESVIO1|Sel[1]" is permanently disabled File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/logicaDesvio.vhd Line: 22
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 15 input pin(s) that do not drive logic
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 15
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 18
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 18
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 18
-    Warning (15610): No output dependent on input pin "FPGA_RESET_N" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/TopLevel.vhd Line: 19
-Info (21057): Implemented 163 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 212 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 95 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 69 warnings
+    Info (21061): Implemented 144 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
     Info: Peak virtual memory: 4851 megabytes
-    Info: Processing ended: Thu Oct 13 12:08:34 2022
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Processing ended: Thu Oct 13 12:54:07 2022
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:29
 
 
