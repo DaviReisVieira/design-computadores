@@ -7,65 +7,53 @@ entity TopLevel is
 		larguraDados : natural := 8;
       larguraEnderecosROM : natural := 9;
 		larguraEnderecosRAM : natural := 6;
-		larguraInstrucao	  : natural := 12;
+		larguraInstrucao	  : natural := 13;
       simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
   );
   port   (
     CLOCK_50 : 	in std_logic;
-	 SW:				in std_logic_vector(8 downto 0);
-	 LEDR  : out std_logic_vector(9 downto 0);
-	 HEX:		out std_logic_vector(5 downto 0);
+	 SW:				in std_logic_vector(9 downto 0);
+	 LEDR  : 		out std_logic_vector(9 downto 0);
+	 HEX0, HEX1, HEX2, HEX3, HEX4, HEX5:		out std_logic_vector(6 downto 0);
+	 KEY:				in	std_logic_vector(3 downto 0);
+	 FPGA_RESET_N:	in	std_logic
 
   );
 end entity;
 
 
 architecture arquitetura of TopLevel is
-
-begin
-
--- #######  Instanciando os componentes:
-
--- Para simular, fica mais simples tirar o edgeDetector
---gravar:  if simulacao generate
---CLK <= KEY(0);
---else generate
---detectorSub0: work.edgeDetector(bordaSubida)
---        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
---end generate;
-
 -- ## DECLARANDO SINAIS:
 
 	-- AJUSTAR PARA SIMULAÇÃO::::
-	signal CLK						std_logic;
+	signal CLK	:					std_logic;
 
 
 	-- CPU
-	signal address_OUT 			std_logic_vector(larguraEnderecosROM -1 downto 0);
-	signal DATA_IN 				std_logic_vector(larguraDados -1 downto 0);
+	signal address_OUT :			std_logic_vector(larguraEnderecosROM -1 downto 0);
+	signal DATA_IN 	:			std_logic_vector(larguraDados -1 downto 0);
 	
 	-- CPU <-> ROM
-	signal CPU_memoriaROM		std_logic_vector(larguraEnderecosROM -1 downto 0);
-	signal instrucao				std_logic_vector(larguraInstrucao -1 downto 0);
+	signal CPU_memoriaROM	:	std_logic_vector(larguraEnderecosROM -1 downto 0);
+	signal instrucao		:		std_logic_vector(larguraInstrucao -1 downto 0);
 	
 	-- CPU <-> RAM
-	signal hab_RAM					std_logic;
-	signal wr						std_logic;
-	signal rd						std_logic;
-	signal data_OUT_CPU 			std_logic_vector(larguraDados -1 downto 0);
-	signal address_RAM			std_logic_vector(larguraEnderecosRAM-1 downto 0);
+	signal hab_RAM	:				std_logic;
+	signal wr		:				std_logic;
+	signal rd			:			std_logic;
+	signal data_OUT_CPU 		:	std_logic_vector(larguraDados -1 downto 0);
+	signal address_RAM	:		std_logic_vector(larguraEnderecosRAM-1 downto 0);
 
 	-- CPU <-> DECODER
-	signal decoder_IN				std_logic_vector(2 downto 0);
+	signal decoder_IN		:		std_logic_vector(2 downto 0);
 	
 	-- ADICIONAR SAÍDAS DO DECODER PARA OS PERIFÉRICOS
 	-- DECODER <-> periféricos
-	signal saida_DECODER1			std_logic_vector(7 downto 0);
-	signal saida_DECODER2			std_logic_vector(7 downto 0);
-	signal hab_RAM 					std_logic;
-	signal hab_LEDS					std_logic;
-	signal hab_7SEGs_and_KEYs		std_logic;
-	signal hab_BUTTONS				std_logic;
+	signal saida_DECODER1	:		std_logic_vector(7 downto 0);
+	signal saida_DECODER2	:		std_logic_vector(7 downto 0);
+	signal hab_LEDS				:	std_logic;
+	signal hab_7SEGs_and_KEYs	:	std_logic;
+	signal hab_BUTTONS			:	std_logic;
 	
 	-- enables:
 	signal ENABLE_LEDR0_7: 			std_logic;
@@ -78,32 +66,29 @@ begin
 	signal ENABLE_KEY:				std_logic_vector(4 downto 0);
 	
 	-- Registradores <-> Decodificador 7 seg
-	signal REG_HEX0:					std_logic_vector(3 downto 0);
-	signal REG_HEX1:					std_logic_vector(3 downto 0);
-	signal REG_HEX2:					std_logic_vector(3 downto 0);
-	signal REG_HEX3:					std_logic_vector(3 downto 0);
-	signal REG_HEX4:					std_logic_vector(3 downto 0);
-	signal REG_HEX5:					std_logic_vector(3 downto 0);
+	signal REG_DEC_0:					std_logic_vector(3 downto 0);
+	signal REG_DEC_1:					std_logic_vector(3 downto 0);
+	signal REG_DEC_2:					std_logic_vector(3 downto 0);
+	signal REG_DEC_3:					std_logic_vector(3 downto 0);
+	signal REG_DEC_4:					std_logic_vector(3 downto 0);
+	signal REG_DEC_5:					std_logic_vector(3 downto 0);
 	
-	-- 7 Segmentos:
-	signal HEX0							std_logic_vector(6 downto 0);
-	signal HEX1							std_logic_vector(6 downto 0);
-	signal HEX2							std_logic_vector(6 downto 0);
-	signal HEX3							std_logic_vector(6 downto 0);
-	signal HEX4							std_logic_vector(6 downto 0);
-	signal HEX5							std_logic_vector(6 downto 0);
-	
-	-- SW
-	signal SW							std_logic_vector(9 downto 0);
-	
-	-- KEYS
-	signal KEY							std_logic_vector(3 downto 0);
-	signal FPGA_RESET_N				std_logic;
+
 	
 	-- obs: SW, KEY e FPGA_RESET_N, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5 
 	-- devem seguir nomenclatura informada no arquivo .qsf
 	
+begin
 	
+-- Para simular, fica mais simples tirar o edgeDetector
+gravar:  if simulacao generate
+CLK <= KEY(0);
+else generate
+detectorSub0: work.edgeDetector(bordaSubida)
+        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
+end generate;
+	
+-- ## INSTANCIANDO OS COMPONENTES
 
 CPU: entity work.CPU
 		 port map (
@@ -111,7 +96,7 @@ CPU: entity work.CPU
 			RESET => '0',
 			
 			INSTRUCAO_IN => instrucao,
-			DATA_IN => data_OUT_RAM,
+			DATA_IN => DATA_IN,
 			
 			DATA_OUT => data_OUT_CPU,
 			DATA_ADDRESS => address_OUT,
@@ -122,6 +107,10 @@ CPU: entity work.CPU
 		);
 					
 RAM64: entity work.memoriaRAM
+		generic map(
+					dataWidth => 8,
+					addrWidth => 6
+			 )
 		port map (
 			addr     => address_OUT (5 downto 0),
 			we			=> wr,
@@ -184,7 +173,7 @@ REG_HEX0: entity work.registradorGenerico
 			)
 			port map (
 				DIN 	=> data_OUT_CPU(3 downto 0), 
-				DOUT 	=> REG_HEX0,
+				DOUT 	=> REG_DEC_0,
 				ENABLE => ENABLE_HEX(0),
 				CLK 	=> CLK,
 				RST => '0'
@@ -196,7 +185,7 @@ REG_HEX1: entity work.registradorGenerico
 			)
 			port map (
 				DIN 	=> data_OUT_CPU(3 downto 0), 
-				DOUT 	=> REG_HEX1,
+				DOUT 	=> REG_DEC_1,
 				ENABLE => ENABLE_HEX(1),
 				CLK 	=> CLK,
 				RST => '0'
@@ -208,7 +197,7 @@ REG_HEX2: entity work.registradorGenerico
 			)
 			port map (
 				DIN 	=> data_OUT_CPU(3 downto 0), 
-				DOUT 	=> REG_HEX2,
+				DOUT 	=> REG_DEC_2,
 				ENABLE => ENABLE_HEX(2),
 				CLK 	=> CLK,
 				RST => '0'
@@ -220,7 +209,7 @@ REG_HEX3: entity work.registradorGenerico
 			)
 			port map (
 				DIN 	=> data_OUT_CPU(3 downto 0), 
-				DOUT 	=> REG_HEX3,
+				DOUT 	=> REG_DEC_3,
 				ENABLE => ENABLE_HEX(3),
 				CLK 	=> CLK,
 				RST => '0'
@@ -232,7 +221,7 @@ REG_HEX4: entity work.registradorGenerico
 			)
 			port map (
 				DIN 	=> data_OUT_CPU(3 downto 0), 
-				DOUT 	=> REG_HEX4,
+				DOUT 	=> REG_DEC_4,
 				ENABLE => ENABLE_HEX(4),
 				CLK 	=> CLK,
 				RST => '0'
@@ -244,7 +233,7 @@ REG_HEX5: entity work.registradorGenerico
 			)
 			port map (
 				DIN 	=> data_OUT_CPU(3 downto 0), 
-				DOUT 	=> REG_HEX5,
+				DOUT 	=> REG_DEC_5,
 				ENABLE => ENABLE_HEX(5),
 				CLK 	=> CLK,
 				RST => '0'
@@ -333,7 +322,7 @@ AND_HEX5: entity work.and4x1
 
 DECODER_7SEG_0: entity work.conversorHex7Seg
 				port map (
-					dadoHex => REG_HEX0,
+					dadoHex => REG_DEC_0,
 					apaga => '0',
 					negativo => '0',
 					overflow => '0',
@@ -342,7 +331,7 @@ DECODER_7SEG_0: entity work.conversorHex7Seg
 				
 DECODER_7SEG_1: entity work.conversorHex7Seg
 				port map (
-					dadoHex => REG_HEX1,
+					dadoHex => REG_DEC_1,
 					apaga => '0',
 					negativo => '0',
 					overflow => '0',
@@ -351,7 +340,7 @@ DECODER_7SEG_1: entity work.conversorHex7Seg
 				
 DECODER_7SEG_2: entity work.conversorHex7Seg
 				port map (
-					dadoHex => REG_HEX2,
+					dadoHex => REG_DEC_2,
 					apaga => '0',
 					negativo => '0',
 					overflow => '0',
@@ -360,7 +349,7 @@ DECODER_7SEG_2: entity work.conversorHex7Seg
 				
 DECODER_7SEG_3: entity work.conversorHex7Seg
 				port map (
-					dadoHex => REG_HEX3,
+					dadoHex => REG_DEC_3,
 					apaga => '0',
 					negativo => '0',
 					overflow => '0',
@@ -369,7 +358,7 @@ DECODER_7SEG_3: entity work.conversorHex7Seg
 				
 DECODER_7SEG_4: entity work.conversorHex7Seg
 				port map (
-					dadoHex => REG_HEX4,
+					dadoHex => REG_DEC_4,
 					apaga => '0',
 					negativo => '0',
 					overflow => '0',
@@ -378,7 +367,7 @@ DECODER_7SEG_4: entity work.conversorHex7Seg
 				
 DECODER_7SEG_5: entity work.conversorHex7Seg
 				port map (
-					dadoHex => REG_HEX5,
+					dadoHex => REG_DEC_5,
 					apaga => '0',
 					negativo => '0',
 					overflow => '0',
