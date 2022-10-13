@@ -7,23 +7,20 @@ entity CPU is
 		larguraDados : natural := 8;
       larguraEnderecosROM : natural := 9;
 		larguraEnderecosRAM : natural := 6;
-		larguraInstrucao	  : natural := 12;
+		larguraInstrucao	  : natural := 13;
       simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
   );
   port   (
     CLOCK_50 : 	in std_logic;
 	 RESET:			in std_logic; -- NÃO TEM OPCODE
 	 INSTRUCAO_IN:	in std_logic_vector(larguraInstrucao -1 downto 0); -- ANTIGO Palavra_Controle
-	 DATA_IN:		in std_logic_vecotr (larguraDados -1 downto 0); 
+	 DATA_IN:		in std_logic_vector (larguraDados -1 downto 0); 
     
 	 DATA_OUT:		out std_logic_vector (larguraDados -1 downto 0); 
-	 DATA_ADDRESS:	out std_logic_vector (larguraEnderecosRAM -1 downto 0); 
+	 DATA_ADDRESS:	out std_logic_vector (larguraEnderecosROM -1 downto 0); 
 	 ROM_ADDRESS: 	out std_logic_vector (larguraEnderecosROM -1 downto 0); 
 	 WR:				out std_logic; 
-	 RD:				out std_logic; 
-	 
-
-
+	 RD:				out std_logic 
   );
 end entity;
 
@@ -32,7 +29,7 @@ architecture arquitetura of CPU is
 -- Sinais organizados de acordo com a entrada em cada Componente
 	-- da Instrução:
 	signal IMEDIATO:			std_logic_vector (larguraDados-1 downto 0);
-	signal IMEDIATO_ADDRESS:std_logic_vector (larguraEndereco -1 downto 0);
+	signal IMEDIATO_ADDRESS:std_logic_vector (larguraEnderecosROM -1 downto 0);
 	
 	-- ULA:
   signal MUX_ULA_B : 		std_logic_vector (larguraDados-1 downto 0);
@@ -165,6 +162,8 @@ DECODER1 : entity work.decoderInstru
 
 -- CONEXÃO DOS SINAIS:
 
+CLK <= CLOCK_50;
+
 -- LER / ESCREVER RAM
 RD <= Sinais_Controle(1);
 WR <= Sinais_Controle(0);		
@@ -175,6 +174,12 @@ ROM_ADDRESS <= PC_OUT;
 IMEDIATO <= INSTRUCAO_IN(7 downto 0);
 IMEDIATO_ADDRESS <= INSTRUCAO_IN (8 downto 0);
 DATA_ADDRESS <= INSTRUCAO_IN (8 downto 0);
+
+Operacao_ULA <= Sinais_Controle(4 downto 3);
+SelMUX <= Sinais_Controle(6);
+Habilita_A <= Sinais_Controle(5);
+
+REGA_ULA_A <= Saida_REGA;
 
 DATA_OUT <= Saida_REGA;
 
