@@ -1,13 +1,13 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/Waveform.vwf" --testbench_file="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/Waveform.vwf" --testbench_file="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim/" aula07 -c aula07</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim/" aula07 -c aula07</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/Waveform1.vwf" --testbench_file="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim/Waveform1.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/Waveform1.vwf" --testbench_file="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim/Waveform1.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim/" aula07 -c aula07</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim/" aula07 -c aula07</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work aula07.vho
-vcom -work work Waveform.vwf.vht
-vsim  -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.TopLevel_vhd_vec_tst
+vcom -work work Waveform1.vwf.vht
+vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.TopLevel_vhd_vec_tst
 vcd file -direction aula07.msim.vcd
 vcd add -internal TopLevel_vhd_vec_tst/*
 vcd add -internal TopLevel_vhd_vec_tst/i1/*
@@ -20,12 +20,11 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
 vcom -work work aula07.vho
-vcom -work work Waveform.vwf.vht
+vcom -work work Waveform1.vwf.vht
 vsim -novopt -c -t 1ps -sdfmax TopLevel_vhd_vec_tst/i1=aula07_vhd.sdo -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.TopLevel_vhd_vec_tst
 vcd file -direction aula07.msim.vcd
 vcd add -internal TopLevel_vhd_vec_tst/*
@@ -39,7 +38,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
 </simulation_settings>*/
@@ -188,7 +186,7 @@ SIGNAL("LEDR[0]")
 	PARENT = "LEDR";
 }
 
-SIGNAL("CLOCK_50")
+SIGNAL("KEY[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -288,7 +286,7 @@ TRANSITION_LIST("LEDR[0]")
 	}
 }
 
-TRANSITION_LIST("CLOCK_50")
+TRANSITION_LIST("KEY[0]")
 {
 	NODE
 	{
@@ -306,121 +304,121 @@ TRANSITION_LIST("CLOCK_50")
 
 DISPLAY_LINE
 {
-	CHANNEL = "CLOCK_50";
+	CHANNEL = "LEDR";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "LEDR";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 1;
-	TREE_LEVEL = 0;
-	CHILDREN = 2, 3, 4, 5, 6, 7, 8, 9, 10, 11;
+	CHILDREN = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "LEDR[9]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 2;
+	RADIX = Binary;
+	TREE_INDEX = 1;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "LEDR[8]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 3;
+	RADIX = Binary;
+	TREE_INDEX = 2;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "LEDR[7]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 4;
+	RADIX = Binary;
+	TREE_INDEX = 3;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "LEDR[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 5;
+	RADIX = Binary;
+	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "LEDR[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 6;
+	RADIX = Binary;
+	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "LEDR[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 7;
+	RADIX = Binary;
+	TREE_INDEX = 6;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "LEDR[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 8;
+	RADIX = Binary;
+	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "LEDR[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 9;
+	RADIX = Binary;
+	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "LEDR[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 10;
+	RADIX = Binary;
+	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "LEDR[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 11;
+	RADIX = Binary;
+	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "KEY[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 0;
 }
 
 TIME_BAR

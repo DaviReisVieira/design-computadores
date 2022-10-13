@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/Waveform.vwf" --testbench_file="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/Waveform1.vwf" --testbench_file="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim/Waveform1.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,8 +26,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Oct 13 11:26:57 2022
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/Waveform.vwf --testbench_file=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim/Waveform.vwf.vht
+    Info: Processing started: Thu Oct 13 12:02:08 2022
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/Waveform1.vwf --testbench_file=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim/Waveform1.vwf.vht
 Info (119006): Selected device 5CEBA2F17A7 for design "aula07"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -35,7 +35,7 @@ Completed successfully.
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim/" aula07 -c aula07
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim/" aula07 -c aula07
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -54,22 +54,22 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Oct 13 11:26:58 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim/ aula07 -c aula07
+    Info: Processing started: Thu Oct 13 12:02:10 2022
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim/ aula07 -c aula07
 Info (119006): Selected device 5CEBA2F17A7 for design "aula07"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file aula07.vho in folder "C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file aula07.vho in folder "C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4716 megabytes
-    Info: Processing ended: Thu Oct 13 11:26:59 2022
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4717 megabytes
+    Info: Processing ended: Thu Oct 13 12:02:12 2022
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim/aula07.do generated.
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim/aula07.do generated.
 
 Completed successfully. 
 
@@ -83,39 +83,46 @@ Reading pref.tcl
 
 
 # do aula07.do
+
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:26:59 on Oct 13,2022
+# Start time: 12:02:16 on Oct 13,2022
 # vcom -work work aula07.vho 
 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
+
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
 # -- Loading package VITAL_Primitives
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
 # -- Loading package altera_lnsim_components
+
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
 # -- Compiling entity TopLevel
 # -- Compiling architecture structure of TopLevel
 
-# End time: 11:27:00 on Oct 13,2022, Elapsed time: 0:00:01
+# End time: 12:02:17 on Oct 13,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:27:00 on Oct 13,2022
-# vcom -work work Waveform.vwf.vht 
+# Start time: 12:02:17 on Oct 13,2022
+# vcom -work work Waveform1.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
+
 # -- Loading package std_logic_1164
 # -- Compiling entity TopLevel_vhd_vec_tst
 # -- Compiling architecture TopLevel_arch of TopLevel_vhd_vec_tst
-# End time: 11:27:00 on Oct 13,2022, Elapsed time: 0:00:00
+# End time: 12:02:17 on Oct 13,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.TopLevel_vhd_vec_tst 
-# Start time: 11:27:00 on Oct 13,2022
+# Start time: 12:02:17 on Oct 13,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -137,20 +144,20 @@ Reading pref.tcl
 # Expect performance to be adversely affected.
 # after#34
 
-# End time: 11:27:00 on Oct 13,2022, Elapsed time: 0:00:00
+# End time: 12:02:19 on Oct 13,2022, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/Waveform.vwf...
+Reading C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/Waveform1.vwf...
 
-Reading C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim/aula07.msim.vcd...
+Reading C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim/aula07.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim/aula07_20221013112700.sim.vwf
+Writing the resulting VWF to C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim/aula07_20221013120220.sim.vwf
 
 Finished VCD to VWF conversion.
 

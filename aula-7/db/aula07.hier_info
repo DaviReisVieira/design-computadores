@@ -1,15 +1,15 @@
 |TopLevel
 CLOCK_50 => ~NO_FANOUT~
-LEDR[0] <= registradorgenerico:REG_LEDR07.DOUT[0]
-LEDR[1] <= registradorgenerico:REG_LEDR07.DOUT[1]
-LEDR[2] <= registradorgenerico:REG_LEDR07.DOUT[2]
-LEDR[3] <= registradorgenerico:REG_LEDR07.DOUT[3]
-LEDR[4] <= registradorgenerico:REG_LEDR07.DOUT[4]
-LEDR[5] <= registradorgenerico:REG_LEDR07.DOUT[5]
-LEDR[6] <= registradorgenerico:REG_LEDR07.DOUT[6]
-LEDR[7] <= registradorgenerico:REG_LEDR07.DOUT[7]
-LEDR[8] <= flipflopgenerico:FLIP_FLOP_LED8.DOUT
-LEDR[9] <= flipflopgenerico:FLIP_FLOP_LED9.DOUT
+LEDR[0] << registradorgenerico:REG_LEDR07.DOUT[0]
+LEDR[1] << registradorgenerico:REG_LEDR07.DOUT[1]
+LEDR[2] << registradorgenerico:REG_LEDR07.DOUT[2]
+LEDR[3] << registradorgenerico:REG_LEDR07.DOUT[3]
+LEDR[4] << registradorgenerico:REG_LEDR07.DOUT[4]
+LEDR[5] << registradorgenerico:REG_LEDR07.DOUT[5]
+LEDR[6] << registradorgenerico:REG_LEDR07.DOUT[6]
+LEDR[7] << registradorgenerico:REG_LEDR07.DOUT[7]
+LEDR[8] << flipflopgenerico:FLIP_FLOP_LED8.DOUT
+LEDR[9] << flipflopgenerico:FLIP_FLOP_LED9.DOUT
 KEY[0] => cpu:CPU.CLOCK_50
 KEY[0] => memoriaram:RAM64.clk
 KEY[0] => registradorgenerico:REG_LEDR07.CLK

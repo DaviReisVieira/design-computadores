@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim
 Etoplevel
-Z1 w1665671219
+Z1 w1665673332
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^K2eeK[IVbX]]MLcdOEI91
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 GFL[QAd@dAZF:`jjOGn9>2
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3dzZ?YU_4FC5UU0cTXRET1
@@ -20,24 +20,24 @@ Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z10 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
-!i122 6
-R0
-Z11 8aula07.vho
-Z12 Faula07.vho
+!i122 8
+Z11 dC:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim
+Z12 8aula07.vho
+Z13 Faula07.vho
 l0
 L39 1
 V:KT9aZkMJ5U31mW[jCRNC1
 !s100 ek<F`66Qf67B^8RP0TH2B1
-Z13 OV;C;2020.1;71
+Z14 OV;C;2020.1;71
 32
-Z14 !s110 1665671220
+Z15 !s110 1665673337
 !i10b 1
-Z15 !s108 1665671219.000000
-Z16 !s90 -work|work|aula07.vho|
-Z17 !s107 aula07.vho|
+Z16 !s108 1665673336.000000
+Z17 !s90 -work|work|aula07.vho|
+Z18 !s107 aula07.vho|
 !i113 1
-Z18 o-work work
-Z19 tExplicit 1 CvgOpt 0
+Z19 o-work work
+Z20 tExplicit 1 CvgOpt 0
 Astructure
 R2
 R3
@@ -49,59 +49,59 @@ R8
 R9
 R10
 DEx4 work 8 toplevel 0 22 :KT9aZkMJ5U31mW[jCRNC1
-!i122 6
+!i122 8
 l293
 L47 2799
 VDEQibUh;_QYGT>6HFXO@<2
 !s100 LilfF4OfaK4`ooP?N7XFg0
-R13
-32
 R14
-!i10b 1
+32
 R15
+!i10b 1
 R16
 R17
-!i113 1
 R18
+!i113 1
 R19
+R20
 Etoplevel_vhd_vec_tst
-Z20 w1665671218
+Z21 w1665673329
 R8
 R9
-!i122 7
-R0
-Z21 8Waveform.vwf.vht
-Z22 FWaveform.vwf.vht
+!i122 9
+R11
+Z22 8Waveform1.vwf.vht
+Z23 FWaveform1.vwf.vht
 l0
 L32 1
 Vi`cW82E4ohG=CFFdJ4Rgz3
 !s100 HOYZb^>X>O4gVXH@FzMRJ1
-R13
-32
 R14
+32
+R15
 !i10b 1
-Z23 !s108 1665671220.000000
-Z24 !s90 -work|work|Waveform.vwf.vht|
-Z25 !s107 Waveform.vwf.vht|
+Z24 !s108 1665673337.000000
+Z25 !s90 -work|work|Waveform1.vwf.vht|
+!s107 Waveform1.vwf.vht|
 !i113 1
-R18
 R19
+R20
 Atoplevel_arch
 R8
 R9
 Z26 DEx4 work 20 toplevel_vhd_vec_tst 0 22 i`cW82E4ohG=CFFdJ4Rgz3
-!i122 7
+!i122 9
 l47
 Z27 L34 38
-Z28 V]_^ieSWMlcF3d]9e2aTUD1
-Z29 !s100 ORe]kb02S6>E<lz<TWm^a2
-R13
-32
+V8SKG4@;m3am1hJKC`K9<Y1
+!s100 c`<nc`6nEGX[4[H0RUkaZ1
 R14
+32
+R15
 !i10b 1
-R23
 R24
 R25
+Z28 !s107 Waveform1.vwf.vht|
 !i113 1
-R18
 R19
+R20

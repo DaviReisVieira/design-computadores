@@ -1,5 +1,5 @@
 Flow report for aula07
-Thu Oct 13 11:26:59 2022
+Thu Oct 13 12:02:12 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -38,29 +38,24 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Oct 13 11:26:59 2022       ;
-; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name                   ; aula07                                      ;
-; Top-level Entity Name           ; TopLevel                                    ;
-; Family                          ; Cyclone V                                   ;
-; Device                          ; 5CEBA2F17A7                                 ;
-; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 43                                          ;
-; Total pins                      ; 15                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------+
+; Flow Summary                                                              ;
++-----------------------------+---------------------------------------------+
+; Flow Status                 ; Successful - Thu Oct 13 12:02:12 2022       ;
+; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name               ; aula07                                      ;
+; Top-level Entity Name       ; TopLevel                                    ;
+; Family                      ; Cyclone V                                   ;
+; Device                      ; 5CEBA2F17A7                                 ;
+; Timing Models               ; Final                                       ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -68,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/13/2022 11:25:52 ;
+; Start date & time ; 10/13/2022 11:39:19 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; aula07              ;
 +-------------------+---------------------+
@@ -79,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 110073161869767.166567115220832        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 110073162874169.166567195827132        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 125                                    ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; -40                                    ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; TopLevel    ; Top        ;
@@ -94,35 +89,38 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4847 MB             ; 00:00:26                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4713 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
-; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:28                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:25     ; 1.0                     ; 4840 MB             ; 00:00:44                           ;
+; EDA Netlist Writer     ; 00:00:02     ; 1.0                     ; 4714 MB             ; 00:00:01                           ;
+; EDA Netlist Writer     ; 00:00:01     ; 1.0                     ; 4713 MB             ; 00:00:01                           ;
+; EDA Netlist Writer     ; 00:00:02     ; 1.0                     ; 4717 MB             ; 00:00:01                           ;
+; Total                  ; 00:00:30     ; --                      ; --                  ; 00:00:47                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; GUILHERME-E14    ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; GUILHERME-E14    ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; GUILHERME-E14    ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Elaboration ; DESKTOP-KVEN14R  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-KVEN14R  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-KVEN14R  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer     ; DESKTOP-KVEN14R  ; Windows 10 ; 10.0       ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off aula07 -c aula07
+quartus_map --read_settings_files=on --write_settings_files=off aula07 -c aula07 --analysis_and_elaboration
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/Waveform.vwf --testbench_file=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim/Waveform.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-7/simulation/qsim/ aula07 -c aula07
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/Waveform1.vwf --testbench_file=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim/Waveform1.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/simulation/qsim/ aula07 -c aula07
 
 
 
