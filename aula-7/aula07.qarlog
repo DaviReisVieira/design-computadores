@@ -1,0 +1,31 @@
+Quartus Prime Archive log --	C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/aula07.qarlog
+
+Archive:	C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/aula07.qar
+Date:		Thu Oct 13 12:41:47 2022
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/CPU.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/TopLevel.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/ULASomaSubPassa.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/Waveform1.vwf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/and3x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/aula07.qpf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/aula07.qsf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/conversorHex7Seg.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/decoder3x8.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/decoderInstru.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/edgeDetector.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/flipflopGenerico.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/logicaDesvio.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/memoriaRAM.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/memoriaROM.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/muxGenerico2x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/muxGenerico4x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/registradorGenerico.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-7/somaConstante.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 20 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

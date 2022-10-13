@@ -16,7 +16,8 @@ entity TopLevel is
 	 LEDR  : 		out std_logic_vector(9 downto 0);
 	 HEX0, HEX1, HEX2, HEX3, HEX4, HEX5:		out std_logic_vector(6 downto 0);
 	 KEY:				in	std_logic_vector(3 downto 0);
-	 FPGA_RESET_N:	in	std_logic
+	 FPGA_RESET_N:	in	std_logic;
+	 DATA_OUT:		out std_logic_vector(larguraDados-1 downto 0)
 
   );
 end entity;
@@ -510,6 +511,8 @@ hab_LEDS <= saida_DECODER1(4); -- bloco 4
 hab_BUTTONS <= saida_DECODER1(5); -- bloco 5
 
 hab_7SEGs_and_KEYs <= address_OUT(5);
+
+DATA_OUT <= data_OUT_CPU;
 
 -- LEDS estão conectados às saídas dos FF ou registrador
 

@@ -1,0 +1,33 @@
+Quartus Prime Archive log --	C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/aula08.qarlog
+
+Archive:	C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/aula08.qar
+Date:		Thu Oct 13 12:58:54 2022
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/CPU.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/TopLevel.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/ULASomaSubPassa.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/and4x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/aula07.qpf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/aula07.qsf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/aula8.vwf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/buffer_3_state_8portas.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/buffer_3_state_simples.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/conversorHex7Seg.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/decoder3x8.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/decoderInstru.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/edgeDetector.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/flipflopGenerico.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/logicaDesvio.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/memoriaRAM.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/memoriaROM.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/muxGenerico2x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/muxGenerico4x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/registradorGenerico.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/somaConstante.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 22 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
