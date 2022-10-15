@@ -1,5 +1,6 @@
 |TopLevel
-CLOCK_50 => ~NO_FANOUT~
+CLOCK_50 => edgedebouncedetector:detectorSubDebounceKey0.CLOCK_50
+CLOCK_50 => edgedebouncedetector:detectorSubDebounceKey1.CLOCK_50
 SW[0] => buffer_3_state_8portas:BUFFER_3_STATE_8_PORTAS.entrada[0]
 SW[1] => buffer_3_state_8portas:BUFFER_3_STATE_8_PORTAS.entrada[1]
 SW[2] => buffer_3_state_8portas:BUFFER_3_STATE_8_PORTAS.entrada[2]
@@ -10,58 +11,58 @@ SW[6] => buffer_3_state_8portas:BUFFER_3_STATE_8_PORTAS.entrada[6]
 SW[7] => buffer_3_state_8portas:BUFFER_3_STATE_8_PORTAS.entrada[7]
 SW[8] => buffer_3_state_simples:BUFFER_SW8.entrada
 SW[9] => buffer_3_state_simples:BUFFER_SW9.entrada
-LEDR[0] << registradorgenerico:REG_LEDR0_7.DOUT[0]
-LEDR[1] << registradorgenerico:REG_LEDR0_7.DOUT[1]
-LEDR[2] << registradorgenerico:REG_LEDR0_7.DOUT[2]
-LEDR[3] << registradorgenerico:REG_LEDR0_7.DOUT[3]
-LEDR[4] << registradorgenerico:REG_LEDR0_7.DOUT[4]
-LEDR[5] << registradorgenerico:REG_LEDR0_7.DOUT[5]
-LEDR[6] << registradorgenerico:REG_LEDR0_7.DOUT[6]
-LEDR[7] << registradorgenerico:REG_LEDR0_7.DOUT[7]
-LEDR[8] << flipflopgenerico:FLIP_FLOP_LED8.DOUT
-LEDR[9] << flipflopgenerico:FLIP_FLOP_LED9.DOUT
-HEX0[0] << conversorhex7seg:DECODER_7SEG_0.saida7seg[0]
-HEX0[1] << conversorhex7seg:DECODER_7SEG_0.saida7seg[1]
-HEX0[2] << conversorhex7seg:DECODER_7SEG_0.saida7seg[2]
-HEX0[3] << conversorhex7seg:DECODER_7SEG_0.saida7seg[3]
-HEX0[4] << conversorhex7seg:DECODER_7SEG_0.saida7seg[4]
-HEX0[5] << conversorhex7seg:DECODER_7SEG_0.saida7seg[5]
-HEX0[6] << conversorhex7seg:DECODER_7SEG_0.saida7seg[6]
-HEX1[0] << conversorhex7seg:DECODER_7SEG_1.saida7seg[0]
-HEX1[1] << conversorhex7seg:DECODER_7SEG_1.saida7seg[1]
-HEX1[2] << conversorhex7seg:DECODER_7SEG_1.saida7seg[2]
-HEX1[3] << conversorhex7seg:DECODER_7SEG_1.saida7seg[3]
-HEX1[4] << conversorhex7seg:DECODER_7SEG_1.saida7seg[4]
-HEX1[5] << conversorhex7seg:DECODER_7SEG_1.saida7seg[5]
-HEX1[6] << conversorhex7seg:DECODER_7SEG_1.saida7seg[6]
-HEX2[0] << conversorhex7seg:DECODER_7SEG_2.saida7seg[0]
-HEX2[1] << conversorhex7seg:DECODER_7SEG_2.saida7seg[1]
-HEX2[2] << conversorhex7seg:DECODER_7SEG_2.saida7seg[2]
-HEX2[3] << conversorhex7seg:DECODER_7SEG_2.saida7seg[3]
-HEX2[4] << conversorhex7seg:DECODER_7SEG_2.saida7seg[4]
-HEX2[5] << conversorhex7seg:DECODER_7SEG_2.saida7seg[5]
-HEX2[6] << conversorhex7seg:DECODER_7SEG_2.saida7seg[6]
-HEX3[0] << conversorhex7seg:DECODER_7SEG_3.saida7seg[0]
-HEX3[1] << conversorhex7seg:DECODER_7SEG_3.saida7seg[1]
-HEX3[2] << conversorhex7seg:DECODER_7SEG_3.saida7seg[2]
-HEX3[3] << conversorhex7seg:DECODER_7SEG_3.saida7seg[3]
-HEX3[4] << conversorhex7seg:DECODER_7SEG_3.saida7seg[4]
-HEX3[5] << conversorhex7seg:DECODER_7SEG_3.saida7seg[5]
-HEX3[6] << conversorhex7seg:DECODER_7SEG_3.saida7seg[6]
-HEX4[0] << conversorhex7seg:DECODER_7SEG_4.saida7seg[0]
-HEX4[1] << conversorhex7seg:DECODER_7SEG_4.saida7seg[1]
-HEX4[2] << conversorhex7seg:DECODER_7SEG_4.saida7seg[2]
-HEX4[3] << conversorhex7seg:DECODER_7SEG_4.saida7seg[3]
-HEX4[4] << conversorhex7seg:DECODER_7SEG_4.saida7seg[4]
-HEX4[5] << conversorhex7seg:DECODER_7SEG_4.saida7seg[5]
-HEX4[6] << conversorhex7seg:DECODER_7SEG_4.saida7seg[6]
-HEX5[0] << conversorhex7seg:DECODER_7SEG_5.saida7seg[0]
-HEX5[1] << conversorhex7seg:DECODER_7SEG_5.saida7seg[1]
-HEX5[2] << conversorhex7seg:DECODER_7SEG_5.saida7seg[2]
-HEX5[3] << conversorhex7seg:DECODER_7SEG_5.saida7seg[3]
-HEX5[4] << conversorhex7seg:DECODER_7SEG_5.saida7seg[4]
-HEX5[5] << conversorhex7seg:DECODER_7SEG_5.saida7seg[5]
-HEX5[6] << conversorhex7seg:DECODER_7SEG_5.saida7seg[6]
+LEDR[0] <= registradorgenerico:REG_LEDR0_7.DOUT[0]
+LEDR[1] <= registradorgenerico:REG_LEDR0_7.DOUT[1]
+LEDR[2] <= registradorgenerico:REG_LEDR0_7.DOUT[2]
+LEDR[3] <= registradorgenerico:REG_LEDR0_7.DOUT[3]
+LEDR[4] <= registradorgenerico:REG_LEDR0_7.DOUT[4]
+LEDR[5] <= registradorgenerico:REG_LEDR0_7.DOUT[5]
+LEDR[6] <= registradorgenerico:REG_LEDR0_7.DOUT[6]
+LEDR[7] <= registradorgenerico:REG_LEDR0_7.DOUT[7]
+LEDR[8] <= flipflopgenerico:FLIP_FLOP_LED8.DOUT
+LEDR[9] <= flipflopgenerico:FLIP_FLOP_LED9.DOUT
+HEX0[0] <= conversorhex7seg:DECODER_7SEG_0.saida7seg[0]
+HEX0[1] <= conversorhex7seg:DECODER_7SEG_0.saida7seg[1]
+HEX0[2] <= conversorhex7seg:DECODER_7SEG_0.saida7seg[2]
+HEX0[3] <= conversorhex7seg:DECODER_7SEG_0.saida7seg[3]
+HEX0[4] <= conversorhex7seg:DECODER_7SEG_0.saida7seg[4]
+HEX0[5] <= conversorhex7seg:DECODER_7SEG_0.saida7seg[5]
+HEX0[6] <= conversorhex7seg:DECODER_7SEG_0.saida7seg[6]
+HEX1[0] <= conversorhex7seg:DECODER_7SEG_1.saida7seg[0]
+HEX1[1] <= conversorhex7seg:DECODER_7SEG_1.saida7seg[1]
+HEX1[2] <= conversorhex7seg:DECODER_7SEG_1.saida7seg[2]
+HEX1[3] <= conversorhex7seg:DECODER_7SEG_1.saida7seg[3]
+HEX1[4] <= conversorhex7seg:DECODER_7SEG_1.saida7seg[4]
+HEX1[5] <= conversorhex7seg:DECODER_7SEG_1.saida7seg[5]
+HEX1[6] <= conversorhex7seg:DECODER_7SEG_1.saida7seg[6]
+HEX2[0] <= conversorhex7seg:DECODER_7SEG_2.saida7seg[0]
+HEX2[1] <= conversorhex7seg:DECODER_7SEG_2.saida7seg[1]
+HEX2[2] <= conversorhex7seg:DECODER_7SEG_2.saida7seg[2]
+HEX2[3] <= conversorhex7seg:DECODER_7SEG_2.saida7seg[3]
+HEX2[4] <= conversorhex7seg:DECODER_7SEG_2.saida7seg[4]
+HEX2[5] <= conversorhex7seg:DECODER_7SEG_2.saida7seg[5]
+HEX2[6] <= conversorhex7seg:DECODER_7SEG_2.saida7seg[6]
+HEX3[0] <= conversorhex7seg:DECODER_7SEG_3.saida7seg[0]
+HEX3[1] <= conversorhex7seg:DECODER_7SEG_3.saida7seg[1]
+HEX3[2] <= conversorhex7seg:DECODER_7SEG_3.saida7seg[2]
+HEX3[3] <= conversorhex7seg:DECODER_7SEG_3.saida7seg[3]
+HEX3[4] <= conversorhex7seg:DECODER_7SEG_3.saida7seg[4]
+HEX3[5] <= conversorhex7seg:DECODER_7SEG_3.saida7seg[5]
+HEX3[6] <= conversorhex7seg:DECODER_7SEG_3.saida7seg[6]
+HEX4[0] <= conversorhex7seg:DECODER_7SEG_4.saida7seg[0]
+HEX4[1] <= conversorhex7seg:DECODER_7SEG_4.saida7seg[1]
+HEX4[2] <= conversorhex7seg:DECODER_7SEG_4.saida7seg[2]
+HEX4[3] <= conversorhex7seg:DECODER_7SEG_4.saida7seg[3]
+HEX4[4] <= conversorhex7seg:DECODER_7SEG_4.saida7seg[4]
+HEX4[5] <= conversorhex7seg:DECODER_7SEG_4.saida7seg[5]
+HEX4[6] <= conversorhex7seg:DECODER_7SEG_4.saida7seg[6]
+HEX5[0] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[0]
+HEX5[1] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[1]
+HEX5[2] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[2]
+HEX5[3] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[3]
+HEX5[4] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[4]
+HEX5[5] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[5]
+HEX5[6] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[6]
 KEY[0] => buffer_3_state_simples:BUFFER_KEY0.entrada
 KEY[0] => cpu:CPU.CLOCK_50
 KEY[0] => memoriaram:RAM64.clk
@@ -74,10 +75,200 @@ KEY[0] => registradorgenerico:REG_HEX2.CLK
 KEY[0] => registradorgenerico:REG_HEX3.CLK
 KEY[0] => registradorgenerico:REG_HEX4.CLK
 KEY[0] => registradorgenerico:REG_HEX5.CLK
+KEY[0] => edgedebouncedetector:detectorSubDebounceKey0.KEY
 KEY[1] => buffer_3_state_simples:BUFFER_KEY1.entrada
+KEY[1] => edgedebouncedetector:detectorSubDebounceKey1.KEY
 KEY[2] => buffer_3_state_simples:BUFFER_KEY2.entrada
 KEY[3] => buffer_3_state_simples:BUFFER_KEY3.entrada
 FPGA_RESET_N => buffer_3_state_simples:BUFFER_KEY_FPGA_RESET_N.entrada
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey0
+CLOCK_50 => edgedetector:edgeDetector.clk
+KEY => edgedetector:edgeDetector.entrada
+habilita => buffer_3_state_simples:BFF0.habilita
+habilita => buffer_3_state_simples:BFF1.habilita
+habilita => buffer_3_state_simples:BFF2.habilita
+habilita => buffer_3_state_simples:BFF3.habilita
+habilita => buffer_3_state_simples:BFF4.habilita
+habilita => buffer_3_state_simples:BFF5.habilita
+habilita => buffer_3_state_simples:BFF6.habilita
+habilita => buffer_3_state_simples:BFF7.habilita
+address[0] => limpa_leitura.IN0
+address[1] => limpa_leitura.IN1
+address[2] => limpa_leitura.IN1
+address[3] => limpa_leitura.IN1
+address[4] => limpa_leitura.IN1
+address[5] => limpa_leitura.IN1
+address[6] => limpa_leitura.IN1
+address[7] => limpa_leitura.IN1
+address[8] => limpa_leitura.IN1
+wr => limpa_leitura.IN1
+saida[0] <= buffer_3_state_simples:BFF0.saida
+saida[1] <= buffer_3_state_simples:BFF1.saida
+saida[2] <= buffer_3_state_simples:BFF2.saida
+saida[3] <= buffer_3_state_simples:BFF3.saida
+saida[4] <= buffer_3_state_simples:BFF4.saida
+saida[5] <= buffer_3_state_simples:BFF5.saida
+saida[6] <= buffer_3_state_simples:BFF6.saida
+saida[7] <= buffer_3_state_simples:BFF7.saida
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey0|edgeDetector:edgeDetector
+clk => saidaQ.CLK
+entrada => saida.IN1
+entrada => saidaQ.DATAIN
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey0|flipFlopGenerico:FFP
+DIN => DOUT~reg0.DATAIN
+DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ENABLE => DOUT~reg0.ENA
+CLK => DOUT~reg0.CLK
+RST => DOUT~reg0.ACLR
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF0
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF1
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF2
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF3
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF4
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF5
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF6
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF7
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1
+CLOCK_50 => edgedetector:edgeDetector.clk
+KEY => edgedetector:edgeDetector.entrada
+habilita => buffer_3_state_simples:BFF0.habilita
+habilita => buffer_3_state_simples:BFF1.habilita
+habilita => buffer_3_state_simples:BFF2.habilita
+habilita => buffer_3_state_simples:BFF3.habilita
+habilita => buffer_3_state_simples:BFF4.habilita
+habilita => buffer_3_state_simples:BFF5.habilita
+habilita => buffer_3_state_simples:BFF6.habilita
+habilita => buffer_3_state_simples:BFF7.habilita
+address[0] => limpa_leitura.IN0
+address[1] => limpa_leitura.IN1
+address[2] => limpa_leitura.IN1
+address[3] => limpa_leitura.IN1
+address[4] => limpa_leitura.IN1
+address[5] => limpa_leitura.IN1
+address[6] => limpa_leitura.IN1
+address[7] => limpa_leitura.IN1
+address[8] => limpa_leitura.IN1
+wr => limpa_leitura.IN1
+saida[0] <= buffer_3_state_simples:BFF0.saida
+saida[1] <= buffer_3_state_simples:BFF1.saida
+saida[2] <= buffer_3_state_simples:BFF2.saida
+saida[3] <= buffer_3_state_simples:BFF3.saida
+saida[4] <= buffer_3_state_simples:BFF4.saida
+saida[5] <= buffer_3_state_simples:BFF5.saida
+saida[6] <= buffer_3_state_simples:BFF6.saida
+saida[7] <= buffer_3_state_simples:BFF7.saida
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|edgeDetector:edgeDetector
+clk => saidaQ.CLK
+entrada => saida.IN1
+entrada => saidaQ.DATAIN
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|flipFlopGenerico:FFP
+DIN => DOUT~reg0.DATAIN
+DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ENABLE => DOUT~reg0.ENA
+CLK => DOUT~reg0.CLK
+RST => DOUT~reg0.ACLR
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF0
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF1
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF2
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF3
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF4
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF5
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF6
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF7
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TopLevel|CPU:CPU

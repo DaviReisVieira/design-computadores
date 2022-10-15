@@ -85,10 +85,31 @@ gravar:  if simulacao generate
 CLK <= KEY(0);
 else generate
 detectorSub0: work.edgeDetector(bordaSubida)
-        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
+        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);  
+
 end generate;
 	
 -- ## INSTANCIANDO OS COMPONENTES
+
+detectorSubDebounceKey0: work.edgeDebounceDetector
+			port map (
+				CLOCK_50 => CLOCK_50,
+				KEY => (not KEY(0)),
+				habilita => ENABLE_KEY(0),
+				address => address_OUT,
+				wr => wr,
+				saida => DATA_IN(0)			
+			);
+			
+detectorSubDebounceKey1: work.edgeDebounceDetector
+			port map (
+				CLOCK_50 => CLOCK_50,
+				KEY => (not KEY(1)),
+				habilita => ENABLE_KEY(1),
+				address => address_OUT,
+				wr => wr,
+				saida => DATA_IN(0)			
+			);
 
 CPU: entity work.CPU
 		 port map (

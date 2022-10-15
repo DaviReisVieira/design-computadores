@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity edgeDebounceDetector is
+     Port ( 
+			clk     : in  STD_LOGIC;
+         entrada : in  STD_LOGIC;
+         saida   : out STD_LOGIC
+			
+		);
+end entity;
+
+architecture arquitetura of edgeDebounceDetector is
+    signal saidaQ : STD_LOGIC;
+
+	 
+	 
+	 
+begin
+
+end  architecture arquitetura;
+
+
