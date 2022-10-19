@@ -30,7 +30,7 @@ saida <= "000000000000" when opcode = NOP else
          "000000000001" WHEN opcode = STA ELSE
          "010000000000" WHEN opcode = JMP ELSE
          "000010000000" WHEN opcode = JEQ ELSE
-         "000000000100" WHEN opcode = CEQ ELSE
+         "000000000110" WHEN opcode = CEQ ELSE
          "100100000000" WHEN opcode = JSR ELSE
          "001000000000" WHEN opcode = RET ELSE
          "000000000000";

@@ -7,11 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-<<<<<<< HEAD
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/Waveform1.vwf" --testbench_file="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/simulation/qsim/Waveform1.vwf.vht"
-=======
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/Waveform.vwf" --testbench_file="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/Waveform.vwf.vht"
->>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -30,31 +26,21 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-<<<<<<< HEAD
-    Info: Processing started: Sat Oct 15 11:52:19 2022
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/Waveform1.vwf --testbench_file=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/simulation/qsim/Waveform1.vwf.vht
-Info (119006): Selected device 5CEBA2F17A7 for design "aula07"
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-
-ource file when writing test bench files
-=======
-    Info: Processing started: Thu Oct 13 15:32:42 2022
+    Info: Processing started: Wed Oct 19 20:37:01 2022
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/Waveform.vwf --testbench_file=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/Waveform.vwf.vht
-Info (119006): Selected device 5CEBA2F17A7 for design "aula07"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
- file when writing test bench files
->>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+arnings
+    Info: Peak virtual memory: 4720 megabytes
+    Info: Processing ended: Wed Oct 19 20:37:02 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-<<<<<<< HEAD
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/simulation/qsim/" aula07 -c aula07
-=======
 quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/" aula07 -c aula07
->>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -73,38 +59,21 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-<<<<<<< HEAD
-    Info: Processing started: Sat Oct 15 11:52:20 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/simulation/qsim/ aula07 -c aula07
-Info (119006): Selected device 5CEBA2F17A7 for design "aula07"
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file aula07.vho in folder "C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/simulation/qsim//" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4718 megabytes
-    Info: Processing ended: Sat Oct 15 11:52:21 2022
-    Info: Elapsed time: 00:00:01
-=======
-    Info: Processing started: Thu Oct 13 15:32:43 2022
+    Info: Processing started: Wed Oct 19 20:37:02 2022
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/ aula07 -c aula07
-Info (119006): Selected device 5CEBA2F17A7 for design "aula07"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file aula07.vho in folder "C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4718 megabytes
-    Info: Processing ended: Thu Oct 13 15:32:45 2022
+    Info: Peak virtual memory: 4726 megabytes
+    Info: Processing ended: Wed Oct 19 20:37:04 2022
     Info: Elapsed time: 00:00:02
->>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-<<<<<<< HEAD
-C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/simulation/qsim/aula07.do generated.
-=======
 C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/aula07.do generated.
->>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
 
 Completed successfully. 
 
@@ -114,25 +83,16 @@ c:/intelfpga_lite/20.1/modelsim_ase/win32aloem//vsim -c -do aula07.do
 
 Reading pref.tcl
 
-<<<<<<< HEAD
-=======
 
->>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
 # 2020.1
 
-
 # do aula07.do
+
 # ** Warning: (vlib-34) Library already exists at "work".
-<<<<<<< HEAD
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:52:22 on Oct 15,2022
-=======
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:32:47 on Oct 13,2022
->>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+# Start time: 20:37:05 on Oct 19,2022
 # vcom -work work aula07.vho 
-
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -141,50 +101,29 @@ Reading pref.tcl
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
 # -- Loading package altera_lnsim_components
-<<<<<<< HEAD
-=======
-
->>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
+
 # -- Compiling entity TopLevel
 # -- Compiling architecture structure of TopLevel
 
-<<<<<<< HEAD
-# End time: 11:52:22 on Oct 15,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:52:22 on Oct 15,2022
-# vcom -work work Waveform1.vwf.vht 
-# -- Loading package STANDARD
-
-=======
-# End time: 15:32:47 on Oct 13,2022, Elapsed time: 0:00:00
+# End time: 20:37:06 on Oct 19,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:32:47 on Oct 13,2022
+# Start time: 20:37:06 on Oct 19,2022
 # vcom -work work Waveform.vwf.vht 
+
 # -- Loading package STANDARD
->>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity TopLevel_vhd_vec_tst
 # -- Compiling architecture TopLevel_arch of TopLevel_vhd_vec_tst
-<<<<<<< HEAD
-# End time: 11:52:22 on Oct 15,2022, Elapsed time: 0:00:00
+# End time: 20:37:07 on Oct 19,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.TopLevel_vhd_vec_tst 
-# Start time: 11:52:22 on Oct 15,2022
-=======
-
-# End time: 15:32:47 on Oct 13,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-
-# vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.TopLevel_vhd_vec_tst 
-# Start time: 15:32:47 on Oct 13,2022
->>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+# Start time: 20:37:07 on Oct 19,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -200,44 +139,30 @@ Reading pref.tcl
 # Loading ieee.std_logic_arith(body)
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
-# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+# Loading cyclonev.cyclonev_clkena(behavior)
 # Loading altera.dffeas(vital_dffeas)
-<<<<<<< HEAD
-# ** Warning: Design size of 35508 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+# ** Warning: Design size of 218446 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
+
 # after#34
 
-# End time: 11:52:22 on Oct 15,2022, Elapsed time: 0:00:00
-=======
-# ** Warning: Design size of 53494 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-# after#34
+# Simulation time: 180000 ps
 
-# End time: 15:32:49 on Oct 13,2022, Elapsed time: 0:00:02
->>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+# End time: 20:37:11 on Oct 19,2022, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-<<<<<<< HEAD
-Reading C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/Waveform1.vwf...
-
-Reading C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/simulation/qsim/aula07.msim.vcd...
-
-Processing channel transitions... 
-
-Writing the resulting VWF to C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/simulation/qsim/aula07_20221015115223.sim.vwf
-=======
 Reading C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/Waveform.vwf...
 
 Reading C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/aula07.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/aula07_20221013153249.sim.vwf
->>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+Writing the resulting VWF to C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/aula07_20221019203711.sim.vwf
 
 Finished VCD to VWF conversion.
 

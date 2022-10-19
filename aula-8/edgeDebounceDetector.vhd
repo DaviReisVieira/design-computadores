@@ -26,7 +26,7 @@ architecture arquitetura of edgeDebounceDetector is
 begin
 
 edgeDetector: entity work.edgeDetector(bordaSubida)
-        port map (clk => CLOCK_50, entrada => (not KEY), saida => CLK_FFP);
+        port map (clk => CLOCK_50, entrada => KEY, saida => CLK_FFP);
 	 
 FFP: entity work.flipflopGenerico
 			port map (

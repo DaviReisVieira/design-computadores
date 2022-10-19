@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aula07
-Wed Oct 19 16:16:13 2022
+Wed Oct 19 20:54:45 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,67 +13,62 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: Top-level Entity: |TopLevel
- 14. Parameter Settings for User Entity Instance: edgeDebounceDetector:detectorSubDebounceKey0
- 15. Parameter Settings for User Entity Instance: edgeDebounceDetector:detectorSubDebounceKey1
- 16. Parameter Settings for User Entity Instance: CPU:CPU
- 17. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1:MUX1
- 18. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico4x1:MUXproxPC
- 19. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:REGA
- 20. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:PC
- 21. Parameter Settings for User Entity Instance: CPU:CPU|somaConstante:incrementaPC
- 22. Parameter Settings for User Entity Instance: CPU:CPU|ULASomaSubPassa:ULA1
- 23. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:END_RETORNO
- 24. Parameter Settings for User Entity Instance: memoriaRAM:RAM64
- 25. Parameter Settings for User Entity Instance: memoriaROM:ROM
- 26. Parameter Settings for User Entity Instance: registradorGenerico:REG_LEDR0_7
- 27. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX0
- 28. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX1
- 29. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX2
- 30. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX3
- 31. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX4
- 32. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX5
- 33. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_5"
- 34. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_4"
- 35. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_3"
- 36. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_2"
- 37. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_1"
- 38. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_0"
- 39. Port Connectivity Checks: "registradorGenerico:REG_HEX5"
- 40. Port Connectivity Checks: "registradorGenerico:REG_HEX4"
- 41. Port Connectivity Checks: "registradorGenerico:REG_HEX3"
- 42. Port Connectivity Checks: "registradorGenerico:REG_HEX2"
- 43. Port Connectivity Checks: "registradorGenerico:REG_HEX1"
- 44. Port Connectivity Checks: "registradorGenerico:REG_HEX0"
- 45. Port Connectivity Checks: "flipFlopGenerico:FLIP_FLOP_LED9"
- 46. Port Connectivity Checks: "flipFlopGenerico:FLIP_FLOP_LED8"
- 47. Port Connectivity Checks: "registradorGenerico:REG_LEDR0_7"
- 48. Port Connectivity Checks: "decoder3x8:DECODER2"
- 49. Port Connectivity Checks: "decoder3x8:DECODER1"
- 50. Port Connectivity Checks: "CPU:CPU|registradorGenerico:END_RETORNO"
- 51. Port Connectivity Checks: "CPU:CPU|flipFlopGenerico:FLIPFLOP1"
- 52. Port Connectivity Checks: "CPU:CPU|registradorGenerico:PC"
- 53. Port Connectivity Checks: "CPU:CPU|registradorGenerico:REGA"
- 54. Port Connectivity Checks: "CPU:CPU|muxGenerico4x1:MUXproxPC"
- 55. Port Connectivity Checks: "CPU:CPU"
- 56. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey1"
- 57. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF7"
- 58. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF6"
- 59. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF5"
- 60. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF4"
- 61. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF3"
- 62. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF2"
- 63. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF1"
- 64. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|flipFlopGenerico:FFP"
- 65. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0"
- 66. Post-Synthesis Netlist Statistics for Top Partition
- 67. Elapsed Time Per Partition
- 68. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |TopLevel
+ 11. Parameter Settings for User Entity Instance: edgeDebounceDetector:detectorSubDebounceKey0
+ 12. Parameter Settings for User Entity Instance: edgeDebounceDetector:detectorSubDebounceKey1
+ 13. Parameter Settings for User Entity Instance: CPU:CPU
+ 14. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1:MUX1
+ 15. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico4x1:MUXproxPC
+ 16. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:REGA
+ 17. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:PC
+ 18. Parameter Settings for User Entity Instance: CPU:CPU|somaConstante:incrementaPC
+ 19. Parameter Settings for User Entity Instance: CPU:CPU|ULASomaSubPassa:ULA1
+ 20. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:END_RETORNO
+ 21. Parameter Settings for User Entity Instance: memoriaRAM:RAM64
+ 22. Parameter Settings for User Entity Instance: memoriaROM:ROM
+ 23. Parameter Settings for User Entity Instance: registradorGenerico:REG_LEDR0_7
+ 24. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX0
+ 25. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX1
+ 26. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX2
+ 27. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX3
+ 28. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX4
+ 29. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX5
+ 30. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_5"
+ 31. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_4"
+ 32. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_3"
+ 33. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_2"
+ 34. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_1"
+ 35. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_0"
+ 36. Port Connectivity Checks: "registradorGenerico:REG_HEX5"
+ 37. Port Connectivity Checks: "registradorGenerico:REG_HEX4"
+ 38. Port Connectivity Checks: "registradorGenerico:REG_HEX3"
+ 39. Port Connectivity Checks: "registradorGenerico:REG_HEX2"
+ 40. Port Connectivity Checks: "registradorGenerico:REG_HEX1"
+ 41. Port Connectivity Checks: "registradorGenerico:REG_HEX0"
+ 42. Port Connectivity Checks: "flipFlopGenerico:FLIP_FLOP_LED9"
+ 43. Port Connectivity Checks: "flipFlopGenerico:FLIP_FLOP_LED8"
+ 44. Port Connectivity Checks: "registradorGenerico:REG_LEDR0_7"
+ 45. Port Connectivity Checks: "decoder3x8:DECODER2"
+ 46. Port Connectivity Checks: "decoder3x8:DECODER1"
+ 47. Port Connectivity Checks: "CPU:CPU|registradorGenerico:END_RETORNO"
+ 48. Port Connectivity Checks: "CPU:CPU|flipFlopGenerico:FLIPFLOP1"
+ 49. Port Connectivity Checks: "CPU:CPU|registradorGenerico:PC"
+ 50. Port Connectivity Checks: "CPU:CPU|registradorGenerico:REGA"
+ 51. Port Connectivity Checks: "CPU:CPU|muxGenerico4x1:MUXproxPC"
+ 52. Port Connectivity Checks: "CPU:CPU"
+ 53. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF7"
+ 54. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF6"
+ 55. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF5"
+ 56. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF4"
+ 57. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF3"
+ 58. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF2"
+ 59. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF1"
+ 60. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|flipFlopGenerico:FFP"
+ 61. Post-Synthesis Netlist Statistics for Top Partition
+ 62. Elapsed Time Per Partition
+ 63. Analysis & Synthesis Messages
 
 
 
@@ -100,13 +95,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct 19 16:16:13 2022       ;
+; Analysis & Synthesis Status     ; Successful - Wed Oct 19 20:54:45 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aula07                                      ;
 ; Top-level Entity Name           ; TopLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 51                                          ;
+; Total registers                 ; 577                                         ;
 ; Total pins                      ; 76                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -221,7 +216,9 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -257,106 +254,78 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 64             ;
+; Estimate of Logic utilization (ALMs needed) ; 456            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 102            ;
+; Combinational ALUT usage for logic          ; 471            ;
 ;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 10             ;
-;     -- 5 input functions                    ; 4              ;
-;     -- 4 input functions                    ; 63             ;
-;     -- <=3 input functions                  ; 25             ;
+;     -- 6 input functions                    ; 250            ;
+;     -- 5 input functions                    ; 50             ;
+;     -- 4 input functions                    ; 73             ;
+;     -- <=3 input functions                  ; 98             ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 51             ;
+; Dedicated logic registers                   ; 577            ;
 ;                                             ;                ;
 ; I/O pins                                    ; 76             ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 51             ;
-; Total fan-out                               ; 691            ;
-; Average fan-out                             ; 2.27           ;
+; Maximum fan-out                             ; 575            ;
+; Total fan-out                               ; 4127           ;
+; Average fan-out                             ; 3.44           ;
 +---------------------------------------------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                               ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name         ; Library Name ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
-; |TopLevel                            ; 102 (5)             ; 51 (0)                    ; 0                 ; 0          ; 76   ; 0            ; |TopLevel                                    ; TopLevel            ; work         ;
-;    |CPU:CPU|                         ; 31 (0)              ; 17 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU                            ; CPU                 ; work         ;
-;       |ULASomaSubPassa:ULA1|         ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|ULASomaSubPassa:ULA1       ; ULASomaSubPassa     ; work         ;
-;       |decoderInstru:DECODER1|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|decoderInstru:DECODER1     ; decoderInstru       ; work         ;
-;       |logicaDesvio:DESVIO1|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|logicaDesvio:DESVIO1       ; logicaDesvio        ; work         ;
-;       |muxGenerico2x1:MUX1|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|muxGenerico2x1:MUX1        ; muxGenerico2x1      ; work         ;
-;       |registradorGenerico:PC|       ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|registradorGenerico:PC     ; registradorGenerico ; work         ;
-;       |registradorGenerico:REGA|     ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|registradorGenerico:REGA   ; registradorGenerico ; work         ;
-;       |somaConstante:incrementaPC|   ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|somaConstante:incrementaPC ; somaConstante       ; work         ;
-;    |and4x1:AND_HEX0|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX0                    ; and4x1              ; work         ;
-;    |and4x1:AND_HEX1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX1                    ; and4x1              ; work         ;
-;    |and4x1:AND_HEX2|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX2                    ; and4x1              ; work         ;
-;    |and4x1:AND_HEX3|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX3                    ; and4x1              ; work         ;
-;    |and4x1:AND_HEX4|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX4                    ; and4x1              ; work         ;
-;    |and4x1:AND_HEX5|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX5                    ; and4x1              ; work         ;
-;    |and4x1:AND_LEDR0_7|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_LEDR0_7                 ; and4x1              ; work         ;
-;    |and4x1:AND_SW0_7|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_SW0_7                   ; and4x1              ; work         ;
-;    |conversorHex7Seg:DECODER_7SEG_0| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_0    ; conversorHex7Seg    ; work         ;
-;    |conversorHex7Seg:DECODER_7SEG_1| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_1    ; conversorHex7Seg    ; work         ;
-;    |conversorHex7Seg:DECODER_7SEG_2| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_2    ; conversorHex7Seg    ; work         ;
-;    |conversorHex7Seg:DECODER_7SEG_3| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_3    ; conversorHex7Seg    ; work         ;
-;    |conversorHex7Seg:DECODER_7SEG_4| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_4    ; conversorHex7Seg    ; work         ;
-;    |conversorHex7Seg:DECODER_7SEG_5| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_5    ; conversorHex7Seg    ; work         ;
-;    |flipFlopGenerico:FLIP_FLOP_LED8| ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|flipFlopGenerico:FLIP_FLOP_LED8    ; flipFlopGenerico    ; work         ;
-;    |flipFlopGenerico:FLIP_FLOP_LED9| ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|flipFlopGenerico:FLIP_FLOP_LED9    ; flipFlopGenerico    ; work         ;
-;    |memoriaROM:ROM|                  ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|memoriaROM:ROM                     ; memoriaROM          ; work         ;
-;    |registradorGenerico:REG_HEX0|    ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX0       ; registradorGenerico ; work         ;
-;    |registradorGenerico:REG_HEX1|    ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX1       ; registradorGenerico ; work         ;
-;    |registradorGenerico:REG_HEX2|    ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX2       ; registradorGenerico ; work         ;
-;    |registradorGenerico:REG_HEX3|    ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX3       ; registradorGenerico ; work         ;
-;    |registradorGenerico:REG_HEX4|    ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX4       ; registradorGenerico ; work         ;
-;    |registradorGenerico:REG_HEX5|    ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX5       ; registradorGenerico ; work         ;
-;    |registradorGenerico:REG_LEDR0_7| ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_LEDR0_7    ; registradorGenerico ; work         ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                 ;
++---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Entity Name          ; Library Name ;
++---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------+----------------------+--------------+
+; |TopLevel                                         ; 471 (15)            ; 577 (0)                   ; 0                 ; 0          ; 76   ; 0            ; |TopLevel                                                                        ; TopLevel             ; work         ;
+;    |CPU:CPU|                                      ; 59 (0)              ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU                                                                ; CPU                  ; work         ;
+;       |ULASomaSubPassa:ULA1|                      ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|ULASomaSubPassa:ULA1                                           ; ULASomaSubPassa      ; work         ;
+;       |decoderInstru:DECODER1|                    ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|decoderInstru:DECODER1                                         ; decoderInstru        ; work         ;
+;       |flipFlopGenerico:FLIPFLOP1|                ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|flipFlopGenerico:FLIPFLOP1                                     ; flipFlopGenerico     ; work         ;
+;       |muxGenerico2x1:MUX1|                       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|muxGenerico2x1:MUX1                                            ; muxGenerico2x1       ; work         ;
+;       |muxGenerico4x1:MUXproxPC|                  ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|muxGenerico4x1:MUXproxPC                                       ; muxGenerico4x1       ; work         ;
+;       |registradorGenerico:END_RETORNO|           ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|registradorGenerico:END_RETORNO                                ; registradorGenerico  ; work         ;
+;       |registradorGenerico:PC|                    ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|registradorGenerico:PC                                         ; registradorGenerico  ; work         ;
+;       |registradorGenerico:REGA|                  ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|registradorGenerico:REGA                                       ; registradorGenerico  ; work         ;
+;       |somaConstante:incrementaPC|                ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|somaConstante:incrementaPC                                     ; somaConstante        ; work         ;
+;    |and4x1:AND_HEX0|                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX0                                                        ; and4x1               ; work         ;
+;    |and4x1:AND_HEX1|                              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX1                                                        ; and4x1               ; work         ;
+;    |and4x1:AND_HEX2|                              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX2                                                        ; and4x1               ; work         ;
+;    |and4x1:AND_HEX3|                              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX3                                                        ; and4x1               ; work         ;
+;    |and4x1:AND_HEX4|                              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX4                                                        ; and4x1               ; work         ;
+;    |and4x1:AND_HEX5|                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX5                                                        ; and4x1               ; work         ;
+;    |and4x1:AND_LEDR0_7|                           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_LEDR0_7                                                     ; and4x1               ; work         ;
+;    |and4x1:AND_SW0_7|                             ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_SW0_7                                                       ; and4x1               ; work         ;
+;    |conversorHex7Seg:DECODER_7SEG_0|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_0                                        ; conversorHex7Seg     ; work         ;
+;    |conversorHex7Seg:DECODER_7SEG_1|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_1                                        ; conversorHex7Seg     ; work         ;
+;    |conversorHex7Seg:DECODER_7SEG_2|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_2                                        ; conversorHex7Seg     ; work         ;
+;    |conversorHex7Seg:DECODER_7SEG_3|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_3                                        ; conversorHex7Seg     ; work         ;
+;    |conversorHex7Seg:DECODER_7SEG_4|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_4                                        ; conversorHex7Seg     ; work         ;
+;    |conversorHex7Seg:DECODER_7SEG_5|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_5                                        ; conversorHex7Seg     ; work         ;
+;    |decoder3x8:DECODER1|                          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|decoder3x8:DECODER1                                                    ; decoder3x8           ; work         ;
+;    |edgeDebounceDetector:detectorSubDebounceKey0| ; 4 (2)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetector:detectorSubDebounceKey0                           ; edgeDebounceDetector ; work         ;
+;       |edgeDetector:edgeDetector|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetector:detectorSubDebounceKey0|edgeDetector:edgeDetector ; edgeDetector         ; work         ;
+;       |flipFlopGenerico:FFP|                      ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetector:detectorSubDebounceKey0|flipFlopGenerico:FFP      ; flipFlopGenerico     ; work         ;
+;    |edgeDebounceDetector:detectorSubDebounceKey1| ; 2 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetector:detectorSubDebounceKey1                           ; edgeDebounceDetector ; work         ;
+;       |edgeDetector:edgeDetector|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|edgeDetector:edgeDetector ; edgeDetector         ; work         ;
+;       |flipFlopGenerico:FFP|                      ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|flipFlopGenerico:FFP      ; flipFlopGenerico     ; work         ;
+;    |flipFlopGenerico:FLIP_FLOP_LED8|              ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|flipFlopGenerico:FLIP_FLOP_LED8                                        ; flipFlopGenerico     ; work         ;
+;    |flipFlopGenerico:FLIP_FLOP_LED9|              ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|flipFlopGenerico:FLIP_FLOP_LED9                                        ; flipFlopGenerico     ; work         ;
+;    |memoriaRAM:RAM64|                             ; 299 (299)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|memoriaRAM:RAM64                                                       ; memoriaRAM           ; work         ;
+;    |memoriaROM:ROM|                               ; 34 (34)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|memoriaROM:ROM                                                         ; memoriaROM           ; work         ;
+;    |registradorGenerico:REG_HEX0|                 ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX0                                           ; registradorGenerico  ; work         ;
+;    |registradorGenerico:REG_HEX1|                 ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX1                                           ; registradorGenerico  ; work         ;
+;    |registradorGenerico:REG_HEX2|                 ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX2                                           ; registradorGenerico  ; work         ;
+;    |registradorGenerico:REG_HEX3|                 ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX3                                           ; registradorGenerico  ; work         ;
+;    |registradorGenerico:REG_HEX4|                 ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX4                                           ; registradorGenerico  ; work         ;
+;    |registradorGenerico:REG_HEX5|                 ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX5                                           ; registradorGenerico  ; work         ;
+;    |registradorGenerico:REG_LEDR0_7|              ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_LEDR0_7                                        ; registradorGenerico  ; work         ;
++---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; CPU:CPU|logicaDesvio:DESVIO1|Sel[0]                ; GND                 ; yes                    ;
-; Number of user-specified and inferred latches = 1  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                          ;
-+-------------------------------------------------------------------------------+---------------------------------------------+
-; Register name                                                                 ; Reason for Removal                          ;
-+-------------------------------------------------------------------------------+---------------------------------------------+
-; edgeDebounceDetector:detectorSubDebounceKey0|flipFlopGenerico:FFP|DOUT        ; Stuck at VCC due to stuck port data_in      ;
-; edgeDebounceDetector:detectorSubDebounceKey0|edgeDetector:edgeDetector|saidaQ ; Lost fanout                                 ;
-; edgeDebounceDetector:detectorSubDebounceKey1|flipFlopGenerico:FFP|DOUT        ; Stuck at VCC due to stuck port data_in      ;
-; edgeDebounceDetector:detectorSubDebounceKey1|edgeDetector:edgeDetector|saidaQ ; Lost fanout                                 ;
-; CPU:CPU|registradorGenerico:END_RETORNO|DOUT[0..8]                            ; Stuck at GND due to stuck port clock_enable ;
-; CPU:CPU|flipFlopGenerico:FLIPFLOP1|DOUT                                       ; Stuck at GND due to stuck port clock_enable ;
-; Total Number of Removed Registers = 14                                        ;                                             ;
-+-------------------------------------------------------------------------------+---------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                        ;
-+------------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
-; Register name                                                          ; Reason for Removal        ; Registers Removed due to This Register                                        ;
-+------------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
-; edgeDebounceDetector:detectorSubDebounceKey0|flipFlopGenerico:FFP|DOUT ; Stuck at VCC              ; edgeDebounceDetector:detectorSubDebounceKey0|edgeDetector:edgeDetector|saidaQ ;
-;                                                                        ; due to stuck port data_in ;                                                                               ;
-; edgeDebounceDetector:detectorSubDebounceKey1|flipFlopGenerico:FFP|DOUT ; Stuck at VCC              ; edgeDebounceDetector:detectorSubDebounceKey1|edgeDetector:edgeDetector|saidaQ ;
-;                                                                        ; due to stuck port data_in ;                                                                               ;
-+------------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -364,12 +333,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 51    ;
+; Total registers                              ; 577   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 9     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Asynchronous Clear ; 2     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 40    ;
+; Number of registers using Clock Enable       ; 561   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -379,10 +348,11 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|CPU:CPU|registradorGenerico:PC|DOUT[5]   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|CPU:CPU|registradorGenerico:REGA|DOUT[7] ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TopLevel|CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[3] ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |TopLevel|CPU:CPU|muxGenerico2x1:MUX1|saida_MUX[5] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|CPU:CPU|registradorGenerico:REGA|DOUT[6] ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|CPU:CPU|registradorGenerico:PC|DOUT[0]   ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TopLevel|CPU:CPU|decoderInstru:DECODER1|saida[6]  ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |TopLevel|CPU:CPU|decoderInstru:DECODER1|saida[5]  ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TopLevel|CPU:CPU|logicaDesvio:DESVIO1|Sel[0]      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 
 
@@ -821,15 +791,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+-------+----------+--------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey1"                                              ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; saida[7..1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF7" ;
 +---------+-------+----------+-------------------------------------------------------------------------+
@@ -903,42 +864,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+-------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0"                                              ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; saida[7..1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 51                          ;
-;     ENA               ; 32                          ;
+; arriav_ff             ; 577                         ;
+;     CLR               ; 2                           ;
+;     ENA               ; 553                         ;
 ;     ENA SLD           ; 8                           ;
-;     SLD               ; 9                           ;
-;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 102                         ;
-;     arith             ; 18                          ;
+;     plain             ; 14                          ;
+; arriav_lcell_comb     ; 471                         ;
+;     arith             ; 26                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 9                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 5                           ;
-;     normal            ; 84                          ;
-;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 1                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 63                          ;
-;         5 data inputs ; 4                           ;
-;         6 data inputs ; 10                          ;
+;         5 data inputs ; 15                          ;
+;     normal            ; 445                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 73                          ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 73                          ;
+;         5 data inputs ; 35                          ;
+;         6 data inputs ; 250                         ;
 ; boundary_port         ; 76                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.70                        ;
-; Average LUT depth     ; 2.90                        ;
+; Max LUT depth         ; 9.30                        ;
+; Average LUT depth     ; 6.09                        ;
 +-----------------------+-----------------------------+
 
 
@@ -947,7 +899,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -957,7 +909,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Oct 19 16:16:04 2022
+    Info: Processing started: Wed Oct 19 20:54:20 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aula07 -c aula07
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1041,7 +993,7 @@ Info (12128): Elaborating entity "decoder3x8" for hierarchy "decoder3x8:DECODER1
 Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REG_HEX0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/TopLevel.vhd Line: 196
 Info (12128): Elaborating entity "and4x1" for hierarchy "and4x1:AND_LEDR0_7" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/TopLevel.vhd Line: 271
 Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:DECODER_7SEG_0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/TopLevel.vhd Line: 349
-Info (12128): Elaborating entity "buffer_3_state_8portas" for hierarchy "buffer_3_state_8portas:BUFFER_3_STATE_8_PORTAS" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/TopLevel.vhd Line: 512
+Info (12128): Elaborating entity "buffer_3_state_8portas" for hierarchy "buffer_3_state_8portas:BUFFER_3_STATE_8_PORTAS" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/TopLevel.vhd Line: 498
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "memoriaRAM:RAM64|ram" is uninferred due to asynchronous read logic File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/memoriaRAM.vhd Line: 27
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
@@ -1053,19 +1005,17 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "DATA_IN[2]" into a selector File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/muxGenerico2x1.vhd Line: 10
     Warning (13048): Converted tri-state node "DATA_IN[1]" into a selector File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/muxGenerico2x1.vhd Line: 10
     Warning (13048): Converted tri-state node "DATA_IN[0]" into a selector File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/muxGenerico2x1.vhd Line: 10
-Warning (14025): LATCH primitive "CPU:CPU|logicaDesvio:DESVIO1|Sel[1]" is permanently disabled File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/logicaDesvio.vhd Line: 22
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 218 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1102 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 60 output pins
-    Info (21061): Implemented 142 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4856 megabytes
-    Info: Processing ended: Wed Oct 19 16:16:13 2022
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:12
+    Info (21061): Implemented 1026 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4872 megabytes
+    Info: Processing ended: Wed Oct 19 20:54:45 2022
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:29
 
 

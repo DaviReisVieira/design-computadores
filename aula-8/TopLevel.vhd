@@ -88,7 +88,7 @@ gravar:  if simulacao generate
 CLK <= KEY(0);
 else generate
 -- detectorSub0: work.edgeDetector(bordaSubida)
---         port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);  
+--         port map (clk => CLOCK_50, entrada => (not KEY(1)), saida => CLK);  
 CLK <= CLOCK_50;
 
 end generate;
@@ -98,7 +98,7 @@ end generate;
 
 detectorSubDebounceKey0: work.edgeDebounceDetector
 			port map (
-				CLOCK_50 => CLOCK_50,
+				CLOCK_50 => CLK,
 				KEY => (not KEY(0)),
 				habilita => ENABLE_KEY(0),
 				address => address_OUT,
@@ -108,7 +108,7 @@ detectorSubDebounceKey0: work.edgeDebounceDetector
 			
 detectorSubDebounceKey1: work.edgeDebounceDetector
 			port map (
-				CLOCK_50 => CLOCK_50,
+				CLOCK_50 => CLK,
 				KEY => (not KEY(1)),
 				habilita => ENABLE_KEY(1),
 				address => address_OUT,
@@ -447,20 +447,6 @@ AND_KEY_FPGA_RESET_N: entity work.and4x1
 					entradaD => hab_7SEGs_and_KEYs,
 					saida => ENABLE_KEY(4)				
 				);
-				
-BUFFER_KEY0 :  entity work.buffer_3_state_simples
-        port map(
-				entrada => KEY(0),
-				habilita =>  ENABLE_KEY(0),
-				saida => DATA_IN(0)
-			);
-			
-BUFFER_KEY1 :  entity work.buffer_3_state_simples
-        port map(
-				entrada => KEY(1),
-				habilita =>  ENABLE_KEY(1),
-				saida => DATA_IN(0)
-			);
 
 BUFFER_KEY2 :  entity work.buffer_3_state_simples
         port map(
@@ -538,9 +524,8 @@ hab_BUTTONS <= saida_DECODER1(5); -- bloco 5
 hab_7SEGs_and_KEYs <= address_OUT(5);
 
 DATA_OUT <= data_OUT_CPU;
-DATA_IN(0) <= DEBOUNCE_KEY0(0);
-DATA_IN(0) <= DEBOUNCE_KEY1(0);
-
+DATA_IN <= DEBOUNCE_KEY0;
+DATA_IN <= DEBOUNCE_KEY1;
 -- LEDS estão conectados às saídas dos FF ou registrador
 
 

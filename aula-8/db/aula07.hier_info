@@ -74,9 +74,7 @@ HEX5[3] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[3]
 HEX5[4] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[4]
 HEX5[5] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[5]
 HEX5[6] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[6]
-KEY[0] => buffer_3_state_simples:BUFFER_KEY0.entrada
 KEY[0] => edgedebouncedetector:detectorSubDebounceKey0.KEY
-KEY[1] => buffer_3_state_simples:BUFFER_KEY1.entrada
 KEY[1] => edgedebouncedetector:detectorSubDebounceKey1.KEY
 KEY[2] => buffer_3_state_simples:BUFFER_KEY2.entrada
 KEY[3] => buffer_3_state_simples:BUFFER_KEY3.entrada
@@ -1723,18 +1721,6 @@ entradaA => saida.IN0
 entradaB => saida.IN1
 entradaC => saida.IN1
 entradaD => saida.IN1
-saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|TopLevel|buffer_3_state_simples:BUFFER_KEY0
-entrada => saida.DATAIN
-habilita => saida.OE
-saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|TopLevel|buffer_3_state_simples:BUFFER_KEY1
-entrada => saida.DATAIN
-habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
