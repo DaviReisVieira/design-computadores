@@ -81,6 +81,14 @@ KEY[1] => edgedebouncedetector:detectorSubDebounceKey1.KEY
 KEY[2] => buffer_3_state_simples:BUFFER_KEY2.entrada
 KEY[3] => buffer_3_state_simples:BUFFER_KEY3.entrada
 FPGA_RESET_N => buffer_3_state_simples:BUFFER_KEY_FPGA_RESET_N.entrada
+DATA_OUT[0] <= cpu:CPU.DATA_OUT[0]
+DATA_OUT[1] <= cpu:CPU.DATA_OUT[1]
+DATA_OUT[2] <= cpu:CPU.DATA_OUT[2]
+DATA_OUT[3] <= cpu:CPU.DATA_OUT[3]
+DATA_OUT[4] <= cpu:CPU.DATA_OUT[4]
+DATA_OUT[5] <= cpu:CPU.DATA_OUT[5]
+DATA_OUT[6] <= cpu:CPU.DATA_OUT[6]
+DATA_OUT[7] <= cpu:CPU.DATA_OUT[7]
 
 
 |TopLevel|edgeDebounceDetector:detectorSubDebounceKey0

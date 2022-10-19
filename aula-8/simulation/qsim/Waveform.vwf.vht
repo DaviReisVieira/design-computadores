@@ -19,7 +19,11 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
+<<<<<<< HEAD
 -- Generated on "10/15/2022 10:54:36"
+=======
+-- Generated on "10/13/2022 15:32:43"
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          TopLevel
 -- 
@@ -35,6 +39,10 @@ ARCHITECTURE TopLevel_arch OF TopLevel_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL CLOCK_50 : STD_LOGIC;
+<<<<<<< HEAD
+=======
+SIGNAL DATA_OUT : STD_LOGIC_VECTOR(7 DOWNTO 0);
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
 SIGNAL FPGA_RESET_N : STD_LOGIC;
 SIGNAL HEX0 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL HEX1 : STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -48,6 +56,10 @@ SIGNAL SW : STD_LOGIC_VECTOR(9 DOWNTO 0);
 COMPONENT TopLevel
 	PORT (
 	CLOCK_50 : IN STD_LOGIC;
+<<<<<<< HEAD
+=======
+	DATA_OUT : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
 	FPGA_RESET_N : IN STD_LOGIC;
 	HEX0 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
 	HEX1 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -65,6 +77,10 @@ BEGIN
 	PORT MAP (
 -- list connections between master ports and signals
 	CLOCK_50 => CLOCK_50,
+<<<<<<< HEAD
+=======
+	DATA_OUT => DATA_OUT,
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
 	FPGA_RESET_N => FPGA_RESET_N,
 	HEX0 => HEX0,
 	HEX1 => HEX1,
@@ -92,6 +108,7 @@ BEGIN
 	KEY(0) <= '0';
 WAIT;
 END PROCESS t_prcs_KEY_0;
+<<<<<<< HEAD
 -- SW[9]
 t_prcs_SW_9: PROCESS
 BEGIN
@@ -166,4 +183,6 @@ BEGIN
 	SW(0) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_0;
+=======
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
 END TopLevel_arch;
