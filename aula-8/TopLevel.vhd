@@ -8,7 +8,7 @@ entity TopLevel is
       larguraEnderecosROM : natural := 9;
 		larguraEnderecosRAM : natural := 6;
 		larguraInstrucao	  : natural := 13;
-      simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
+      simulacao : boolean := FALSE -- para gravar na placa, altere de TRUE para FALSE
   );
   port   (
     CLOCK_50 : 	in std_logic;
@@ -87,10 +87,12 @@ begin
 gravar:  if simulacao generate
 CLK <= KEY(0);
 else generate
-detectorSub0: work.edgeDetector(bordaSubida)
-        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);  
+-- detectorSub0: work.edgeDetector(bordaSubida)
+--         port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);  
+CLK <= CLOCK_50;
 
 end generate;
+
 	
 -- ## INSTANCIANDO OS COMPONENTES
 

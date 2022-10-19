@@ -2,52 +2,52 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'KEY[0]'
-Slack : -6.645
-TNS   : -427.711
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -4.621
+TNS   : -151.576
 
-Type  : Slow 1100mV 85C Model Hold 'KEY[0]'
-Slack : 0.441
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
-Slack : -0.538
-TNS   : -99.264
-
-Type  : Slow 1100mV 0C Model Setup 'KEY[0]'
-Slack : -6.648
-TNS   : -422.292
-
-Type  : Slow 1100mV 0C Model Hold 'KEY[0]'
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
 Slack : 0.457
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -0.538
-TNS   : -88.612
+TNS   : -52.989
 
-Type  : Fast 1100mV 85C Model Setup 'KEY[0]'
-Slack : -2.839
-TNS   : -146.920
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -4.680
+TNS   : -151.536
 
-Type  : Fast 1100mV 85C Model Hold 'KEY[0]'
-Slack : 0.250
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.467
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
-Slack : -0.401
-TNS   : -49.479
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.538
+TNS   : -46.852
 
-Type  : Fast 1100mV 0C Model Setup 'KEY[0]'
-Slack : -2.522
-TNS   : -124.180
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -1.616
+TNS   : -39.555
 
-Type  : Fast 1100mV 0C Model Hold 'KEY[0]'
-Slack : 0.239
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.184
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
-Slack : -0.440
-TNS   : -60.154
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.408
+TNS   : -27.762
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -1.422
+TNS   : -32.193
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.446
+TNS   : -33.229
 
 ------------------------------------------------------------
