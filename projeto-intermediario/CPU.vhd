@@ -5,10 +5,11 @@ entity CPU is
   -- Total de bits das entradas e saidas
   generic ( 
 		larguraDados : natural := 8;
-      larguraEnderecosROM : natural := 9;
+    larguraEnderecosROM : natural := 9;
 		larguraEnderecosRAM : natural := 6;
-		larguraInstrucao	  : natural := 13;
-      simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
+		larguraInstrucao	  : natural := 15;
+    larguraRegs: natural := 2;
+    simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
   );
   port   (
     CLOCK_50 : 	in std_logic;
@@ -48,7 +49,7 @@ architecture arquitetura of CPU is
   
   -- Reg A
   signal Habilita_A : 		std_logic;
-  signal Saida_REGA : 		std_logic_vector (larguraDados-1 downto 0);
+  signal Saida_REGs : 		std_logic_vector (larguraDados-1 downto 0);
 	   -- Saida_ULA
 		-- REGA_ULA_A
   
@@ -92,13 +93,21 @@ MUXproxPC :  entity work.muxGenerico4x1  generic map (larguraDados => larguraEnd
 			saida_MUX => MUXproxPC_OUT);
 
 -- O port map completo do Acumulador.
-REGA : entity work.registradorGenerico   generic map (larguraDados => larguraDados)
-          port map (
-				DIN => Saida_ULA, 
-				DOUT => Saida_REGA, 
-				ENABLE => Habilita_A, 
-				CLK => CLK,
-        RST => '0');
+-- REGA : entity work.registradorGenerico   generic map (larguraDados => larguraDados)
+--           port map (
+-- 				DIN => Saida_ULA, 
+-- 				DOUT => Saida_REGs, 
+-- 				ENABLE => Habilita_A, 
+-- 				CLK => CLK,
+--         RST => '0');
+
+-- O port map completo do Acumulador-Memoria.
+REGS : entity work.bancoRegistradoresArqRegMem   generic map (larguraDados => larguraDados, larguraEndBancoRegs => larguraRegs)
+port map ( clk => CLK,
+    endereco => INSTRUCAO_IN(larguraInstrucao -1 -4 downto larguraInstrucao -larguraRegs -4),
+    dadoEscrita => Saida_ULA,
+    habilitaEscrita => Habilita_A,
+    saida  => Saida_REGs);
 
 -- O port map completo do Program Counter.
 PC : entity work.registradorGenerico   generic map (larguraDados => larguraEnderecosROM)
@@ -178,9 +187,9 @@ Operacao_ULA <= Sinais_Controle(4 downto 3);
 SelMUX <= Sinais_Controle(6);
 Habilita_A <= Sinais_Controle(5);
 
-REGA_ULA_A <= Saida_REGA;
+REGA_ULA_A <= Saida_REGs;
 
-DATA_OUT <= Saida_REGA;
+DATA_OUT <= Saida_REGs;
 
 -- INSTRUCAO_IN <= conectada ao DECODER
 end architecture;

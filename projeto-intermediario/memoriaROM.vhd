@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity memoriaROM is
    generic (
-          dataWidth: natural := 13;
+          dataWidth: natural := 15;
           addrWidth: natural := 9
     );
    port (
@@ -70,27 +70,27 @@ architecture assincrona of memoriaROM is
         -- tmp(16) := JMP & '0' & x"00";
 
         -- ATV 3:
-        tmp(0) := LDI & '0' & x"00";
-        tmp(1) := STA & '0' & x"00";
-        tmp(2) := STA & '0' & x"02";
-        tmp(3) := LDI & '0' & x"01";
-        tmp(4) := STA & '0' & x"01";
-        tmp(5) := NOP & '0' & x"00";
-        tmp(6) := LDA & '1' & x"60";
-        tmp(7) := STA & '1' & x"20";
-        tmp(8) := CEQ & '0' & x"00";
-        tmp(9) := JEQ & '0' & x"0B";
-        tmp(10) := JSR & '0' & x"20";
-        tmp(11) := NOP & '0' & x"00";
-        tmp(12) := JMP & '0' & x"05";
+        tmp(0) := LDI & "00" & '0' & x"00";
+        tmp(1) := STA & "00" & '0' & x"00";
+        tmp(2) := STA & "00" & '0' & x"02";
+        tmp(3) := LDI & "00" & '0' & x"01";
+        tmp(4) := STA & "00" & '0' & x"01";
+        tmp(5) := NOP & "00" & '0' & x"00";
+        tmp(6) := LDA & "00" & '1' & x"60";
+        tmp(7) := STA & "00" & '1' & x"20";
+        tmp(8) := CEQ & "00" & '0' & x"00";
+        tmp(9) := JEQ & "00" & '0' & x"0B";
+        tmp(10) := JSR & "00" & '0' & x"20";
+        tmp(11) := NOP & "00" & '0' & x"00";
+        tmp(12) := JMP & "00" & '0' & x"05";
 
-        tmp(32) := STA & '1' & x"FF";
-        tmp(33) := LDA & '0' & x"02";
-        tmp(34) := SOMA & '0' & x"01";
-        tmp(35) := STA & '0' & x"02";
-        tmp(36) := STA & '1' & x"02";
-        tmp(37) := STA & '1' & x"25";
-        tmp(38) := RET & '0' & x"00";
+        tmp(32) := STA & "00" & '1' & x"FF";
+        tmp(33) := LDA & "00" & '0' & x"02";
+        tmp(34) := SOMA & "00" & '0' & x"01";
+        tmp(35) := STA & "00" & '0' & x"02";
+        tmp(36) := STA & "00" & '1' & x"02";
+        tmp(37) := STA & "00" & '1' & x"25";
+        tmp(38) := RET & "00" & '0' & x"00";
 
 
         -- ATV 4:
