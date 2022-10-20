@@ -1,0 +1,5 @@
+tmp(0) := STA  &  x"001";
+tmp(1) := LDI  &  x"002";
+tmp(2) :=     LDI  &  x"003";
+tmp(3) :=     LDI &  x"004";
+tmp(4) := JMP  &  x"003";

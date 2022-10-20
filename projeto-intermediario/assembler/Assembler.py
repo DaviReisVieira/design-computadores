@@ -81,7 +81,7 @@ class Assembler:
         return label
 
     def find_commands(self, line):
-        regex = f"(({'|'.join([f'({op_code})' for op_code in self.op_codes])})" + r"\s*([@$](\d*)(\w*)))"
+        regex = f"(\s*({'|'.join([f'({op_code})' for op_code in self.op_codes])})" + r"\s*([@$](\d*)(\w*)))"
         match = re.search(regex, line)
         
         if match:
