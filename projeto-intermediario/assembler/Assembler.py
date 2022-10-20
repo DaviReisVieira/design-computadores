@@ -8,7 +8,7 @@ class Assembler:
             tmp(<# instrucao>) := <comando> & x"<argumento>";
 
         A classe aceita a seguinte lista de comandos:
-            NOP, SOMA, SUB, LDI, STA, JMP, JEQ, CEQ, JSR, RET
+            NOP, SOMA, SUB, LDI, LDA, STA, JMP, JEQ, CEQ, JSR, RET
 
         #! Comandos que não estão nessa lista não serão detectados e serão ignorados
 
@@ -28,7 +28,7 @@ class Assembler:
         self.input_dir = os.path.join(cwd, 'input')
         self.output_dir = os.path.join(cwd, 'output')
 
-        self.input_file = os.path.join(self.input_dir, 'test.txt')
+        self.input_file = os.path.join(self.input_dir, 'input.txt')
         self.output_file = os.path.join(self.output_dir, 'assembly.txt')
 
         self.labels = {}
@@ -81,7 +81,7 @@ class Assembler:
         return label
 
     def find_commands(self, line):
-        regex = f"(\s*({'|'.join([f'({op_code})' for op_code in self.op_codes])})"+r"\s*([@$]|\w*)?\d*)"
+        regex = f"(({'|'.join([f'({op_code})' for op_code in self.op_codes])})" + r"\s*([@$](\d*)(\w*)))"
         match = re.search(regex, line)
         
         if match:
@@ -100,10 +100,9 @@ class Assembler:
     def int_to_hex(self, int) -> str:
         return "x%0.3X" % int
 
-    
     def map(self):
         lines = self.read()
-        n = 1   # aponta para a próxima instrução
+        pc = 0   # aponta para a próxima instrução
 
         for line in lines:
             if line is not None:
@@ -117,11 +116,11 @@ class Assembler:
                 print(line, "-->", command, "|",  arg)
                 if command:
                     self.codes.append((command, arg))
-                    n += 1
+                    pc += 1
 
                 if label:
                     # Guarda label no dicionário com a posição do próximo comando
-                    self.labels[label] = n
+                    self.labels[label] = pc 
 
                 # TODO: - Transpor comentário ao binário
 
@@ -143,7 +142,7 @@ class Assembler:
                     arg_int = self.labels[match_label.group()]
 
                 arg_hex = self.int_to_hex(arg_int)[1:]
-            cmd_str = f'tmp({count}) := {op} & x"{arg_hex}";'
+            cmd_str = f'tmp({count}) := {op.ljust(4)} &  x"{arg_hex}";'
             output.append(cmd_str)
 
         self.write('\n'.join(output))
