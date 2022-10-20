@@ -1,17 +1,35 @@
 
-# [x] 1- Mapear Labels e Operações
-#      1.1- Contar apenas linhas que tenham operações ou labels (skipar linhas de comentários) 
-# [x] 2- Separar Comentários (# ou --) de comandos
-# [x] 3- Traduzir NOP, SOMA, SUB como minemônicos (o arquivo decoderInstru terá o significado de cada minemônico)
-# [x] 4- Adicionar comando JMP @LABEL no regex
 import os
 import re
 
-
 class Assembler:
+    """
+        Montador que transforma uma sequência de linhas de comandos legíveis em uma sequência de instruções em VHDL, obedecendo o seguinte template:
+            tmp(<# instrucao>) := <comando> & x"<argumento>";
+
+        A classe aceita a seguinte lista de comandos:
+            NOP, SOMA, SUB, LDI, STA, JMP, JEQ, CEQ, JSR, RET
+
+        #! Comandos que não estão nessa lista não serão detectados e serão ignorados
+
+        A classe também é flexível quanto a forma como os argumentos são escritos. Não é necessário fixar a quantidade de espaços entre o comando e o argumento, nem a quantidade de espaços ou tabs no início da linha.
+
+        Ela também detecta comentários (que começam com # ou --) e ignora-os, seja uma linha toda de comentário ou comentários após a instrução.
+
+        Ela detecta labels (que terminam com :) e os guarda em um dicionário, associando o nome do label ao número da próxima instrução. 
+            - Caso algum comentário seja encontrado após o label, ele é ignorado.
+            - Caso algum : seja encontrado em um comentário, ele é devidamente classificado como comentário.
+    
+    
+    """
     def __init__(self):
-        self.input_file = os.path.join(os.getcwd(), 'assembler', 'input', 'test.txt')
-        self.output_file = './output/program.bin'
+        cwd = os.getcwd()
+        
+        self.input_dir = os.path.join(cwd, 'input')
+        self.output_dir = os.path.join(cwd, 'output')
+
+        self.input_file = os.path.join(self.input_dir, 'test.txt')
+        self.output_file = os.path.join(self.output_dir, 'assembly.txt')
 
         self.labels = {}
         self.codes = []
@@ -23,8 +41,13 @@ class Assembler:
             return file.readlines()
 
     def write(self, data):
-        with open(self.output_file, 'w') as file:
-            file.write(data)
+        try:
+            os.makedirs(self.output_dir)
+        except FileExistsError:
+            pass
+        finally:
+            with open(self.output_file, 'w') as file:
+                file.write(data)
 
     def find_comments(self, line):
         match = re.search(r'(#|--)', line)
@@ -58,14 +81,26 @@ class Assembler:
         return label
 
     def find_commands(self, line):
-        regex = f"(({'|'.join([f'({op_code})' for op_code in self.op_codes])})"+r'\s*([@$]|\w*)?\d*)'
+        regex = f"(\s*({'|'.join([f'({op_code})' for op_code in self.op_codes])})"+r"\s*([@$]|\w*)?\d*)"
         match = re.search(regex, line)
         
         if match:
-            return match.group()
-        else:
-            return None
+            match_args = re.search(r'([@$](\d*)?(\w*))', match.group())
+            if match_args:
+                args = match_args.group()
+                commands = match.string[match.start(): match_args.start()]
+            else:
+                commands = match.group()
+                args = None
 
+            return (commands, args)
+        else:
+            return (None, None)
+
+    def int_to_hex(self, int) -> str:
+        return "x%0.3X" % int
+
+    
     def map(self):
         lines = self.read()
         n = 1   # aponta para a próxima instrução
@@ -73,29 +108,46 @@ class Assembler:
         for line in lines:
             if line is not None:
                 line = line.replace('\n', '')
-                comando, label, comentario = None, None, None
+                command, label, comment = None, None, None
 
-                comentario = self.find_comments(line)
+                comment = self.find_comments(line)
                 label = self.find_label(line)
-                comando = self.find_commands(line)
+                command, arg = self.find_commands(line)
                 
-                if comando:
-                    self.codes.append(comando)
+                print(line, "-->", command, "|",  arg)
+                if command:
+                    self.codes.append((command, arg))
                     n += 1
 
                 if label:
                     # Guarda label no dicionário com a posição do próximo comando
                     self.labels[label] = n
 
+                # TODO: - Transpor comentário ao binário
 
-                print(line.strip(), f" --> {comando} | {label} | {comentario}")
-            
-            
+    def assemble(self):
+        self.map()
 
+        output = []
+        for count, code in enumerate(self.codes):
+            # separa instrução em minemônico e argumento
+            op = code[0]
+            arg = code[1]
+            arg_hex = '000'
+            if arg:
+                match_int = re.search(r'(\d+)', arg)
+                match_label = re.search(r'(\w+)', arg)
+                if match_int:
+                    arg_int = int(match_int.group())
+                elif match_label:
+                    arg_int = self.labels[match_label.group()]
+
+                arg_hex = self.int_to_hex(arg_int)[1:]
+            cmd_str = f'tmp({count}) := {op} & x"{arg_hex}";'
+            output.append(cmd_str)
+
+        self.write('\n'.join(output))
 
 if __name__ == '__main__':
     assembler = Assembler()
-    assembler.map()
-
-    print(assembler.labels)
-    print(assembler.codes)
+    assembler.assemble()
