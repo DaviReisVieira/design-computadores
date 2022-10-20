@@ -2,6 +2,14 @@
 import os
 import re
 
+"""
+    - Salvar U, D, C
+    - Retorno de subrotina
+    - Endereços base de acesso
+
+
+"""
+
 class Assembler:
     """
         Montador que transforma uma sequência de linhas de comandos legíveis em uma sequência de instruções em VHDL, obedecendo o seguinte template:
@@ -35,6 +43,12 @@ class Assembler:
         self.codes = []
 
         self.op_codes = ['NOP', 'LDA','SOMA', 'SUB','LDI', 'STA','JMP','JEQ','CEQ','JSR','RET', ]
+        self.regs = {
+            'R0': '00',
+            'R1': '01',
+            'R2': '10',
+            'R3': '11',
+        }
 
     def read(self):
         with open(self.input_file, 'r') as file:
@@ -81,7 +95,7 @@ class Assembler:
         return label
 
     def find_commands(self, line):
-        regex = f"(({'|'.join([f'({op_code})' for op_code in self.op_codes])})" + r"\s*([@$](\d*)(\w*)))"
+        regex = f"(({'|'.join([f'({op_code})' for op_code in self.op_codes])})" + r"\s*([@$](\d*)(\w*))?)"
         match = re.search(regex, line)
         
         if match:
@@ -132,6 +146,8 @@ class Assembler:
             # separa instrução em minemônico e argumento
             op = code[0]
             arg = code[1]
+
+            reg = 'R0'
             arg_hex = '000'
             if arg:
                 match_int = re.search(r'(\d+)', arg)
@@ -142,7 +158,7 @@ class Assembler:
                     arg_int = self.labels[match_label.group()]
 
                 arg_hex = self.int_to_hex(arg_int)[1:]
-            cmd_str = f'tmp({count}) := {op.ljust(4)} &  x"{arg_hex}";'
+            cmd_str = f'tmp({count}) := {op.ljust(4)} & "{self.regs[reg]}" & \'{arg_hex[0]}\' & x"{arg_hex[1:3]}";'
             output.append(cmd_str)
 
         self.write('\n'.join(output))

@@ -1,0 +1,10 @@
+LDI $2 
+	STA @1 -- MEM[1] = 2
+LDI $1
+	STA @0 -- MEM[0] = 0
+	NOP
+LOOP: -- Laço para somar 2 em MEM[0]
+	LDA @0
+	SOMA @1
+	STA @0
+	JMP @LOOP 
