@@ -1,0 +1,19 @@
+LDI $0			#Carrega o acumulador com o valor 0
+STA @0			#Armazena o valor do acumulador em MEM[0] (constante 0)
+STA @2			#Armazena o valor do acumulador em MEM[2] (contador)
+LDI $1			#Carrega o acumulador com o valor 1
+STA @1			#Armazena o valor do acumulador em MEM[1] (constante 1)
+NOP
+LDA @352		#Carrega o acumulador com a leitura do botão KEY0
+STA @288		#Armazena o valor lido em HEX0 (para verificar erros de leitura)
+CEQ @0			#Compara com o valor de MEM[0] (constante 0)
+JEQ @11			#Desvia se igual a 0 (botão não foi pressionado)
+JSR @32			#O botão foi pressionado, chama a sub-rotina de incremento
+NOP			    #Retorno da sub-rotina de incremento
+JMP @5			#Fecha o laço principal, faz uma nova leitura de KEY0
+STA @511		#Limpa a leitura do botão
+LDA @2			#Carrega o valor de MEM[2] (contador)
+SOMA @1			#Soma com a constante em MEM[1]
+STA @2			#Salva o incremento em MEM[2] (contador)
+STA @258		#Armazena o valor do bit0 do acumulador no LDR9
+RET			    #Retorna da sub-rotina

@@ -1,0 +1,252 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+<<<<<<< HEAD
+dC:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/simulation/qsim
+<<<<<<< HEAD
+!i122 12
+Z0 =======
+!i122 6
+<<<<<<< HEAD
+V;@gW4@I2miMd2XMKMXA=M2
+!s100 NkFng0d5kUL4X:2R82QNG0
+Z1 OV;C;2020.1;71
+32
+!s110 1665845542
+!i10b 1
+!s108 1665845542.000000
+R0
+Vd6N8_nfKC^EkniT9=2_J30
+!s100 RHlYSEoLRY_<SV?6Sk69P2
+R1
+32
+Z2 !s110 1665685967
+!i10b 1
+Z3 !s108 1665685967.000000
+<<<<<<< HEAD
+DEx4 work 8 toplevel 0 22 ;@gW4@I2miMd2XMKMXA=M2
+!i122 12
+l282
+L55 3650
+VNW<VCJKHAQfL48e8JdAKW1
+!s100 cJc^ENH8n0l;dPX4<@8fR2
+R0
+DEx4 work 8 toplevel 0 22 d6N8_nfKC^EkniT9=2_J30
+!i122 6
+l467
+L56 5541
+VDZRzWnnWOiCLm_:0a[zkH3
+!s100 eP2@f9506bBe_k7FEle?h0
+<<<<<<< HEAD
+w1665845540
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 13
+Z6 dC:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim
+Z7 8Waveform1.vwf.vht
+Z8 FWaveform1.vwf.vht
+R0
+w1665685963
+R4
+R5
+!i122 7
+R6
+Z9 8Waveform.vwf.vht
+Z10 FWaveform.vwf.vht
+<<<<<<< HEAD
+Z11 !s90 -work|work|Waveform1.vwf.vht|
+Z12 !s107 Waveform1.vwf.vht|
+R0
+Z13 !s90 -work|work|Waveform.vwf.vht|
+Z14 !s107 Waveform.vwf.vht|
+<<<<<<< HEAD
+!i122 13
+l63
+L34 160
+VUiIo2>0zB8ZUFZ3TB7ScK3
+!s100 fMCFzX<TKi>Sf0@75IS]l0
+R0
+!i122 7
+l65
+L34 65
+VARRk8V=<L?c_MoJn[@A951
+!s100 a3F[[ll<j;;RkBe>FhUkG3
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+Z15 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^K2eeK[IVbX]]MLcdOEI91
+Z16 DPx8 cyclonev 19 cyclonev_components 0 22 GFL[QAd@dAZF:`jjOGn9>2
+Z17 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3dzZ?YU_4FC5UU0cTXRET1
+Z18 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z19 DPx6 altera 11 dffeas_pack 0 22 H5F:RRfLz82T3`4>@b7mS3
+Z20 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+R4
+R5
+Z21 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+R6
+Z22 8aula07.vho
+Z23 Faula07.vho
+l0
+Z24 L39 1
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+Z25 !s90 -work|work|aula07.vho|
+Z26 !s107 aula07.vho|
+!i113 1
+Z27 o-work work
+Z28 tExplicit 1 CvgOpt 0
+Astructure
+R15
+R16
+R17
+R18
+R19
+R20
+R4
+R5
+R21
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+R1
+32
+R2
+!i10b 1
+R3
+R25
+R26
+!i113 1
+R27
+R28
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+l0
+Z29 L32 1
+Z30 Vi`cW82E4ohG=CFFdJ4Rgz3
+Z31 !s100 HOYZb^>X>O4gVXH@FzMRJ1
+R1
+32
+R2
+!i10b 1
+R3
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+!i113 1
+R27
+R28
+Atoplevel_arch
+R4
+R5
+Z32 DEx4 work 20 toplevel_vhd_vec_tst 0 22 i`cW82E4ohG=CFFdJ4Rgz3
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+R1
+32
+R2
+!i10b 1
+R3
+R13
+R14
+!i113 1
+R27
+R28
+Etoplevel
+w1665845541
+R0
+R6
+Etoplevel
+Z33 w1666222624
+R15
+R16
+R17
+R18
+R19
+R20
+R4
+R5
+R21
+!i122 54
+R6
+R22
+R23
+l0
+R24
+V`7e1HeVii`QW^U0^h6Ne42
+!s100 9Jf46immn8CQdbSWKJMP=0
+R1
+32
+Z34 !s110 1666222626
+!i10b 1
+Z35 !s108 1666222625.000000
+R25
+R26
+!i113 1
+R27
+R28
+Astructure
+R15
+R16
+R17
+R18
+R19
+R20
+R4
+R5
+R21
+DEx4 work 8 toplevel 0 22 `7e1HeVii`QW^U0^h6Ne42
+!i122 54
+l2196
+L149 24149
+VR:8dN^;<zD1AUZD?OYDb[2
+!s100 R<T]6aF9h>_FcGB[P04GE3
+R1
+32
+R34
+!i10b 1
+R35
+R25
+R26
+!i113 1
+R27
+R28
+Etoplevel_vhd_vec_tst
+Z36 w1666222622
+R4
+R5
+!i122 55
+R6
+R9
+R10
+l0
+R29
+R30
+R31
+R1
+32
+Z37 !s110 1666222627
+!i10b 1
+Z38 !s108 1666222626.000000
+R13
+R14
+!i113 1
+R27
+R28
+Atoplevel_arch
+R4
+R5
+R32
+!i122 55
+l71
+L34 100
+VXlH2=h;F<KK>mEZC=4lMW3
+!s100 hk1U5WiYV?ZVP0>>AW6F`1
+R1
+32
+R37
+!i10b 1
+R38
+R13
+R14
+!i113 1
+R27
+R28
