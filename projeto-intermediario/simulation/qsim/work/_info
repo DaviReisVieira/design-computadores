@@ -9,7 +9,7 @@ z2
 !i10f 100
 cModel Technology
 <<<<<<< HEAD
-dC:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-8/simulation/qsim
+dC:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto-intermediario/simulation/qsim
 <<<<<<< HEAD
 !i122 12
 Z0 =======
@@ -49,7 +49,7 @@ w1665845540
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 13
-Z6 dC:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim
+Z6 dC:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/simulation/qsim
 Z7 8Waveform1.vwf.vht
 Z8 FWaveform1.vwf.vht
 R0

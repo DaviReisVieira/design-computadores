@@ -43,7 +43,7 @@ SETUP:
 MAIN:
 	-- Verifica se KEY0 pressionado
 	JSR @READ_KEY0
-	CEQ R1, @10
+	CEQ R1, @10 -- Compara se KEY0 não foi pressionado
 	JEQ @KEY0_NOT_PRESSED
 	JSR @INCREMENTADOR
 
@@ -52,9 +52,13 @@ MAIN:
 		JSR @ESCREVER_DISPLAY
 
 
+JMP @MAIN
+
+
 READ_KEY0:
 	-- Lê KEY0, armazena em R1 e Limpa KEY0
 	LDA @352, R1
+	LDI $0, R0
 	STA R0, @511
 	RET
 
@@ -70,6 +74,9 @@ INCREMENTADOR:
 	JEQ @FLAG_NOT_SET
 	RET
 	FLAG_NOT_SET: -- Incrementa contador
+
+ESCREVER_DISPLAY:
+	RET
 
 		
 

@@ -51,10 +51,10 @@ Info: File Set 'Source control' contains:
     Info: Automatically detected source files
 Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
 Info: Archive will store files relative to the closest common parent directory
-Info (13213): Using common directory C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/
+Info (13213): Using common directory C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/aula08.qar'
+Info: Generated archive 'C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/aula08.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'aula07.archive.rpt'

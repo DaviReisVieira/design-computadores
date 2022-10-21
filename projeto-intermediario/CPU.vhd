@@ -48,7 +48,7 @@ architecture arquitetura of CPU is
   
   
   -- Reg A
-  signal Habilita_A : 		std_logic;
+  signal Habilita_REGs : 		std_logic;
   signal Saida_REGs : 		std_logic_vector (larguraDados-1 downto 0);
 	   -- Saida_ULA
 		-- REGA_ULA_A
@@ -97,7 +97,7 @@ MUXproxPC :  entity work.muxGenerico4x1  generic map (larguraDados => larguraEnd
 --           port map (
 -- 				DIN => Saida_ULA, 
 -- 				DOUT => Saida_REGs, 
--- 				ENABLE => Habilita_A, 
+-- 				ENABLE => Habilita_REGs, 
 -- 				CLK => CLK,
 --         RST => '0');
 
@@ -106,7 +106,7 @@ REGS : entity work.bancoRegistradoresArqRegMem   generic map (larguraDados => la
 port map ( clk => CLK,
     endereco => INSTRUCAO_IN(larguraInstrucao -1 -4 downto larguraInstrucao -larguraRegs -4),
     dadoEscrita => Saida_ULA,
-    habilitaEscrita => Habilita_A,
+    habilitaEscrita => Habilita_REGs,
     saida  => Saida_REGs);
 
 -- O port map completo do Program Counter.
@@ -165,7 +165,7 @@ PORT MAP(
 			 
 DECODER1 : entity work.decoderInstru
 			 port map (
-					opcode => INSTRUCAO_IN (12 downto 9),
+					opcode => INSTRUCAO_IN (larguraInstrucao-1 downto larguraInstrucao -1 -3),
 					saida => Sinais_Controle
 			);
 
@@ -185,7 +185,7 @@ DATA_ADDRESS <= INSTRUCAO_IN (8 downto 0);
 
 Operacao_ULA <= Sinais_Controle(4 downto 3);
 SelMUX <= Sinais_Controle(6);
-Habilita_A <= Sinais_Controle(5);
+Habilita_REGs <= Sinais_Controle(5);
 
 REGA_ULA_A <= Saida_REGs;
 

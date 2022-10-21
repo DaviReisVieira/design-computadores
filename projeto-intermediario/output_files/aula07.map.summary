@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Oct 20 17:34:22 2022
+Analysis & Synthesis Status : Successful - Fri Oct 21 17:10:02 2022
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : aula07
 Top-level Entity Name : TopLevel
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 17
+Total registers : 601
 Total pins : 76
 Total virtual pins : 0
 Total block memory bits : 0

@@ -6,7 +6,7 @@ entity bancoRegistradoresArqRegMem is
     generic
     (
         larguraDados        : natural := 8;
-        larguraEndBancoRegs : natural := 3   --Resulta em 2^3=8 posicoes
+        larguraEndBancoRegs : natural := 2   --Resulta em 2^3=8 posicoes
     );
 
 -- Leitura e escrita de um registrador.

@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/Waveform.vwf" --testbench_file="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/Waveform.vwf" --testbench_file="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/simulation/qsim/Waveform.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -27,7 +27,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
     Info: Processing started: Wed Oct 19 20:37:01 2022
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/Waveform.vwf --testbench_file=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/Waveform.vwf.vht
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula07 -c aula07 --vector_source=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/Waveform.vwf --testbench_file=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/simulation/qsim/Waveform.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 arnings
@@ -40,7 +40,7 @@ Completed successfully.
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/" aula07 -c aula07
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/simulation/qsim/" aula07 -c aula07
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -60,9 +60,9 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
     Info: Processing started: Wed Oct 19 20:37:02 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/ aula07 -c aula07
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/simulation/qsim/ aula07 -c aula07
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file aula07.vho in folder "C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file aula07.vho in folder "C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4726 megabytes
     Info: Processing ended: Wed Oct 19 20:37:04 2022
@@ -73,7 +73,7 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/aula07.do generated.
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/simulation/qsim/aula07.do generated.
 
 Completed successfully. 
 
@@ -156,13 +156,13 @@ Completed successfully.
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/Waveform.vwf...
+Reading C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/Waveform.vwf...
 
-Reading C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/aula07.msim.vcd...
+Reading C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/simulation/qsim/aula07.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-8/simulation/qsim/aula07_20221019203711.sim.vwf
+Writing the resulting VWF to C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/simulation/qsim/aula07_20221019203711.sim.vwf
 
 Finished VCD to VWF conversion.
 
