@@ -157,7 +157,7 @@ class Assembler:
             for arg in args:
                 m = re.search(r'[@$](\d+)', arg)
                 r = re.search(r'R[0123]', arg)
-                l = re.search(r'(@[a-zA-Z]+)', arg)
+                l = re.search(r'(@[a-zA-Z]+\w*)', arg)
 
                 if m:
                     m_int = re.search(r'(\d+)', m.group()).group()
