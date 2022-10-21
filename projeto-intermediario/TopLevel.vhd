@@ -7,7 +7,7 @@ entity TopLevel is
 		larguraDados : natural := 8;
       larguraEnderecosROM : natural := 9;
 		larguraEnderecosRAM : natural := 6;
-		larguraInstrucao	  : natural := 13;
+		larguraInstrucao	  : natural := 15;
       simulacao : boolean := FALSE -- para gravar na placa, altere de TRUE para FALSE
   );
   port   (

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 LDI $2, R3 
 STA @1, R2
 LDI $1, R0
@@ -9,3 +10,15 @@ LOOP: -- Laço para somar 2 em MEM[0]
 	STA R3, @5
 	JMP @LOOP 
 	
+=======
+STA @1 -- 0
+LDI @2 -- 1
+LABEL LINHA3:
+    LDI @3 -- 2
+    LDI$4 -- 3
+
+LABEL LINHA5:
+    NOP -- 4
+
+JMP @LINHA3
+>>>>>>> 3db73b578cc4803e7dc5aa5a0fc10453a6ffa1ee

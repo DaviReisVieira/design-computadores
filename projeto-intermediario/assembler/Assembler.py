@@ -96,7 +96,7 @@ class Assembler:
 
     def find_commands(self, line):
         # (((LDA)|(LDI)|(NOP)|(STA)|(SOMA)|(SUB)|(JMP))\s*(([@$]\d*\w*\s*,?\s*)|(R[0123]\s*,?\s*))*)
-        regex_ops = f"(({'|'.join([f'({op_code})' for op_code in self.op_codes])}))"
+        regex_ops = f"(\s*({'|'.join([f'({op_code})' for op_code in self.op_codes])}))"
         # regex_args = r"\s*(([@$]\d*\w*\s*,?\s*)|(R[0123]\s*,?\s*))*"
         
         match_ops = re.search(regex_ops, line)
