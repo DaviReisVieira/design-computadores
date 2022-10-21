@@ -90,7 +90,7 @@ class Assembler:
                     label = None
                     #comentario = line
             else:
-                label = line.strip()[:l_match.start()]
+                label = line.strip()[:l_match.start()].replace(':', '')
 
         return label
 
