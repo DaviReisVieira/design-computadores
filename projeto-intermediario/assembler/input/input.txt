@@ -25,11 +25,11 @@ SETUP:
 	STA R0, @3				--Armazena o valor do acumulador em M3
 
 	-- Seta contadores de compração, incremento, valor 10 e continuar contagem
-	STA R0, @10				--Armazena o valor do acumulador em M3
+	STA R0, @10				--Armazena o valor do acumulador em M10
 	LDI $1, R0
-	STA R0, @11				--Armazena o valor do acumulador em M4
+	STA R0, @11				--Armazena o valor do acumulador em M11
 	LDI $10, R0
-	STA R0, @12				--Armazena o valor do acumulador em M5
+	STA R0, @12				--Armazena o valor do acumulador em M12
 	LDI $1, R0
 	STA R0, @20				--Armazena o valor do acumulador em M20
 	LDI $0, R0
@@ -46,10 +46,7 @@ MAIN:
 	CEQ R1, @10 -- Compara se KEY0 não foi pressionado
 	JEQ @KEY0_NOT_PRESSED
 	JSR @INCREMENTADOR
-
-	-- Verifica se KEY1 pressionado
-	KEY0_NOT_PRESSED: -- Escrever no display
-		JSR @ESCREVER_DISPLAY
+	JSR @ESCREVER_DISPLAY
 
 
 JMP @MAIN
@@ -69,15 +66,87 @@ READ_KEY1:
 	RET
 
 INCREMENTADOR:
-	STA R1, @20
+	LDA @20, R1
 	CEQ R1, @11
-	JEQ @FLAG_NOT_SET
+	JEQ @FLAG_IS_SET
 	RET
-	FLAG_NOT_SET: -- Incrementa contador
+	FLAG_IS_SET: -- Incrementa contador
+		-- Incrementa unidades
+		SOMA R2, @11
+		CEQ R2, @12
+		JEQ @INCREMENTA_DEZENA
+		RET
+
+		INCREMENTA_DEZENA: -- Incrementa dezena
+			-- Incrementa dezena
+			SOMA R3, @11
+			CEQ R3, @12
+			LDI $0, R2 -- Zera unidades
+			JEQ @INCREMENTA_CENTENA
+			RET
+
+			INCREMENTA_CENTENA: -- Incrementa Centena
+				-- Incrementa centena
+				LDI $1, R0
+				SOMA R0, @0
+				LDI $0, R3 -- Zera dezena
+				CEQ R0, @12
+				JEQ @INCREMENTA_MILHAR
+				STA R0, @0
+				RET
+
+				INCREMENTA_MILHAR: -- Incrementa Milhar
+					-- Incrementa milhar
+					LDI $0, R0 -- Zera centena
+					STA R0, @0
+
+					LDI $1, R0
+					SOMA R0, @1
+					CEQ R0, @12
+					JEQ @INCREMENTA_DEZ_MILHAR
+					STA R0, @1
+					RET
+
+					INCREMENTA_DEZ_MILHAR: -- Incrementa Dezena de Milhar
+						-- Incrementa dezena de milhar
+						LDI $0, R0 -- Zera milhar
+						STA R0, @1
+
+						LDI $1, R0
+						SOMA R0, @2
+						CEQ R0, @12
+						JEQ @INCREMENTA_CENT_MILHAR
+						STA R0, @2
+						RET
+
+						INCREMENTA_CENT_MILHAR: -- Incrementa Centena de Milhar
+							-- Incrementa centena de milhar
+							LDI $0, R0 -- Zera dezena de milhar
+							STA R0, @2
+
+							LDI $1, R0
+							SOMA R0, @3
+							CEQ R0, @12
+							JEQ @INCREMENTA_MILHAR
+							STA R0, @3
+							RET
 
 ESCREVER_DISPLAY:
+	-- Escreve o valor do contador no display
+	STA R2, @288
+	STA R3, @289
+	LDA @0, R1
+	STA R1, @290
+	LDA @1, R1
+	STA R1, @291
+	LDA @2, R1
+	STA R1, @292
+	LDA @3, R1
+	STA R1, @293
 	RET
 
+KEY0_NOT_PRESSED:
+	JMP @MAIN
 		
 
 
