@@ -84,7 +84,7 @@ class Assembler:
             if c_match:
                 # checar se o match é válido e não apenas pontuação de comentários
                 if l_match.start() < c_match.start():
-                    label = line[:l_match.start()]
+                    label = line[:l_match.start()].strip()
                     #comentario = line[l_match.start():]
                 else:
                     label = None
@@ -144,7 +144,7 @@ class Assembler:
 
     def assemble(self):
         self.map()
-
+        print(self.labels)
         output = []
         for count, code in enumerate(self.codes):
             # separa instrução em minemônico e argumento

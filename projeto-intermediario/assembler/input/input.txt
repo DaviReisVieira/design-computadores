@@ -48,8 +48,7 @@ MAIN:
 	JSR @INCREMENTADOR
 
 	-- Verifica se KEY1 pressionado
-	KEY0_NOT_PRESSED:
-		-- Escrever no display
+	KEY0_NOT_PRESSED: -- Escrever no display
 		JSR @ESCREVER_DISPLAY
 
 
