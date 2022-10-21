@@ -1,24 +1,79 @@
-<<<<<<< HEAD
-LDI $2, R3 
-STA @1, R2
-LDI $1, R0
-STA R2, @1
-NOP
-LOOP: -- Laço para somar 2 em MEM[0]
-	LDA @0, R2
-	SOMA R1, @2
-	STA R3, @5
-	JMP @LOOP 
+SETUP:
+	--Limpa Registradores
+    LDI $0, R0
+	LDI $0, R1
+	LDI $0, R2
+	LDI $0, R3
+
+    --Apaga o display
+	STA @288, R0			--Armazena o valor do acumulador em HEX0
+	STA @289, R0			--Armazena o valor do acumulador em HEX1
+	STA @290, R0			--Armazena o valor do acumulador em HEX2
+	STA @291, R0			--Armazena o valor do acumulador em HEX3
+	STA @292, R0			--Armazena o valor do acumulador em HEX4
+	STA @293, R0			--Armazena o valor do acumulador em HEX5
+
+    --Apaga os LEDs
+	STA @256, R0            --Armazena o valor do bit0 do acumulador no LEDR0~7
+	STA @257, R0            --Armazena o valor do bit1 do acumulador no LEDR8
+	STA @258, R0            --Armazena o valor do bit2 do acumulador no LEDR9 
+
+	--Seta o valor inicial do contador em M0, M1, M2 e M3
+	STA R0, @0				--Armazena o valor do acumulador em M0
+	STA R0, @1				--Armazena o valor do acumulador em M1
+	STA R0, @2				--Armazena o valor do acumulador em M2
+	STA R0, @3				--Armazena o valor do acumulador em M3
+
+	-- Seta contadores de compração, incremento, valor 10 e continuar contagem
+	STA R0, @10				--Armazena o valor do acumulador em M3
+	LDI $1, R0
+	STA R0, @11				--Armazena o valor do acumulador em M4
+	LDI $10, R0
+	STA R0, @12				--Armazena o valor do acumulador em M5
+	LDI $1, R0
+	STA R0, @20				--Armazena o valor do acumulador em M20
+	LDI $0, R0
+
+	-- Limpa Leitura de KEY0, KEY1 e RESET FPGA
+	STA R0, @510
+	STA R0, @511
+	STA R0, @356
 	
-=======
-STA @1 -- 0
-LDI @2 -- 1
-LABEL LINHA3:
-    LDI @3 -- 2
-    LDI$4 -- 3
 
-LABEL LINHA5:
-    NOP -- 4
+MAIN:
+	-- Verifica se KEY0 pressionado
+	JSR @READ_KEY0
+	CEQ R1, @10
+	JEQ @KEY0_NOT_PRESSED
+	JSR @INCREMENTADOR
 
-JMP @LINHA3
->>>>>>> 3db73b578cc4803e7dc5aa5a0fc10453a6ffa1ee
+	-- Verifica se KEY1 pressionado
+	KEY0_NOT_PRESSED:
+		-- Escrever no display
+		JSR @ESCREVER_DISPLAY
+
+
+READ_KEY0:
+	-- Lê KEY0, armazena em R1 e Limpa KEY0
+	LDA @352, R1
+	STA R0, @511
+	RET
+
+READ_KEY1:
+	-- Lê KEY1, armazena em R1 e Limpa KEY1
+	LDA @353, R1
+	STA R0, @510
+	RET
+
+INCREMENTADOR:
+	STA R1, @20
+	CEQ R1, @11
+	JEQ @FLAG_NOT_SET
+	RET
+	FLAG_NOT_SET: -- Incrementa contador
+
+		
+
+
+
+

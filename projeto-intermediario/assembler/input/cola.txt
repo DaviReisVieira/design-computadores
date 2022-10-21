@@ -1,0 +1,15 @@
+R0: Acumulador
+R1: Acumulador
+
+R2: Unidade
+R3: Dezena
+M0: Centena
+M1: Milhar
+M2: Dezena de milhar
+M3: Centena de milhar
+
+M10: 0 Comparativo
+M11: 1 Comparativo
+M12: 10 Comparativo
+
+M20: Flag continuar contagem
