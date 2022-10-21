@@ -95,21 +95,27 @@ class Assembler:
         return label
 
     def find_commands(self, line):
-        regex = f"(({'|'.join([f'({op_code})' for op_code in self.op_codes])})" + r"\s*([@$](\d*)(\w*))?)"
-        match = re.search(regex, line)
+        # (((LDA)|(LDI)|(NOP)|(STA)|(SOMA)|(SUB)|(JMP))\s*(([@$]\d*\w*\s*,?\s*)|(R[0123]\s*,?\s*))*)
+        regex_ops = f"(({'|'.join([f'({op_code})' for op_code in self.op_codes])}))"
+        # regex_args = r"\s*(([@$]\d*\w*\s*,?\s*)|(R[0123]\s*,?\s*))*"
         
-        if match:
-            match_args = re.search(r'([@$](\d*)?(\w*))', match.group())
+        match_ops = re.search(regex_ops, line)
+        args = []
+
+        if match_ops:
+            match_args = re.findall(r'([@$]\d*\w*)|(\w*\d{1})?', line)
+            # match_args = re.findall(regex_args, line)
             if match_args:
-                args = match_args.group()
-                commands = match.string[match.start(): match_args.start()]
-            else:
-                commands = match.group()
-                args = None
+                for groups in match_args:
+                    for arg in groups:
+                        if arg != '' and len(arg)>= 2:
+                            args.append(arg)
+
+            commands = match_ops.group()
 
             return (commands, args)
         else:
-            return (None, None)
+            return (None, args)
 
     def int_to_hex(self, int) -> str:
         return "x%0.3X" % int
@@ -125,18 +131,16 @@ class Assembler:
 
                 comment = self.find_comments(line)
                 label = self.find_label(line)
-                command, arg = self.find_commands(line)
+                command, args = self.find_commands(line)
                 
-                print(line, "-->", command, "|",  arg)
+                print(line, "-->", command, "|",  args)
                 if command:
-                    self.codes.append((command, arg))
+                    self.codes.append((command, args))
                     pc += 1
 
                 if label:
                     # Guarda label no dicionário com a posição do próximo comando
                     self.labels[label] = pc 
-
-                # TODO: - Transpor comentário ao binário
 
     def assemble(self):
         self.map()
@@ -145,19 +149,30 @@ class Assembler:
         for count, code in enumerate(self.codes):
             # separa instrução em minemônico e argumento
             op = code[0]
-            arg = code[1]
-
+            args = code[1]
             reg = 'R0'
-            arg_hex = '000'
-            if arg:
-                match_int = re.search(r'(\d+)', arg)
-                match_label = re.search(r'(\w+)', arg)
-                if match_int:
-                    arg_int = int(match_int.group())
-                elif match_label:
-                    arg_int = self.labels[match_label.group()]
 
-                arg_hex = self.int_to_hex(arg_int)[1:]
+            arg_int = 0
+
+            for arg in args:
+                m = re.search(r'[@$](\d+)', arg)
+                r = re.search(r'R[0123]', arg)
+                l = re.search(r'(@[a-zA-Z]+)', arg)
+
+                if m:
+                    m_int = re.search(r'(\d+)', m.group()).group()
+                    arg_int = int(m_int)
+
+                elif l is not None and r is None:
+                    arg_int = self.labels[l.group().replace('@', '')]
+
+                elif r:
+                    reg = r.group()
+
+
+
+
+            arg_hex = self.int_to_hex(arg_int)[1:]
             cmd_str = f'tmp({count}) := {op.ljust(4)} & "{self.regs[reg]}" & \'{arg_hex[0]}\' & x"{arg_hex[1:3]}";'
             output.append(cmd_str)
 
