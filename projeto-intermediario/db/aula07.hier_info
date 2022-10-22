@@ -1,6 +1,6 @@
 |TopLevel
 CLOCK_50 => edgedebouncedetector:detectorSubDebounceKey0.CLOCK_50
-CLOCK_50 => edgedebouncedetector:detectorSubDebounceKey1.CLOCK_50
+CLOCK_50 => edgedebouncedetectorkey1:detectorSubDebounceKey1.CLOCK_50
 CLOCK_50 => cpu:CPU.CLOCK_50
 CLOCK_50 => memoriaram:RAM64.clk
 CLOCK_50 => registradorgenerico:REG_LEDR0_7.CLK
@@ -75,7 +75,7 @@ HEX5[4] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[4]
 HEX5[5] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[5]
 HEX5[6] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[6]
 KEY[0] => edgedebouncedetector:detectorSubDebounceKey0.KEY
-KEY[1] => edgedebouncedetector:detectorSubDebounceKey1.KEY
+KEY[1] => edgedebouncedetectorkey1:detectorSubDebounceKey1.KEY
 KEY[2] => buffer_3_state_simples:BUFFER_KEY2.entrada
 KEY[3] => buffer_3_state_simples:BUFFER_KEY3.entrada
 FPGA_RESET_N => buffer_3_state_simples:BUFFER_KEY_FPGA_RESET_N.entrada
@@ -183,7 +183,7 @@ habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1
+|TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1
 CLOCK_50 => edgedetector:edgeDetector.clk
 KEY => edgedetector:edgeDetector.entrada
 habilita => buffer_3_state_simples:BFF0.habilita
@@ -214,14 +214,14 @@ saida[6] <= buffer_3_state_simples:BFF6.saida
 saida[7] <= buffer_3_state_simples:BFF7.saida
 
 
-|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|edgeDetector:edgeDetector
+|TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1|edgeDetector:edgeDetector
 clk => saidaQ.CLK
 entrada => saida.IN1
 entrada => saidaQ.DATAIN
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|flipFlopGenerico:FFP
+|TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1|flipFlopGenerico:FFP
 DIN => DOUT~reg0.DATAIN
 DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ENABLE => DOUT~reg0.ENA
@@ -229,49 +229,49 @@ CLK => DOUT~reg0.CLK
 RST => DOUT~reg0.ACLR
 
 
-|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF0
+|TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF0
 entrada => saida.DATAIN
 habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF1
+|TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF1
 entrada => saida.DATAIN
 habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF2
+|TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF2
 entrada => saida.DATAIN
 habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF3
+|TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF3
 entrada => saida.DATAIN
 habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF4
+|TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF4
 entrada => saida.DATAIN
 habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF5
+|TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF5
 entrada => saida.DATAIN
 habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF6
+|TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF6
 entrada => saida.DATAIN
 habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopLevel|edgeDebounceDetector:detectorSubDebounceKey1|buffer_3_state_simples:BFF7
+|TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF7
 entrada => saida.DATAIN
 habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE

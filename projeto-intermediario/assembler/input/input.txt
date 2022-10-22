@@ -24,6 +24,15 @@ SETUP:
 	STA R0, @2				--Armazena o valor do acumulador em M2
 	STA R0, @3				--Armazena o valor do acumulador em M3
 
+	LDI $9, R0				--Carrega o valor 9 no acumulador
+	STA R0, @30				--Armazena o valor do acumulador em M30
+	STA R0, @31				--Armazena o valor do acumulador em M31
+	STA R0, @32				--Armazena o valor do acumulador em M32
+	STA R0, @33				--Armazena o valor do acumulador em M33
+	STA R0, @34				--Armazena o valor do acumulador em M34
+	STA R0, @35				--Armazena o valor do acumulador em M35
+	LDI $0, R0				--Carrega o valor 0 no acumulador	
+
 	-- Seta contadores de compração, incremento, valor 10 e continuar contagem
 	STA R0, @10				--Armazena o valor do acumulador em M10
 	LDI $1, R0
@@ -42,25 +51,146 @@ SETUP:
 
 MAIN:
 	-- Verifica se KEY0 pressionado
-	JSR @READ_KEY0
+	LDA @352, R1 -- Lê o valor do KEY0 e coloca em R1
 	CEQ R1, @10 -- Compara se KEY0 não foi pressionado
 	JEQ @KEY0_NOT_PRESSED
 	JSR @INCREMENTADOR
 	JSR @ESCREVER_DISPLAY
 
-	
+		-- Verifica se KEY1 pressionado
+		KEY0_NOT_PRESSED:
+			-- Verifica se KEY1 pressionado
+			LDA @353, R1
+			CEQ R1, @10 -- Compara se KEY1 não foi pressionado
+			JEQ @KEY1_NOT_PRESSED
+			STA R0, @510
+			
+
+			AJUSTE_LIMITES_U:
+				-- Ligar LEDR0
+				LDI $1, R0
+				STA R0, @256
+
+				AGUARDA_KEY1_0:
+					LDA @320, R1	-- lê chaves SW[0~4]
+					STA R1, @288
+					LDA @353, R1
+					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
+					JEQ @AGUARDA_KEY1_0
+					STA R0, @510
+
+					STA R1, @30
+
+			AJUSTE_LIMITES_D:
+				-- Ligar LEDR1
+				LDI $2, R0
+				STA R0, @256
+
+				AGUARDA_KEY1_1:
+					LDA @320, R1	-- lê chaves SW[0~4]
+					STA R1, @289
+					LDA @353, R1
+					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
+					JEQ @AGUARDA_KEY1_1
+					STA R0, @510
+
+					-- se KEY1 foi pressionado: ajusta limite da dezena
+					STA R1, @31
+
+			AJUSTE_LIMITES_C:
+				LDI $4, R0
+				STA R0, @256
+
+				AGUARDA_KEY1_2:
+					LDA @320, R1	-- lê chaves SW[0~4]
+					STA R1, @290
+					LDA @353, R1
+					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
+					JEQ @AGUARDA_KEY1_2
+					STA R0, @510
+
+					-- se KEY1 foi pressionado: ajusta limite da centena
+					STA R1, @32
+
+			AJUSTE_LIMITES_UM:
+				-- Ligar LEDR3
+				LDI $8, R0
+				STA R0, @256
+
+				AGUARDA_KEY1_3:
+					LDA @320, R1	-- lê chaves SW[0~4]
+					STA R1, @291
+					LDA @353, R1
+					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
+					JEQ @AGUARDA_KEY1_3
+					STA R0, @510
+
+					-- se KEY1 foi pressionado: ajusta limite da unidade de Milhar
+					STA R1, @33
+
+			AJUSTE_LIMITES_DM:
+				-- Ligar LEDR4
+				LDI $16, R0
+				STA R0, @256
+
+				AGUARDA_KEY1_4:
+					LDA @320, R1	-- lê chaves SW[0~4]
+					STA R1, @292   
+					LDA @353, R1
+					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
+					JEQ @AGUARDA_KEY1_4
+					STA R0, @510
+
+
+					-- se KEY1 foi pressionado: ajusta limite da unidade de Milhar
+					STA R1, @34
+
+			AJUSTE_LIMITES_CM:
+				-- Ligar LEDR5
+				LDI $32, R0
+				STA R0, @256
+
+				AGUARDA_KEY1_5:
+					LDA @320, R1	-- lê chaves SW[0~4]
+					STA R1, @293
+					LDA @353, R1
+					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
+					JEQ @AGUARDA_KEY1_5
+					STA R0, @510
+
+					-- se KEY1 foi pressionado: ajusta limite da unidade de Milhar
+					STA R1, @35
+
+					LDI $0, R0
+					LDI $0, R1
+					STA R0, @256 -- Desliga todos os LEDs
+
+					-- Zerar todos os displays
+					LDI $0, R0
+					STA R0, @288
+					STA R0, @289
+					STA R0, @290
+					STA R0, @291
+					STA R0, @292
+					STA R0, @293
+
+			KEY1_NOT_PRESSED:
+				NOP
+
 JMP @MAIN
 
+RESET_FPGA:
+	LDI $0, R2
+	STA R2, @0
+	STA R2, @1
+	STA R2, @2
+	STA R2, @3
 
-READ_KEY0:
-	-- Lê KEY0, armazena em R1 e Limpa KEY0
-	LDA @352, R1
-	RET
+	STA R2, @258
 
-READ_KEY1:
-	-- Lê KEY1, armazena em R1 e Limpa KEY1
-	LDA @353, R1
-	STA R0, @510
+	LDI $1, R3
+	STA R3, @20
+	LDI $0, R3
 	RET
 
 INCREMENTADOR:
@@ -127,9 +257,16 @@ INCREMENTADOR:
 							LDI $1, R0
 							SOMA R0, @3
 							CEQ R0, @12
-							JEQ @INCREMENTA_MILHAR
-							STA R0, @3
+							JEQ @SETA_OVERFLOW
 							RET
+							
+							SETA_OVERFLOW:
+								LDI $1, R0
+								STA R0, @258
+
+								LDI $0, R0
+								STA R0, @20
+								RET
 
 ESCREVER_DISPLAY:
 	-- Escreve o valor do contador no display
@@ -144,9 +281,6 @@ ESCREVER_DISPLAY:
 	LDA @3, R1
 	STA R1, @293
 	RET
-
-KEY0_NOT_PRESSED:
-	JMP @MAIN
 		
 
 

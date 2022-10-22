@@ -106,7 +106,7 @@ detectorSubDebounceKey0: work.edgeDebounceDetector
 				saida => DEBOUNCE_KEY0			
 			);
 			
-detectorSubDebounceKey1: work.edgeDebounceDetector
+detectorSubDebounceKey1: work.edgeDebounceDetectorKey1
 			port map (
 				CLOCK_50 => CLK,
 				KEY => (not KEY(1)),
