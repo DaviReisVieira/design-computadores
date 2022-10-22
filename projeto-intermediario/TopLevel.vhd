@@ -15,7 +15,7 @@ entity TopLevel is
 	 SW:				in std_logic_vector(9 downto 0);
 	 LEDR  : 		out std_logic_vector(9 downto 0);
 	 HEX0, HEX1, HEX2, HEX3, HEX4, HEX5:		out std_logic_vector(6 downto 0);
-	 KEY:				in	std_logic_vector(3 downto 0);
+	 KEY:				in	std_logic_vector(4 downto 0);
 	 FPGA_RESET_N:	in	std_logic;
 	 DATA_OUT:		out std_logic_vector(larguraDados-1 downto 0)
 
@@ -76,6 +76,7 @@ architecture arquitetura of TopLevel is
 	
 	signal DEBOUNCE_KEY0:			std_logic_vector(larguraDados -1 downto 0);
 	signal DEBOUNCE_KEY1:			std_logic_vector(larguraDados -1 downto 0);
+	signal DEBOUNCE_KEY4:			std_logic_vector(larguraDados -1 downto 0);
 	
 	
 	-- obs: SW, KEY e FPGA_RESET_N, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5 
@@ -115,6 +116,16 @@ detectorSubDebounceKey1: work.edgeDebounceDetectorKey1
 				wr => wr,
 				saida => DEBOUNCE_KEY1		
 			);
+
+detectorSubDebounceReset: work.edgeDebounceDetectorReset
+port map (
+	CLOCK_50 => CLK,
+	KEY => (not KEY(4)),
+	habilita => ENABLE_KEY(4),
+	address => address_OUT,
+	wr => wr,
+	saida => DEBOUNCE_KEY4		
+);
 
 CPU: entity work.CPU
 		 port map (
@@ -526,6 +537,7 @@ hab_7SEGs_and_KEYs <= address_OUT(5);
 DATA_OUT <= data_OUT_CPU;
 DATA_IN <= DEBOUNCE_KEY0;
 DATA_IN <= DEBOUNCE_KEY1;
+DATA_IN <= DEBOUNCE_KEY4;
 -- LEDS estão conectados às saídas dos FF ou registrador
 
 

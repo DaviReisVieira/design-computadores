@@ -256,7 +256,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY[3]",
+					"name" : "SW[9]",
 					"strict" : false
 				},
 				{
@@ -264,7 +264,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[9]",
+					"name" : "KEY[3]",
 					"strict" : false
 				},
 				{
@@ -305,6 +305,10 @@
 				},
 				{
 					"name" : "KEY[1]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[4]",
 					"strict" : false
 				}
 			]

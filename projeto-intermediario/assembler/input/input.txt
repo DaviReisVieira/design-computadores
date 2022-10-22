@@ -46,7 +46,7 @@ SETUP:
 	-- Limpa Leitura de KEY0, KEY1 e RESET FPGA
 	STA R0, @510
 	STA R0, @511
-	STA R0, @356
+	STA R0, @509
 	
 
 MAIN:
@@ -55,8 +55,18 @@ MAIN:
 	CEQ R1, @10 -- Compara se KEY0 não foi pressionado
 	JEQ @KEY0_NOT_PRESSED
 	JSR @INCREMENTADOR
+	JSR @CHECA_LIMITES
 	JSR @ESCREVER_DISPLAY
 
+	-- Verifica se FPGA_RESET KEY foi pressionado
+	LDA @509, R1
+	CEQ R1, @10
+	JEQ @FPGA_RESET_NOT_PRESSED
+	JSR @RESET_FPGA
+
+	
+
+	FPGA_RESET_NOT_PRESSED:
 		-- Verifica se KEY1 pressionado
 		KEY0_NOT_PRESSED:
 			-- Verifica se KEY1 pressionado
@@ -263,7 +273,6 @@ INCREMENTADOR:
 							SETA_OVERFLOW:
 								LDI $1, R0
 								STA R0, @258
-
 								LDI $0, R0
 								STA R0, @20
 								RET
@@ -281,8 +290,46 @@ ESCREVER_DISPLAY:
 	LDA @3, R1
 	STA R1, @293
 	RET
-		
 
 
+CHECA_LIMITES:
+	CEQ R2, @30 -- Compara unidade com valor Limite da Unidade
+	JEQ @CHECA_LIMITES_D
+	RET
 
+	CHECA_LIMITES_D:
 
+		CEQ R3, @31 -- Compara dezena com valor Limite da Dezena
+		JEQ @CHECA_LIMITES_C
+		RET
+
+		CHECA_LIMITES_C:
+			LDA @0, R0 -- Lê valor Limite da Centena
+			CEQ R0, @32 -- Compara centena com valor Limite da Centena
+			JEQ @CHECA_LIMITES_UM
+			RET
+
+			CHECA_LIMITES_UM:
+				LDA @1, R0 -- Lê valor Limite da Unidade de Milhar
+				CEQ R0, @33 -- Compara unidade de milhar com valor Limite da Unidade de Milhar
+				JEQ @CHECA_LIMITES_DM
+				RET
+
+				CHECA_LIMITES_DM:
+					LDA @2, R0 -- Lê valor Limite da Dezena de Milhar
+					CEQ R0, @34 -- Compara dezena de milhar com valor Limite da Dezena de Milhar
+					JEQ @CHECA_LIMITES_CM
+					RET
+
+					CHECA_LIMITES_CM:
+						LDA @3, R0 -- Lê valor Limite da Centena de Milhar
+						CEQ R0, @35 -- Compara centena de milhar com valor Limite da Centena de Milhar
+						JEQ @CHECA_LIMITES_FINAL
+						RET
+
+						CHECA_LIMITES_FINAL:
+							LDI $1, R0
+							STA R0, @20	-- ATIVA FLAG DE CONTAGEM
+							-- aTIVA LEDR8
+							STA R0, @257
+							RET
