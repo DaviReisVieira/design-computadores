@@ -53,13 +53,13 @@ MAIN:
 	-- Verifica se KEY0 pressionado
 	LDA @352, R1 -- Lê o valor do KEY0 e coloca em R1
 	CEQ R1, @10 -- Compara se KEY0 não foi pressionado
-	JEQ @KEY0_NOT_PRESSED
-	JSR @INCREMENTADOR
-	JSR @CHECA_LIMITES
 	JSR @ESCREVER_DISPLAY
+	JEQ @KEY0_NOT_PRESSED
+	JSR @CHECA_LIMITES
+	JSR @INCREMENTADOR
 
 	-- Verifica se FPGA_RESET KEY foi pressionado
-	LDA @509, R1
+	LDA @356, R1
 	CEQ R1, @10
 	JEQ @FPGA_RESET_NOT_PRESSED
 	JSR @RESET_FPGA
@@ -82,14 +82,14 @@ MAIN:
 				STA R0, @256
 
 				AGUARDA_KEY1_0:
-					LDA @320, R1	-- lê chaves SW[0~4]
-					STA R1, @288
+					LDA @320, R0	-- lê chaves SW[0~4]
+					STA R0, @288
 					LDA @353, R1
 					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
 					JEQ @AGUARDA_KEY1_0
 					STA R0, @510
 
-					STA R1, @30
+					STA R0, @30
 
 			AJUSTE_LIMITES_D:
 				-- Ligar LEDR1
@@ -97,30 +97,30 @@ MAIN:
 				STA R0, @256
 
 				AGUARDA_KEY1_1:
-					LDA @320, R1	-- lê chaves SW[0~4]
-					STA R1, @289
+					LDA @320, R0	-- lê chaves SW[0~4]
+					STA R0, @289
 					LDA @353, R1
 					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
 					JEQ @AGUARDA_KEY1_1
 					STA R0, @510
 
 					-- se KEY1 foi pressionado: ajusta limite da dezena
-					STA R1, @31
+					STA R0, @31
 
 			AJUSTE_LIMITES_C:
 				LDI $4, R0
 				STA R0, @256
 
 				AGUARDA_KEY1_2:
-					LDA @320, R1	-- lê chaves SW[0~4]
-					STA R1, @290
+					LDA @320, R0	-- lê chaves SW[0~4]
+					STA R0, @290
 					LDA @353, R1
 					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
 					JEQ @AGUARDA_KEY1_2
 					STA R0, @510
 
 					-- se KEY1 foi pressionado: ajusta limite da centena
-					STA R1, @32
+					STA R0, @32
 
 			AJUSTE_LIMITES_UM:
 				-- Ligar LEDR3
@@ -128,15 +128,15 @@ MAIN:
 				STA R0, @256
 
 				AGUARDA_KEY1_3:
-					LDA @320, R1	-- lê chaves SW[0~4]
-					STA R1, @291
+					LDA @320, R0	-- lê chaves SW[0~4]
+					STA R0, @291
 					LDA @353, R1
 					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
 					JEQ @AGUARDA_KEY1_3
 					STA R0, @510
 
 					-- se KEY1 foi pressionado: ajusta limite da unidade de Milhar
-					STA R1, @33
+					STA R0, @33
 
 			AJUSTE_LIMITES_DM:
 				-- Ligar LEDR4
@@ -144,8 +144,8 @@ MAIN:
 				STA R0, @256
 
 				AGUARDA_KEY1_4:
-					LDA @320, R1	-- lê chaves SW[0~4]
-					STA R1, @292   
+					LDA @320, R0	-- lê chaves SW[0~4]
+					STA R0, @292   
 					LDA @353, R1
 					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
 					JEQ @AGUARDA_KEY1_4
@@ -153,7 +153,7 @@ MAIN:
 
 
 					-- se KEY1 foi pressionado: ajusta limite da unidade de Milhar
-					STA R1, @34
+					STA R0, @34
 
 			AJUSTE_LIMITES_CM:
 				-- Ligar LEDR5
@@ -161,15 +161,15 @@ MAIN:
 				STA R0, @256
 
 				AGUARDA_KEY1_5:
-					LDA @320, R1	-- lê chaves SW[0~4]
-					STA R1, @293
+					LDA @320, R0	-- lê chaves SW[0~4]
+					STA R0, @293
 					LDA @353, R1
 					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
 					JEQ @AGUARDA_KEY1_5
 					STA R0, @510
 
 					-- se KEY1 foi pressionado: ajusta limite da unidade de Milhar
-					STA R1, @35
+					STA R0, @35
 
 					LDI $0, R0
 					LDI $0, R1
@@ -190,17 +190,29 @@ MAIN:
 JMP @MAIN
 
 RESET_FPGA:
+	STA R0, @509
+
 	LDI $0, R2
 	STA R2, @0
 	STA R2, @1
 	STA R2, @2
 	STA R2, @3
 
-	STA R2, @258
+	-- Zerar todos os displays
+	STA R2, @288
+	STA R2, @289
+	STA R2, @290
+	STA R2, @291
+	STA R2, @292
+	STA R2, @293
+
+	STA R2, @257  -- Deligar LED Limite
+	STA R2, @258 -- Deligar LED Overflow
 
 	LDI $1, R3
 	STA R3, @20
 	LDI $0, R3
+
 	RET
 
 INCREMENTADOR:
@@ -276,6 +288,7 @@ INCREMENTADOR:
 								LDI $0, R0
 								STA R0, @20
 								RET
+								
 
 ESCREVER_DISPLAY:
 	-- Escreve o valor do contador no display
@@ -289,6 +302,8 @@ ESCREVER_DISPLAY:
 	STA R1, @292
 	LDA @3, R1
 	STA R1, @293
+
+
 	RET
 
 
@@ -298,7 +313,6 @@ CHECA_LIMITES:
 	RET
 
 	CHECA_LIMITES_D:
-
 		CEQ R3, @31 -- Compara dezena com valor Limite da Dezena
 		JEQ @CHECA_LIMITES_C
 		RET
@@ -328,8 +342,9 @@ CHECA_LIMITES:
 						RET
 
 						CHECA_LIMITES_FINAL:
+							LDI $0, R0
+							STA R0, @20	-- DESATIVA FLAG DE CONTAGEM
 							LDI $1, R0
-							STA R0, @20	-- ATIVA FLAG DE CONTAGEM
-							-- aTIVA LEDR8
 							STA R0, @257
+							LDI $0, R0
 							RET

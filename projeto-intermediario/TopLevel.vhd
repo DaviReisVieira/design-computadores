@@ -15,7 +15,7 @@ entity TopLevel is
 	 SW:				in std_logic_vector(9 downto 0);
 	 LEDR  : 		out std_logic_vector(9 downto 0);
 	 HEX0, HEX1, HEX2, HEX3, HEX4, HEX5:		out std_logic_vector(6 downto 0);
-	 KEY:				in	std_logic_vector(4 downto 0);
+	 KEY:				in	std_logic_vector(3 downto 0);
 	 FPGA_RESET_N:	in	std_logic;
 	 DATA_OUT:		out std_logic_vector(larguraDados-1 downto 0)
 
@@ -58,13 +58,14 @@ architecture arquitetura of TopLevel is
 	
 	-- enables:
 	signal ENABLE_LEDR0_7: 			std_logic;
-	signal ENABLE_LEDR8:	 			std_logic;
+	signal ENABLE_LEDR8:	 		std_logic;
 	signal ENABLE_LEDR9: 			std_logic;
 	signal ENABLE_SW0_7: 			std_logic;
 	signal ENABLE_SW8:	 			std_logic;
 	signal ENABLE_SW9: 				std_logic;
 	signal ENABLE_HEX:				std_logic_vector(5 downto 0);
-	signal ENABLE_KEY:				std_logic_vector(4 downto 0);
+	signal ENABLE_KEY:				std_logic_vector(3 downto 0);
+	signal ENABLE_FPGA_RESET:	 	std_logic;
 	
 	-- Registradores <-> Decodificador 7 seg
 	signal REG_DEC_0:					std_logic_vector(3 downto 0);
@@ -120,8 +121,8 @@ detectorSubDebounceKey1: work.edgeDebounceDetectorKey1
 detectorSubDebounceReset: work.edgeDebounceDetectorReset
 port map (
 	CLOCK_50 => CLK,
-	KEY => (not KEY(4)),
-	habilita => ENABLE_KEY(4),
+	KEY => (not FPGA_RESET_N),
+	habilita => ENABLE_FPGA_RESET,
 	address => address_OUT,
 	wr => wr,
 	saida => DEBOUNCE_KEY4		
@@ -456,7 +457,7 @@ AND_KEY_FPGA_RESET_N: entity work.and4x1
 					entradaB => hab_BUTTONS,
 					entradaC => saida_DECODER2(4),
 					entradaD => hab_7SEGs_and_KEYs,
-					saida => ENABLE_KEY(4)				
+					saida => ENABLE_FPGA_RESET				
 				);
 
 BUFFER_KEY2 :  entity work.buffer_3_state_simples
@@ -473,12 +474,6 @@ BUFFER_KEY3 :  entity work.buffer_3_state_simples
 				saida => DATA_IN(0)
 			);
 
-BUFFER_KEY_FPGA_RESET_N :  entity work.buffer_3_state_simples
-        port map(
-				entrada => FPGA_RESET_N,
-				habilita =>  ENABLE_KEY(4),
-				saida => DATA_IN(0)
-			);
 AND_SW0_7: entity work.and4x1
 				port map(
 					entradaA => rd,

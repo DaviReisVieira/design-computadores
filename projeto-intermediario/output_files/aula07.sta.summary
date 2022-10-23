@@ -3,195 +3,195 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -10.089
-TNS   : -4146.139
+Slack : -10.148
+TNS   : -4309.692
 
 Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.467
+Slack : 0.468
 TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Recovery 'KEY[4]'
-Slack : -4.271
-TNS   : -4.271
 
 Type  : Slow 1100mV 85C Model Recovery 'KEY[0]'
-Slack : -4.218
-TNS   : -4.218
+Slack : -4.682
+TNS   : -4.682
+
+Type  : Slow 1100mV 85C Model Recovery 'FPGA_RESET_N'
+Slack : -4.464
+TNS   : -8.916
 
 Type  : Slow 1100mV 85C Model Recovery 'KEY[1]'
-Slack : -4.011
-TNS   : -4.011
+Slack : -4.428
+TNS   : -4.428
 
 Type  : Slow 1100mV 85C Model Removal 'KEY[1]'
-Slack : 1.449
+Slack : 1.576
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Removal 'KEY[4]'
-Slack : 1.561
+Type  : Slow 1100mV 85C Model Removal 'FPGA_RESET_N'
+Slack : 1.618
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'KEY[0]'
-Slack : 1.619
+Slack : 1.901
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -0.538
-TNS   : -538.040
+TNS   : -538.224
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'FPGA_RESET_N'
 Slack : -0.538
-TNS   : -0.868
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[4]'
-Slack : -0.538
-TNS   : -0.849
+TNS   : -1.826
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[1]'
 Slack : -0.538
-TNS   : -0.803
+TNS   : -0.895
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.538
+TNS   : -0.792
 
 Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -10.112
-TNS   : -4050.684
+Slack : -10.178
+TNS   : -4238.619
 
 Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.501
+Slack : 0.505
 TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Recovery 'KEY[4]'
-Slack : -4.460
-TNS   : -4.460
 
 Type  : Slow 1100mV 0C Model Recovery 'KEY[0]'
-Slack : -4.432
-TNS   : -4.432
+Slack : -4.888
+TNS   : -4.888
+
+Type  : Slow 1100mV 0C Model Recovery 'FPGA_RESET_N'
+Slack : -4.624
+TNS   : -9.233
 
 Type  : Slow 1100mV 0C Model Recovery 'KEY[1]'
-Slack : -4.191
-TNS   : -4.191
+Slack : -4.588
+TNS   : -4.588
 
 Type  : Slow 1100mV 0C Model Removal 'KEY[1]'
-Slack : 1.636
+Slack : 1.659
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Removal 'KEY[4]'
-Slack : 1.697
+Type  : Slow 1100mV 0C Model Removal 'FPGA_RESET_N'
+Slack : 1.699
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'KEY[0]'
-Slack : 1.755
+Slack : 2.045
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -0.538
-TNS   : -477.172
+TNS   : -477.049
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'FPGA_RESET_N'
 Slack : -0.538
-TNS   : -0.866
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[4]'
-Slack : -0.538
-TNS   : -0.854
+TNS   : -1.890
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[1]'
 Slack : -0.538
-TNS   : -0.792
+TNS   : -0.911
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.538
+TNS   : -0.779
 
 Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -4.775
-TNS   : -1931.365
+Slack : -4.794
+TNS   : -1953.012
 
 Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.183
+Slack : 0.184
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Recovery 'KEY[4]'
-Slack : -1.706
-TNS   : -1.706
+Type  : Fast 1100mV 85C Model Recovery 'FPGA_RESET_N'
+Slack : -1.982
+TNS   : -3.959
 
 Type  : Fast 1100mV 85C Model Recovery 'KEY[0]'
-Slack : -1.635
-TNS   : -1.635
+Slack : -1.862
+TNS   : -1.862
 
 Type  : Fast 1100mV 85C Model Recovery 'KEY[1]'
-Slack : -1.516
-TNS   : -1.516
+Slack : -1.666
+TNS   : -1.666
 
 Type  : Fast 1100mV 85C Model Removal 'KEY[1]'
-Slack : 0.349
+Slack : 0.338
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'FPGA_RESET_N'
+Slack : 0.547
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'KEY[0]'
-Slack : 0.488
+Slack : 0.639
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Removal 'KEY[4]'
-Slack : 0.634
-TNS   : 0.000
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[1]'
+Slack : -0.519
+TNS   : -1.574
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
 Slack : -0.410
-TNS   : -1.166
+TNS   : -1.106
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -0.409
-TNS   : -275.490
+TNS   : -276.227
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[1]'
-Slack : -0.373
-TNS   : -1.109
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[4]'
-Slack : -0.180
-TNS   : -0.180
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'FPGA_RESET_N'
+Slack : -0.334
+TNS   : -1.207
 
 Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -4.263
-TNS   : -1653.996
+Slack : -4.284
+TNS   : -1691.480
 
 Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.173
+Slack : 0.139
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Recovery 'KEY[4]'
-Slack : -1.517
-TNS   : -1.517
+Type  : Fast 1100mV 0C Model Recovery 'FPGA_RESET_N'
+Slack : -1.703
+TNS   : -3.401
 
 Type  : Fast 1100mV 0C Model Recovery 'KEY[0]'
-Slack : -1.435
-TNS   : -1.435
+Slack : -1.631
+TNS   : -1.631
 
 Type  : Fast 1100mV 0C Model Recovery 'KEY[1]'
-Slack : -1.280
-TNS   : -1.280
+Slack : -1.445
+TNS   : -1.445
 
 Type  : Fast 1100mV 0C Model Removal 'KEY[1]'
-Slack : 0.297
+Slack : 0.302
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'FPGA_RESET_N'
+Slack : 0.501
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'KEY[0]'
-Slack : 0.419
+Slack : 0.568
 TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Removal 'KEY[4]'
-Slack : 0.592
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
-Slack : -0.472
-TNS   : -1.422
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.445
-TNS   : -329.073
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[1]'
-Slack : -0.443
-TNS   : -1.381
+Slack : -0.579
+TNS   : -1.783
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[4]'
-Slack : -0.208
-TNS   : -0.208
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.466
+TNS   : -1.355
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.446
+TNS   : -329.589
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'FPGA_RESET_N'
+Slack : -0.400
+TNS   : -1.622
 
 ------------------------------------------------------------

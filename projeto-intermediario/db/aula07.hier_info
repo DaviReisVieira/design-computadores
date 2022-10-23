@@ -79,8 +79,7 @@ KEY[0] => edgedebouncedetector:detectorSubDebounceKey0.KEY
 KEY[1] => edgedebouncedetectorkey1:detectorSubDebounceKey1.KEY
 KEY[2] => buffer_3_state_simples:BUFFER_KEY2.entrada
 KEY[3] => buffer_3_state_simples:BUFFER_KEY3.entrada
-KEY[4] => edgedebouncedetectorreset:detectorSubDebounceReset.KEY
-FPGA_RESET_N => buffer_3_state_simples:BUFFER_KEY_FPGA_RESET_N.entrada
+FPGA_RESET_N => edgedebouncedetectorreset:detectorSubDebounceReset.KEY
 DATA_OUT[0] <= cpu:CPU.DATA_OUT[0]
 DATA_OUT[1] <= cpu:CPU.DATA_OUT[1]
 DATA_OUT[2] <= cpu:CPU.DATA_OUT[2]
@@ -1835,12 +1834,6 @@ saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TopLevel|buffer_3_state_simples:BUFFER_KEY3
-entrada => saida.DATAIN
-habilita => saida.OE
-saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|TopLevel|buffer_3_state_simples:BUFFER_KEY_FPGA_RESET_N
 entrada => saida.DATAIN
 habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
