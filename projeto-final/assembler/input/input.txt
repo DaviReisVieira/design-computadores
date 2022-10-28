@@ -1,0 +1,350 @@
+SETUP:
+	--Limpa Registradores
+    LDI $0, R0
+	LDI $0, R1
+	LDI $0, R2
+	LDI $0, R3
+
+    --Apaga o display
+	STA @288, R0			--Armazena o valor do acumulador em HEX0
+	STA @289, R0			--Armazena o valor do acumulador em HEX1
+	STA @290, R0			--Armazena o valor do acumulador em HEX2
+	STA @291, R0			--Armazena o valor do acumulador em HEX3
+	STA @292, R0			--Armazena o valor do acumulador em HEX4
+	STA @293, R0			--Armazena o valor do acumulador em HEX5
+
+    --Apaga os LEDs
+	STA @256, R0            --Armazena o valor do bit0 do acumulador no LEDR0~7
+	STA @257, R0            --Armazena o valor do bit1 do acumulador no LEDR8
+	STA @258, R0            --Armazena o valor do bit2 do acumulador no LEDR9 
+
+	--Seta o valor inicial do contador em M0, M1, M2 e M3
+	STA R0, @0				--Armazena o valor do acumulador em M0
+	STA R0, @1				--Armazena o valor do acumulador em M1
+	STA R0, @2				--Armazena o valor do acumulador em M2
+	STA R0, @3				--Armazena o valor do acumulador em M3
+
+	LDI $9, R0				--Carrega o valor 9 no acumulador
+	STA R0, @30				--Armazena o valor do acumulador em M30
+	STA R0, @31				--Armazena o valor do acumulador em M31
+	STA R0, @32				--Armazena o valor do acumulador em M32
+	STA R0, @33				--Armazena o valor do acumulador em M33
+	STA R0, @34				--Armazena o valor do acumulador em M34
+	STA R0, @35				--Armazena o valor do acumulador em M35
+	LDI $0, R0				--Carrega o valor 0 no acumulador	
+
+	-- Seta contadores de compração, incremento, valor 10 e continuar contagem
+	STA R0, @10				--Armazena o valor do acumulador em M10
+	LDI $1, R0
+	STA R0, @11				--Armazena o valor do acumulador em M11
+	LDI $10, R0
+	STA R0, @12				--Armazena o valor do acumulador em M12
+	LDI $1, R0
+	STA R0, @20				--Armazena o valor do acumulador em M20
+	LDI $0, R0
+
+	-- Limpa Leitura de KEY0, KEY1 e RESET FPGA
+	STA R0, @510
+	STA R0, @511
+	STA R0, @509
+	
+
+MAIN:
+	-- Verifica se KEY0 pressionado
+	LDA @352, R1 -- Lê o valor do KEY0 e coloca em R1
+	CEQ R1, @10 -- Compara se KEY0 não foi pressionado
+	JSR @ESCREVER_DISPLAY
+	JEQ @KEY0_NOT_PRESSED
+	JSR @CHECA_LIMITES
+	JSR @INCREMENTADOR
+
+	-- Verifica se FPGA_RESET KEY foi pressionado
+	LDA @356, R1
+	CEQ R1, @10
+	JEQ @FPGA_RESET_NOT_PRESSED
+	JSR @RESET_FPGA
+
+	
+
+	FPGA_RESET_NOT_PRESSED:
+		-- Verifica se KEY1 pressionado
+		KEY0_NOT_PRESSED:
+			-- Verifica se KEY1 pressionado
+			LDA @353, R1
+			CEQ R1, @10 -- Compara se KEY1 não foi pressionado
+			JEQ @KEY1_NOT_PRESSED
+			STA R0, @510
+			
+
+			AJUSTE_LIMITES_U:
+				-- Ligar LEDR0
+				LDI $1, R0
+				STA R0, @256
+
+				AGUARDA_KEY1_0:
+					LDA @320, R0	-- lê chaves SW[0~4]
+					STA R0, @288
+					LDA @353, R1
+					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
+					JEQ @AGUARDA_KEY1_0
+					STA R0, @510
+
+					STA R0, @30
+
+			AJUSTE_LIMITES_D:
+				-- Ligar LEDR1
+				LDI $2, R0
+				STA R0, @256
+
+				AGUARDA_KEY1_1:
+					LDA @320, R0	-- lê chaves SW[0~4]
+					STA R0, @289
+					LDA @353, R1
+					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
+					JEQ @AGUARDA_KEY1_1
+					STA R0, @510
+
+					-- se KEY1 foi pressionado: ajusta limite da dezena
+					STA R0, @31
+
+			AJUSTE_LIMITES_C:
+				LDI $4, R0
+				STA R0, @256
+
+				AGUARDA_KEY1_2:
+					LDA @320, R0	-- lê chaves SW[0~4]
+					STA R0, @290
+					LDA @353, R1
+					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
+					JEQ @AGUARDA_KEY1_2
+					STA R0, @510
+
+					-- se KEY1 foi pressionado: ajusta limite da centena
+					STA R0, @32
+
+			AJUSTE_LIMITES_UM:
+				-- Ligar LEDR3
+				LDI $8, R0
+				STA R0, @256
+
+				AGUARDA_KEY1_3:
+					LDA @320, R0	-- lê chaves SW[0~4]
+					STA R0, @291
+					LDA @353, R1
+					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
+					JEQ @AGUARDA_KEY1_3
+					STA R0, @510
+
+					-- se KEY1 foi pressionado: ajusta limite da unidade de Milhar
+					STA R0, @33
+
+			AJUSTE_LIMITES_DM:
+				-- Ligar LEDR4
+				LDI $16, R0
+				STA R0, @256
+
+				AGUARDA_KEY1_4:
+					LDA @320, R0	-- lê chaves SW[0~4]
+					STA R0, @292   
+					LDA @353, R1
+					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
+					JEQ @AGUARDA_KEY1_4
+					STA R0, @510
+
+
+					-- se KEY1 foi pressionado: ajusta limite da unidade de Milhar
+					STA R0, @34
+
+			AJUSTE_LIMITES_CM:
+				-- Ligar LEDR5
+				LDI $32, R0
+				STA R0, @256
+
+				AGUARDA_KEY1_5:
+					LDA @320, R0	-- lê chaves SW[0~4]
+					STA R0, @293
+					LDA @353, R1
+					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
+					JEQ @AGUARDA_KEY1_5
+					STA R0, @510
+
+					-- se KEY1 foi pressionado: ajusta limite da unidade de Milhar
+					STA R0, @35
+
+					LDI $0, R0
+					LDI $0, R1
+					STA R0, @256 -- Desliga todos os LEDs
+
+					-- Zerar todos os displays
+					LDI $0, R0
+					STA R0, @288
+					STA R0, @289
+					STA R0, @290
+					STA R0, @291
+					STA R0, @292
+					STA R0, @293
+
+			KEY1_NOT_PRESSED:
+				NOP
+
+JMP @MAIN
+
+RESET_FPGA:
+	STA R0, @509
+
+	LDI $0, R2
+	STA R2, @0
+	STA R2, @1
+	STA R2, @2
+	STA R2, @3
+
+	-- Zerar todos os displays
+	STA R2, @288
+	STA R2, @289
+	STA R2, @290
+	STA R2, @291
+	STA R2, @292
+	STA R2, @293
+
+	STA R2, @257  -- Deligar LED Limite
+	STA R2, @258 -- Deligar LED Overflow
+
+	LDI $1, R3
+	STA R3, @20
+	LDI $0, R3
+
+	RET
+
+INCREMENTADOR:
+	STA R0, @511
+
+	LDA @20, R1
+	CEQ R1, @11
+	JEQ @FLAG_IS_SET
+	RET
+	FLAG_IS_SET: -- Incrementa contador
+		-- Incrementa unidades
+		SOMA R2, @11
+		CEQ R2, @12
+		JEQ @INCREMENTA_DEZENA
+		RET
+
+		INCREMENTA_DEZENA: -- Incrementa dezena
+			-- Incrementa dezena
+			SOMA R3, @11
+			CEQ R3, @12
+			LDI $0, R2 -- Zera unidades
+			JEQ @INCREMENTA_CENTENA
+			RET
+
+			INCREMENTA_CENTENA: -- Incrementa Centena
+				-- Incrementa centena
+				LDI $1, R0
+				SOMA R0, @0
+				LDI $0, R3 -- Zera dezena
+				CEQ R0, @12
+				JEQ @INCREMENTA_MILHAR
+				STA R0, @0
+				RET
+
+				INCREMENTA_MILHAR: -- Incrementa Milhar
+					-- Incrementa milhar
+					LDI $0, R0 -- Zera centena
+					STA R0, @0
+
+					LDI $1, R0
+					SOMA R0, @1
+					CEQ R0, @12
+					JEQ @INCREMENTA_DEZ_MILHAR
+					STA R0, @1
+					RET
+
+					INCREMENTA_DEZ_MILHAR: -- Incrementa Dezena de Milhar
+						-- Incrementa dezena de milhar
+						LDI $0, R0 -- Zera milhar
+						STA R0, @1
+
+						LDI $1, R0
+						SOMA R0, @2
+						CEQ R0, @12
+						JEQ @INCREMENTA_CENT_MILHAR
+						STA R0, @2
+						RET
+
+						INCREMENTA_CENT_MILHAR: -- Incrementa Centena de Milhar
+							-- Incrementa centena de milhar
+							LDI $0, R0 -- Zera dezena de milhar
+							STA R0, @2
+
+							LDI $1, R0
+							SOMA R0, @3
+							CEQ R0, @12
+							JEQ @SETA_OVERFLOW
+							RET
+							
+							SETA_OVERFLOW:
+								LDI $1, R0
+								STA R0, @258
+								LDI $0, R0
+								STA R0, @20
+								RET
+								
+
+ESCREVER_DISPLAY:
+	-- Escreve o valor do contador no display
+	STA R2, @288
+	STA R3, @289
+	LDA @0, R1
+	STA R1, @290
+	LDA @1, R1
+	STA R1, @291
+	LDA @2, R1
+	STA R1, @292
+	LDA @3, R1
+	STA R1, @293
+
+
+	RET
+
+
+CHECA_LIMITES:
+	CEQ R2, @30 -- Compara unidade com valor Limite da Unidade
+	JEQ @CHECA_LIMITES_D
+	RET
+
+	CHECA_LIMITES_D:
+		CEQ R3, @31 -- Compara dezena com valor Limite da Dezena
+		JEQ @CHECA_LIMITES_C
+		RET
+
+		CHECA_LIMITES_C:
+			LDA @0, R0 -- Lê valor Limite da Centena
+			CEQ R0, @32 -- Compara centena com valor Limite da Centena
+			JEQ @CHECA_LIMITES_UM
+			RET
+
+			CHECA_LIMITES_UM:
+				LDA @1, R0 -- Lê valor Limite da Unidade de Milhar
+				CEQ R0, @33 -- Compara unidade de milhar com valor Limite da Unidade de Milhar
+				JEQ @CHECA_LIMITES_DM
+				RET
+
+				CHECA_LIMITES_DM:
+					LDA @2, R0 -- Lê valor Limite da Dezena de Milhar
+					CEQ R0, @34 -- Compara dezena de milhar com valor Limite da Dezena de Milhar
+					JEQ @CHECA_LIMITES_CM
+					RET
+
+					CHECA_LIMITES_CM:
+						LDA @3, R0 -- Lê valor Limite da Centena de Milhar
+						CEQ R0, @35 -- Compara centena de milhar com valor Limite da Centena de Milhar
+						JEQ @CHECA_LIMITES_FINAL
+						RET
+
+						CHECA_LIMITES_FINAL:
+							LDI $0, R0
+							STA R0, @20	-- DESATIVA FLAG DE CONTAGEM
+							LDI $1, R0
+							STA R0, @257
+							LDI $0, R0
+							RET

@@ -1,0 +1,38 @@
+Quartus Prime Archive log --	C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/projeto_intermediario.qarlog
+
+Archive:	C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/projeto_intermediario.qar
+Date:		Sun Oct 23 23:23:39 2022
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/CPU.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/TopLevel.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/ULASomaSubPassa.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/Waveform.vwf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/Waveform1.vwf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/and4x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/aula07.qpf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/aula07.qsf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/bancoRegistradoresArqRegMem.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/buffer_3_state_8portas.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/buffer_3_state_simples.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/conversorHex7Seg.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/decoder3x8.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/decoderInstru.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/edgeDebounceDetector.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/edgeDebounceDetectorKey1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/edgeDebounceDetectorReset.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/edgeDetector.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/flipflopGenerico.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/logicaDesvio.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/memoriaRAM.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/memoriaROM.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/muxGenerico2x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/muxGenerico4x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/registradorGenerico.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/somaConstante.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 27 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

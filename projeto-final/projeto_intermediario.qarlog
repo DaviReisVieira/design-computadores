@@ -1,0 +1,38 @@
+Quartus Prime Archive log --	C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/projeto_final.qarlog
+
+Archive:	C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/projeto_final.qar
+Date:		Sun Oct 23 23:23:39 2022
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/CPU.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/ULASomaSubPassa.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/Waveform.vwf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/Waveform1.vwf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/and4x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/aula07.qpf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/aula07.qsf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/bancoRegistradoresArqRegMem.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/buffer_3_state_8portas.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/buffer_3_state_simples.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/conversorHex7Seg.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/decoder3x8.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/decoderInstru.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/edgeDebounceDetector.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/edgeDebounceDetectorKey1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/edgeDebounceDetectorReset.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/edgeDetector.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/flipflopGenerico.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/logicaDesvio.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/memoriaRAM.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/memoriaROM.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/muxGenerico2x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/muxGenerico4x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/registradorGenerico.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/somaConstante.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 27 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

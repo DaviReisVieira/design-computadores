@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity and3x1 is
+  port ( entrada : 	in std_logic_vector(2 downto 0);
+         saida : 		out std_logic
+  );
+end entity;
+
+architecture comportamento of decoder3x8 is
+  begin
+    saida <= entrada(0) AND entrada(1) AND entrada(2);
+end architecture;

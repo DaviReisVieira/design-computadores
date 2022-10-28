@@ -1,5 +1,5 @@
 Archive Project report for aula07
-Thu Oct 13 12:58:54 2022
+Sun Oct 23 23:23:39 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Thu Oct 13 12:58:54 2022 ;
+; Archive Project Status ; Successful - Sun Oct 23 23:23:39 2022 ;
 ; Revision Name          ; aula07                                ;
 ; Top-level Entity Name  ; TopLevel                              ;
 ; Family                 ; Cyclone V                             ;
@@ -54,14 +54,14 @@ Info: Archive will store files relative to the closest common parent directory
 Info (13213): Using common directory C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/aula08.qar'
+Info: Generated archive 'C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/projeto_intermediario.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'aula07.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4821 megabytes
-    Info: Processing ended: Thu Oct 13 12:58:54 2022
+    Info: Peak virtual memory: 4825 megabytes
+    Info: Processing ended: Sun Oct 23 23:23:39 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
@@ -74,7 +74,7 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; and4x1.vhd                                                   ;
 ; aula07.qpf                                                   ;
 ; aula07.qsf                                                   ;
-; aula8.vwf                                                    ;
+; bancoRegistradoresArqRegMem.vhd                              ;
 ; buffer_3_state_8portas.vhd                                   ;
 ; buffer_3_state_simples.vhd                                   ;
 ; c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf ;
@@ -82,6 +82,9 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; CPU.vhd                                                      ;
 ; decoder3x8.vhd                                               ;
 ; decoderInstru.vhd                                            ;
+; edgeDebounceDetector.vhd                                     ;
+; edgeDebounceDetectorKey1.vhd                                 ;
+; edgeDebounceDetectorReset.vhd                                ;
 ; edgeDetector.vhd                                             ;
 ; flipflopGenerico.vhd                                         ;
 ; logicaDesvio.vhd                                             ;
@@ -93,6 +96,8 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; somaConstante.vhd                                            ;
 ; TopLevel.vhd                                                 ;
 ; ULASomaSubPassa.vhd                                          ;
+; Waveform.vwf                                                 ;
+; Waveform1.vwf                                                ;
 +--------------------------------------------------------------+
 
 
