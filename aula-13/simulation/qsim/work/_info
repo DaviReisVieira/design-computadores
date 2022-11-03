@@ -1,0 +1,252 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+<<<<<<< HEAD
+dC:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto-intermediario/simulation/qsim
+<<<<<<< HEAD
+!i122 12
+Z0 =======
+!i122 6
+<<<<<<< HEAD
+V;@gW4@I2miMd2XMKMXA=M2
+!s100 NkFng0d5kUL4X:2R82QNG0
+Z1 OV;C;2020.1;71
+32
+!s110 1665845542
+!i10b 1
+!s108 1665845542.000000
+R0
+Vd6N8_nfKC^EkniT9=2_J30
+!s100 RHlYSEoLRY_<SV?6Sk69P2
+R1
+32
+Z2 !s110 1665685967
+!i10b 1
+Z3 !s108 1665685967.000000
+<<<<<<< HEAD
+DEx4 work 8 toplevel 0 22 ;@gW4@I2miMd2XMKMXA=M2
+!i122 12
+l282
+L55 3650
+VNW<VCJKHAQfL48e8JdAKW1
+!s100 cJc^ENH8n0l;dPX4<@8fR2
+R0
+DEx4 work 8 toplevel 0 22 d6N8_nfKC^EkniT9=2_J30
+!i122 6
+l467
+L56 5541
+VDZRzWnnWOiCLm_:0a[zkH3
+!s100 eP2@f9506bBe_k7FEle?h0
+<<<<<<< HEAD
+w1665845540
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 13
+Z6 dC:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-intermediario/simulation/qsim
+8Waveform1.vwf.vht
+FWaveform1.vwf.vht
+R0
+w1665685963
+R4
+R5
+!i122 7
+R6
+8Waveform.vwf.vht
+FWaveform.vwf.vht
+<<<<<<< HEAD
+!s90 -work|work|Waveform1.vwf.vht|
+!s107 Waveform1.vwf.vht|
+R0
+Z7 !s90 -work|work|Waveform.vwf.vht|
+Z8 !s107 Waveform.vwf.vht|
+<<<<<<< HEAD
+!i122 13
+l63
+L34 160
+VUiIo2>0zB8ZUFZ3TB7ScK3
+!s100 fMCFzX<TKi>Sf0@75IS]l0
+R0
+!i122 7
+l65
+L34 65
+VARRk8V=<L?c_MoJn[@A951
+!s100 a3F[[ll<j;;RkBe>FhUkG3
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+Z9 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^K2eeK[IVbX]]MLcdOEI91
+Z10 DPx8 cyclonev 19 cyclonev_components 0 22 GFL[QAd@dAZF:`jjOGn9>2
+Z11 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3dzZ?YU_4FC5UU0cTXRET1
+Z12 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z13 DPx6 altera 11 dffeas_pack 0 22 H5F:RRfLz82T3`4>@b7mS3
+Z14 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+R4
+R5
+Z15 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+R6
+Z16 8aula07.vho
+Z17 Faula07.vho
+l0
+Z18 L39 1
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+Z19 !s90 -work|work|aula07.vho|
+Z20 !s107 aula07.vho|
+!i113 1
+Z21 o-work work
+Z22 tExplicit 1 CvgOpt 0
+Astructure
+R9
+R10
+R11
+R12
+R13
+R14
+R4
+R5
+R15
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+R1
+32
+R2
+!i10b 1
+R3
+R19
+R20
+!i113 1
+R21
+R22
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+l0
+Z23 L32 1
+Z24 Vi`cW82E4ohG=CFFdJ4Rgz3
+Z25 !s100 HOYZb^>X>O4gVXH@FzMRJ1
+R1
+32
+R2
+!i10b 1
+R3
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+!i113 1
+R21
+R22
+Atoplevel_arch
+R4
+R5
+Z26 DEx4 work 20 toplevel_vhd_vec_tst 0 22 i`cW82E4ohG=CFFdJ4Rgz3
+>>>>>>> cafc17b46a731f175043c3bbfe3e93ab0b07dd17
+R1
+32
+R2
+!i10b 1
+R3
+R7
+R8
+!i113 1
+R21
+R22
+Etoplevel
+w1665845541
+R0
+R6
+Etoplevel
+Z27 w1667433857
+R9
+R10
+R11
+R12
+R13
+R14
+R4
+R5
+R15
+!i122 82
+Z28 dC:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-13/simulation/qsim
+R16
+R17
+l0
+R18
+Vih0P2P1YVm_<GSQ2@MEcn0
+!s100 8]LZL;?Z7=nEd?z>jMKPY0
+R1
+32
+Z29 !s110 1667433858
+!i10b 1
+Z30 !s108 1667433858.000000
+R19
+R20
+!i113 1
+R21
+R22
+Astructure
+R9
+R10
+R11
+R12
+R13
+R14
+R4
+R5
+R15
+DEx4 work 8 toplevel 0 22 ih0P2P1YVm_<GSQ2@MEcn0
+!i122 82
+l828
+L54 8797
+V_GbbVg9hC=:<_PXXD0Oie3
+!s100 `;FOTTJ7R^4L0CZfEVg:J1
+R1
+32
+R29
+!i10b 1
+R30
+R19
+R20
+!i113 1
+R21
+R22
+Etoplevel_vhd_vec_tst
+Z31 w1667433856
+R4
+R5
+!i122 83
+R28
+Z32 8Waveform2.vwf.vht
+Z33 FWaveform2.vwf.vht
+l0
+R23
+R24
+R25
+R1
+32
+R29
+!i10b 1
+R30
+Z34 !s90 -work|work|Waveform2.vwf.vht|
+Z35 !s107 Waveform2.vwf.vht|
+!i113 1
+R21
+R22
+Atoplevel_arch
+R4
+R5
+R26
+!i122 83
+l61
+Z36 L34 59
+Z37 VIh77RCIL7b?7YMXbQN>5e3
+Z38 !s100 Q@Pj]aJZ2WK7D<F:e]`601
+R1
+32
+R29
+!i10b 1
+R30
+R34
+R35
+!i113 1
+R21
+R22
