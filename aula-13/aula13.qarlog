@@ -1,0 +1,29 @@
+Quartus Prime Archive log --	C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/aula13.qarlog
+
+Archive:	C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/aula13.qar
+Date:		Thu Nov 03 12:03:55 2022
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/TopLevel.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/ULASomaSubPassa.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/Waveform.vwf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/Waveform1.vwf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/Waveform2.vwf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/and4x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/aula07.qpf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/aula07.qsf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/bancoRegistradores.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/edgeDetector.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/flipflopGenerico.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/memoriaROM.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/muxGenerico2x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/muxGenerico4x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/output_files/edgeDebounceDetectorReset.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/registradorGenerico.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-13/somaConstante.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 18 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

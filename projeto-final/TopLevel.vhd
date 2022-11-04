@@ -97,6 +97,11 @@ end generate;
 
 	
 -- ## INSTANCIANDO OS COMPONENTES
+interfaceBaseTempo : entity work.divisorGenerico_e_Interface
+              port map (clk => CLK,
+              habilitaLeitura => ENABLE_KEY(0),
+              limpaLeitura => sinalLocal,
+              leituraUmSegundo => sinalLocal);
 
 detectorSubDebounceKey0: work.edgeDebounceDetector
 			port map (
