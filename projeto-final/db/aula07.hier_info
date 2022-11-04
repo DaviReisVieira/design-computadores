@@ -1,4 +1,6 @@
 |TopLevel
+CLOCK_50 => divisorgenerico:baseTempoNormal.clk
+CLOCK_50 => divisorgenerico:baseTempoDebounce.clk
 CLOCK_50 => edgedebouncedetector:detectorSubDebounceKey0.CLOCK_50
 CLOCK_50 => edgedebouncedetectorkey1:detectorSubDebounceKey1.CLOCK_50
 CLOCK_50 => edgedebouncedetectorreset:detectorSubDebounceReset.CLOCK_50
@@ -78,6 +80,7 @@ HEX5[6] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[6]
 KEY[0] => edgedebouncedetector:detectorSubDebounceKey0.KEY
 KEY[1] => edgedebouncedetectorkey1:detectorSubDebounceKey1.KEY
 KEY[2] => buffer_3_state_simples:BUFFER_KEY2.entrada
+KEY[3] => mux2x1:muxBaseTempo.seletor_MUX
 KEY[3] => buffer_3_state_simples:BUFFER_KEY3.entrada
 FPGA_RESET_N => edgedebouncedetectorreset:detectorSubDebounceReset.KEY
 DATA_OUT[0] <= cpu:CPU.DATA_OUT[0]
@@ -88,6 +91,79 @@ DATA_OUT[4] <= cpu:CPU.DATA_OUT[4]
 DATA_OUT[5] <= cpu:CPU.DATA_OUT[5]
 DATA_OUT[6] <= cpu:CPU.DATA_OUT[6]
 DATA_OUT[7] <= cpu:CPU.DATA_OUT[7]
+
+
+|TopLevel|divisorGenerico:baseTempoNormal
+clk => tick.CLK
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+clk => contador[4].CLK
+clk => contador[5].CLK
+clk => contador[6].CLK
+clk => contador[7].CLK
+clk => contador[8].CLK
+clk => contador[9].CLK
+clk => contador[10].CLK
+clk => contador[11].CLK
+clk => contador[12].CLK
+clk => contador[13].CLK
+clk => contador[14].CLK
+clk => contador[15].CLK
+clk => contador[16].CLK
+clk => contador[17].CLK
+clk => contador[18].CLK
+clk => contador[19].CLK
+clk => contador[20].CLK
+clk => contador[21].CLK
+clk => contador[22].CLK
+clk => contador[23].CLK
+clk => contador[24].CLK
+saida_clk <= tick.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|divisorGenerico:baseTempoDebounce
+clk => tick.CLK
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+clk => contador[4].CLK
+clk => contador[5].CLK
+clk => contador[6].CLK
+clk => contador[7].CLK
+clk => contador[8].CLK
+clk => contador[9].CLK
+clk => contador[10].CLK
+clk => contador[11].CLK
+clk => contador[12].CLK
+clk => contador[13].CLK
+clk => contador[14].CLK
+saida_clk <= tick.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|mux2x1:muxBaseTempo
+entradaA_MUX => saida_MUX.DATAA
+entradaB_MUX => saida_MUX.DATAB
+seletor_MUX => saida_MUX.OUTPUTSELECT
+saida_MUX <= saida_MUX.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|flipFlopGenerico:registraTempoSegundoOuDebouce
+DIN => DOUT~reg0.DATAIN
+DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ENABLE => DOUT~reg0.ENA
+CLK => DOUT~reg0.CLK
+RST => DOUT~reg0.ACLR
+
+
+|TopLevel|and4x1:AND_INTERFACE
+entradaA => saida.IN0
+entradaB => saida.IN1
+entradaC => saida.IN1
+entradaD => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TopLevel|edgeDebounceDetector:detectorSubDebounceKey0

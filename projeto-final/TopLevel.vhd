@@ -52,9 +52,9 @@ architecture arquitetura of TopLevel is
 	-- DECODER <-> periféricos
 	signal saida_DECODER1	:		std_logic_vector(7 downto 0);
 	signal saida_DECODER2	:		std_logic_vector(7 downto 0);
-	signal hab_LEDS				:	std_logic;
+	signal hab_BLOCO4				:	std_logic;
 	signal hab_7SEGs_and_KEYs	:	std_logic;
-	signal hab_BUTTONS			:	std_logic;
+	signal hab_BLOCO5			:	std_logic;
 	
 	-- enables:
 	signal ENABLE_LEDR0_7: 			std_logic;
@@ -78,7 +78,9 @@ architecture arquitetura of TopLevel is
 	signal DEBOUNCE_KEY0:			std_logic_vector(larguraDados -1 downto 0);
 	signal DEBOUNCE_KEY1:			std_logic_vector(larguraDados -1 downto 0);
 	signal DEBOUNCE_KEY4:			std_logic_vector(larguraDados -1 downto 0);
-	
+	signal base_tempo_normal, base_tempo_debounce, base_tempo_mux, limpa_interface_divisor, habilita_sinal_um_segundo, habilita_leitura_interface, base_tempo_datain:	std_Logic;
+	signal zero_concat : std_logic_vector(6 downto 0);
+	signal base_out_concat : std_logic_vector(7 downto 0);
 	
 	-- obs: SW, KEY e FPGA_RESET_N, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5 
 	-- devem seguir nomenclatura informada no arquivo .qsf
@@ -97,12 +99,50 @@ end generate;
 
 	
 -- ## INSTANCIANDO OS COMPONENTES
-interfaceBaseTempo : entity work.divisorGenerico_e_Interface
-              port map (clk => CLK,
-              habilitaLeitura => ENABLE_KEY(0),
-              limpaLeitura => sinalLocal,
-              leituraUmSegundo => sinalLocal);
+baseTempoNormal: entity work.divisorGenerico
+           generic map (divisor => 25000000)
+           port map (clk => clk, saida_clk => base_tempo_normal);
 
+baseTempoDebounce: entity work.divisorGenerico
+			generic map (divisor => 25000)
+			port map (clk => clk, saida_clk => base_tempo_debounce);
+
+muxBaseTempo: entity work.mux2x1
+			port map (entradaA_MUX => base_tempo_normal, entradaB_MUX => base_tempo_debounce, saida_MUX => base_tempo_mux, seletor_MUX => KEY(3));
+
+registraTempoSegundoOuDebouce: entity work.flipflopGenerico
+port map (DIN => '1', DOUT => habilita_sinal_um_segundo,
+		ENABLE => '1', CLK => base_tempo_mux,
+		RST => limpa_interface_divisor);
+
+limpa_interface_divisor <= wr and address_OUT(8) 
+							and address_OUT(7) 
+							and address_OUT(6) 
+							and address_OUT(5) 
+							and address_OUT(4) 
+							and address_OUT(3) 
+							and address_OUT(2) 
+							and not address_OUT(1) 
+							and not address_OUT(0); 
+
+base_tempo_datain <= habilita_sinal_um_segundo when habilita_leitura_interface = '1' else 'Z';
+		 
+zero_concat <= "0000000";
+
+base_out_concat <= zero_concat & base_tempo_datain;
+
+DATA_IN(0) <= base_tempo_datain;
+
+AND_INTERFACE: entity work.and4x1
+				port map(
+					entradaA => rd,
+					entradaB => hab_BLOCO5,
+					entradaC => saida_DECODER2(5),
+					entradaD => hab_7SEGs_and_KEYs,
+					saida => habilita_leitura_interface			
+				);
+
+				
 detectorSubDebounceKey0: work.edgeDebounceDetector
 			port map (
 				CLOCK_50 => CLK,
@@ -288,7 +328,7 @@ REG_HEX5: entity work.registradorGenerico
 AND_LEDR0_7: entity work.and4x1
 			port map (
 				entradaA => wr,
-				entradaB => hab_LEDS,
+				entradaB => hab_BLOCO4,
 				entradaC => saida_DECODER2(0),
 				entradaD => not (hab_7SEGs_and_KEYs),
 				saida => ENABLE_LEDR0_7
@@ -297,7 +337,7 @@ AND_LEDR0_7: entity work.and4x1
 AND_LEDR8: entity work.and4x1
 			port map (
 				entradaA => wr,
-				entradaB => hab_LEDS,
+				entradaB => hab_BLOCO4,
 				entradaC => saida_DECODER2(1),
 				entradaD => not (hab_7SEGs_and_KEYs),
 				saida => ENABLE_LEDR8
@@ -306,7 +346,7 @@ AND_LEDR8: entity work.and4x1
 AND_LEDR9: entity work.and4x1
 			port map (
 				entradaA => wr,
-				entradaB => hab_LEDS,
+				entradaB => hab_BLOCO4,
 				entradaC => saida_DECODER2(2),
 				entradaD => not (hab_7SEGs_and_KEYs),
 				saida => ENABLE_LEDR9
@@ -315,7 +355,7 @@ AND_LEDR9: entity work.and4x1
 AND_HEX0: entity work.and4x1
 			port map (
 				entradaA => wr,
-				entradaB => hab_LEDS,
+				entradaB => hab_BLOCO4,
 				entradaC => saida_DECODER2(0),
 				entradaD => hab_7SEGs_and_KEYs,
 				saida => ENABLE_HEX(0)
@@ -323,7 +363,7 @@ AND_HEX0: entity work.and4x1
 AND_HEX1: entity work.and4x1
 			port map (
 				entradaA => wr,
-				entradaB => hab_LEDS,
+				entradaB => hab_BLOCO4,
 				entradaC => saida_DECODER2(1),
 				entradaD => hab_7SEGs_and_KEYs,
 				saida => ENABLE_HEX(1)
@@ -331,7 +371,7 @@ AND_HEX1: entity work.and4x1
 AND_HEX2: entity work.and4x1
 			port map (
 				entradaA => wr,
-				entradaB => hab_LEDS,
+				entradaB => hab_BLOCO4,
 				entradaC => saida_DECODER2(2),
 				entradaD => hab_7SEGs_and_KEYs,
 				saida => ENABLE_HEX(2)
@@ -339,7 +379,7 @@ AND_HEX2: entity work.and4x1
 AND_HEX3: entity work.and4x1
 			port map (
 				entradaA => wr,
-				entradaB => hab_LEDS,
+				entradaB => hab_BLOCO4,
 				entradaC => saida_DECODER2(3),
 				entradaD => hab_7SEGs_and_KEYs,
 				saida => ENABLE_HEX(3)
@@ -347,7 +387,7 @@ AND_HEX3: entity work.and4x1
 AND_HEX4: entity work.and4x1
 			port map (
 				entradaA => wr,
-				entradaB => hab_LEDS,
+				entradaB => hab_BLOCO4,
 				entradaC => saida_DECODER2(4),
 				entradaD => hab_7SEGs_and_KEYs,
 				saida => ENABLE_HEX(4)
@@ -355,7 +395,7 @@ AND_HEX4: entity work.and4x1
 AND_HEX5: entity work.and4x1
 			port map (
 				entradaA => wr,
-				entradaB => hab_LEDS,
+				entradaB => hab_BLOCO4,
 				entradaC => saida_DECODER2(5),
 				entradaD => hab_7SEGs_and_KEYs,
 				saida => ENABLE_HEX(5)
@@ -424,15 +464,16 @@ DECODER_7SEG_5: entity work.conversorHex7Seg
 AND_KEY0: entity work.and4x1
 				port map(
 					entradaA => rd,
-					entradaB => hab_BUTTONS,
+					entradaB => hab_BLOCO5,
 					entradaC => saida_DECODER2(0),
 					entradaD => hab_7SEGs_and_KEYs,
 					saida => ENABLE_KEY(0)				
 				);
+
 AND_KEY1: entity work.and4x1
 				port map(
 					entradaA => rd,
-					entradaB => hab_BUTTONS,
+					entradaB => hab_BLOCO5,
 					entradaC => saida_DECODER2(1),
 					entradaD => hab_7SEGs_and_KEYs,
 					saida => ENABLE_KEY(1)				
@@ -441,7 +482,7 @@ AND_KEY1: entity work.and4x1
 AND_KEY2: entity work.and4x1
 				port map(
 					entradaA => rd,
-					entradaB => hab_BUTTONS,
+					entradaB => hab_BLOCO5,
 					entradaC => saida_DECODER2(2),
 					entradaD => hab_7SEGs_and_KEYs,
 					saida => ENABLE_KEY(2)				
@@ -450,7 +491,7 @@ AND_KEY2: entity work.and4x1
 AND_KEY3: entity work.and4x1
 				port map(
 					entradaA => rd,
-					entradaB => hab_BUTTONS,
+					entradaB => hab_BLOCO5,
 					entradaC => saida_DECODER2(3),
 					entradaD => hab_7SEGs_and_KEYs,
 					saida => ENABLE_KEY(3)				
@@ -459,7 +500,7 @@ AND_KEY3: entity work.and4x1
 AND_KEY_FPGA_RESET_N: entity work.and4x1
 				port map(
 					entradaA => rd,
-					entradaB => hab_BUTTONS,
+					entradaB => hab_BLOCO5,
 					entradaC => saida_DECODER2(4),
 					entradaD => hab_7SEGs_and_KEYs,
 					saida => ENABLE_FPGA_RESET				
@@ -482,7 +523,7 @@ BUFFER_KEY3 :  entity work.buffer_3_state_simples
 AND_SW0_7: entity work.and4x1
 				port map(
 					entradaA => rd,
-					entradaB => hab_BUTTONS,
+					entradaB => hab_BLOCO5,
 					entradaC => saida_DECODER2(0),
 					entradaD => not(hab_7SEGs_and_KEYs),
 					saida => ENABLE_SW0_7				
@@ -491,7 +532,7 @@ AND_SW0_7: entity work.and4x1
 AND_SW8: entity work.and4x1
 				port map(
 					entradaA => rd,
-					entradaB => hab_BUTTONS,
+					entradaB => hab_BLOCO5,
 					entradaC => saida_DECODER2(1),
 					entradaD => not(hab_7SEGs_and_KEYs),
 					saida => ENABLE_SW8				
@@ -500,7 +541,7 @@ AND_SW8: entity work.and4x1
 AND_SW9: entity work.and4x1
 				port map(
 					entradaA => rd,
-					entradaB => hab_BUTTONS,
+					entradaB => hab_BLOCO5,
 					entradaC => saida_DECODER2(2),
 					entradaD => not(hab_7SEGs_and_KEYs),
 					saida => ENABLE_SW9				
@@ -529,8 +570,8 @@ BUFFER_SW9 :  entity work.buffer_3_state_simples
 			
 			
 hab_RAM <= saida_DECODER1(0);
-hab_LEDS <= saida_DECODER1(4); -- bloco 4
-hab_BUTTONS <= saida_DECODER1(5); -- bloco 5
+hab_BLOCO4 <= saida_DECODER1(4); -- bloco 4
+hab_BLOCO5 <= saida_DECODER1(5); -- bloco 5
 
 hab_7SEGs_and_KEYs <= address_OUT(5);
 

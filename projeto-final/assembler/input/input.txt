@@ -45,13 +45,13 @@ SETUP:
 
 	-- Limpa Leitura de KEY0, KEY1 e RESET FPGA
 	STA R0, @510
-	STA R0, @511
+	STA R0, @508
 	STA R0, @509
 	
 
 MAIN:
 	-- Verifica se KEY0 pressionado
-	LDA @352, R1 -- Lê o valor do KEY0 e coloca em R1
+	LDA @357, R1 -- Lê o valor do KEY0 e coloca em R1
 	CEQ R1, @10 -- Compara se KEY0 não foi pressionado
 	JSR @ESCREVER_DISPLAY
 	JEQ @KEY0_NOT_PRESSED
@@ -216,13 +216,13 @@ RESET_FPGA:
 	RET
 
 INCREMENTADOR:
-	STA R0, @511
+	STA R0, @508
 
 	LDA @20, R1
 	CEQ R1, @11
 	JEQ @FLAG_IS_SET
 	RET
-	FLAG_IS_SET: -- Incrementa contador
+	FLAG_IS_SET: X-- Incrementa contador
 		-- Incrementa unidades
 		SOMA R2, @11
 		CEQ R2, @12
