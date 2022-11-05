@@ -79,8 +79,6 @@ architecture arquitetura of TopLevel is
 	signal DEBOUNCE_KEY1:			std_logic_vector(larguraDados -1 downto 0);
 	signal DEBOUNCE_KEY4:			std_logic_vector(larguraDados -1 downto 0);
 	signal base_tempo_normal, base_tempo_debounce, base_tempo_mux, limpa_interface_divisor, habilita_sinal_um_segundo, habilita_leitura_interface, base_tempo_datain:	std_Logic;
-	signal zero_concat : std_logic_vector(6 downto 0);
-	signal base_out_concat : std_logic_vector(7 downto 0);
 	
 	-- obs: SW, KEY e FPGA_RESET_N, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5 
 	-- devem seguir nomenclatura informada no arquivo .qsf
@@ -104,11 +102,11 @@ baseTempoNormal: entity work.divisorGenerico
            port map (clk => clk, saida_clk => base_tempo_normal);
 
 baseTempoDebounce: entity work.divisorGenerico
-			generic map (divisor => 25000)
+			generic map (divisor => 2500)
 			port map (clk => clk, saida_clk => base_tempo_debounce);
 
 muxBaseTempo: entity work.mux2x1
-			port map (entradaA_MUX => base_tempo_normal, entradaB_MUX => base_tempo_debounce, saida_MUX => base_tempo_mux, seletor_MUX => KEY(3));
+			port map (entradaA_MUX => base_tempo_normal, entradaB_MUX => base_tempo_debounce, saida_MUX => base_tempo_mux, seletor_MUX => (not KEY(3)));
 
 registraTempoSegundoOuDebouce: entity work.flipflopGenerico
 port map (DIN => '1', DOUT => habilita_sinal_um_segundo,
@@ -126,10 +124,6 @@ limpa_interface_divisor <= wr and address_OUT(8)
 							and not address_OUT(0); 
 
 base_tempo_datain <= habilita_sinal_um_segundo when habilita_leitura_interface = '1' else 'Z';
-		 
-zero_concat <= "0000000";
-
-base_out_concat <= zero_concat & base_tempo_datain;
 
 DATA_IN(0) <= base_tempo_datain;
 
@@ -141,7 +135,6 @@ AND_INTERFACE: entity work.and4x1
 					entradaD => hab_7SEGs_and_KEYs,
 					saida => habilita_leitura_interface			
 				);
-
 				
 detectorSubDebounceKey0: work.edgeDebounceDetector
 			port map (

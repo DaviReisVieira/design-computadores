@@ -39,8 +39,18 @@ SETUP:
 	STA R0, @11				--Armazena o valor do acumulador em M11
 	LDI $10, R0
 	STA R0, @12				--Armazena o valor do acumulador em M12
+	LDI $6, R0
+	STA R0, @13				--Armazena o valor do acumulador em M13
+	LDI $4, R0
+	STA R0, @14				--Armazena o valor do acumulador em M14
+	LDI $2, R0
+	STA R0, @15				--Armazena o valor do acumulador em M15
 	LDI $1, R0
 	STA R0, @20				--Armazena o valor do acumulador em M20
+	LDI $0, R0
+	STA R0, @21				--Armazena o valor do acumulador em M21 (Flag Tipo 12/24 horas)
+	LDI $0, R0
+	STA R0, @22				--Armazena o valor do acumulador em M22 (Flag PM ON)
 	LDI $0, R0
 
 	-- Limpa Leitura de KEY0, KEY1 e RESET FPGA
@@ -50,11 +60,10 @@ SETUP:
 	
 
 MAIN:
-	-- Verifica se KEY0 pressionado
-	LDA @357, R1 -- Lê o valor do KEY0 e coloca em R1
-	CEQ R1, @10 -- Compara se KEY0 não foi pressionado
+	LDA @357, R1 -- Lê o valor da Base Tempo e coloca em R1
+	CEQ R1, @10 -- Compara se Base tempo é 0
 	JSR @ESCREVER_DISPLAY
-	JEQ @KEY0_NOT_PRESSED
+	JEQ @BASE_TEMPO_NAO_MUDOU
 	JSR @CHECA_LIMITES
 	JSR @INCREMENTADOR
 
@@ -68,7 +77,7 @@ MAIN:
 
 	FPGA_RESET_NOT_PRESSED:
 		-- Verifica se KEY1 pressionado
-		KEY0_NOT_PRESSED:
+		BASE_TEMPO_NAO_MUDOU:
 			-- Verifica se KEY1 pressionado
 			LDA @353, R1
 			CEQ R1, @10 -- Compara se KEY1 não foi pressionado
@@ -223,72 +232,108 @@ INCREMENTADOR:
 	JEQ @FLAG_IS_SET
 	RET
 	FLAG_IS_SET: X-- Incrementa contador
-		-- Incrementa unidades
+		-- Incrementa unidade de segundo
 		SOMA R2, @11
 		CEQ R2, @12
-		JEQ @INCREMENTA_DEZENA
+		JEQ @INCREMENTA_DEZENA_SEGUNDO
 		RET
 
-		INCREMENTA_DEZENA: -- Incrementa dezena
-			-- Incrementa dezena
+		INCREMENTA_DEZENA_SEGUNDO: -- Incrementa dezena de segundo
 			SOMA R3, @11
-			CEQ R3, @12
-			LDI $0, R2 -- Zera unidades
-			JEQ @INCREMENTA_CENTENA
+			CEQ R3, @13
+			LDI $0, R2
+			JEQ @INCREMENTA_UNIDADE_MINUTO
 			RET
 
-			INCREMENTA_CENTENA: -- Incrementa Centena
-				-- Incrementa centena
+			INCREMENTA_UNIDADE_MINUTO: -- Incrementa unidade de minuto
 				LDI $1, R0
 				SOMA R0, @0
-				LDI $0, R3 -- Zera dezena
+				LDI $0, R3
 				CEQ R0, @12
-				JEQ @INCREMENTA_MILHAR
+				JEQ @INCREMENTA_DEZENA_MINUTO
 				STA R0, @0
 				RET
 
-				INCREMENTA_MILHAR: -- Incrementa Milhar
-					-- Incrementa milhar
-					LDI $0, R0 -- Zera centena
+				INCREMENTA_DEZENA_MINUTO: -- Incrementa Dezena de minuto
+					LDI $0, R0
 					STA R0, @0
 
 					LDI $1, R0
 					SOMA R0, @1
-					CEQ R0, @12
-					JEQ @INCREMENTA_DEZ_MILHAR
+					CEQ R0, @13
+					JEQ @INCREMENTA_UNIDADE_HORA
 					STA R0, @1
 					RET
 
-					INCREMENTA_DEZ_MILHAR: -- Incrementa Dezena de Milhar
-						-- Incrementa dezena de milhar
-						LDI $0, R0 -- Zera milhar
+					INCREMENTA_UNIDADE_HORA: -- Incrementa Unidade de Hora
+						LDI $0, R0
 						STA R0, @1
 
 						LDI $1, R0
 						SOMA R0, @2
 						CEQ R0, @12
-						JEQ @INCREMENTA_CENT_MILHAR
+						JEQ @INCREMENTA_DEZENA_HORA
 						STA R0, @2
-						RET
+						JMP @CHECA_LIMITE_HORA
 
-						INCREMENTA_CENT_MILHAR: -- Incrementa Centena de Milhar
-							-- Incrementa centena de milhar
-							LDI $0, R0 -- Zera dezena de milhar
+						INCREMENTA_DEZENA_HORA: -- Incrementa  Dezena de Hora
+							LDI $0, R0
 							STA R0, @2
 
 							LDI $1, R0
 							SOMA R0, @3
-							CEQ R0, @12
-							JEQ @SETA_OVERFLOW
+							STA R0, @3
+
+		CHECA_LIMITE_HORA:
+			-- Checa Flag 12/24
+			LDA @21, R0
+			CEQ R0, @10
+			JEQ @FLAG_12H
+
+			-- Checa se hora é maior que 23
+			LDA @2, R0
+			CEQ R0, @14
+			JEQ @FLAG_24H
+			RET
+				FLAG_24H:
+					LDA @3, R0
+					CEQ R0, @15
+					JEQ @FLAG_24H_2
+					RET
+						FLAG_24H_2:
+							LDI $0, R0
+							STA R0, @2
+							STA R0, @3
 							RET
-							
-							SETA_OVERFLOW:
-								LDI $1, R0
-								STA R0, @258
+
+			FLAG_12H:
+				LDA @2, R0
+				CEQ R0, @15
+				JEQ @FLAG_12H_2
+				RET
+					FLAG_12H_2:
+						LDA @3, R0
+						CEQ R0, @11
+						JEQ @FLAG_12H_3
+						RET
+							FLAG_12H_3:
 								LDI $0, R0
-								STA R0, @20
+								STA R0, @2
+								STA R0, @3
+								-- Altera FLAG PM ON
+								LDA @22, R0
+								CEQ R0, @10
+								JEQ @FLAG_PM_OFF
+								LDI $0, R0
+								STA R0, @22
+								STA R0, @258
 								RET
-								
+									FLAG_PM_OFF:
+										LDI $1, R0
+										STA R0, @22
+										STA R0, @258
+										RET
+					
 
 ESCREVER_DISPLAY:
 	-- Escreve o valor do contador no display
