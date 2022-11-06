@@ -854,7 +854,6 @@ JLT => Sel.IN1
 JLT => Sel.IN1
 JLT => Sel.IN1
 JLT => Sel.IN1
-JLT => Sel.IN1
 JMP => Sel.IN0
 JMP => Sel.IN0
 JMP => Sel.IN0
@@ -872,13 +871,10 @@ RET => Sel.IN1
 RET => Sel.IN1
 FLAG_EQ => Sel.IN1
 FLAG_EQ => Sel.IN1
-FLAG_EQ => Sel.IN1
 FLAG_LESS => Sel.IN1
 FLAG_LESS => Sel.IN1
-FLAG_LESS => Sel.IN1
-FLAG_LESS => Sel.IN1
-Sel[0] <= Sel[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Sel[1] <= Sel[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Sel[0] <= Sel.DB_MAX_OUTPUT_PORT_TYPE
+Sel[1] <= Sel.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TopLevel|CPU:CPU|decoderInstru:DECODER1

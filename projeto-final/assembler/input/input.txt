@@ -194,9 +194,44 @@ MAIN:
 					STA R0, @293
 
 			KEY1_NOT_PRESSED:
-				NOP
+				STA R0, @510
+				
+				LDA @352, R1
+				CEQ R1, @10 
+				JEQ @KEY0_NOT_PRESSED
+				JSR @AJUSTA_HORAS
+				
+				KEY0_NOT_PRESSED:
+					NOP
 
 JMP @MAIN
+
+
+AJUSTA_HORAS:
+	STA R0, @511
+	AGUARDA_KEY0_0:
+		LDA @320, R0	-- lê chaves SW[0~4]
+
+		LDI $7, R1
+		CLT R1, @320
+		JLT @TESTE_JAA
+		
+		LDI $1, R0
+		STA R0, @257	
+
+		LDA @352, R1
+		CEQ R1, @10
+		JEQ @AGUARDA_KEY0_0
+		STA R0, @511
+		RET	
+		
+		TESTE_JAA:
+			LDI $0, R0
+			STA R0, @257
+
+			RET
+
+			
 
 RESET_FPGA:
 	STA R0, @509

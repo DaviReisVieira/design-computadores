@@ -94,15 +94,6 @@ MUXproxPC :  entity work.muxGenerico4x1  generic map (larguraDados => larguraEnd
 			seletor_MUX => SelMUXproxPC,
 			saida_MUX => MUXproxPC_OUT);
 
--- O port map completo do Acumulador.
--- REGA : entity work.registradorGenerico   generic map (larguraDados => larguraDados)
---           port map (
--- 				DIN => Saida_ULA, 
--- 				DOUT => Saida_REGs, 
--- 				ENABLE => Habilita_REGs, 
--- 				CLK => CLK,
---         RST => '0');
-
 -- O port map completo do Acumulador-Memoria.
 REGS : entity work.bancoRegistradoresArqRegMem   generic map (larguraDados => larguraDados, larguraEndBancoRegs => larguraRegs)
 port map ( clk => CLK,
