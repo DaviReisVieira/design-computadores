@@ -123,10 +123,6 @@ limpa_interface_divisor <= wr and address_OUT(8)
 							and not address_OUT(1) 
 							and not address_OUT(0); 
 
-base_tempo_datain <= habilita_sinal_um_segundo when habilita_leitura_interface = '1' else 'Z';
-
-DATA_IN(0) <= base_tempo_datain;
-
 AND_INTERFACE: entity work.and4x1
 				port map(
 					entradaA => rd,
@@ -135,6 +131,10 @@ AND_INTERFACE: entity work.and4x1
 					entradaD => hab_7SEGs_and_KEYs,
 					saida => habilita_leitura_interface			
 				);
+
+base_tempo_datain <= habilita_sinal_um_segundo when habilita_leitura_interface = '1' else 'Z';
+
+DATA_IN(0) <= base_tempo_datain;
 				
 detectorSubDebounceKey0: work.edgeDebounceDetector
 			port map (

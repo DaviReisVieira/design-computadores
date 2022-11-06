@@ -47,7 +47,7 @@ SETUP:
 	STA R0, @15				--Armazena o valor do acumulador em M15
 	LDI $1, R0
 	STA R0, @20				--Armazena o valor do acumulador em M20
-	LDI $0, R0
+	LDI $1, R0
 	STA R0, @21				--Armazena o valor do acumulador em M21 (Flag Tipo 12/24 horas)
 	LDI $0, R0
 	STA R0, @22				--Armazena o valor do acumulador em M22 (Flag PM ON)
@@ -64,16 +64,13 @@ MAIN:
 	CEQ R1, @10 -- Compara se Base tempo é 0
 	JSR @ESCREVER_DISPLAY
 	JEQ @BASE_TEMPO_NAO_MUDOU
-	JSR @CHECA_LIMITES
 	JSR @INCREMENTADOR
 
 	-- Verifica se FPGA_RESET KEY foi pressionado
 	LDA @356, R1
 	CEQ R1, @10
 	JEQ @FPGA_RESET_NOT_PRESSED
-	JSR @RESET_FPGA
-
-	
+	JSR @RESET_FPGA	
 
 	FPGA_RESET_NOT_PRESSED:
 		-- Verifica se KEY1 pressionado
@@ -83,119 +80,10 @@ MAIN:
 			CEQ R1, @10 -- Compara se KEY1 não foi pressionado
 			JEQ @KEY1_NOT_PRESSED
 			STA R0, @510
-			
-
-			AJUSTE_LIMITES_U:
-				-- Ligar LEDR0
-				LDI $1, R0
-				STA R0, @256
-
-				AGUARDA_KEY1_0:
-					LDA @320, R0	-- lê chaves SW[0~4]
-					STA R0, @288
-					LDA @353, R1
-					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
-					JEQ @AGUARDA_KEY1_0
-					STA R0, @510
-
-					STA R0, @30
-
-			AJUSTE_LIMITES_D:
-				-- Ligar LEDR1
-				LDI $2, R0
-				STA R0, @256
-
-				AGUARDA_KEY1_1:
-					LDA @320, R0	-- lê chaves SW[0~4]
-					STA R0, @289
-					LDA @353, R1
-					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
-					JEQ @AGUARDA_KEY1_1
-					STA R0, @510
-
-					-- se KEY1 foi pressionado: ajusta limite da dezena
-					STA R0, @31
-
-			AJUSTE_LIMITES_C:
-				LDI $4, R0
-				STA R0, @256
-
-				AGUARDA_KEY1_2:
-					LDA @320, R0	-- lê chaves SW[0~4]
-					STA R0, @290
-					LDA @353, R1
-					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
-					JEQ @AGUARDA_KEY1_2
-					STA R0, @510
-
-					-- se KEY1 foi pressionado: ajusta limite da centena
-					STA R0, @32
-
-			AJUSTE_LIMITES_UM:
-				-- Ligar LEDR3
-				LDI $8, R0
-				STA R0, @256
-
-				AGUARDA_KEY1_3:
-					LDA @320, R0	-- lê chaves SW[0~4]
-					STA R0, @291
-					LDA @353, R1
-					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
-					JEQ @AGUARDA_KEY1_3
-					STA R0, @510
-
-					-- se KEY1 foi pressionado: ajusta limite da unidade de Milhar
-					STA R0, @33
-
-			AJUSTE_LIMITES_DM:
-				-- Ligar LEDR4
-				LDI $16, R0
-				STA R0, @256
-
-				AGUARDA_KEY1_4:
-					LDA @320, R0	-- lê chaves SW[0~4]
-					STA R0, @292   
-					LDA @353, R1
-					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
-					JEQ @AGUARDA_KEY1_4
-					STA R0, @510
-
-
-					-- se KEY1 foi pressionado: ajusta limite da unidade de Milhar
-					STA R0, @34
-
-			AJUSTE_LIMITES_CM:
-				-- Ligar LEDR5
-				LDI $32, R0
-				STA R0, @256
-
-				AGUARDA_KEY1_5:
-					LDA @320, R0	-- lê chaves SW[0~4]
-					STA R0, @293
-					LDA @353, R1
-					CEQ R1, @10 -- Compara se KEY1 não foi pressionado
-					JEQ @AGUARDA_KEY1_5
-					STA R0, @510
-
-					-- se KEY1 foi pressionado: ajusta limite da unidade de Milhar
-					STA R0, @35
-
-					LDI $0, R0
-					LDI $0, R1
-					STA R0, @256 -- Desliga todos os LEDs
-
-					-- Zerar todos os displays
-					LDI $0, R0
-					STA R0, @288
-					STA R0, @289
-					STA R0, @290
-					STA R0, @291
-					STA R0, @292
-					STA R0, @293
+			-- Alarme rotina
 
 			KEY1_NOT_PRESSED:
 				STA R0, @510
-				
 				LDA @352, R1
 				CEQ R1, @10 
 				JEQ @KEY0_NOT_PRESSED
@@ -203,35 +91,291 @@ MAIN:
 				
 				KEY0_NOT_PRESSED:
 					NOP
-
 JMP @MAIN
 
 
 AJUSTA_HORAS:
-	STA R0, @511
-	AGUARDA_KEY0_0:
-		LDA @320, R0	-- lê chaves SW[0~4]
+	-- Zerar todos os displays
+	LDI $0, R0
+	STA R0, @288
+	STA R0, @289
+	STA R0, @290
+	STA R0, @291
+	STA R0, @292
+	STA R0, @293
 
-		LDI $7, R1
-		CLT R1, @320
-		JLT @TESTE_JAA
-		
-		LDI $1, R0
-		STA R0, @257	
-
-		LDA @352, R1
-		CEQ R1, @10
-		JEQ @AGUARDA_KEY0_0
+	AJUSTA_DEZENA_HORA:
 		STA R0, @511
-		RET	
-		
-		TESTE_JAA:
-			LDI $0, R0
-			STA R0, @257
+		-- Ligar LEDR9
+		LDI $1, R0
+		STA R0, @258
 
-			RET
+		AGUARDA_KEY0_0:
+			LDA @320, R0	-- lê chaves SW[0~7]
 
+			LDA @21, R1
+			CEQ R1, @10
+			JEQ @FLAG_12H_AJUSTE_DEZENA_HORA
+			LDI $2, R1
+			CLT R1, @320
+			JLT @LIMITA_24_HORA_DH
+			JMP @NAO_LIMITA_24_DH
 			
+			LIMITA_24_HORA_DH:
+				LDI $2, R0
+
+			NAO_LIMITA_24_DH:
+				STA R0, @293 --HEX5
+
+				LDA @352, R1
+				CEQ R1, @10 -- Compara se KEY0 não foi pressionado
+				JEQ @AGUARDA_KEY0_0
+				STA R0, @511
+
+
+				-- se KEY0 foi pressionado: ajusta dezena da hora
+				STA R0, @3
+				JMP @AJUSTA_UNIDADE_HORA
+
+			FLAG_12H_AJUSTE_DEZENA_HORA:
+				LDI $1, R1
+				CLT R1, @320
+				JLT @LIMITA_12_HORA_DH
+				JMP @NAO_LIMITA_12_DH
+				
+				LIMITA_12_HORA_DH:
+					LDI $1, R0	
+
+				NAO_LIMITA_12_DH:
+					STA R0, @293 --HEX5
+
+					LDA @352, R1
+					CEQ R1, @10 -- Compara se KEY0 não foi pressionado
+					JEQ @AGUARDA_KEY0_0
+					STA R0, @511
+
+					-- se KEY0 foi pressionado ajusta dezena da hora
+					STA R0, @3
+
+
+	AJUSTA_UNIDADE_HORA:
+		STA R0, @511
+		-- Ligar LEDR8
+		LDI $1, R0
+		STA R0, @257
+
+		AGUARDA_KEY0_1:
+			LDA @320, R0	-- lê chaves SW[0~7]
+
+			LDA @21, R1
+			CEQ R1, @10
+			JEQ @FLAG_12H_AJUSTE_UNIDADE_HORA
+			LDI $2, R1
+			CEQ R1, @3
+			JEQ @BASE_24_HORAS_UNIDADE_HORA_LIMITE
+
+			LDI $10, R1
+			CLT R1, @320
+			JLT @LIMITA_24_HORA_UH_1
+			JMP @NAO_LIMITA_24_UH_1
+			
+			LIMITA_24_HORA_UH_1:
+				LDI $9, R0	
+
+			NAO_LIMITA_24_UH_1:
+				STA R0, @292 --HEX4
+
+				LDA @352, R1
+				CEQ R1, @10 -- Compara se KEY0 não foi pressionado
+				JEQ @AGUARDA_KEY0_1
+				STA R0, @511
+
+				-- se KEY0 foi pressionado ajusta dezena da hora
+				STA R0, @2
+				JMP @AJUSTA_DEZENA_MINUTO
+
+			BASE_24_HORAS_UNIDADE_HORA_LIMITE:
+				LDI $3, R1
+				CLT R1, @320
+				JLT @LIMITA_24_HORA_UH_2
+				JMP @NAO_LIMITA_24_UH_2
+				
+				LIMITA_24_HORA_UH_2:
+					LDI $3, R0	
+
+				NAO_LIMITA_24_UH_2:
+					STA R0, @292
+
+					LDA @352, R1
+					CEQ R1, @10 -- Compara se KEY0 não foi pressionado
+					JEQ @AGUARDA_KEY0_1
+					STA R0, @511
+
+					-- se KEY0 foi pressionado ajusta dezena da hora
+					STA R0, @2
+					JMP @AJUSTA_DEZENA_MINUTO
+
+				
+			FLAG_12H_AJUSTE_UNIDADE_HORA:
+				LDI $1, R1
+				CEQ R1, @3
+				JEQ @BASE_12_HORAS_UNIDADE_HORA_LIMITE
+
+				LDI $10, R1
+				CLT R1, @320
+				JLT @LIMITA_12_HORA_UH
+				JMP @NAO_LIMITA_12_UH_1
+				
+				LIMITA_12_HORA_UH:
+					LDI $9, R0	
+
+				NAO_LIMITA_12_UH_1:
+					STA R0, @292 --HEX4
+
+					LDA @352, R1
+					CEQ R1, @10 -- Compara se KEY0 não foi pressionado
+					JEQ @AGUARDA_KEY0_1
+					STA R0, @511
+
+					-- se KEY0 foi pressionado ajusta dezena da hora
+					STA R0, @2
+					JMP @AJUSTA_DEZENA_MINUTO
+
+				BASE_12_HORAS_UNIDADE_HORA_LIMITE:
+					LDI $2, R1
+					CLT R1, @320
+					JLT @LIMITA_12_HORA_UH_2
+					JMP @NAO_LIMITA_12_UH_2
+					
+					LIMITA_12_HORA_UH_2:
+						LDI $1, R0	
+
+					NAO_LIMITA_12_UH_2:
+						STA R0, @292 --HEX4
+
+						LDA @352, R1
+						CEQ R1, @10 -- Compara se KEY0 não foi pressionado
+						JEQ @AGUARDA_KEY0_1
+						STA R0, @511
+
+						-- se KEY0 foi pressionado: ajusta unidade da hora
+						STA R0, @2
+
+
+	AJUSTA_DEZENA_MINUTO:
+		STA R0, @511
+		-- Ligar LEDR7
+		LDI $128, R0
+		STA R0, @256
+
+		AGUARDA_KEY0_2:
+			LDA @320, R0	-- lê chaves SW[0~7]
+
+			LDI $6, R1
+			CLT R1, @320
+			JLT @LIMITA_5_DM
+			JMP @NAO_LIMITA_5_DM
+			
+			LIMITA_5_DM:
+				LDI $5, R0	
+
+			NAO_LIMITA_5_DM:
+				STA R0, @291 --HEX3
+
+				LDA @352, R1
+				CEQ R1, @10 -- Compara se KEY0 não foi pressionado
+				JEQ @AGUARDA_KEY0_2
+				STA R0, @511
+
+				-- se KEY0 foi pressionado: ajusta Unidade de minuto
+				STA R0, @1
+
+	AJUSTA_UNIDADE_MINUTO:
+		STA R0, @511
+		-- Ligar LEDR6
+		LDI $192, R0
+		STA R0, @256
+
+		AGUARDA_KEY0_3:
+			LDA @320, R0	-- lê chaves SW[0~7]
+
+			LDI $10, R1
+			CLT R1, @320
+			JLT @LIMITA_9_UM
+			JMP @NAO_LIMITA_9_UM
+			
+			LIMITA_9_UM:
+				LDI $9, R0	
+
+			NAO_LIMITA_9_UM:
+				STA R0, @290 --HEX2
+
+				LDA @352, R1
+				CEQ R1, @10 -- Compara se KEY0 não foi pressionado
+				JEQ @AGUARDA_KEY0_3
+				STA R0, @511
+
+				-- se KEY0 foi pressionado ajusta Unidade de minuto
+				STA R0, @0
+
+	AJUSTA_DEZENA_SEGUNDO:
+		STA R0, @511
+		-- Ligar LEDR5
+		LDI $224, R0
+		STA R0, @256
+
+		AGUARDA_KEY0_4:
+			LDA @320, R3	-- lê chaves SW[0~7]
+
+			LDI $6, R1
+			CLT R1, @320
+			JLT @LIMITA_5_DS
+			JMP @NAO_LIMITA_5_DS
+			
+			LIMITA_5_DS:
+				LDI $5, R3	
+
+			NAO_LIMITA_5_DS:
+				STA R3, @289 --HEX1
+
+				LDA @352, R1
+				CEQ R1, @10 -- Compara se KEY0 não foi pressionado
+				JEQ @AGUARDA_KEY0_4
+				STA R0, @511
+
+
+	AJUSTA_UNIDADE_SEGUNDO:
+		STA R0, @511
+		-- Ligar LEDR6
+		LDI $240, R0
+		STA R0, @256
+
+		AGUARDA_KEY0_5:
+			LDA @320, R2	-- lê chaves SW[0~7]
+
+			LDI $10, R1
+			CLT R1, @320
+			JLT @LIMITA_9_US
+			JMP @NAO_LIMITA_9_US
+			
+			LIMITA_9_US:
+				LDI $9, R2	
+
+			NAO_LIMITA_9_US:
+				STA R2, @288 --HEX0
+
+				LDA @352, R1
+				CEQ R1, @10 -- Compara se KEY0 não foi pressionado
+				JEQ @AGUARDA_KEY0_5
+				STA R0, @511
+
+				-- se KEY0 foi pressionado ajusta Unidade de segundo
+				LDI $0, R0
+				LDI $0, R1
+				STA R0, @256 -- Desliga todos os LEDs
+				STA R0, @257 -- Desliga todos os LEDs
+				STA R0, @258 -- Desliga todos os LEDs
+				RET			
 
 RESET_FPGA:
 	STA R0, @509
@@ -266,7 +410,7 @@ INCREMENTADOR:
 	CEQ R1, @11
 	JEQ @FLAG_IS_SET
 	RET
-	FLAG_IS_SET: X-- Incrementa contador
+	FLAG_IS_SET: -- Incrementa contador
 		-- Incrementa unidade de segundo
 		SOMA R2, @11
 		CEQ R2, @12
@@ -382,49 +526,4 @@ ESCREVER_DISPLAY:
 	STA R1, @292
 	LDA @3, R1
 	STA R1, @293
-
-
 	RET
-
-
-CHECA_LIMITES:
-	CEQ R2, @30 -- Compara unidade com valor Limite da Unidade
-	JEQ @CHECA_LIMITES_D
-	RET
-
-	CHECA_LIMITES_D:
-		CEQ R3, @31 -- Compara dezena com valor Limite da Dezena
-		JEQ @CHECA_LIMITES_C
-		RET
-
-		CHECA_LIMITES_C:
-			LDA @0, R0 -- Lê valor Limite da Centena
-			CEQ R0, @32 -- Compara centena com valor Limite da Centena
-			JEQ @CHECA_LIMITES_UM
-			RET
-
-			CHECA_LIMITES_UM:
-				LDA @1, R0 -- Lê valor Limite da Unidade de Milhar
-				CEQ R0, @33 -- Compara unidade de milhar com valor Limite da Unidade de Milhar
-				JEQ @CHECA_LIMITES_DM
-				RET
-
-				CHECA_LIMITES_DM:
-					LDA @2, R0 -- Lê valor Limite da Dezena de Milhar
-					CEQ R0, @34 -- Compara dezena de milhar com valor Limite da Dezena de Milhar
-					JEQ @CHECA_LIMITES_CM
-					RET
-
-					CHECA_LIMITES_CM:
-						LDA @3, R0 -- Lê valor Limite da Centena de Milhar
-						CEQ R0, @35 -- Compara centena de milhar com valor Limite da Centena de Milhar
-						JEQ @CHECA_LIMITES_FINAL
-						RET
-
-						CHECA_LIMITES_FINAL:
-							LDI $0, R0
-							STA R0, @20	-- DESATIVA FLAG DE CONTAGEM
-							LDI $1, R0
-							STA R0, @257
-							LDI $0, R0
-							RET

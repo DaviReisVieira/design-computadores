@@ -127,7 +127,7 @@ ULA1 : entity work.ULASomaSubPassa  generic map(larguraDados => larguraDados)
           flagEqual => ULA_FLAG_EQ,
           flagLess => ULA_FLAG_LESS);
 
-FLIPFLOP1 : ENTITY work.flipFlopGenerico
+FLIPFLOP_CEQ : ENTITY work.flipFlopGenerico
           port map(
           DIN => ULA_FLAG_EQ,
           DOUT => FLIPFLOP_EQUAL_OUT,
@@ -135,7 +135,7 @@ FLIPFLOP1 : ENTITY work.flipFlopGenerico
           CLK => CLK,
           RST => '0');
 
-FLIPFLOP2 : ENTITY work.flipFlopGenerico
+FLIPFLOP_CLT : ENTITY work.flipFlopGenerico
           port map(
           DIN => ULA_FLAG_LESS,
           DOUT => FLIPFLOP_LESS_OUT,

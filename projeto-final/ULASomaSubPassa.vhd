@@ -30,5 +30,5 @@ architecture comportamento of ULASomaSubPassa is
 					entradaB;
 
       flagEqual <= '1' when (subtracao = "00000000") else '0';
-      flagLess <= saida(larguraDados-1);
+      flagLess <= subtracao(larguraDados-1);
 end architecture;
