@@ -33,12 +33,14 @@ architecture arquitetura of CPU is
 	signal IMEDIATO_ADDRESS:std_logic_vector (larguraEnderecosROM -1 downto 0);
 	
 	-- ULA:
-  signal MUX_ULA_B : 		std_logic_vector (larguraDados-1 downto 0);
+  signal MUX_ULA_B : 		  std_logic_vector (larguraDados-1 downto 0);
   signal REGA_ULA_A : 		std_logic_vector (larguraDados-1 downto 0);
-  signal Saida_ULA : 		std_logic_vector (larguraDados-1 downto 0);
+  signal Saida_ULA : 		  std_logic_vector (larguraDados-1 downto 0);
   signal Operacao_ULA : 	std_logic_vector (2 - 1 downto 0);
   signal ULA_FLAG_EQ : 		std_logic;
-  signal FLIPFLOP_OUT : 	std_logic;
+  signal ULA_FLAG_LESS : 	std_logic;
+  signal FLIPFLOP_EQUAL_OUT : 	std_logic;
+  signal FLIPFLOP_LESS_OUT : 	std_logic;
   
   
   -- MUX:
@@ -55,7 +57,7 @@ architecture arquitetura of CPU is
   
   -- Decoder
   signal ROM_OpCode : 		std_logic_vector (3 downto 0);
-  signal Sinais_Controle : std_logic_vector (11 downto 0);
+  signal Sinais_Controle : std_logic_vector (13 downto 0);
       
   -- Program Counter
   signal PC_OUT:				std_logic_vector (larguraEnderecosROM -1 downto 0);
@@ -131,13 +133,22 @@ ULA1 : entity work.ULASomaSubPassa  generic map(larguraDados => larguraDados)
 					entradaB => MUX_ULA_B, 
 					saida => Saida_ULA, 
 					seletor => Operacao_ULA,
-          flagEqual => ULA_FLAG_EQ);
+          flagEqual => ULA_FLAG_EQ,
+          flagLess => ULA_FLAG_LESS);
 
 FLIPFLOP1 : ENTITY work.flipFlopGenerico
           port map(
           DIN => ULA_FLAG_EQ,
-          DOUT => FLIPFLOP_OUT,
+          DOUT => FLIPFLOP_EQUAL_OUT,
           ENABLE => Sinais_Controle(2),
+          CLK => CLK,
+          RST => '0');
+
+FLIPFLOP2 : ENTITY work.flipFlopGenerico
+          port map(
+          DIN => ULA_FLAG_LESS,
+          DOUT => FLIPFLOP_LESS_OUT,
+          ENABLE => Sinais_Controle(3),
           CLK => CLK,
           RST => '0');
 
@@ -145,18 +156,20 @@ END_RETORNO : ENTITY work.registradorGenerico GENERIC MAP (larguraDados => 9)
 PORT MAP(
         DIN => proxPC,
         DOUT => EndRetorno_OUT,
-        ENABLE => Sinais_Controle(11),
+        ENABLE => Sinais_Controle(13),
         CLK => CLK,
         RST => '0'
 );
           
 DESVIO1 : ENTITY work.LogicaDesvio
 PORT MAP(
-        JMP => Sinais_Controle(10),
-        RET => Sinais_Controle(9),
-        JSR => Sinais_Controle(8),
-        JEQ => Sinais_Controle(7),
-        FLAG_EQ => FLIPFLOP_OUT,
+        JLT => Sinais_Controle(12),
+        JMP => Sinais_Controle(11),
+        RET => Sinais_Controle(10),
+        JSR => Sinais_Controle(9),
+        JEQ => Sinais_Controle(8),
+        FLAG_EQ => FLIPFLOP_EQUAL_OUT,
+        FLAG_LESS => FLIPFLOP_LESS_OUT,
         Sel => SelMUXproxPC
 );
 
@@ -183,9 +196,9 @@ IMEDIATO <= INSTRUCAO_IN(7 downto 0);
 IMEDIATO_ADDRESS <= INSTRUCAO_IN (8 downto 0);
 DATA_ADDRESS <= INSTRUCAO_IN (8 downto 0);
 
-Operacao_ULA <= Sinais_Controle(4 downto 3);
-SelMUX <= Sinais_Controle(6);
-Habilita_REGs <= Sinais_Controle(5);
+Operacao_ULA <= Sinais_Controle(5 downto 4);
+SelMUX <= Sinais_Controle(7);
+Habilita_REGs <= Sinais_Controle(6);
 
 REGA_ULA_A <= Saida_REGs;
 

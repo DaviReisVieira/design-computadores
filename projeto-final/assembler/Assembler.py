@@ -42,7 +42,7 @@ class Assembler:
         self.labels = {}
         self.codes = []
 
-        self.op_codes = ['NOP', 'LDA','SOMA', 'SUB','LDI', 'STA','JMP','JEQ','CEQ','JSR','RET', ]
+        self.op_codes = ['NOP', 'LDA','SOMA', 'SUB','LDI', 'STA','JMP','JEQ','CEQ','JSR','RET','CLT','JLT', ]
         self.regs = {
             'R0': '00',
             'R1': '01',
