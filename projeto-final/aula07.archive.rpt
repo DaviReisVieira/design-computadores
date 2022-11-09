@@ -1,5 +1,5 @@
 Archive Project report for aula07
-Sun Oct 23 23:23:39 2022
+Sun Nov 06 23:58:48 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Sun Oct 23 23:23:39 2022 ;
+; Archive Project Status ; Successful - Sun Nov 06 23:58:48 2022 ;
 ; Revision Name          ; aula07                                ;
 ; Top-level Entity Name  ; TopLevel                              ;
 ; Family                 ; Cyclone V                             ;
@@ -54,15 +54,15 @@ Info: Archive will store files relative to the closest common parent directory
 Info (13213): Using common directory C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/projeto_final.qar'
+Info: Generated archive 'C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/PROJETOFINAL.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'aula07.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4825 megabytes
-    Info: Processing ended: Sun Oct 23 23:23:39 2022
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Sun Nov 06 23:58:48 2022
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:00
 
 
@@ -82,14 +82,18 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; CPU.vhd                                                      ;
 ; decoder3x8.vhd                                               ;
 ; decoderInstru.vhd                                            ;
+; divisorGenerico.vhd                                          ;
+; divisorGenerico_e_Interface.vhd                              ;
 ; edgeDebounceDetector.vhd                                     ;
 ; edgeDebounceDetectorKey1.vhd                                 ;
+; edgeDebounceDetectorKey2.vhd                                 ;
 ; edgeDebounceDetectorReset.vhd                                ;
 ; edgeDetector.vhd                                             ;
 ; flipflopGenerico.vhd                                         ;
 ; logicaDesvio.vhd                                             ;
 ; memoriaRAM.vhd                                               ;
 ; memoriaROM.vhd                                               ;
+; mux2x1.vhd                                                   ;
 ; muxGenerico2x1.vhd                                           ;
 ; muxGenerico4x1.vhd                                           ;
 ; registradorGenerico.vhd                                      ;

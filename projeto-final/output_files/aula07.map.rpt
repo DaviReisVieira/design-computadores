@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aula07
-Sun Nov 06 18:56:09 2022
+Sun Nov 06 23:56:24 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -21,75 +21,84 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  13. Parameter Settings for User Entity Instance: divisorGenerico:baseTempoDebounce
  14. Parameter Settings for User Entity Instance: edgeDebounceDetector:detectorSubDebounceKey0
  15. Parameter Settings for User Entity Instance: edgeDebounceDetectorKey1:detectorSubDebounceKey1
- 16. Parameter Settings for User Entity Instance: edgeDebounceDetectorReset:detectorSubDebounceReset
- 17. Parameter Settings for User Entity Instance: CPU:CPU
- 18. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1:MUX1
- 19. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico4x1:MUXproxPC
- 20. Parameter Settings for User Entity Instance: CPU:CPU|bancoRegistradoresArqRegMem:REGS
- 21. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:PC
- 22. Parameter Settings for User Entity Instance: CPU:CPU|somaConstante:incrementaPC
- 23. Parameter Settings for User Entity Instance: CPU:CPU|ULASomaSubPassa:ULA1
- 24. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:END_RETORNO
- 25. Parameter Settings for User Entity Instance: memoriaRAM:RAM64
- 26. Parameter Settings for User Entity Instance: memoriaROM:ROM
- 27. Parameter Settings for User Entity Instance: registradorGenerico:REG_LEDR0_7
- 28. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX0
- 29. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX1
- 30. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX2
- 31. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX3
- 32. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX4
- 33. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX5
- 34. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_5"
- 35. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_4"
- 36. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_3"
- 37. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_2"
- 38. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_1"
- 39. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_0"
- 40. Port Connectivity Checks: "registradorGenerico:REG_HEX5"
- 41. Port Connectivity Checks: "registradorGenerico:REG_HEX4"
- 42. Port Connectivity Checks: "registradorGenerico:REG_HEX3"
- 43. Port Connectivity Checks: "registradorGenerico:REG_HEX2"
- 44. Port Connectivity Checks: "registradorGenerico:REG_HEX1"
- 45. Port Connectivity Checks: "registradorGenerico:REG_HEX0"
- 46. Port Connectivity Checks: "flipFlopGenerico:FLIP_FLOP_LED9"
- 47. Port Connectivity Checks: "flipFlopGenerico:FLIP_FLOP_LED8"
- 48. Port Connectivity Checks: "registradorGenerico:REG_LEDR0_7"
- 49. Port Connectivity Checks: "decoder3x8:DECODER2"
- 50. Port Connectivity Checks: "decoder3x8:DECODER1"
- 51. Port Connectivity Checks: "CPU:CPU|registradorGenerico:END_RETORNO"
- 52. Port Connectivity Checks: "CPU:CPU|flipFlopGenerico:FLIPFLOP_CLT"
- 53. Port Connectivity Checks: "CPU:CPU|flipFlopGenerico:FLIPFLOP_CEQ"
- 54. Port Connectivity Checks: "CPU:CPU|registradorGenerico:PC"
- 55. Port Connectivity Checks: "CPU:CPU|muxGenerico4x1:MUXproxPC"
- 56. Port Connectivity Checks: "CPU:CPU"
- 57. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|buffer_3_state_simples:BFF7"
- 58. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|buffer_3_state_simples:BFF6"
- 59. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|buffer_3_state_simples:BFF5"
- 60. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|buffer_3_state_simples:BFF4"
- 61. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|buffer_3_state_simples:BFF3"
- 62. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|buffer_3_state_simples:BFF2"
- 63. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|buffer_3_state_simples:BFF1"
- 64. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|flipFlopGenerico:FFP"
- 65. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF7"
- 66. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF6"
- 67. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF5"
- 68. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF4"
- 69. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF3"
- 70. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF2"
- 71. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF1"
- 72. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|flipFlopGenerico:FFP"
- 73. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF7"
- 74. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF6"
- 75. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF5"
- 76. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF4"
- 77. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF3"
- 78. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF2"
- 79. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF1"
- 80. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|flipFlopGenerico:FFP"
- 81. Port Connectivity Checks: "flipFlopGenerico:registraTempoSegundoOuDebouce"
- 82. Post-Synthesis Netlist Statistics for Top Partition
- 83. Elapsed Time Per Partition
- 84. Analysis & Synthesis Messages
+ 16. Parameter Settings for User Entity Instance: edgeDebounceDetectorKey2:detectorSubDebounceKey2
+ 17. Parameter Settings for User Entity Instance: edgeDebounceDetectorReset:detectorSubDebounceReset
+ 18. Parameter Settings for User Entity Instance: CPU:CPU
+ 19. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico2x1:MUX1
+ 20. Parameter Settings for User Entity Instance: CPU:CPU|muxGenerico4x1:MUXproxPC
+ 21. Parameter Settings for User Entity Instance: CPU:CPU|bancoRegistradoresArqRegMem:REGS
+ 22. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:PC
+ 23. Parameter Settings for User Entity Instance: CPU:CPU|somaConstante:incrementaPC
+ 24. Parameter Settings for User Entity Instance: CPU:CPU|ULASomaSubPassa:ULA1
+ 25. Parameter Settings for User Entity Instance: CPU:CPU|registradorGenerico:END_RETORNO
+ 26. Parameter Settings for User Entity Instance: memoriaRAM:RAM64
+ 27. Parameter Settings for User Entity Instance: memoriaROM:ROM
+ 28. Parameter Settings for User Entity Instance: registradorGenerico:REG_LEDR0_7
+ 29. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX0
+ 30. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX1
+ 31. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX2
+ 32. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX3
+ 33. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX4
+ 34. Parameter Settings for User Entity Instance: registradorGenerico:REG_HEX5
+ 35. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_5"
+ 36. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_4"
+ 37. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_3"
+ 38. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_2"
+ 39. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_1"
+ 40. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_0"
+ 41. Port Connectivity Checks: "registradorGenerico:REG_HEX5"
+ 42. Port Connectivity Checks: "registradorGenerico:REG_HEX4"
+ 43. Port Connectivity Checks: "registradorGenerico:REG_HEX3"
+ 44. Port Connectivity Checks: "registradorGenerico:REG_HEX2"
+ 45. Port Connectivity Checks: "registradorGenerico:REG_HEX1"
+ 46. Port Connectivity Checks: "registradorGenerico:REG_HEX0"
+ 47. Port Connectivity Checks: "flipFlopGenerico:FLIP_FLOP_LED9"
+ 48. Port Connectivity Checks: "flipFlopGenerico:FLIP_FLOP_LED8"
+ 49. Port Connectivity Checks: "registradorGenerico:REG_LEDR0_7"
+ 50. Port Connectivity Checks: "decoder3x8:DECODER2"
+ 51. Port Connectivity Checks: "decoder3x8:DECODER1"
+ 52. Port Connectivity Checks: "CPU:CPU|registradorGenerico:END_RETORNO"
+ 53. Port Connectivity Checks: "CPU:CPU|flipFlopGenerico:FLIPFLOP_CLT"
+ 54. Port Connectivity Checks: "CPU:CPU|flipFlopGenerico:FLIPFLOP_CEQ"
+ 55. Port Connectivity Checks: "CPU:CPU|registradorGenerico:PC"
+ 56. Port Connectivity Checks: "CPU:CPU|muxGenerico4x1:MUXproxPC"
+ 57. Port Connectivity Checks: "CPU:CPU"
+ 58. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|buffer_3_state_simples:BFF7"
+ 59. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|buffer_3_state_simples:BFF6"
+ 60. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|buffer_3_state_simples:BFF5"
+ 61. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|buffer_3_state_simples:BFF4"
+ 62. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|buffer_3_state_simples:BFF3"
+ 63. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|buffer_3_state_simples:BFF2"
+ 64. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|buffer_3_state_simples:BFF1"
+ 65. Port Connectivity Checks: "edgeDebounceDetectorReset:detectorSubDebounceReset|flipFlopGenerico:FFP"
+ 66. Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF7"
+ 67. Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF6"
+ 68. Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF5"
+ 69. Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF4"
+ 70. Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF3"
+ 71. Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF2"
+ 72. Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF1"
+ 73. Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|flipFlopGenerico:FFP"
+ 74. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF7"
+ 75. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF6"
+ 76. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF5"
+ 77. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF4"
+ 78. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF3"
+ 79. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF2"
+ 80. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF1"
+ 81. Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|flipFlopGenerico:FFP"
+ 82. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF7"
+ 83. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF6"
+ 84. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF5"
+ 85. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF4"
+ 86. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF3"
+ 87. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF2"
+ 88. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF1"
+ 89. Port Connectivity Checks: "edgeDebounceDetector:detectorSubDebounceKey0|flipFlopGenerico:FFP"
+ 90. Port Connectivity Checks: "flipFlopGenerico:registraTempoSegundoOuDebouce"
+ 91. Post-Synthesis Netlist Statistics for Top Partition
+ 92. Elapsed Time Per Partition
+ 93. Analysis & Synthesis Messages
 
 
 
@@ -116,13 +125,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Nov 06 18:56:09 2022       ;
+; Analysis & Synthesis Status     ; Successful - Sun Nov 06 23:56:24 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aula07                                      ;
 ; Top-level Entity Name           ; TopLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 644                                         ;
+; Total registers                 ; 646                                         ;
 ; Total pins                      ; 76                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -272,6 +281,7 @@ https://fpgasoftware.intel.com/eula.
 ; edgeDebounceDetectorReset.vhd    ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/edgeDebounceDetectorReset.vhd   ;         ;
 ; divisorGenerico.vhd              ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/divisorGenerico.vhd             ;         ;
 ; mux2x1.vhd                       ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/mux2x1.vhd                      ;         ;
+; edgeDebounceDetectorKey2.vhd     ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/edgeDebounceDetectorKey2.vhd    ;         ;
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -280,25 +290,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 546            ;
+; Estimate of Logic utilization (ALMs needed) ; 602            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 647            ;
-;     -- 7 input functions                    ; 3              ;
-;     -- 6 input functions                    ; 355            ;
-;     -- 5 input functions                    ; 50             ;
-;     -- 4 input functions                    ; 158            ;
-;     -- <=3 input functions                  ; 81             ;
+; Combinational ALUT usage for logic          ; 659            ;
+;     -- 7 input functions                    ; 30             ;
+;     -- 6 input functions                    ; 371            ;
+;     -- 5 input functions                    ; 108            ;
+;     -- 4 input functions                    ; 78             ;
+;     -- <=3 input functions                  ; 72             ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 644            ;
+; Dedicated logic registers                   ; 646            ;
 ;                                             ;                ;
 ; I/O pins                                    ; 76             ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 640            ;
-; Total fan-out                               ; 5332           ;
-; Average fan-out                             ; 3.70           ;
+; Maximum fan-out                             ; 641            ;
+; Total fan-out                               ; 5569           ;
+; Average fan-out                             ; 3.82           ;
 +---------------------------------------------+----------------+
 
 
@@ -307,26 +317,26 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                    ; Entity Name                 ; Library Name ;
 +---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------+-----------------------------+--------------+
-; |TopLevel                                               ; 647 (29)            ; 644 (0)                   ; 0                 ; 0          ; 76   ; 0            ; |TopLevel                                                                              ; TopLevel                    ; work         ;
-;    |CPU:CPU|                                            ; 72 (0)              ; 52 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU                                                                      ; CPU                         ; work         ;
+; |TopLevel                                               ; 659 (28)            ; 646 (0)                   ; 0                 ; 0          ; 76   ; 0            ; |TopLevel                                                                              ; TopLevel                    ; work         ;
+;    |CPU:CPU|                                            ; 69 (0)              ; 52 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU                                                                      ; CPU                         ; work         ;
 ;       |ULASomaSubPassa:ULA1|                            ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|ULASomaSubPassa:ULA1                                                 ; ULASomaSubPassa             ; work         ;
 ;       |bancoRegistradoresArqRegMem:REGS|                ; 12 (12)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|bancoRegistradoresArqRegMem:REGS                                     ; bancoRegistradoresArqRegMem ; work         ;
-;       |decoderInstru:DECODER1|                          ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|decoderInstru:DECODER1                                               ; decoderInstru               ; work         ;
+;       |decoderInstru:DECODER1|                          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|decoderInstru:DECODER1                                               ; decoderInstru               ; work         ;
 ;       |flipFlopGenerico:FLIPFLOP_CEQ|                   ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|flipFlopGenerico:FLIPFLOP_CEQ                                        ; flipFlopGenerico            ; work         ;
 ;       |flipFlopGenerico:FLIPFLOP_CLT|                   ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|flipFlopGenerico:FLIPFLOP_CLT                                        ; flipFlopGenerico            ; work         ;
-;       |logicaDesvio:DESVIO1|                            ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|logicaDesvio:DESVIO1                                                 ; logicaDesvio                ; work         ;
+;       |logicaDesvio:DESVIO1|                            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|logicaDesvio:DESVIO1                                                 ; logicaDesvio                ; work         ;
 ;       |muxGenerico4x1:MUXproxPC|                        ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|muxGenerico4x1:MUXproxPC                                             ; muxGenerico4x1              ; work         ;
 ;       |registradorGenerico:END_RETORNO|                 ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|registradorGenerico:END_RETORNO                                      ; registradorGenerico         ; work         ;
 ;       |registradorGenerico:PC|                          ; 1 (1)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|registradorGenerico:PC                                               ; registradorGenerico         ; work         ;
 ;       |somaConstante:incrementaPC|                      ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|CPU:CPU|somaConstante:incrementaPC                                           ; somaConstante               ; work         ;
-;    |and4x1:AND_HEX0|                                    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX0                                                              ; and4x1                      ; work         ;
+;    |and4x1:AND_HEX0|                                    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX0                                                              ; and4x1                      ; work         ;
 ;    |and4x1:AND_HEX1|                                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX1                                                              ; and4x1                      ; work         ;
 ;    |and4x1:AND_HEX2|                                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX2                                                              ; and4x1                      ; work         ;
 ;    |and4x1:AND_HEX3|                                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX3                                                              ; and4x1                      ; work         ;
 ;    |and4x1:AND_HEX4|                                    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX4                                                              ; and4x1                      ; work         ;
 ;    |and4x1:AND_HEX5|                                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_HEX5                                                              ; and4x1                      ; work         ;
-;    |and4x1:AND_LEDR0_7|                                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_LEDR0_7                                                           ; and4x1                      ; work         ;
-;    |and4x1:AND_SW0_7|                                   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_SW0_7                                                             ; and4x1                      ; work         ;
+;    |and4x1:AND_LEDR0_7|                                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_LEDR0_7                                                           ; and4x1                      ; work         ;
+;    |and4x1:AND_SW0_7|                                   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|and4x1:AND_SW0_7                                                             ; and4x1                      ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_0|                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_0                                              ; conversorHex7Seg            ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_1|                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_1                                              ; conversorHex7Seg            ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_2|                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_2                                              ; conversorHex7Seg            ; work         ;
@@ -335,20 +345,23 @@ https://fpgasoftware.intel.com/eula.
 ;    |conversorHex7Seg:DECODER_7SEG_5|                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_5                                              ; conversorHex7Seg            ; work         ;
 ;    |divisorGenerico:baseTempoDebounce|                  ; 16 (16)             ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|divisorGenerico:baseTempoDebounce                                            ; divisorGenerico             ; work         ;
 ;    |divisorGenerico:baseTempoNormal|                    ; 33 (33)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|divisorGenerico:baseTempoNormal                                              ; divisorGenerico             ; work         ;
-;    |edgeDebounceDetector:detectorSubDebounceKey0|       ; 2 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetector:detectorSubDebounceKey0                                 ; edgeDebounceDetector        ; work         ;
+;    |edgeDebounceDetector:detectorSubDebounceKey0|       ; 3 (1)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetector:detectorSubDebounceKey0                                 ; edgeDebounceDetector        ; work         ;
 ;       |edgeDetector:edgeDetector|                       ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetector:detectorSubDebounceKey0|edgeDetector:edgeDetector       ; edgeDetector                ; work         ;
 ;       |flipFlopGenerico:FFP|                            ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetector:detectorSubDebounceKey0|flipFlopGenerico:FFP            ; flipFlopGenerico            ; work         ;
-;    |edgeDebounceDetectorKey1:detectorSubDebounceKey1|   ; 5 (3)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1                             ; edgeDebounceDetectorKey1    ; work         ;
+;    |edgeDebounceDetectorKey1:detectorSubDebounceKey1|   ; 3 (1)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1                             ; edgeDebounceDetectorKey1    ; work         ;
 ;       |edgeDetector:edgeDetector|                       ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1|edgeDetector:edgeDetector   ; edgeDetector                ; work         ;
 ;       |flipFlopGenerico:FFP|                            ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1|flipFlopGenerico:FFP        ; flipFlopGenerico            ; work         ;
-;    |edgeDebounceDetectorReset:detectorSubDebounceReset| ; 2 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetectorReset:detectorSubDebounceReset                           ; edgeDebounceDetectorReset   ; work         ;
+;    |edgeDebounceDetectorKey2:detectorSubDebounceKey2|   ; 3 (1)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetectorKey2:detectorSubDebounceKey2                             ; edgeDebounceDetectorKey2    ; work         ;
+;       |edgeDetector:edgeDetector|                       ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetectorKey2:detectorSubDebounceKey2|edgeDetector:edgeDetector   ; edgeDetector                ; work         ;
+;       |flipFlopGenerico:FFP|                            ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetectorKey2:detectorSubDebounceKey2|flipFlopGenerico:FFP        ; flipFlopGenerico            ; work         ;
+;    |edgeDebounceDetectorReset:detectorSubDebounceReset| ; 3 (1)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetectorReset:detectorSubDebounceReset                           ; edgeDebounceDetectorReset   ; work         ;
 ;       |edgeDetector:edgeDetector|                       ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetectorReset:detectorSubDebounceReset|edgeDetector:edgeDetector ; edgeDetector                ; work         ;
 ;       |flipFlopGenerico:FFP|                            ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|edgeDebounceDetectorReset:detectorSubDebounceReset|flipFlopGenerico:FFP      ; flipFlopGenerico            ; work         ;
 ;    |flipFlopGenerico:FLIP_FLOP_LED8|                    ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|flipFlopGenerico:FLIP_FLOP_LED8                                              ; flipFlopGenerico            ; work         ;
 ;    |flipFlopGenerico:FLIP_FLOP_LED9|                    ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|flipFlopGenerico:FLIP_FLOP_LED9                                              ; flipFlopGenerico            ; work         ;
 ;    |flipFlopGenerico:registraTempoSegundoOuDebouce|     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|flipFlopGenerico:registraTempoSegundoOuDebouce                               ; flipFlopGenerico            ; work         ;
-;    |memoriaRAM:RAM64|                                   ; 298 (298)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|memoriaRAM:RAM64                                                             ; memoriaRAM                  ; work         ;
-;    |memoriaROM:ROM|                                     ; 131 (131)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|memoriaROM:ROM                                                               ; memoriaROM                  ; work         ;
+;    |memoriaRAM:RAM64|                                   ; 296 (296)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|memoriaRAM:RAM64                                                             ; memoriaRAM                  ; work         ;
+;    |memoriaROM:ROM|                                     ; 147 (147)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|memoriaROM:ROM                                                               ; memoriaROM                  ; work         ;
 ;    |mux2x1:muxBaseTempo|                                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|mux2x1:muxBaseTempo                                                          ; mux2x1                      ; work         ;
 ;    |registradorGenerico:REG_HEX0|                       ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX0                                                 ; registradorGenerico         ; work         ;
 ;    |registradorGenerico:REG_HEX1|                       ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:REG_HEX1                                                 ; registradorGenerico         ; work         ;
@@ -378,10 +391,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 644   ;
+; Total registers                              ; 646   ;
 ; Number of registers using Synchronous Clear  ; 46    ;
 ; Number of registers using Synchronous Load   ; 32    ;
-; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Clear ; 5     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 585   ;
 ; Number of registers using Preset             ; 0     ;
@@ -446,6 +459,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-----------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: edgeDebounceDetectorKey1:detectorSubDebounceKey1 ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; dataaddresss   ; 9     ; Signed Integer                                                       ;
+; datawidth      ; 8     ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: edgeDebounceDetectorKey2:detectorSubDebounceKey2 ;
 +----------------+-------+----------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                 ;
 +----------------+-------+----------------------------------------------------------------------+
@@ -941,6 +965,79 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF7" ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                     ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+; entrada ; Input ; Info     ; Stuck at GND                                                                ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF6" ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                     ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+; entrada ; Input ; Info     ; Stuck at GND                                                                ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF5" ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                     ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+; entrada ; Input ; Info     ; Stuck at GND                                                                ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF4" ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                     ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+; entrada ; Input ; Info     ; Stuck at GND                                                                ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF3" ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                     ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+; entrada ; Input ; Info     ; Stuck at GND                                                                ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF2" ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                     ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+; entrada ; Input ; Info     ; Stuck at GND                                                                ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF1" ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                     ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+; entrada ; Input ; Info     ; Stuck at GND                                                                ;
++---------+-------+----------+-----------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "edgeDebounceDetectorKey2:detectorSubDebounceKey2|flipFlopGenerico:FFP" ;
++--------+-------+----------+-----------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                               ;
++--------+-------+----------+-----------------------------------------------------------------------+
+; din    ; Input ; Info     ; Stuck at VCC                                                          ;
+; enable ; Input ; Info     ; Stuck at VCC                                                          ;
++--------+-------+----------+-----------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF7" ;
 +---------+-------+----------+-----------------------------------------------------------------------------+
 ; Port    ; Type  ; Severity ; Details                                                                     ;
@@ -1101,31 +1198,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 644                         ;
-;     CLR               ; 4                           ;
+; arriav_ff             ; 646                         ;
+;     CLR               ; 5                           ;
 ;     ENA               ; 553                         ;
 ;     ENA SLD           ; 32                          ;
 ;     SCLR              ; 46                          ;
-;     plain             ; 9                           ;
-; arriav_lcell_comb     ; 647                         ;
+;     plain             ; 10                          ;
+; arriav_lcell_comb     ; 659                         ;
 ;     arith             ; 63                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 46                          ;
 ;         4 data inputs ; 8                           ;
 ;         5 data inputs ; 8                           ;
-;     extend            ; 3                           ;
-;         7 data inputs ; 3                           ;
-;     normal            ; 581                         ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 20                          ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 150                         ;
-;         5 data inputs ; 42                          ;
-;         6 data inputs ; 355                         ;
+;     extend            ; 30                          ;
+;         7 data inputs ; 30                          ;
+;     normal            ; 566                         ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 70                          ;
+;         5 data inputs ; 100                         ;
+;         6 data inputs ; 371                         ;
 ; boundary_port         ; 76                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.30                       ;
-; Average LUT depth     ; 6.31                        ;
+; Average LUT depth     ; 6.23                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1134,7 +1231,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -1144,7 +1241,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Nov 06 18:55:51 2022
+    Info: Processing started: Sun Nov 06 23:55:49 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aula07 -c aula07
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1224,18 +1321,22 @@ Info (12021): Found 2 design units, including 1 entities, in source file divisor
 Info (12021): Found 2 design units, including 1 entities, in source file mux2x1.vhd
     Info (12022): Found design unit 1: mux2x1-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/mux2x1.vhd Line: 12
     Info (12023): Found entity 1: mux2x1 File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/mux2x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file edgedebouncedetectorkey2.vhd
+    Info (12022): Found design unit 1: edgeDebounceDetectorKey2-arquitetura File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/edgeDebounceDetectorKey2.vhd Line: 20
+    Info (12023): Found entity 1: edgeDebounceDetectorKey2 File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/edgeDebounceDetectorKey2.vhd Line: 4
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico:baseTempoNormal" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 100
-Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico:baseTempoDebounce" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 104
-Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:muxBaseTempo" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 108
-Info (12128): Elaborating entity "flipFlopGenerico" for hierarchy "flipFlopGenerico:registraTempoSegundoOuDebouce" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 111
-Info (12128): Elaborating entity "and4x1" for hierarchy "and4x1:AND_INTERFACE" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 126
-Info (12128): Elaborating entity "edgeDebounceDetector" for hierarchy "edgeDebounceDetector:detectorSubDebounceKey0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 139
+Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico:baseTempoNormal" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 101
+Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico:baseTempoDebounce" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 105
+Info (12128): Elaborating entity "mux2x1" for hierarchy "mux2x1:muxBaseTempo" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 109
+Info (12128): Elaborating entity "flipFlopGenerico" for hierarchy "flipFlopGenerico:registraTempoSegundoOuDebouce" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 112
+Info (12128): Elaborating entity "and4x1" for hierarchy "and4x1:AND_INTERFACE" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 127
+Info (12128): Elaborating entity "edgeDebounceDetector" for hierarchy "edgeDebounceDetector:detectorSubDebounceKey0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 140
 Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDebounceDetector:detectorSubDebounceKey0|edgeDetector:edgeDetector" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/edgeDebounceDetector.vhd Line: 28
 Info (12128): Elaborating entity "buffer_3_state_simples" for hierarchy "edgeDebounceDetector:detectorSubDebounceKey0|buffer_3_state_simples:BFF0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/edgeDebounceDetector.vhd Line: 40
-Info (12128): Elaborating entity "edgeDebounceDetectorKey1" for hierarchy "edgeDebounceDetectorKey1:detectorSubDebounceKey1" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 149
-Info (12128): Elaborating entity "edgeDebounceDetectorReset" for hierarchy "edgeDebounceDetectorReset:detectorSubDebounceReset" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 159
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 169
+Info (12128): Elaborating entity "edgeDebounceDetectorKey1" for hierarchy "edgeDebounceDetectorKey1:detectorSubDebounceKey1" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 150
+Info (12128): Elaborating entity "edgeDebounceDetectorKey2" for hierarchy "edgeDebounceDetectorKey2:detectorSubDebounceKey2" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 160
+Info (12128): Elaborating entity "edgeDebounceDetectorReset" for hierarchy "edgeDebounceDetectorReset:detectorSubDebounceReset" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 170
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPU" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 180
 Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "CPU:CPU|muxGenerico2x1:MUX1" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/CPU.vhd Line: 79
 Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "CPU:CPU|muxGenerico4x1:MUXproxPC" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/CPU.vhd Line: 88
 Info (12128): Elaborating entity "bancoRegistradoresArqRegMem" for hierarchy "CPU:CPU|bancoRegistradoresArqRegMem:REGS" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/CPU.vhd Line: 98
@@ -1246,13 +1347,13 @@ Info (12128): Elaborating entity "logicaDesvio" for hierarchy "CPU:CPU|logicaDes
 Info (10041): Inferred latch for "Sel[0]" at logicaDesvio.vhd(23) File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/logicaDesvio.vhd Line: 23
 Info (10041): Inferred latch for "Sel[1]" at logicaDesvio.vhd(23) File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/logicaDesvio.vhd Line: 23
 Info (12128): Elaborating entity "decoderInstru" for hierarchy "CPU:CPU|decoderInstru:DECODER1" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/CPU.vhd Line: 170
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM64" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 185
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 199
-Info (12128): Elaborating entity "decoder3x8" for hierarchy "decoder3x8:DECODER1" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 204
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REG_LEDR0_7" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 216
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REG_HEX0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 246
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:DECODER_7SEG_0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 399
-Info (12128): Elaborating entity "buffer_3_state_8portas" for hierarchy "buffer_3_state_8portas:BUFFER_3_STATE_8_PORTAS" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 543
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM64" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 196
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 210
+Info (12128): Elaborating entity "decoder3x8" for hierarchy "decoder3x8:DECODER1" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 215
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REG_LEDR0_7" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 227
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REG_HEX0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 257
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:DECODER_7SEG_0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 410
+Info (12128): Elaborating entity "buffer_3_state_8portas" for hierarchy "buffer_3_state_8portas:BUFFER_3_STATE_8_PORTAS" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/TopLevel.vhd Line: 547
 Warning (19016): Clock multiplexers are found and protected
     Warning (19017): Found clock multiplexer mux2x1:muxBaseTempo|saida_MUX File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto-final/mux2x1.vhd Line: 8
 Info (276014): Found 2 instances of uninferred RAM logic
@@ -1270,14 +1371,14 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1312 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1325 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 60 output pins
-    Info (21061): Implemented 1236 logic cells
+    Info (21061): Implemented 1249 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4864 megabytes
-    Info: Processing ended: Sun Nov 06 18:56:09 2022
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 4865 megabytes
+    Info: Processing ended: Sun Nov 06 23:56:24 2022
+    Info: Elapsed time: 00:00:35
+    Info: Total CPU time (on all processors): 00:00:45
 
 

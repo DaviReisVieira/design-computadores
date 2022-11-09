@@ -5,14 +5,6 @@ SETUP:
 	LDI $0, R2
 	LDI $0, R3
 
-    --Apaga o display
-	STA @288, R0			--Armazena o valor do acumulador em HEX0
-	STA @289, R0			--Armazena o valor do acumulador em HEX1
-	STA @290, R0			--Armazena o valor do acumulador em HEX2
-	STA @291, R0			--Armazena o valor do acumulador em HEX3
-	STA @292, R0			--Armazena o valor do acumulador em HEX4
-	STA @293, R0			--Armazena o valor do acumulador em HEX5
-
     --Apaga os LEDs
 	STA @256, R0            --Armazena o valor do bit0 do acumulador no LEDR0~7
 	STA @257, R0            --Armazena o valor do bit1 do acumulador no LEDR8
@@ -51,6 +43,8 @@ SETUP:
 	STA R0, @21				--Armazena o valor do acumulador em M21 (Flag Tipo 12/24 horas)
 	LDI $0, R0
 	STA R0, @22				--Armazena o valor do acumulador em M22 (Flag PM ON)
+	LDI $1, R0
+	STA R0, @23				--Armazena o valor do acumulador em M23 (Flag arruma horario ON/despertador OFF)
 	LDI $0, R0
 
 	-- Limpa Leitura de KEY0, KEY1 e RESET FPGA
@@ -64,6 +58,7 @@ MAIN:
 	CEQ R1, @10 -- Compara se Base tempo é 0
 	JSR @ESCREVER_DISPLAY
 	JEQ @BASE_TEMPO_NAO_MUDOU
+	JSR @CHECA_LIMITES
 	JSR @INCREMENTADOR
 
 	-- Verifica se FPGA_RESET KEY foi pressionado
@@ -80,21 +75,164 @@ MAIN:
 			CEQ R1, @10 -- Compara se KEY1 não foi pressionado
 			JEQ @KEY1_NOT_PRESSED
 			STA R0, @510
-			-- Alarme rotina
+			-- Ajuste de alarme
+			LDI $0, R0
+			STA R0, @23
+			JSR @AJUSTE_HORAS
 
 			KEY1_NOT_PRESSED:
 				STA R0, @510
 				LDA @352, R1
 				CEQ R1, @10 
 				JEQ @KEY0_NOT_PRESSED
-				JSR @AJUSTA_HORAS
+				-- Ajuste de horas
+				LDI $1, R0
+				STA R0, @23
+				JSR @AJUSTE_HORAS
 				
 				KEY0_NOT_PRESSED:
-					NOP
+					-- Verifica se KEY2 pressionado
+					LDA @354, R1
+					CEQ R1, @10 -- Compara se KEY2 não foi pressionado
+					JEQ @KEY2_NOT_PRESSED
+					JSR @AJUSTE_MODE
+
+					KEY2_NOT_PRESSED:
+						NOP	
+
 JMP @MAIN
 
+AJUSTE_MODE:
+	STA R0, @507
 
-AJUSTA_HORAS:
+	LDA @21, R0
+	CEQ R0, @10
+	JEQ @MODO_12H
+	LDI $0, R0
+	STA R0, @21
+	-- Converte 24hr para 12h
+		LDA @3, R0
+		CEQ R0, @11  -- compara d.h = 1
+		JEQ @DEZENA_HORA_UM
+		CEQ R0, @15  -- compara d.h = 2
+		JEQ @DEZENZA_HORA_DOIS
+		RET -- d.h = 0 (não converte)
+
+		DEZENA_HORA_UM:
+			LDI $1, R0
+			-- compara se u.h > 1
+			CLT R0, @2
+			JLT @UN_HORA_MAIOR_UM
+			RET
+
+			UN_HORA_MAIOR_UM: -- (12, 13, ..., 19)
+				LDA @2, R0
+				SUB R0, @15 -- subtrai 2 da u.h
+				STA R0, @2
+				STA R0, @34 -- zera u.h do limite do alarme
+				
+				LDI $0, R0
+				STA R0, @3 -- zera d.h
+				STA R0, @35 -- zera d.h do limite do alarme
+
+				LDI $1, R0
+				STA R0, @22 -- ativa flag PM ON
+				RET
+
+		DEZENZA_HORA_DOIS:
+			LDI $1, R0
+			STA R0, @22 -- ativa flag PM ON
+
+			LDA @2, R0
+			CEQ R0, @10 -- compara u.h = 0
+			JEQ @UN_HORA_ZERO
+
+			CEQ R0, @11 -- compara u.h = 1
+			JEQ @UN_HORA_UM
+
+			CEQ R0, @15 -- compara u.h = 2
+			JEQ @UN_HORA_DOIS
+
+			-- else: u.h = 3
+			JMP @UN_HORA_TRES
+
+			UN_HORA_ZERO:
+				LDI $8, R1
+				STA R1, @2 -- u.h = 8
+				STA R1, @34 -- u.h = 8 do limite do despertador
+				STA R0, @3 -- d.h = 0
+				STA R0, @35 -- d.h = 0 do limite do despertador
+				RET
+
+			UN_HORA_UM:
+				LDI $9, R1
+				STA R1, @2 -- u.h = 9
+				STA R1, @34 -- u.h = 9 do limite do despertador
+				LDI $0, R0
+				STA R0, @3 -- d.h = 0
+				STA R0, @35 -- d.h = 0 do limite do despertador
+				RET 
+
+			UN_HORA_DOIS:
+				LDI $0, R0
+				STA R0, @2 -- u.h = 0
+				STA R0, @34 -- u.h = 0 do limite do despertador
+				LDI $1, R1
+				STA R1, @3 -- d.h = 1
+				STA R1, @35 -- d.h = 1 do limite do despertador
+				RET
+
+			UN_HORA_TRES:
+				LDI $1, R1
+				STA R1, @2 -- u.h = 1
+				STA R1, @34 -- u.h = 1 do limite do despertador
+				STA R1, @3 -- d.h = 1
+				STA R1, @35 -- d.h = 1 do limite do despertador
+				RET
+
+	MODO_12H:
+		LDI $1, R0
+		STA R0, @21
+		-- Converte de 12h para 24h
+		LDA @22, R0
+		CEQ R0, @10
+		JEQ @PM_OFF
+
+		-- soma 2 na unidade de hora
+		LDA @2, R0
+		SOMA R0, @15
+		STA R0, @2
+
+
+		-- checa se ocorre carry out
+		LDI $9, R0
+		CLT R0, @2 -- (9 - soma < 0 => soma > 9)
+		JLT @ARRUMA_CARRYOUT
+		JMP @INCR_DEZENA
+
+		ARRUMA_CARRYOUT:
+			LDA @2, R0
+			SUB R0, @12 -- MOD(10)
+			STA R0, @2
+			STA R0, @34 -- do limite do despertador
+			LDA @3, R0	-- incrementa 1 na dezena (carryout)
+			SOMA R0, @11 
+			STA R0, @3
+
+		-- soma 1 na DEZENa de hora
+		INCR_DEZENA:
+			LDA @3, R0
+			SOMA R0, @11
+			STA R0, @3
+			STA R0, @35 -- do limite do despertador
+
+		PM_OFF:
+			-- Desliga flag pm on
+			LDI $0, R0
+			STA R0, @22
+			RET
+
+AJUSTE_HORAS:
 	-- Zerar todos os displays
 	LDI $0, R0
 	STA R0, @288
@@ -104,7 +242,8 @@ AJUSTA_HORAS:
 	STA R0, @292
 	STA R0, @293
 
-	AJUSTA_DEZENA_HORA:
+	AJUSTE_DEZENA_HORA:
+		STA R0, @510
 		STA R0, @511
 		-- Ligar LEDR9
 		LDI $1, R0
@@ -133,9 +272,16 @@ AJUSTA_HORAS:
 				STA R0, @511
 
 
-				-- se KEY0 foi pressionado: ajusta dezena da hora
-				STA R0, @3
-				JMP @AJUSTA_UNIDADE_HORA
+				-- se KEY0 foi pressionado: AJUSTE dezena da hora
+				LDA @23, R1
+				CEQ R1, @11
+				JEQ @AJUSTE_DEZENA_HORA_NAO_ALARME_1
+				STA R0, @35
+				JMP @AJUSTE_UNIDADE_HORA
+
+				AJUSTE_DEZENA_HORA_NAO_ALARME_1:
+					STA R0, @3
+					JMP @AJUSTE_UNIDADE_HORA
 
 			FLAG_12H_AJUSTE_DEZENA_HORA:
 				LDI $1, R1
@@ -154,11 +300,17 @@ AJUSTA_HORAS:
 					JEQ @AGUARDA_KEY0_0
 					STA R0, @511
 
-					-- se KEY0 foi pressionado ajusta dezena da hora
-					STA R0, @3
+					-- se KEY0 foi pressionado AJUSTE dezena da hora
+					LDA @23, R1
+					CEQ R1, @11
+					JEQ @AJUSTE_DEZENA_HORA_NAO_ALARME_2
+					STA R0, @35
+					JMP @AJUSTE_UNIDADE_HORA
 
+					AJUSTE_DEZENA_HORA_NAO_ALARME_2:
+						STA R0, @3
 
-	AJUSTA_UNIDADE_HORA:
+	AJUSTE_UNIDADE_HORA:
 		STA R0, @511
 		-- Ligar LEDR8
 		LDI $1, R0
@@ -190,9 +342,16 @@ AJUSTA_HORAS:
 				JEQ @AGUARDA_KEY0_1
 				STA R0, @511
 
-				-- se KEY0 foi pressionado ajusta dezena da hora
-				STA R0, @2
-				JMP @AJUSTA_DEZENA_MINUTO
+				-- se KEY0 foi pressionado AJUSTE dezena da hora
+				LDA @23, R1
+				CEQ R1, @11
+				JEQ @AJUSTE_UNIDADE_HORA_NAO_ALARME_1
+				STA R0, @34
+				JMP @AJUSTE_DEZENA_MINUTO
+
+				AJUSTE_UNIDADE_HORA_NAO_ALARME_1:
+					STA R0, @2
+					JMP @AJUSTE_DEZENA_MINUTO
 
 			BASE_24_HORAS_UNIDADE_HORA_LIMITE:
 				LDI $3, R1
@@ -211,9 +370,16 @@ AJUSTA_HORAS:
 					JEQ @AGUARDA_KEY0_1
 					STA R0, @511
 
-					-- se KEY0 foi pressionado ajusta dezena da hora
-					STA R0, @2
-					JMP @AJUSTA_DEZENA_MINUTO
+					-- se KEY0 foi pressionado AJUSTE dezena da hora
+					LDA @23, R1
+					CEQ R1, @11
+					JEQ @AJUSTE_UNIDADE_HORA_NAO_ALARME_2
+					STA R0, @34
+					JMP @AJUSTE_DEZENA_MINUTO
+
+					AJUSTE_UNIDADE_HORA_NAO_ALARME_2:
+						STA R0, @2
+						JMP @AJUSTE_DEZENA_MINUTO
 
 				
 			FLAG_12H_AJUSTE_UNIDADE_HORA:
@@ -237,9 +403,16 @@ AJUSTA_HORAS:
 					JEQ @AGUARDA_KEY0_1
 					STA R0, @511
 
-					-- se KEY0 foi pressionado ajusta dezena da hora
-					STA R0, @2
-					JMP @AJUSTA_DEZENA_MINUTO
+					-- se KEY0 foi pressionado AJUSTE dezena da hora
+					LDA @23, R1
+					CEQ R1, @11
+					JEQ @AJUSTE_UNIDADE_HORA_NAO_ALARME_3
+					STA R0, @34
+					JMP @AJUSTE_DEZENA_MINUTO
+
+					AJUSTE_UNIDADE_HORA_NAO_ALARME_3:
+						STA R0, @2
+						JMP @AJUSTE_DEZENA_MINUTO
 
 				BASE_12_HORAS_UNIDADE_HORA_LIMITE:
 					LDI $2, R1
@@ -258,11 +431,18 @@ AJUSTA_HORAS:
 						JEQ @AGUARDA_KEY0_1
 						STA R0, @511
 
-						-- se KEY0 foi pressionado: ajusta unidade da hora
-						STA R0, @2
+						-- se KEY0 foi pressionado: AJUSTE unidade da hora
+						LDA @23, R1
+						CEQ R1, @11
+						JEQ @AJUSTE_UNIDADE_HORA_NAO_ALARME_4
+						STA R0, @34
+						JMP @AJUSTE_DEZENA_MINUTO
+
+						AJUSTE_UNIDADE_HORA_NAO_ALARME_4:
+							STA R0, @2
 
 
-	AJUSTA_DEZENA_MINUTO:
+	AJUSTE_DEZENA_MINUTO:
 		STA R0, @511
 		-- Ligar LEDR7
 		LDI $128, R0
@@ -287,10 +467,18 @@ AJUSTA_HORAS:
 				JEQ @AGUARDA_KEY0_2
 				STA R0, @511
 
-				-- se KEY0 foi pressionado: ajusta Unidade de minuto
-				STA R0, @1
+				-- se KEY0 foi pressionado: AJUSTE Unidade de minuto
+				LDA @23, R1
+				CEQ R1, @11
+				JEQ @AJUSTE_DEZENA_MINUTO_NAO_ALARME_1
+				STA R0, @33
+				JMP @AJUSTE_UNIDADE_MINUTO
 
-	AJUSTA_UNIDADE_MINUTO:
+				AJUSTE_DEZENA_MINUTO_NAO_ALARME_1:
+					STA R0, @1
+
+
+	AJUSTE_UNIDADE_MINUTO:
 		STA R0, @511
 		-- Ligar LEDR6
 		LDI $192, R0
@@ -315,17 +503,24 @@ AJUSTA_HORAS:
 				JEQ @AGUARDA_KEY0_3
 				STA R0, @511
 
-				-- se KEY0 foi pressionado ajusta Unidade de minuto
-				STA R0, @0
+				-- se KEY0 foi pressionado AJUSTE Unidade de minuto
+				LDA @23, R1
+				CEQ R1, @11
+				JEQ @AJUSTE_UNIDADE_MINUTO_NAO_ALARME_1
+				STA R0, @32
+				JMP @AJUSTE_DEZENA_SEGUNDO
 
-	AJUSTA_DEZENA_SEGUNDO:
+				AJUSTE_UNIDADE_MINUTO_NAO_ALARME_1:
+					STA R0, @0
+
+	AJUSTE_DEZENA_SEGUNDO:
 		STA R0, @511
 		-- Ligar LEDR5
 		LDI $224, R0
 		STA R0, @256
 
 		AGUARDA_KEY0_4:
-			LDA @320, R3	-- lê chaves SW[0~7]
+			LDA @320, R0	-- lê chaves SW[0~7]
 
 			LDI $6, R1
 			CLT R1, @320
@@ -333,25 +528,34 @@ AJUSTA_HORAS:
 			JMP @NAO_LIMITA_5_DS
 			
 			LIMITA_5_DS:
-				LDI $5, R3	
+				LDI $5, R0	
 
 			NAO_LIMITA_5_DS:
-				STA R3, @289 --HEX1
+				STA R0, @289 --HEX1
 
 				LDA @352, R1
 				CEQ R1, @10 -- Compara se KEY0 não foi pressionado
 				JEQ @AGUARDA_KEY0_4
 				STA R0, @511
 
+				LDA @23, R1
+				CEQ R1, @11
+				JEQ @AJUSTE_DEZENA_SEGUNDO_NAO_ALARME_1
+				STA R0, @31
+				JMP @AJUSTE_UNIDADE_SEGUNDO
 
-	AJUSTA_UNIDADE_SEGUNDO:
+				AJUSTE_DEZENA_SEGUNDO_NAO_ALARME_1:
+					STA R0, @50
+					LDA @50, R3
+
+	AJUSTE_UNIDADE_SEGUNDO:
 		STA R0, @511
 		-- Ligar LEDR6
 		LDI $240, R0
 		STA R0, @256
 
 		AGUARDA_KEY0_5:
-			LDA @320, R2	-- lê chaves SW[0~7]
+			LDA @320, R0	-- lê chaves SW[0~7]
 
 			LDI $10, R1
 			CLT R1, @320
@@ -359,17 +563,28 @@ AJUSTA_HORAS:
 			JMP @NAO_LIMITA_9_US
 			
 			LIMITA_9_US:
-				LDI $9, R2	
+				LDI $9, R0	
 
 			NAO_LIMITA_9_US:
-				STA R2, @288 --HEX0
+				STA R0, @288 --HEX0
 
 				LDA @352, R1
 				CEQ R1, @10 -- Compara se KEY0 não foi pressionado
 				JEQ @AGUARDA_KEY0_5
 				STA R0, @511
 
-				-- se KEY0 foi pressionado ajusta Unidade de segundo
+				LDA @23, R1
+				CEQ R1, @11
+				JEQ @AJUSTE_UNIDADE_SEGUNDO_NAO_ALARME_1
+				STA R0, @30
+				JMP @FINALIZA_AJUSTE_UNIDADE_SEGUNDO_NAO_ALARME_1
+
+				AJUSTE_UNIDADE_SEGUNDO_NAO_ALARME_1:
+					STA R0, @50
+					LDA @50, R2
+				FINALIZA_AJUSTE_UNIDADE_SEGUNDO_NAO_ALARME_1:
+
+				-- se KEY0 foi pressionado AJUSTE Unidade de segundo
 				LDI $0, R0
 				LDI $0, R1
 				STA R0, @256 -- Desliga todos os LEDs
@@ -386,21 +601,9 @@ RESET_FPGA:
 	STA R2, @2
 	STA R2, @3
 
-	-- Zerar todos os displays
-	STA R2, @288
-	STA R2, @289
-	STA R2, @290
-	STA R2, @291
-	STA R2, @292
-	STA R2, @293
-
-	STA R2, @257  -- Deligar LED Limite
-	STA R2, @258 -- Deligar LED Overflow
-
 	LDI $1, R3
 	STA R3, @20
 	LDI $0, R3
-
 	RET
 
 INCREMENTADOR:
@@ -505,14 +708,11 @@ INCREMENTADOR:
 								JEQ @FLAG_PM_OFF
 								LDI $0, R0
 								STA R0, @22
-								STA R0, @258
 								RET
 									FLAG_PM_OFF:
 										LDI $1, R0
 										STA R0, @22
-										STA R0, @258
-										RET
-					
+										RET				
 
 ESCREVER_DISPLAY:
 	-- Escreve o valor do contador no display
@@ -526,4 +726,51 @@ ESCREVER_DISPLAY:
 	STA R1, @292
 	LDA @3, R1
 	STA R1, @293
+
+	-- Acende indicador de 12/24
+	LDA @21, R1
+	STA R1, @256
+	-- Atualiza PM On off led
+	LDA @22, R1
+	STA R1, @258
 	RET
+
+CHECA_LIMITES:
+	CEQ R2, @30 -- Compara unidade com valor Limite da Unidade
+	JEQ @CHECA_LIMITES_D
+	RET
+
+	CHECA_LIMITES_D:
+		CEQ R3, @31 -- Compara dezena com valor Limite da Dezena
+		JEQ @CHECA_LIMITES_C
+		RET
+
+		CHECA_LIMITES_C:
+			LDA @0, R0 -- Lê valor Limite da Centena
+			CEQ R0, @32 -- Compara centena com valor Limite da Centena
+			JEQ @CHECA_LIMITES_UM
+			RET
+
+			CHECA_LIMITES_UM:
+				LDA @1, R0 -- Lê valor Limite da Unidade de Milhar
+				CEQ R0, @33 -- Compara unidade de milhar com valor Limite da Unidade de Milhar
+				JEQ @CHECA_LIMITES_DM
+				RET
+
+				CHECA_LIMITES_DM:
+					LDA @2, R0 -- Lê valor Limite da Dezena de Milhar
+					CEQ R0, @34 -- Compara dezena de milhar com valor Limite da Dezena de Milhar
+					JEQ @CHECA_LIMITES_CM
+					RET
+
+					CHECA_LIMITES_CM:
+						LDA @3, R0 -- Lê valor Limite da Centena de Milhar
+						CEQ R0, @35 -- Compara centena de milhar com valor Limite da Centena de Milhar
+						JEQ @CHECA_LIMITES_FINAL
+						RET
+
+						CHECA_LIMITES_FINAL:
+							LDI $1, R0
+							STA R0, @257
+							LDI $0, R0
+							RET

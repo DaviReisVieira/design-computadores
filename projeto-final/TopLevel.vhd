@@ -77,6 +77,7 @@ architecture arquitetura of TopLevel is
 	
 	signal DEBOUNCE_KEY0:			std_logic_vector(larguraDados -1 downto 0);
 	signal DEBOUNCE_KEY1:			std_logic_vector(larguraDados -1 downto 0);
+	signal DEBOUNCE_KEY2:			std_logic_vector(larguraDados -1 downto 0);
 	signal DEBOUNCE_KEY4:			std_logic_vector(larguraDados -1 downto 0);
 	signal base_tempo_normal, base_tempo_debounce, base_tempo_mux, limpa_interface_divisor, habilita_sinal_um_segundo, habilita_leitura_interface, base_tempo_datain:	std_Logic;
 	
@@ -154,6 +155,16 @@ detectorSubDebounceKey1: work.edgeDebounceDetectorKey1
 				address => address_OUT,
 				wr => wr,
 				saida => DEBOUNCE_KEY1		
+			);
+
+detectorSubDebounceKey2: work.edgeDebounceDetectorKey2
+			port map (
+				CLOCK_50 => CLK,
+				KEY => (not KEY(2)),
+				habilita => ENABLE_KEY(2),
+				address => address_OUT,
+				wr => wr,
+				saida => DEBOUNCE_KEY2		
 			);
 
 detectorSubDebounceReset: work.edgeDebounceDetectorReset
@@ -498,13 +509,6 @@ AND_KEY_FPGA_RESET_N: entity work.and4x1
 					entradaD => hab_7SEGs_and_KEYs,
 					saida => ENABLE_FPGA_RESET				
 				);
-
-BUFFER_KEY2 :  entity work.buffer_3_state_simples
-        port map(
-				entrada => KEY(2),
-				habilita =>  ENABLE_KEY(2),
-				saida => DATA_IN(0)
-			);
 			
 BUFFER_KEY3 :  entity work.buffer_3_state_simples
         port map(
@@ -571,6 +575,7 @@ hab_7SEGs_and_KEYs <= address_OUT(5);
 DATA_OUT <= data_OUT_CPU;
 DATA_IN <= DEBOUNCE_KEY0;
 DATA_IN <= DEBOUNCE_KEY1;
+DATA_IN <= DEBOUNCE_KEY2;
 DATA_IN <= DEBOUNCE_KEY4;
 -- LEDS estão conectados às saídas dos FF ou registrador
 

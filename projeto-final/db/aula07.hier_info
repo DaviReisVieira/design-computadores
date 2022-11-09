@@ -3,6 +3,7 @@ CLOCK_50 => divisorgenerico:baseTempoNormal.clk
 CLOCK_50 => divisorgenerico:baseTempoDebounce.clk
 CLOCK_50 => edgedebouncedetector:detectorSubDebounceKey0.CLOCK_50
 CLOCK_50 => edgedebouncedetectorkey1:detectorSubDebounceKey1.CLOCK_50
+CLOCK_50 => edgedebouncedetectorkey2:detectorSubDebounceKey2.CLOCK_50
 CLOCK_50 => edgedebouncedetectorreset:detectorSubDebounceReset.CLOCK_50
 CLOCK_50 => cpu:CPU.CLOCK_50
 CLOCK_50 => memoriaram:RAM64.clk
@@ -79,7 +80,7 @@ HEX5[5] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[5]
 HEX5[6] <= conversorhex7seg:DECODER_7SEG_5.saida7seg[6]
 KEY[0] => edgedebouncedetector:detectorSubDebounceKey0.KEY
 KEY[1] => edgedebouncedetectorkey1:detectorSubDebounceKey1.KEY
-KEY[2] => buffer_3_state_simples:BUFFER_KEY2.entrada
+KEY[2] => edgedebouncedetectorkey2:detectorSubDebounceKey2.KEY
 KEY[3] => buffer_3_state_simples:BUFFER_KEY3.entrada
 KEY[3] => mux2x1:muxBaseTempo.seletor_MUX
 FPGA_RESET_N => edgedebouncedetectorreset:detectorSubDebounceReset.KEY
@@ -346,6 +347,100 @@ saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TopLevel|edgeDebounceDetectorKey1:detectorSubDebounceKey1|buffer_3_state_simples:BFF7
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetectorKey2:detectorSubDebounceKey2
+CLOCK_50 => edgedetector:edgeDetector.clk
+KEY => edgedetector:edgeDetector.entrada
+habilita => buffer_3_state_simples:BFF0.habilita
+habilita => buffer_3_state_simples:BFF1.habilita
+habilita => buffer_3_state_simples:BFF2.habilita
+habilita => buffer_3_state_simples:BFF3.habilita
+habilita => buffer_3_state_simples:BFF4.habilita
+habilita => buffer_3_state_simples:BFF5.habilita
+habilita => buffer_3_state_simples:BFF6.habilita
+habilita => buffer_3_state_simples:BFF7.habilita
+address[0] => limpa_leitura.IN0
+address[1] => limpa_leitura.IN1
+address[2] => limpa_leitura.IN1
+address[3] => limpa_leitura.IN1
+address[4] => limpa_leitura.IN1
+address[5] => limpa_leitura.IN1
+address[6] => limpa_leitura.IN1
+address[7] => limpa_leitura.IN1
+address[8] => limpa_leitura.IN1
+wr => limpa_leitura.IN1
+saida[0] <= buffer_3_state_simples:BFF0.saida
+saida[1] <= buffer_3_state_simples:BFF1.saida
+saida[2] <= buffer_3_state_simples:BFF2.saida
+saida[3] <= buffer_3_state_simples:BFF3.saida
+saida[4] <= buffer_3_state_simples:BFF4.saida
+saida[5] <= buffer_3_state_simples:BFF5.saida
+saida[6] <= buffer_3_state_simples:BFF6.saida
+saida[7] <= buffer_3_state_simples:BFF7.saida
+
+
+|TopLevel|edgeDebounceDetectorKey2:detectorSubDebounceKey2|edgeDetector:edgeDetector
+clk => saidaQ.CLK
+entrada => saida.IN1
+entrada => saidaQ.DATAIN
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetectorKey2:detectorSubDebounceKey2|flipFlopGenerico:FFP
+DIN => DOUT~reg0.DATAIN
+DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ENABLE => DOUT~reg0.ENA
+CLK => DOUT~reg0.CLK
+RST => DOUT~reg0.ACLR
+
+
+|TopLevel|edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF0
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF1
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF2
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF3
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF4
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF5
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF6
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|edgeDebounceDetectorKey2:detectorSubDebounceKey2|buffer_3_state_simples:BFF7
 entrada => saida.DATAIN
 habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
@@ -1925,12 +2020,6 @@ entradaA => saida.IN0
 entradaB => saida.IN1
 entradaC => saida.IN1
 entradaD => saida.IN1
-saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|TopLevel|buffer_3_state_simples:BUFFER_KEY2
-entrada => saida.DATAIN
-habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
