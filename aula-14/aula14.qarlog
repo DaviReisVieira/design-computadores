@@ -1,0 +1,26 @@
+Quartus Prime Archive log --	C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/aula14.qarlog
+
+Archive:	C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/aula14.qar
+Date:		Thu Nov 10 07:37:27 2022
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/RAMMIPS.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/ROMMIPS.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/TopLevel.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/ULASomaSubPassa.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/Waveform.vwf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/aula14.qpf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/aula14.qsf
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/bancoRegistradores.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/decoderInstru.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/estendeSinalGenerico.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/muxGenerico2x1.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/registradorGenerico.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/somaConstante.vhd
+C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-14/somadorGenerico.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 15 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
