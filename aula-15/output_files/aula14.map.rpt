@@ -1,5 +1,5 @@
 Analysis & Elaboration report for aula14
-Mon Nov 14 22:58:11 2022
+Wed Nov 16 23:30:08 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -56,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Nov 14 22:58:11 2022       ;
+; Analysis & Elaboration Status ; Successful - Wed Nov 16 23:30:08 2022       ;
 ; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                 ; aula14                                      ;
 ; Top-level Entity Name         ; TopLevel                                    ;
@@ -392,60 +392,60 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Nov 14 22:57:52 2022
+    Info: Processing started: Wed Nov 16 23:29:56 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aula14 -c aula14 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file toplevel.vhd
-    Info (12022): Found design unit 1: TopLevel-arquitetura File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/TopLevel.vhd Line: 46
-    Info (12023): Found entity 1: TopLevel File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/TopLevel.vhd Line: 5
+    Info (12022): Found design unit 1: TopLevel-arquitetura File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/TopLevel.vhd Line: 47
+    Info (12023): Found entity 1: TopLevel File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/TopLevel.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/registradorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: registradorGenerico File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/registradorGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradores.vhd
-    Info (12022): Found design unit 1: bancoRegistradores-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/bancoRegistradores.vhd Line: 30
-    Info (12023): Found entity 1: bancoRegistradores File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/bancoRegistradores.vhd Line: 7
+    Info (12022): Found design unit 1: bancoRegistradores-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/bancoRegistradores.vhd Line: 30
+    Info (12023): Found entity 1: bancoRegistradores File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/bancoRegistradores.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file rommips.vhd
-    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/ROMMIPS.vhd Line: 19
-    Info (12023): Found entity 1: ROMMIPS File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/ROMMIPS.vhd Line: 5
+    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/ROMMIPS.vhd Line: 19
+    Info (12023): Found entity 1: ROMMIPS File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/ROMMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ulasomasubpassa.vhd
-    Info (12022): Found design unit 1: ULASomaSubPassa-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/ULASomaSubPassa.vhd Line: 18
-    Info (12023): Found entity 1: ULASomaSubPassa File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/ULASomaSubPassa.vhd Line: 5
+    Info (12022): Found design unit 1: ULASomaSubPassa-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/ULASomaSubPassa.vhd Line: 18
+    Info (12023): Found entity 1: ULASomaSubPassa File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/ULASomaSubPassa.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somadorgenerico.vhd
-    Info (12022): Found design unit 1: somadorGenerico-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/somadorGenerico.vhd Line: 17
-    Info (12023): Found entity 1: somadorGenerico File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/somadorGenerico.vhd Line: 5
+    Info (12022): Found design unit 1: somadorGenerico-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/somadorGenerico.vhd Line: 17
+    Info (12023): Found entity 1: somadorGenerico File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/somadorGenerico.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file estendesinalgenerico.vhd
-    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/estendeSinalGenerico.vhd Line: 19
-    Info (12023): Found entity 1: estendeSinalGenerico File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/estendeSinalGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/estendeSinalGenerico.vhd Line: 19
+    Info (12023): Found entity 1: estendeSinalGenerico File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/estendeSinalGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file rammips.vhd
-    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/RAMMIPS.vhd Line: 18
-    Info (12023): Found entity 1: RAMMIPS File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/RAMMIPS.vhd Line: 5
+    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/RAMMIPS.vhd Line: 18
+    Info (12023): Found entity 1: RAMMIPS File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/RAMMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file decoderinstru.vhd
-    Info (12022): Found design unit 1: decoderInstru-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/decoderInstru.vhd Line: 17
-    Info (12023): Found entity 1: decoderInstru File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/decoderInstru.vhd Line: 4
+    Info (12022): Found design unit 1: decoderInstru-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/decoderInstru.vhd Line: 17
+    Info (12023): Found entity 1: decoderInstru File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/decoderInstru.vhd Line: 4
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at TopLevel.vhd(30): used implicit default value for signal "DATA_OUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/TopLevel.vhd Line: 30
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:ProgramCounter" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/TopLevel.vhd Line: 115
-Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/TopLevel.vhd Line: 127
-Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/TopLevel.vhd Line: 138
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MuxBEQ" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/TopLevel.vhd Line: 148
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/TopLevel.vhd Line: 170
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MuxRtRd" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/TopLevel.vhd Line: 176
-Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:Estende" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/TopLevel.vhd Line: 188
-Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:bancoRegs" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/TopLevel.vhd Line: 198
-Info (12128): Elaborating entity "ULASomaSubPassa" for hierarchy "ULASomaSubPassa:ULA" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/TopLevel.vhd Line: 218
-Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/TopLevel.vhd Line: 231
-Info (12128): Elaborating entity "decoderInstru" for hierarchy "decoderInstru:DECODER" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/TopLevel.vhd Line: 254
+Warning (10541): VHDL Signal Declaration warning at TopLevel.vhd(30): used implicit default value for signal "DATA_OUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/TopLevel.vhd Line: 30
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:ProgramCounter" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/TopLevel.vhd Line: 116
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/TopLevel.vhd Line: 128
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/TopLevel.vhd Line: 139
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MuxBEQ" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/TopLevel.vhd Line: 149
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/TopLevel.vhd Line: 171
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MuxRtRd" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/TopLevel.vhd Line: 177
+Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:Estende" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/TopLevel.vhd Line: 189
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:bancoRegs" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/TopLevel.vhd Line: 199
+Info (12128): Elaborating entity "ULASomaSubPassa" for hierarchy "ULASomaSubPassa:ULA" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/TopLevel.vhd Line: 219
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/TopLevel.vhd Line: 232
+Info (12128): Elaborating entity "decoderInstru" for hierarchy "decoderInstru:DECODER" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/TopLevel.vhd Line: 255
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4844 megabytes
-    Info: Processing ended: Mon Nov 14 22:58:11 2022
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Wed Nov 16 23:30:08 2022
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:31
 
 

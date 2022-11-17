@@ -37,7 +37,8 @@ entity TopLevel is
 	inspectEndRD: out std_logic_vector(larguraEndBancoRegs-1 downto 0);
 	inspectInstru: out std_logic_vector(larguraInstrucao-1 downto 0);
 	inspectPC: out std_logic_vector(larguraDados-1 downto 0);
-	inspectSeletorULA: out std_logic_vector(3 downto 0)
+	inspectSeletorULA: out std_logic_vector(3 downto 0);
+	inspectControles: out std_logic_vector(11 downto 0)
 
   );
 end entity;
@@ -251,58 +252,66 @@ MUuxULARAM : entity work.muxGenerico2x1  generic map (larguraDados => larguraDad
 				saida_MUX => saidaEscritaRD 
 			);
 			
-DECODER : entity work.decoderInstru
-			port map (
-				opcode => opcode, 
-				funct=>funct, 
-				saida => decoderControle
-			);
-			
-			-- Controle
-			wrRAM <= decoderControle(0);
-			rdRAM <= decoderControle(1);
-			beq <= decoderControle(2);
-			MuxULARAMSeletor <= decoderControle(3);
-			ULAOpSeletor <= decoderControle(7 downto 4);
-			MUuxRtImediatoSeletor <= decoderControle(8);
-			wrReg  <= decoderControle(9);
-			muxRtRdSeletor <= decoderControle(10);
-			muxBeqPcSeletor <= decoderControle(11);
-			
-			-- Tipo R
-			opCode <= instrucao(31 downto 26);
-			enderecoRS <= instrucao(25 downto 21);
-			enderecoRT <= instrucao(20 downto 16);
-			enderecoRD <= instrucao(15 downto 11);
-			funct <= instrucao(5 downto 0);
-			
-			-- Tipo I
-			imediatoI <= instrucao(larguraImediatoTipoI-1 downto 0);
+DECODER: entity work.decoderInstru
+		generic map (
+			larguraOpCode => 6,
+    		larguraFunct => 6,
+    		larguraSinaisControle => 12
+		)
+		port map(
+			opcode => opCode,
+			funct => funct,
+			saida => decoderControle
+		);
+		
+		
+		
+	inspectControles <= decoderControle;
 
-			-- Tipo J
-			imediatoJ <= instrucao(larguraImediatoTipoJ-1 downto 0);
-			
-			
-			-- And Para o beq
-			beqAndZero <= beq and flagZero;
-			
-			
-			inspectEndRS <= enderecoRS;
-			inspectEndRT <= enderecoRT;
-			inspectEndRD <= enderecoRD;
+	-- Controle
+	wrRAM <= decoderControle(0);
+	rdRAM <= decoderControle(1);
+	beq <= decoderControle(2);
+	MuxULARAMSeletor <= decoderControle(3);
+	ULAOpSeletor <= decoderControle(7 downto 4);
+	MUuxRtImediatoSeletor <= decoderControle(8);
+	wrReg  <= decoderControle(9);
+	muxRtRdSeletor <= decoderControle(10);
+	muxBeqPcSeletor <= decoderControle(11);
+	
+	-- Tipo R
+	opCode <= instrucao(31 downto 26);
+	enderecoRS <= instrucao(25 downto 21);
+	enderecoRT <= instrucao(20 downto 16);
+	enderecoRD <= instrucao(15 downto 11);
+	funct <= instrucao(5 downto 0);
+	
+	-- Tipo I
+	imediatoI <= instrucao(larguraImediatoTipoI-1 downto 0);
 
-			inspectR0 <= ULA_A;
-			inspectR1 <= saidaRT;
-			inspectR2 <= saidaEscritaRD;
+	-- Tipo J
+	imediatoJ <= instrucao(larguraImediatoTipoJ-1 downto 0);
+	
+	
+	-- And Para o beq
+	beqAndZero <= beq and flagZero;
+	
+	
+	inspectEndRS <= enderecoRS;
+	inspectEndRT <= enderecoRT;
+	inspectEndRD <= enderecoRD;
 
-			inspectInstru <= instrucao;
-			
-			sigExtImediatoShifted <= std_logic_vector(shift_left(unsigned(SigExt), larguraShift));
+	inspectR0 <= ULA_A;
+	inspectR1 <= saidaRT;
+	inspectR2 <= saidaEscritaRD;
 
-			inspectPC <= PC_out;
+	inspectInstru <= instrucao;
+	
+	
+	sigExtImediatoShifted <= std_logic_vector(shift_left(unsigned(SigExt), larguraShift));
 
-			inspectSeletorULA <= ULAOpSeletor;
+	inspectPC <= PC_out;
 
-			-- hab_RD <= '1';
+	inspectSeletorULA <= ULAOpSeletor;
 
 end architecture;
