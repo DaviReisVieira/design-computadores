@@ -1,0 +1,901 @@
+|ULAMIPS
+A[0] => halfula:opBit0.A
+A[1] => halfula:opBit1.A
+A[2] => halfula:opBit2.A
+A[3] => halfula:opBit3.A
+A[4] => halfula:opBit4.A
+A[5] => halfula:opBit5.A
+A[6] => halfula:opBit6.A
+A[7] => halfula:opBit7.A
+A[8] => halfula:opBit8.A
+A[9] => halfula:opBit9.A
+A[10] => halfula:opBit10.A
+A[11] => halfula:opBit11.A
+A[12] => halfula:opBit12.A
+A[13] => halfula:opBit13.A
+A[14] => halfula:opBit14.A
+A[15] => halfula:opBit15.A
+A[16] => halfula:opBit16.A
+A[17] => halfula:opBit17.A
+A[18] => halfula:opBit18.A
+A[19] => halfula:opBit19.A
+A[20] => halfula:opBit20.A
+A[21] => halfula:opBit21.A
+A[22] => halfula:opBit22.A
+A[23] => halfula:opBit23.A
+A[24] => halfula:opBit24.A
+A[25] => halfula:opBit25.A
+A[26] => halfula:opBit26.A
+A[27] => halfula:opBit27.A
+A[28] => halfula:opBit28.A
+A[29] => halfula:opBit29.A
+A[30] => halfula:opBit30.A
+A[31] => halfula:opBit31.A
+B[0] => halfula:opBit0.B
+B[1] => halfula:opBit1.B
+B[2] => halfula:opBit2.B
+B[3] => halfula:opBit3.B
+B[4] => halfula:opBit4.B
+B[5] => halfula:opBit5.B
+B[6] => halfula:opBit6.B
+B[7] => halfula:opBit7.B
+B[8] => halfula:opBit8.B
+B[9] => halfula:opBit9.B
+B[10] => halfula:opBit10.B
+B[11] => halfula:opBit11.B
+B[12] => halfula:opBit12.B
+B[13] => halfula:opBit13.B
+B[14] => halfula:opBit14.B
+B[15] => halfula:opBit15.B
+B[16] => halfula:opBit16.B
+B[17] => halfula:opBit17.B
+B[18] => halfula:opBit18.B
+B[19] => halfula:opBit19.B
+B[20] => halfula:opBit20.B
+B[21] => halfula:opBit21.B
+B[22] => halfula:opBit22.B
+B[23] => halfula:opBit23.B
+B[24] => halfula:opBit24.B
+B[25] => halfula:opBit25.B
+B[26] => halfula:opBit26.B
+B[27] => halfula:opBit27.B
+B[28] => halfula:opBit28.B
+B[29] => halfula:opBit29.B
+B[30] => halfula:opBit30.B
+B[31] => halfula:opBit31.B
+inverteB => halfula:opBit0.inverteB
+inverteB => halfula:opBit0.carryIn
+inverteB => halfula:opBit1.inverteB
+inverteB => halfula:opBit2.inverteB
+inverteB => halfula:opBit3.inverteB
+inverteB => halfula:opBit4.inverteB
+inverteB => halfula:opBit5.inverteB
+inverteB => halfula:opBit6.inverteB
+inverteB => halfula:opBit7.inverteB
+inverteB => halfula:opBit8.inverteB
+inverteB => halfula:opBit9.inverteB
+inverteB => halfula:opBit10.inverteB
+inverteB => halfula:opBit11.inverteB
+inverteB => halfula:opBit12.inverteB
+inverteB => halfula:opBit13.inverteB
+inverteB => halfula:opBit14.inverteB
+inverteB => halfula:opBit15.inverteB
+inverteB => halfula:opBit16.inverteB
+inverteB => halfula:opBit17.inverteB
+inverteB => halfula:opBit18.inverteB
+inverteB => halfula:opBit19.inverteB
+inverteB => halfula:opBit20.inverteB
+inverteB => halfula:opBit21.inverteB
+inverteB => halfula:opBit22.inverteB
+inverteB => halfula:opBit23.inverteB
+inverteB => halfula:opBit24.inverteB
+inverteB => halfula:opBit25.inverteB
+inverteB => halfula:opBit26.inverteB
+inverteB => halfula:opBit27.inverteB
+inverteB => halfula:opBit28.inverteB
+inverteB => halfula:opBit29.inverteB
+inverteB => halfula:opBit30.inverteB
+inverteB => halfula:opBit31.inverteB
+R[0] <= halfula:opBit0.R
+R[1] <= halfula:opBit1.R
+R[2] <= halfula:opBit2.R
+R[3] <= halfula:opBit3.R
+R[4] <= halfula:opBit4.R
+R[5] <= halfula:opBit5.R
+R[6] <= halfula:opBit6.R
+R[7] <= halfula:opBit7.R
+R[8] <= halfula:opBit8.R
+R[9] <= halfula:opBit9.R
+R[10] <= halfula:opBit10.R
+R[11] <= halfula:opBit11.R
+R[12] <= halfula:opBit12.R
+R[13] <= halfula:opBit13.R
+R[14] <= halfula:opBit14.R
+R[15] <= halfula:opBit15.R
+R[16] <= halfula:opBit16.R
+R[17] <= halfula:opBit17.R
+R[18] <= halfula:opBit18.R
+R[19] <= halfula:opBit19.R
+R[20] <= halfula:opBit20.R
+R[21] <= halfula:opBit21.R
+R[22] <= halfula:opBit22.R
+R[23] <= halfula:opBit23.R
+R[24] <= halfula:opBit24.R
+R[25] <= halfula:opBit25.R
+R[26] <= halfula:opBit26.R
+R[27] <= halfula:opBit27.R
+R[28] <= halfula:opBit28.R
+R[29] <= halfula:opBit29.R
+R[30] <= halfula:opBit30.R
+R[31] <= halfula:opBit31.R
+ZERO <= ZERO.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => halfula:opBit0.sel[0]
+sel[0] => halfula:opBit1.sel[0]
+sel[0] => halfula:opBit2.sel[0]
+sel[0] => halfula:opBit3.sel[0]
+sel[0] => halfula:opBit4.sel[0]
+sel[0] => halfula:opBit5.sel[0]
+sel[0] => halfula:opBit6.sel[0]
+sel[0] => halfula:opBit7.sel[0]
+sel[0] => halfula:opBit8.sel[0]
+sel[0] => halfula:opBit9.sel[0]
+sel[0] => halfula:opBit10.sel[0]
+sel[0] => halfula:opBit11.sel[0]
+sel[0] => halfula:opBit12.sel[0]
+sel[0] => halfula:opBit13.sel[0]
+sel[0] => halfula:opBit14.sel[0]
+sel[0] => halfula:opBit15.sel[0]
+sel[0] => halfula:opBit16.sel[0]
+sel[0] => halfula:opBit17.sel[0]
+sel[0] => halfula:opBit18.sel[0]
+sel[0] => halfula:opBit19.sel[0]
+sel[0] => halfula:opBit20.sel[0]
+sel[0] => halfula:opBit21.sel[0]
+sel[0] => halfula:opBit22.sel[0]
+sel[0] => halfula:opBit23.sel[0]
+sel[0] => halfula:opBit24.sel[0]
+sel[0] => halfula:opBit25.sel[0]
+sel[0] => halfula:opBit26.sel[0]
+sel[0] => halfula:opBit27.sel[0]
+sel[0] => halfula:opBit28.sel[0]
+sel[0] => halfula:opBit29.sel[0]
+sel[0] => halfula:opBit30.sel[0]
+sel[0] => halfula:opBit31.sel[0]
+sel[1] => halfula:opBit0.sel[1]
+sel[1] => halfula:opBit1.sel[1]
+sel[1] => halfula:opBit2.sel[1]
+sel[1] => halfula:opBit3.sel[1]
+sel[1] => halfula:opBit4.sel[1]
+sel[1] => halfula:opBit5.sel[1]
+sel[1] => halfula:opBit6.sel[1]
+sel[1] => halfula:opBit7.sel[1]
+sel[1] => halfula:opBit8.sel[1]
+sel[1] => halfula:opBit9.sel[1]
+sel[1] => halfula:opBit10.sel[1]
+sel[1] => halfula:opBit11.sel[1]
+sel[1] => halfula:opBit12.sel[1]
+sel[1] => halfula:opBit13.sel[1]
+sel[1] => halfula:opBit14.sel[1]
+sel[1] => halfula:opBit15.sel[1]
+sel[1] => halfula:opBit16.sel[1]
+sel[1] => halfula:opBit17.sel[1]
+sel[1] => halfula:opBit18.sel[1]
+sel[1] => halfula:opBit19.sel[1]
+sel[1] => halfula:opBit20.sel[1]
+sel[1] => halfula:opBit21.sel[1]
+sel[1] => halfula:opBit22.sel[1]
+sel[1] => halfula:opBit23.sel[1]
+sel[1] => halfula:opBit24.sel[1]
+sel[1] => halfula:opBit25.sel[1]
+sel[1] => halfula:opBit26.sel[1]
+sel[1] => halfula:opBit27.sel[1]
+sel[1] => halfula:opBit28.sel[1]
+sel[1] => halfula:opBit29.sel[1]
+sel[1] => halfula:opBit30.sel[1]
+sel[1] => halfula:opBit31.sel[1]
+
+
+|ULAMIPS|halfULA:opBit0
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit1
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit2
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit3
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit4
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit5
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit6
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit7
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit8
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit9
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit10
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit11
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit12
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit13
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit14
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit15
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit16
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit17
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit18
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit19
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit20
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit21
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit22
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit23
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit24
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit25
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit26
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit27
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit28
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit29
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit30
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
+|ULAMIPS|halfULA:opBit31
+A => op_AND.IN1
+A => op_OR.IN1
+A => op_SOMA_SUB.IN1
+B => saida_MUX_B.DATAB
+B => saida_MUX_B.DATAA
+SLT => R.DATAA
+inverteB => saida_MUX_B.OUTPUTSELECT
+carryIn => op_SOMA_SUB.IN1
+carryIn => carryOut.IN1
+R <= R$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN0
+
+
