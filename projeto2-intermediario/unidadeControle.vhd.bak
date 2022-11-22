@@ -1,0 +1,73 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity unidadeControle is
+  generic (
+    larguraOpCode: natural := 6;
+    larguraFunct: natural := 6;
+    larguraInstrucao	: natural := 32;
+  );
+
+  port ( 
+    instrucao : in std_logic_vector(larguraInstrucao-1 downto 0);
+    opcode: out std_logic_vector(larguraOpCode-1 downto 0);
+
+    mux_PC_4_BEQ_JUMP, mux_RT_RD, habilitaEscritaRD,
+    mux_RT_Imediato, tipoR, mux_ULA_Mem, op_BEQ,
+    rd, wr: out std_logic;
+    
+  );
+end entity;
+
+architecture comportamento of unidadeControle is
+  
+  -- funct
+  constant f_AND: std_logic_vector(larguraFunct-1 downto 0) := "100100";
+  constant f_OR : std_logic_vector(larguraFunct-1 downto 0) := "100101";
+  constant f_ADD : std_logic_vector(larguraFunct-1 downto 0) := "100000";
+  constant f_SUB : std_logic_vector(larguraFunct-1 downto 0) := "100010";
+  constant f_SLT : std_logic_vector(larguraFunct-1 downto 0) := "101010";
+
+  -- opcode
+  constant op_LW  : std_logic_vector(larguraOpCode-1 downto 0) := "100011";
+  constant op_SW  : std_logic_vector(larguraOpCode-1 downto 0) := "101011";
+  constant op_BEQ : std_logic_vector(larguraOpCode-1 downto 0) := "000100";
+  constant op_JMP : std_logic_vector(larguraOpCode-1 downto 0) := "000010";
+
+  -- aux signals
+  signal funct : std_logic_vector(larguraFunct-1 downto 0);
+
+  begin
+    opcode <= instrucao(larguraInstrucao-1 downto larguraInstrucao - larguraOpCode);
+    funct  <= instrucao(larguraFunct-1 downto 0);
+
+    tipoR <= '1' when opcode = "000000" else '0';
+    
+    MUX_PC_4_BEQ_JUMP <= opcode = op_JMP;
+
+    MUX_RT_RD <=  opcode = f_AND 
+                  or opcode = f_OR 
+                  or opcode = f_ADD
+                  or opcode = f_SUB 
+                  or opcode = f_SLT;
+
+    HabilitaEscritaRD <= opcode = f_AND
+                        or opcode = f_OR
+                        or opcode = f_ADD 
+                        or opcode = f_SUB 
+                        or opcode = f_SLT 
+                        or opcode = op_LW; 
+
+    MUX_RT_Imediato <= opcode = op_LW
+                      or opcode = SW;
+                      
+    mux_ULA_Mem     <= opcode = op_LW;
+
+    op_BEQ <= opcode = op_BEQ;
+
+    rd <= opcode = op_LW;
+
+    wr <= opcode = SW;
+
+              
+end architecture;

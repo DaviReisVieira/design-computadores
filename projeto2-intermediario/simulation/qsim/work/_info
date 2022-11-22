@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/aula-15/simulation/qsim
+Etoplevel
+Z0 w1668652364
+Z1 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^K2eeK[IVbX]]MLcdOEI91
+Z2 DPx8 cyclonev 19 cyclonev_components 0 22 GFL[QAd@dAZF:`jjOGn9>2
+Z3 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3dzZ?YU_4FC5UU0cTXRET1
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 H5F:RRfLz82T3`4>@b7mS3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
+!i122 84
+Z10 dC:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-intermediario/simulation/qsim
+Z11 8aula14.vho
+Z12 Faula14.vho
+l0
+L39 1
+V1`KaIYjXYaV9:027:7cRk3
+!s100 G@XAEdBFi`BSn6Ig@JK?Y0
+Z13 OV;C;2020.1;71
+32
+Z14 !s110 1669080091
+!i10b 1
+Z15 !s108 1669080091.000000
+Z16 !s90 -work|work|aula14.vho|
+Z17 !s107 aula14.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 8 toplevel 0 22 1`KaIYjXYaV9:027:7cRk3
+!i122 84
+l6473
+L60 63654
+V?G7K_7>4CBaFC>QNF4fEK2
+!s100 LJZ>8Lg0GN9?@f`gBKH^Z2
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Etoplevel_vhd_vec_tst
+Z20 w1668652363
+R7
+R8
+!i122 85
+R10
+Z21 8Waveform4.vwf.vht
+Z22 FWaveform4.vwf.vht
+l0
+L32 1
+Vi`cW82E4ohG=CFFdJ4Rgz3
+!s100 HOYZb^>X>O4gVXH@FzMRJ1
+R13
+32
+Z23 !s110 1669080093
+!i10b 1
+Z24 !s108 1669080093.000000
+Z25 !s90 -work|work|Waveform4.vwf.vht|
+Z26 !s107 Waveform4.vwf.vht|
+!i113 1
+R18
+R19
+Atoplevel_arch
+R7
+R8
+Z27 DEx4 work 20 toplevel_vhd_vec_tst 0 22 i`cW82E4ohG=CFFdJ4Rgz3
+!i122 85
+l67
+Z28 L34 64
+Z29 VNY5Mca?C_zJW9<FQ4Ef@O3
+Z30 !s100 ]bZinGi<LTjS[8<>U7Ylk0
+R13
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R18
+R19
