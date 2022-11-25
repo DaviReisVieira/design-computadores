@@ -1307,7 +1307,7 @@ A[27] => halfula:opBit27.A
 A[28] => halfula:opBit28.A
 A[29] => halfula:opBit29.A
 A[30] => halfula:opBit30.A
-A[31] => halfula:opBit31.A
+A[31] => halfulalastbit:opBit31.A
 B[0] => halfula:opBit0.B
 B[1] => halfula:opBit1.B
 B[2] => halfula:opBit2.B
@@ -1339,7 +1339,7 @@ B[27] => halfula:opBit27.B
 B[28] => halfula:opBit28.B
 B[29] => halfula:opBit29.B
 B[30] => halfula:opBit30.B
-B[31] => halfula:opBit31.B
+B[31] => halfulalastbit:opBit31.B
 inverteB => halfula:opBit0.inverteB
 inverteB => halfula:opBit0.carryIn
 inverteB => halfula:opBit1.inverteB
@@ -1372,7 +1372,7 @@ inverteB => halfula:opBit27.inverteB
 inverteB => halfula:opBit28.inverteB
 inverteB => halfula:opBit29.inverteB
 inverteB => halfula:opBit30.inverteB
-inverteB => halfula:opBit31.inverteB
+inverteB => halfulalastbit:opBit31.inverteB
 R[0] <= halfula:opBit0.R
 R[1] <= halfula:opBit1.R
 R[2] <= halfula:opBit2.R
@@ -1404,7 +1404,7 @@ R[27] <= halfula:opBit27.R
 R[28] <= halfula:opBit28.R
 R[29] <= halfula:opBit29.R
 R[30] <= halfula:opBit30.R
-R[31] <= halfula:opBit31.R
+R[31] <= halfulalastbit:opBit31.R
 ZERO <= ZERO.DB_MAX_OUTPUT_PORT_TYPE
 sel[0] => halfula:opBit0.sel[0]
 sel[0] => halfula:opBit1.sel[0]
@@ -1437,7 +1437,7 @@ sel[0] => halfula:opBit27.sel[0]
 sel[0] => halfula:opBit28.sel[0]
 sel[0] => halfula:opBit29.sel[0]
 sel[0] => halfula:opBit30.sel[0]
-sel[0] => halfula:opBit31.sel[0]
+sel[0] => halfulalastbit:opBit31.sel[0]
 sel[1] => halfula:opBit0.sel[1]
 sel[1] => halfula:opBit1.sel[1]
 sel[1] => halfula:opBit2.sel[1]
@@ -1469,7 +1469,7 @@ sel[1] => halfula:opBit27.sel[1]
 sel[1] => halfula:opBit28.sel[1]
 sel[1] => halfula:opBit29.sel[1]
 sel[1] => halfula:opBit30.sel[1]
-sel[1] => halfula:opBit31.sel[1]
+sel[1] => halfulalastbit:opBit31.sel[1]
 
 
 |TopLevel|ULAMIPS:ULA|halfULA:opBit0
@@ -2154,7 +2154,7 @@ sel[1] => Equal2.IN0
 sel[1] => Equal3.IN0
 
 
-|TopLevel|ULAMIPS:ULA|halfULA:opBit31
+|TopLevel|ULAMIPS:ULA|halfULALastBit:opBit31
 A => op_AND.IN1
 A => op_OR.IN1
 A => op_SOMA_SUB.IN1
@@ -2174,6 +2174,7 @@ sel[1] => Equal0.IN0
 sel[1] => Equal1.IN1
 sel[1] => Equal2.IN0
 sel[1] => Equal3.IN0
+op_SOMA_SUB <= op_SOMA_SUB.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TopLevel|RAMMIPS:RAM

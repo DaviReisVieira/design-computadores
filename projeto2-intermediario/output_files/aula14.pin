@@ -79,17 +79,17 @@ GND                          : A1        :        :                   :         
 MSEL2                        : A2        :        :                   :         : 9A        :                
 VCCBAT                       : A3        : power  :                   : 1.2V    :           :                
 nCONFIG                      : A4        :        :                   :         : 9A        :                
-DATA_OUT[28]                 : A5        : output : 2.5 V             :         : 8A        : N              
+DATA_OUT[31]                 : A5        : output : 2.5 V             :         : 8A        : N              
 VCCIO8A                      : A6        : power  :                   : 2.5V    : 8A        :                
-inspectPC[16]                : A7        : output : 2.5 V             :         : 8A        : N              
-DATA_OUT[1]                  : A8        : output : 2.5 V             :         : 8A        : N              
-DATA_OUT[27]                 : A9        : output : 2.5 V             :         : 8A        : N              
-inspectPC[25]                : A10       : output : 2.5 V             :         : 8A        : N              
+inspectInstru[20]            : A7        : output : 2.5 V             :         : 8A        : N              
+inspectPC[19]                : A8        : output : 2.5 V             :         : 8A        : N              
+inspectPC[1]                 : A9        : output : 2.5 V             :         : 8A        : N              
+DATA_OUT[9]                  : A10       : output : 2.5 V             :         : 8A        : N              
 GND                          : A11       : gnd    :                   :         :           :                
-inspectPC[8]                 : A12       : output : 2.5 V             :         : 7A        : N              
-inspectEndRT[3]              : A13       : output : 2.5 V             :         : 7A        : N              
-inspectPC[18]                : A14       : output : 2.5 V             :         : 7A        : N              
-inspectInstru[11]            : A15       : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[11]                 : A12       : output : 2.5 V             :         : 7A        : N              
+inspectInstru[16]            : A13       : output : 2.5 V             :         : 7A        : N              
+inspectPC[0]                 : A14       : output : 2.5 V             :         : 7A        : N              
+inspectPC[22]                : A15       : output : 2.5 V             :         : 7A        : N              
 VCCIO7A                      : A16       : power  :                   : 2.5V    : 7A        :                
 NC                           : A17       :        :                   :         :           :                
 NC                           : A18       :        :                   :         :           :                
@@ -145,18 +145,18 @@ GND                          : B1        : gnd    :                   :         
 GND                          : B2        : gnd    :                   :         :           :                
 DNU                          : B3        :        :                   :         :           :                
 DNU                          : B4        :        :                   :         :           :                
-inspectControles[5]          : B5        : output : 2.5 V             :         : 8A        : N              
-inspectInstru[14]            : B6        : output : 2.5 V             :         : 8A        : N              
-DATA_OUT[7]                  : B7        : output : 2.5 V             :         : 8A        : N              
+DATA_OUT[5]                  : B5        : output : 2.5 V             :         : 8A        : N              
+DATA_OUT[8]                  : B6        : output : 2.5 V             :         : 8A        : N              
+inspectControles[5]          : B7        : output : 2.5 V             :         : 8A        : N              
 VREFB8AN0                    : B8        : power  :                   :         : 8A        :                
 GND                          : B9        : gnd    :                   :         :           :                
-inspectInstru[1]             : B10       : output : 2.5 V             :         : 8A        : N              
-DATA_OUT[8]                  : B11       : output : 2.5 V             :         : 7A        : N              
-inspectPC[9]                 : B12       : output : 2.5 V             :         : 7A        : N              
-inspectInstru[17]            : B13       : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[23]                 : B10       : output : 2.5 V             :         : 8A        : N              
+inspectControles[1]          : B11       : output : 2.5 V             :         : 7A        : N              
+inspectEndRT[3]              : B12       : output : 2.5 V             :         : 7A        : N              
+inspectEndRT[0]              : B13       : output : 2.5 V             :         : 7A        : N              
 GND                          : B14       : gnd    :                   :         :           :                
-DATA_OUT[11]                 : B15       : output : 2.5 V             :         : 7A        : N              
-DATA_OUT[12]                 : B16       : output : 2.5 V             :         : 7A        : N              
+inspectInstru[5]             : B15       : output : 2.5 V             :         : 7A        : N              
+inspectEndRD[0]              : B16       : output : 2.5 V             :         : 7A        : N              
 NC                           : B17       :        :                   :         :           :                
 NC                           : B18       :        :                   :         :           :                
 VCCIO7A                      : B19       : power  :                   : 2.5V    : 7A        :                
@@ -168,17 +168,17 @@ HEX5[5]                      : C2        : output : 3.3-V LVTTL       :         
 GND                          : C3        : gnd    :                   :         :           :                
 GND                          : C4        : gnd    :                   :         :           :                
 GND                          : C5        :        :                   :         : 9A        :                
-inspectControles[9]          : C6        : output : 2.5 V             :         : 8A        : N              
+inspectInstru[18]            : C6        : output : 2.5 V             :         : 8A        : N              
 VCCIO8A                      : C7        : power  :                   : 2.5V    : 8A        :                
-inspectControles[7]          : C8        : output : 2.5 V             :         : 8A        : N              
-DATA_OUT[2]                  : C9        : output : 2.5 V             :         : 8A        : N              
+inspectEndRS[1]              : C8        : output : 2.5 V             :         : 8A        : N              
+inspectControles[9]          : C9        : output : 2.5 V             :         : 8A        : N              
 VCCPD7A8A                    : C10       : power  :                   : 2.5V    : 7A, 8A    :                
-inspectInstru[3]             : C11       : output : 2.5 V             :         : 7A        : N              
+inspectInstru[22]            : C11       : output : 2.5 V             :         : 7A        : N              
 VCCIO7A                      : C12       : power  :                   : 2.5V    : 7A        :                
-inspectControles[3]          : C13       : output : 2.5 V             :         : 7A        : N              
+inspectInstru[19]            : C13       : output : 2.5 V             :         : 7A        : N              
 VREFB7AN0                    : C14       : power  :                   :         : 7A        :                
-DATA_OUT[20]                 : C15       : output : 2.5 V             :         : 7A        : N              
-inspectInstru[16]            : C16       : output : 2.5 V             :         : 7A        : N              
+inspectPC[26]                : C15       : output : 2.5 V             :         : 7A        : N              
+inspectInstru[12]            : C16       : output : 2.5 V             :         : 7A        : N              
 GND                          : C17       : gnd    :                   :         :           :                
 NC                           : C18       :        :                   :         :           :                
 NC                           : C19       :        :                   :         :           :                
@@ -190,18 +190,18 @@ GND                          : D2        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : D3        :        :                   :         : 2A        :                
 VCCIO2A                      : D4        : power  :                   : 3.3V    : 2A        :                
 GND                          : D5        : gnd    :                   :         :           :                
-inspectInstru[25]            : D6        : output : 2.5 V             :         : 8A        : N              
-DATA_OUT[4]                  : D7        : output : 2.5 V             :         : 8A        : N              
+DATA_OUT[18]                 : D6        : output : 2.5 V             :         : 8A        : N              
+DATA_OUT[0]                  : D7        : output : 2.5 V             :         : 8A        : N              
 VCCPD7A8A                    : D8        : power  :                   : 2.5V    : 7A, 8A    :                
-inspectEndRT[2]              : D9        : output : 2.5 V             :         : 8A        : N              
+inspectEndRT[4]              : D9        : output : 2.5 V             :         : 8A        : N              
 GND                          : D10       : gnd    :                   :         :           :                
 VCC_AUX                      : D11       : power  :                   : 2.5V    :           :                
-inspectInstru[0]             : D12       : output : 2.5 V             :         : 7A        : N              
-inspectEndRS[2]              : D13       : output : 2.5 V             :         : 7A        : N              
+inspectInstru[7]             : D12       : output : 2.5 V             :         : 7A        : N              
+inspectPC[9]                 : D13       : output : 2.5 V             :         : 7A        : N              
 VCCPD7A8A                    : D14       : power  :                   : 2.5V    : 7A, 8A    :                
 VCCIO7A                      : D15       : power  :                   : 2.5V    : 7A        :                
 VCCPD7A8A                    : D16       : power  :                   : 2.5V    : 7A, 8A    :                
-inspectInstru[4]             : D17       : output : 2.5 V             :         : 7A        : N              
+inspectPC[29]                : D17       : output : 2.5 V             :         : 7A        : N              
 VCC_AUX                      : D18       : power  :                   : 2.5V    :           :                
 NC                           : D19       :        :                   :         :           :                
 GND                          : D20       : gnd    :                   :         :           :                
@@ -213,16 +213,16 @@ GND                          : E3        : gnd    :                   :         
 GND                          : E4        : gnd    :                   :         :           :                
 MSEL3                        : E5        :        :                   :         : 9A        :                
 VCC_AUX                      : E6        : power  :                   : 2.5V    :           :                
-DATA_OUT[15]                 : E7        : output : 2.5 V             :         : 8A        : N              
+inspectEndRS[4]              : E7        : output : 2.5 V             :         : 8A        : N              
 VCCIO8A                      : E8        : power  :                   : 2.5V    : 8A        :                
 inspectControles[2]          : E9        : output : 2.5 V             :         : 8A        : N              
-DATA_OUT[21]                 : E10       : output : 2.5 V             :         : 8A        : N              
+inspectInstru[31]            : E10       : output : 2.5 V             :         : 8A        : N              
 VCCPD7A8A                    : E11       : power  :                   : 2.5V    : 7A, 8A    :                
-inspectPC[17]                : E12       : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[28]                 : E12       : output : 2.5 V             :         : 7A        : N              
 GND                          : E13       : gnd    :                   :         :           :                
-inspectEndRT[1]              : E14       : output : 2.5 V             :         : 7A        : N              
-inspectControles[0]          : E15       : output : 2.5 V             :         : 7A        : N              
-DATA_OUT[6]                  : E16       : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[19]                 : E14       : output : 2.5 V             :         : 7A        : N              
+inspectPC[12]                : E15       : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[7]                  : E16       : output : 2.5 V             :         : 7A        : N              
 DNU                          : E17       :        :                   :         :           :                
 VCCIO7A                      : E18       : power  :                   : 2.5V    : 7A        :                
 NC                           : E19       :        :                   :         :           :                
@@ -235,15 +235,15 @@ MSEL4                        : F3        :        :                   :         
 VCCA_FPLL                    : F4        : power  :                   : 2.5V    :           :                
 GND                          : F5        : gnd    :                   :         :           :                
 GND                          : F6        : gnd    :                   :         :           :                
-DATA_OUT[24]                 : F7        : output : 2.5 V             :         : 8A        : N              
+inspectControles[3]          : F7        : output : 2.5 V             :         : 8A        : N              
 VCCPGM                       : F8        : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
-inspectPC[7]                 : F9        : output : 2.5 V             :         : 8A        : N              
-inspectPC[29]                : F10       : output : 2.5 V             :         : 8A        : N              
+inspectPC[16]                : F9        : output : 2.5 V             :         : 8A        : N              
+DATA_OUT[6]                  : F10       : output : 2.5 V             :         : 8A        : N              
 VCCIO7A                      : F11       : power  :                   : 2.5V    : 7A        :                
 inspectControles[4]          : F12       : output : 2.5 V             :         : 7A        : N              
-inspectPC[2]                 : F13       : output : 2.5 V             :         : 7A        : N              
-inspectInstru[7]             : F14       : output : 2.5 V             :         : 7A        : N              
-inspectInstru[28]            : F15       : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[17]                 : F13       : output : 2.5 V             :         : 7A        : N              
+inspectPC[27]                : F14       : output : 2.5 V             :         : 7A        : N              
+inspectInstru[11]            : F15       : output : 2.5 V             :         : 7A        : N              
 GND                          : F16       : gnd    :                   :         :           :                
 GND                          : F17       :        :                   :         : 7A        :                
 NC                           : F18       :        :                   :         :           :                
@@ -256,19 +256,19 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : G2        :        :                   :      
 GND                          : G3        : gnd    :                   :         :           :                
 GND                          : G4        : gnd    :                   :         :           :                
 nCE                          : G5        :        :                   :         : 9A        :                
-inspectPC[10]                : G6        : output : 2.5 V             :         : 8A        : N              
+inspectInstru[26]            : G6        : output : 2.5 V             :         : 8A        : N              
 VCCIO8A                      : G7        : power  :                   : 2.5V    : 8A        :                
-inspectEndRS[0]              : G8        : output : 2.5 V             :         : 8A        : N              
+DATA_OUT[21]                 : G8        : output : 2.5 V             :         : 8A        : N              
 GND                          : G9        : gnd    :                   :         :           :                
-DATA_OUT[10]                 : G10       : output : 2.5 V             :         : 8A        : N              
-inspectInstru[27]            : G11       : output : 2.5 V             :         : 7A        : N              
-inspectInstru[2]             : G12       : output : 2.5 V             :         : 7A        : N              
-inspectEndRD[3]              : G13       : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[14]                 : G10       : output : 2.5 V             :         : 8A        : N              
+DATA_OUT[1]                  : G11       : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[10]                 : G12       : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[30]                 : G13       : output : 2.5 V             :         : 7A        : N              
 VCCIO7A                      : G14       : power  :                   : 2.5V    : 7A        :                
-inspectEndRD[1]              : G15       : output : 2.5 V             :         : 7A        : N              
-inspectInstru[15]            : G16       : output : 2.5 V             :         : 7A        : N              
-inspectInstru[9]             : G17       : output : 2.5 V             :         : 7A        : N              
-inspectInstru[13]            : G18       : output : 2.5 V             :         : 7A        : N              
+inspectPC[10]                : G15       : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[2]                  : G16       : output : 2.5 V             :         : 7A        : N              
+inspectInstru[15]            : G17       : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[22]                 : G18       : output : 2.5 V             :         : 7A        : N              
 GND                          : G19       : gnd    :                   :         :           :                
 NC                           : G20       :        :                   :         :           :                
 NC                           : G21       :        :                   :         :           :                
@@ -278,19 +278,19 @@ GND                          : H2        : gnd    :                   :         
 GND                          : H3        : gnd    :                   :         :           :                
 GND                          : H4        : gnd    :                   :         :           :                
 nSTATUS                      : H5        :        :                   :         : 9A        :                
-DATA_OUT[25]                 : H6        : output : 2.5 V             :         : 8A        : N              
+inspectSeletorULA[0]         : H6        : output : 2.5 V             :         : 8A        : N              
 GND                          : H7        : gnd    :                   :         :           :                
-inspectInstru[24]            : H8        : output : 2.5 V             :         : 8A        : N              
-DATA_OUT[30]                 : H9        : output : 2.5 V             :         : 8A        : N              
-DATA_OUT[0]                  : H10       : output : 2.5 V             :         : 7A        : N              
-inspectPC[19]                : H11       : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[25]                 : H8        : output : 2.5 V             :         : 8A        : N              
+inspectInstru[28]            : H9        : output : 2.5 V             :         : 8A        : N              
+DATA_OUT[3]                  : H10       : output : 2.5 V             :         : 7A        : N              
+inspectInstru[24]            : H11       : output : 2.5 V             :         : 7A        : N              
 GND                          : H12       : gnd    :                   :         :           :                
-inspectInstru[19]            : H13       : output : 2.5 V             :         : 7A        : N              
-inspectEndRT[0]              : H14       : output : 2.5 V             :         : 7A        : N              
-inspectPC[0]                 : H15       : output : 2.5 V             :         : 7A        : N              
-inspectInstru[12]            : H16       : output : 2.5 V             :         : 7A        : N              
+inspectInstru[8]             : H13       : output : 2.5 V             :         : 7A        : N              
+inspectSeletorULA[1]         : H14       : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[12]                 : H15       : output : 2.5 V             :         : 7A        : N              
+inspectPC[31]                : H16       : output : 2.5 V             :         : 7A        : N              
 VCCIO7A                      : H17       : power  :                   : 2.5V    : 7A        :                
-inspectEndRS[3]              : H18       : output : 2.5 V             :         : 7A        : N              
+inspectPC[15]                : H18       : output : 2.5 V             :         : 7A        : N              
 VCCA_FPLL                    : H19       : power  :                   : 2.5V    :           :                
 NC                           : H20       :        :                   :         :           :                
 NC                           : H21       :        :                   :         :           :                
@@ -301,19 +301,19 @@ GND                          : J3        : gnd    :                   :         
 VCC                          : J4        : power  :                   : 1.1V    :           :                
 GND                          : J5        : gnd    :                   :         :           :                
 MSEL1                        : J6        :        :                   :         : 9A        :                
-inspectPC[21]                : J7        : output : 2.5 V             :         : 8A        : N              
-inspectControles[1]          : J8        : output : 2.5 V             :         : 8A        : N              
-inspectSeletorULA[2]         : J9        : output : 2.5 V             :         : 8A        : N              
+inspectEndRD[2]              : J7        : output : 2.5 V             :         : 8A        : N              
+inspectInstru[10]            : J8        : output : 2.5 V             :         : 8A        : N              
+inspectInstru[23]            : J9        : output : 2.5 V             :         : 8A        : N              
 VCC                          : J10       : power  :                   : 1.1V    :           :                
-inspectInstru[10]            : J11       : output : 2.5 V             :         : 7A        : N              
+inspectInstru[14]            : J11       : output : 2.5 V             :         : 7A        : N              
 VCC                          : J12       : power  :                   : 1.1V    :           :                
-DATA_OUT[17]                 : J13       : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[29]                 : J13       : output : 2.5 V             :         : 7A        : N              
 VCC                          : J14       : power  :                   : 1.1V    :           :                
 GND                          : J15       : gnd    :                   :         :           :                
 VCC                          : J16       : power  :                   : 1.1V    :           :                
-inspectInstru[18]            : J17       : output : 2.5 V             :         : 7A        : N              
-inspectInstru[5]             : J18       : output : 2.5 V             :         : 7A        : N              
-inspectInstru[22]            : J19       : output : 2.5 V             :         : 7A        : N              
+inspectControles[0]          : J17       : output : 2.5 V             :         : 7A        : N              
+inspectPC[4]                 : J18       : output : 2.5 V             :         : 7A        : N              
+inspectPC[14]                : J19       : output : 2.5 V             :         : 7A        : N              
 GND                          : J20       : gnd    :                   :         :           :                
 NC                           : J21       :        :                   :         :           :                
 NC                           : J22       :        :                   :         :           :                
@@ -323,30 +323,30 @@ VCC                          : K3        : power  :                   : 1.1V    
 GND                          : K4        : gnd    :                   :         :           :                
 VCC                          : K5        : power  :                   : 1.1V    :           :                
 CONF_DONE                    : K6        :        :                   :         : 9A        :                
-DATA_OUT[9]                  : K7        : output : 2.5 V             :         : 8A        : N              
+inspectInstru[17]            : K7        : output : 2.5 V             :         : 8A        : N              
 GND                          : K8        : gnd    :                   :         :           :                
-inspectEndRD[2]              : K9        : output : 2.5 V             :         : 7A        : N              
+inspectEndRD[4]              : K9        : output : 2.5 V             :         : 7A        : N              
 GND                          : K10       : gnd    :                   :         :           :                
 VCC                          : K11       : power  :                   : 1.1V    :           :                
 GND                          : K12       : gnd    :                   :         :           :                
 VCC                          : K13       : power  :                   : 1.1V    :           :                
 GND                          : K14       : gnd    :                   :         :           :                
 VCC                          : K15       : power  :                   : 1.1V    :           :                
-inspectPC[3]                 : K16       : output : 2.5 V             :         : 7A        : N              
-inspectPC[1]                 : K17       : output : 2.5 V             :         : 5B        : N              
+DATA_OUT[26]                 : K16       : output : 2.5 V             :         : 7A        : N              
+inspectPC[7]                 : K17       : output : 2.5 V             :         : 5B        : N              
 VCCIO5B                      : K18       : power  :                   : 2.5V    : 5B        :                
-inspectInstru[8]             : K19       : output : 2.5 V             :         : 7A        : N              
-DATA_OUT[5]                  : K20       : output : 2.5 V             :         : 7A        : N              
-inspectInstru[20]            : K21       : output : 2.5 V             :         : 5B        : N              
-inspectEndRS[1]              : K22       : output : 2.5 V             :         : 5B        : N              
+inspectInstru[9]             : K19       : output : 2.5 V             :         : 7A        : N              
+inspectEndRT[1]              : K20       : output : 2.5 V             :         : 7A        : N              
+inspectInstru[6]             : K21       : output : 2.5 V             :         : 5B        : N              
+inspectEndRT[2]              : K22       : output : 2.5 V             :         : 5B        : N              
 LEDR[9]                      : L1        : output : 3.3-V LVTTL       :         : 2A        : Y              
 LEDR[8]                      : L2        : output : 3.3-V LVTTL       :         : 2A        : Y              
 GND                          : L3        : gnd    :                   :         :           :                
 VCC                          : L4        : power  :                   : 1.1V    :           :                
 GND                          : L5        : gnd    :                   :         :           :                
 MSEL0                        : L6        :        :                   :         : 9A        :                
-inspectInstru[21]            : L7        : output : 2.5 V             :         : 8A        : N              
-inspectPC[12]                : L8        : output : 2.5 V             :         : 7A        : N              
+DATA_OUT[20]                 : L7        : output : 2.5 V             :         : 8A        : N              
+inspectPC[6]                 : L8        : output : 2.5 V             :         : 7A        : N              
 DNU                          : L9        :        :                   :         :           :                
 VCC                          : L10       : power  :                   : 1.1V    :           :                
 GND                          : L11       : gnd    :                   :         :           :                
@@ -355,12 +355,12 @@ GND                          : L13       : gnd    :                   :         
 VCC                          : L14       : power  :                   : 1.1V    :           :                
 GND                          : L15       : gnd    :                   :         :           :                
 VCC                          : L16       : power  :                   : 1.1V    :           :                
-DATA_OUT[23]                 : L17       : output : 2.5 V             :         : 5B        : N              
-inspectInstru[6]             : L18       : output : 2.5 V             :         : 5B        : N              
+inspectInstru[4]             : L17       : output : 2.5 V             :         : 5B        : N              
+inspectEndRD[1]              : L18       : output : 2.5 V             :         : 5B        : N              
 inspectControles[8]          : L19       : output : 2.5 V             :         : 5B        : N              
 VREFB5BN0                    : L20       : power  :                   :         : 5B        :                
 GND                          : L21       : gnd    :                   :         :           :                
-DATA_OUT[22]                 : L22       : output : 2.5 V             :         : 5B        : N              
+inspectPC[3]                 : L22       : output : 2.5 V             :         : 5B        : N              
 GND                          : M1        : gnd    :                   :         :           :                
 GND                          : M2        : gnd    :                   :         :           :                
 VCCA_FPLL                    : M3        : power  :                   : 2.5V    :           :                
@@ -376,19 +376,19 @@ GND                          : M12       : gnd    :                   :         
 VCC                          : M13       : power  :                   : 1.1V    :           :                
 GND                          : M14       : gnd    :                   :         :           :                
 VCC                          : M15       : power  :                   : 1.1V    :           :                
-inspectEndRD[4]              : M16       : output : 2.5 V             :         : 5B        : N              
+inspectEndRD[3]              : M16       : output : 2.5 V             :         : 5B        : N              
 VCCPD5B                      : M17       : power  :                   : 2.5V    : 5B        :                
-DATA_OUT[18]                 : M18       : output : 2.5 V             :         : 5B        : N              
+inspectEndRS[3]              : M18       : output : 2.5 V             :         : 5B        : N              
 VCCIO5B                      : M19       : power  :                   : 2.5V    : 5B        :                
 DATA_OUT[16]                 : M20       : output : 2.5 V             :         : 5B        : N              
-inspectControles[6]          : M21       : output : 2.5 V             :         : 5B        : N              
-inspectEndRS[4]              : M22       : output : 2.5 V             :         : 5B        : N              
+inspectInstru[30]            : M21       : output : 2.5 V             :         : 5B        : N              
+inspectInstru[13]            : M22       : output : 2.5 V             :         : 5B        : N              
 LEDR[5]                      : N1        : output : 3.3-V LVTTL       :         : 2A        : Y              
 LEDR[4]                      : N2        : output : 3.3-V LVTTL       :         : 2A        : Y              
 GND                          : N3        : gnd    :                   :         :           :                
 VCC                          : N4        : power  :                   : 1.1V    :           :                
 GND                          : N5        : gnd    :                   :         :           :                
-inspectSeletorULA[0]         : N6        : output : 2.5 V             :         : 3A        : N              
+inspectPC[11]                : N6        : output : 2.5 V             :         : 3A        : N              
 GND                          : N7        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N8        :        :                   :         : 3B        :                
 HEX5[0]                      : N9        : output : 3.3-V LVTTL       :         : 3B        : Y              
@@ -398,20 +398,20 @@ VCC                          : N12       : power  :                   : 1.1V    
 GND                          : N13       : gnd    :                   :         :           :                
 VCC                          : N14       : power  :                   : 1.1V    :           :                
 GND                          : N15       : gnd    :                   :         :           :                
-DATA_OUT[3]                  : N16       : output : 2.5 V             :         : 5B        : N              
+inspectInstru[25]            : N16       : output : 2.5 V             :         : 5B        : N              
 GND                          : N17       : gnd    :                   :         :           :                
 VCCPD5B                      : N18       : power  :                   : 2.5V    : 5B        :                
-inspectPC[11]                : N19       : output : 2.5 V             :         : 5B        : N              
-inspectPC[23]                : N20       : output : 2.5 V             :         : 5B        : N              
-inspectSeletorULA[1]         : N21       : output : 2.5 V             :         : 5B        : N              
+DATA_OUT[24]                 : N19       : output : 2.5 V             :         : 5B        : N              
+inspectPC[30]                : N20       : output : 2.5 V             :         : 5B        : N              
+inspectPC[21]                : N21       : output : 2.5 V             :         : 5B        : N              
 GND                          : N22       : gnd    :                   :         :           :                
 GND                          : P1        : gnd    :                   :         :           :                
 GND                          : P2        : gnd    :                   :         :           :                
 VCC                          : P3        : power  :                   : 1.1V    :           :                
 GND                          : P4        : gnd    :                   :         :           :                
 TMS                          : P5        : input  :                   :         : 3A        :                
-inspectPC[6]                 : P6        : output : 2.5 V             :         : 3A        : N              
-inspectPC[31]                : P7        : output : 2.5 V             :         : 3A        : N              
+inspectControles[7]          : P6        : output : 2.5 V             :         : 3A        : N              
+inspectPC[25]                : P7        : output : 2.5 V             :         : 3A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : P8        :        :                   :         : 3B        :                
 HEX4[6]                      : P9        : output : 3.3-V LVTTL       :         : 3B        : Y              
 GND                          : P10       : gnd    :                   :         :           :                
@@ -420,20 +420,20 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : P12       :        :                   :      
 VCC                          : P13       : power  :                   : 1.1V    :           :                
 HEX5[3]                      : P14       : output : 3.3-V LVTTL       :         : 4A        : Y              
 VCC                          : P15       : power  :                   : 1.1V    :           :                
-inspectPC[22]                : P16       : output : 2.5 V             :         : 5A        : N              
-inspectPC[28]                : P17       : output : 2.5 V             :         : 5A        : N              
+DATA_OUT[4]                  : P16       : output : 2.5 V             :         : 5A        : N              
+inspectPC[17]                : P17       : output : 2.5 V             :         : 5A        : N              
 inspectPC[24]                : P18       : output : 2.5 V             :         : 5A        : N              
-inspectPC[27]                : P19       : output : 2.5 V             :         : 5A        : N              
+inspectPC[20]                : P19       : output : 2.5 V             :         : 5A        : N              
 VCCIO5A                      : P20       : power  :                   : 2.5V    : 5A        :                
 VCCPD5A                      : P21       : power  :                   : 2.5V    : 5A        :                
-DATA_OUT[19]                 : P22       : output : 2.5 V             :         : 5A        : N              
+inspectInstru[1]             : P22       : output : 2.5 V             :         : 5A        : N              
 VCCIO2A                      : R1        : power  :                   : 3.3V    : 2A        :                
 VCCPD1A2A                    : R2        : power  :                   : 3.3V    : 1A, 2A    :                
 GND                          : R3        : gnd    :                   :         :           :                
 nCSO, DATA4                  : R4        :        :                   :         : 3A        :                
-inspectPC[15]                : R5        : output : 2.5 V             :         : 3A        : N              
-inspectPC[26]                : R6        : output : 2.5 V             :         : 3A        : N              
-inspectEndRT[4]              : R7        : output : 2.5 V             :         : 3A        : N              
+DATA_OUT[15]                 : R5        : output : 2.5 V             :         : 3A        : N              
+inspectControles[6]          : R6        : output : 2.5 V             :         : 3A        : N              
+inspectInstru[21]            : R7        : output : 2.5 V             :         : 3A        : N              
 VCCIO3B                      : R8        : power  :                   : 3.3V    : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R10       :        :                   :         : 3B        :                
@@ -441,44 +441,44 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : R11       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : R12       :        :                   :         : 3B        :                
 GND                          : R13       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 4A        :                
-inspectInstru[31]            : R15       : output : 2.5 V             :         : 5A        : N              
-DATA_OUT[29]                 : R16       : output : 2.5 V             :         : 5A        : N              
-inspectEndRD[0]              : R17       : output : 2.5 V             :         : 5A        : N              
+inspectEndRS[2]              : R15       : output : 2.5 V             :         : 5A        : N              
+DATA_OUT[27]                 : R16       : output : 2.5 V             :         : 5A        : N              
+inspectPC[28]                : R17       : output : 2.5 V             :         : 5A        : N              
 VCCIO5A                      : R18       : power  :                   : 2.5V    : 5A        :                
 VCCPGM                       : R19       : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
 VREFB5AN0                    : R20       : power  :                   :         : 5A        :                
-DATA_OUT[31]                 : R21       : output : 2.5 V             :         : 5A        : N              
-inspectPC[30]                : R22       : output : 2.5 V             :         : 5A        : N              
+inspectInstru[27]            : R21       : output : 2.5 V             :         : 5A        : N              
+inspectSeletorULA[2]         : R22       : output : 2.5 V             :         : 5A        : N              
 GND                          : T1        : gnd    :                   :         :           :                
 GND                          : T2        : gnd    :                   :         :           :                
 VCCA_FPLL                    : T3        : power  :                   : 2.5V    :           :                
 AS_DATA3, DATA3              : T4        :        :                   :         : 3A        :                
 VCCA_FPLL                    : T5        : power  :                   : 2.5V    :           :                
 VCCIO3A                      : T6        : power  :                   : 2.5V    : 3A        :                
-inspectInstru[29]            : T7        : output : 2.5 V             :         : 3A        : N              
-inspectInstru[23]            : T8        : output : 2.5 V             :         : 3A        : N              
+inspectInstru[3]             : T7        : output : 2.5 V             :         : 3A        : N              
+inspectInstru[2]             : T8        : output : 2.5 V             :         : 3A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T10       :        :                   :         : 3B        :                
 VCCIO3B                      : T11       : power  :                   : 3.3V    : 3B        :                
 SW[3]                        : T12       : input  : 3.3-V LVTTL       :         : 4A        : Y              
 SW[2]                        : T13       : input  : 3.3-V LVTTL       :         : 4A        : Y              
 HEX5[2]                      : T14       : output : 3.3-V LVTTL       :         : 4A        : Y              
-inspectInstru[30]            : T15       : output : 2.5 V             :         : 5A        : N              
+inspectInstru[0]             : T15       : output : 2.5 V             :         : 5A        : N              
 GND                          : T16       : gnd    :                   :         :           :                
-DATA_OUT[14]                 : T17       : output : 2.5 V             :         : 5A        : N              
-inspectPC[5]                 : T18       : output : 2.5 V             :         : 5A        : N              
-inspectInstru[26]            : T19       : output : 2.5 V             :         : 5A        : N              
-inspectPC[4]                 : T20       : output : 2.5 V             :         : 5A        : N              
+inspectInstru[29]            : T17       : output : 2.5 V             :         : 5A        : N              
+inspectPC[2]                 : T18       : output : 2.5 V             :         : 5A        : N              
+inspectPC[18]                : T19       : output : 2.5 V             :         : 5A        : N              
+inspectPC[5]                 : T20       : output : 2.5 V             :         : 5A        : N              
 GND                          : T21       : gnd    :                   :         :           :                
-inspectPC[14]                : T22       : output : 2.5 V             :         : 5A        : N              
+inspectPC[23]                : T22       : output : 2.5 V             :         : 5A        : N              
 LEDR[7]                      : U1        : output : 3.3-V LVTTL       :         : 2A        : Y              
 LEDR[6]                      : U2        : output : 3.3-V LVTTL       :         : 2A        : Y              
 GND                          : U3        : gnd    :                   :         :           :                
 GND                          : U4        : gnd    :                   :         :           :                
 GND                          : U5        : gnd    :                   :         :           :                
-inspectPC[13]                : U6        : output : 2.5 V             :         : 3A        : N              
+inspectEndRS[0]              : U6        : output : 2.5 V             :         : 3A        : N              
 KEY[0]                       : U7        : input  : 3.3-V LVTTL       :         : 3A        : Y              
-DATA_OUT[26]                 : U8        : output : 2.5 V             :         : 3A        : N              
+DATA_OUT[13]                 : U8        : output : 2.5 V             :         : 3A        : N              
 GND                          : U9        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U10       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U11       :        :                   :         : 3B        :                
@@ -498,7 +498,7 @@ GND                          : V2        : gnd    :                   :         
 DCLK                         : V3        :        :                   :         : 3A        :                
 GND                          : V4        : gnd    :                   :         :           :                
 TCK                          : V5        : input  :                   :         : 3A        :                
-inspectPC[20]                : V6        : output : 2.5 V             :         : 3A        : N              
+inspectPC[13]                : V6        : output : 2.5 V             :         : 3A        : N              
 GND                          : V7        : gnd    :                   :         :           :                
 VCCPGM                       : V8        : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :         : 3B        :                
@@ -522,7 +522,7 @@ GND                          : W4        : gnd    :                   :         
 TDI                          : W5        : input  :                   :         : 3A        :                
 VCCPD3A                      : W6        : power  :                   : 2.5V    : 3A        :                
 VCC_AUX                      : W7        : power  :                   : 2.5V    :           :                
-DATA_OUT[13]                 : W8        : output : 2.5 V             :         : 3A        : N              
+inspectPC[8]                 : W8        : output : 2.5 V             :         : 3A        : N              
 KEY[1]                       : W9        : input  : 3.3-V LVTTL       :         : 3A        : Y              
 VCCIO3B                      : W10       : power  :                   : 3.3V    : 3B        :                
 VCCPD3B4A                    : W11       : power  :                   : 3.3V    : 3B, 4A    :                

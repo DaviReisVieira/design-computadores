@@ -19,6 +19,7 @@ architecture comportamento of ULAMIPS is
     -- declare internal signals
     signal vai1_bitX: std_logic_vector(larguraDados-1 downto 0);
     signal overflow: std_logic;
+    signal op_SOMA_SUB_Last_Bit: std_logic;
 
     begin 
     -- operadores bit a bit
@@ -178,12 +179,12 @@ architecture comportamento of ULAMIPS is
         );
 
     --$ bit31 -- especial (overflow)
-    opBit31: entity work.halfULA
+    opBit31: entity work.halfULALastBit
         port map (
-            A => A(31), B => B(31), SLT => '0', inverteB => inverteB, carryIn => vai1_bitX(30), R => R(31), sel => sel, carryOut => vai1_bitX(31)
+            A => A(31), B => B(31), SLT => '0', inverteB => inverteB, carryIn => vai1_bitX(30), R => R(31), sel => sel, carryOut => vai1_bitX(31), op_SOMA_SUB => op_SOMA_SUB_Last_Bit
         );
 
-    overflow <= (vai1_bitX(31) xor vai1_bitX(30)) xor R(31);
+    overflow <= (vai1_bitX(31) xor vai1_bitX(30)) xor op_SOMA_SUB_Last_Bit;
     ZERO <= not(R(31) or R(30) or R(29) or R(28) or R(27) or R(26) or R(25) or R(24) or R(23) or R(22) or R(21) or R(20) or R(19) or R(18) or R(17) or R(16) or R(15) or R(14) or R(13) or R(12) or R(11) or R(10) or R(9) or R(8) or R(7) or R(6) or R(5) or R(4) or R(3) or R(2) or R(1) or R(0));
 
 end architecture;

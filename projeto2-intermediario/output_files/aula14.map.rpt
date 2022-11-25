@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aula14
-Thu Nov 24 21:33:31 2022
+Fri Nov 25 14:00:36 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  32. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_1"
  33. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_0"
  34. Port Connectivity Checks: "RAMMIPS:RAM"
- 35. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit31"
+ 35. Port Connectivity Checks: "ULAMIPS:ULA|halfULALastBit:opBit31"
  36. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit30"
  37. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit29"
  38. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit28"
@@ -103,7 +103,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 24 21:33:31 2022       ;
+; Analysis & Synthesis Status     ; Successful - Fri Nov 25 14:00:36 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aula14                                      ;
 ; Top-level Entity Name           ; TopLevel                                    ;
@@ -224,7 +224,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
@@ -249,6 +249,7 @@ https://fpgasoftware.intel.com/eula.
 ; unidadeControle.vhd              ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/unidadeControle.vhd      ;         ;
 ; controleULA.vhd                  ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/controleULA.vhd          ;         ;
 ; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/conversorHex7Seg.vhd     ;         ;
+; halfULALastBit.vhd               ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULALastBit.vhd       ;         ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -257,14 +258,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 1618         ;
+; Estimate of Logic utilization (ALMs needed) ; 1617         ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 1280         ;
-;     -- 7 input functions                    ; 34           ;
-;     -- 6 input functions                    ; 846          ;
-;     -- 5 input functions                    ; 54           ;
-;     -- 4 input functions                    ; 91           ;
-;     -- <=3 input functions                  ; 255          ;
+; Combinational ALUT usage for logic          ; 1278         ;
+;     -- 7 input functions                    ; 32           ;
+;     -- 6 input functions                    ; 842          ;
+;     -- 5 input functions                    ; 59           ;
+;     -- 4 input functions                    ; 88           ;
+;     -- <=3 input functions                  ; 257          ;
 ;                                             ;              ;
 ; Dedicated logic registers                   ; 2206         ;
 ;                                             ;              ;
@@ -274,7 +275,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
 ; Maximum fan-out                             ; 2206         ;
-; Total fan-out                               ; 13518        ;
+; Total fan-out                               ; 13502        ;
 ; Average fan-out                             ; 3.49         ;
 +---------------------------------------------+--------------+
 
@@ -284,11 +285,11 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name         ; Library Name ;
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
-; |TopLevel                               ; 1280 (9)            ; 2206 (0)                  ; 0                 ; 0          ; 191  ; 0            ; |TopLevel                                    ; TopLevel            ; work         ;
-;    |RAMMIPS:RAM|                        ; 798 (798)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|RAMMIPS:RAM                        ; RAMMIPS             ; work         ;
+; |TopLevel                               ; 1278 (9)            ; 2206 (0)                  ; 0                 ; 0          ; 191  ; 0            ; |TopLevel                                    ; TopLevel            ; work         ;
+;    |RAMMIPS:RAM|                        ; 800 (800)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|RAMMIPS:RAM                        ; RAMMIPS             ; work         ;
 ;    |ROMMIPS:ROM|                        ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ROMMIPS:ROM                        ; ROMMIPS             ; work         ;
-;    |ULAMIPS:ULA|                        ; 141 (4)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA                        ; ULAMIPS             ; work         ;
-;       |halfULA:opBit0|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit0         ; halfULA             ; work         ;
+;    |ULAMIPS:ULA|                        ; 137 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA                        ; ULAMIPS             ; work         ;
+;       |halfULA:opBit0|                  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit0         ; halfULA             ; work         ;
 ;       |halfULA:opBit10|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit10        ; halfULA             ; work         ;
 ;       |halfULA:opBit11|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit11        ; halfULA             ; work         ;
 ;       |halfULA:opBit12|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit12        ; halfULA             ; work         ;
@@ -308,11 +309,10 @@ https://fpgasoftware.intel.com/eula.
 ;       |halfULA:opBit25|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit25        ; halfULA             ; work         ;
 ;       |halfULA:opBit26|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit26        ; halfULA             ; work         ;
 ;       |halfULA:opBit27|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit27        ; halfULA             ; work         ;
-;       |halfULA:opBit28|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit28        ; halfULA             ; work         ;
+;       |halfULA:opBit28|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit28        ; halfULA             ; work         ;
 ;       |halfULA:opBit29|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit29        ; halfULA             ; work         ;
 ;       |halfULA:opBit2|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit2         ; halfULA             ; work         ;
 ;       |halfULA:opBit30|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit30        ; halfULA             ; work         ;
-;       |halfULA:opBit31|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit31        ; halfULA             ; work         ;
 ;       |halfULA:opBit3|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit3         ; halfULA             ; work         ;
 ;       |halfULA:opBit4|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit4         ; halfULA             ; work         ;
 ;       |halfULA:opBit5|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit5         ; halfULA             ; work         ;
@@ -320,6 +320,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |halfULA:opBit7|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit7         ; halfULA             ; work         ;
 ;       |halfULA:opBit8|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit8         ; halfULA             ; work         ;
 ;       |halfULA:opBit9|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit9         ; halfULA             ; work         ;
+;       |halfULALastBit:opBit31|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULALastBit:opBit31 ; halfULALastBit      ; work         ;
 ;    |bancoRegistradores:bancoRegs|       ; 110 (110)           ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|bancoRegistradores:bancoRegs       ; bancoRegistradores  ; work         ;
 ;    |controleULA:UC_ULA|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|controleULA:UC_ULA                 ; controleULA         ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_0|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_0    ; conversorHex7Seg    ; work         ;
@@ -1116,6 +1117,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoRegistradores:bancoRegs|registrador~1061 ; Lost fanout                                            ;
 ; bancoRegistradores:bancoRegs|registrador~38   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~70   ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~69   ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~101  ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~68   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~100  ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~67   ; Stuck at GND due to stuck port clock_enable            ;
@@ -1176,10 +1179,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoRegistradores:bancoRegs|registrador~72   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~39   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~71   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~69   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~101  ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~134  ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~102  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~165  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~133  ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~164  ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~132  ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~163  ; Stuck at GND due to stuck port clock_enable            ;
@@ -1240,8 +1243,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoRegistradores:bancoRegs|registrador~104  ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~135  ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~103  ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~165  ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~133  ; Stuck at GND due to stuck port clock_enable            ;
 ; Total Number of Removed Registers = 898       ;                                                        ;
 +-----------------------------------------------+--------------------------------------------------------+
 
@@ -1269,7 +1270,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[25] ;
 ; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[10] ;
 ; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |TopLevel|ULAMIPS:ULA|halfULA:opBit25|R               ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TopLevel|ULAMIPS:ULA|halfULA:opBit21|saida_MUX_B     ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TopLevel|ULAMIPS:ULA|halfULA:opBit22|saida_MUX_B     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
 
 
@@ -1543,13 +1544,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+--------------+
 
 
-+---------------------------------------------------------+
-; Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit31" ;
-+------+-------+----------+-------------------------------+
-; Port ; Type  ; Severity ; Details                       ;
-+------+-------+----------+-------------------------------+
-; slt  ; Input ; Info     ; Stuck at GND                  ;
-+------+-------+----------+-------------------------------+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|halfULALastBit:opBit31" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
 
 
 +---------------------------------------------------------+
@@ -1858,26 +1859,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 2206                        ;
 ;     ENA               ; 2176                        ;
 ;     plain             ; 30                          ;
-; arriav_lcell_comb     ; 1285                        ;
+; arriav_lcell_comb     ; 1283                        ;
 ;     arith             ; 60                          ;
 ;         1 data inputs ; 30                          ;
 ;         2 data inputs ; 25                          ;
 ;         3 data inputs ; 2                           ;
 ;         4 data inputs ; 3                           ;
-;     extend            ; 34                          ;
-;         7 data inputs ; 34                          ;
+;     extend            ; 32                          ;
+;         7 data inputs ; 32                          ;
 ;     normal            ; 1191                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 11                          ;
-;         2 data inputs ; 52                          ;
-;         3 data inputs ; 139                         ;
-;         4 data inputs ; 88                          ;
-;         5 data inputs ; 54                          ;
-;         6 data inputs ; 846                         ;
+;         2 data inputs ; 49                          ;
+;         3 data inputs ; 144                         ;
+;         4 data inputs ; 85                          ;
+;         5 data inputs ; 59                          ;
+;         6 data inputs ; 842                         ;
 ; boundary_port         ; 191                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 19.00                       ;
-; Average LUT depth     ; 6.91                        ;
+; Max LUT depth         ; 18.00                       ;
+; Average LUT depth     ; 6.90                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1886,7 +1887,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -1896,7 +1897,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 24 21:33:15 2022
+    Info: Processing started: Fri Nov 25 14:00:11 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aula14 -c aula14
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1949,6 +1950,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file control
 Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
     Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/conversorHex7Seg.vhd Line: 17
     Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/conversorHex7Seg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file halfulalastbit.vhd
+    Info (12022): Found design unit 1: halfULALastBit-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULALastBit.vhd Line: 14
+    Info (12023): Found entity 1: halfULALastBit File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULALastBit.vhd Line: 4
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at TopLevel.vhd(30): used implicit default value for signal "DATA_OUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
 Warning (10541): VHDL Signal Declaration warning at TopLevel.vhd(44): used implicit default value for signal "inspectControles" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 44
@@ -1963,8 +1967,10 @@ Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:
 Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:Estende" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 197
 Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:bancoRegs" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 207
 Info (12128): Elaborating entity "ULAMIPS" for hierarchy "ULAMIPS:ULA" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 227
-Info (12128): Elaborating entity "halfULA" for hierarchy "ULAMIPS:ULA|halfULA:opBit0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/ULAMIPS.vhd Line: 25
+Info (12128): Elaborating entity "halfULA" for hierarchy "ULAMIPS:ULA|halfULA:opBit0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/ULAMIPS.vhd Line: 26
 Info (10041): Inferred latch for "R" at halfULA.vhd(30) File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULA.vhd Line: 30
+Info (12128): Elaborating entity "halfULALastBit" for hierarchy "ULAMIPS:ULA|halfULALastBit:opBit31" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/ULAMIPS.vhd Line: 182
+Info (10041): Inferred latch for "R" at halfULALastBit.vhd(30) File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULALastBit.vhd Line: 30
 Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 240
 Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 263
 Warning (10036): Verilog HDL or VHDL warning at unidadeControle.vhd(39): object "funct" assigned a value but never read File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/unidadeControle.vhd Line: 39
@@ -2038,7 +2044,7 @@ Warning (14026): LATCH primitive "ULAMIPS:ULA|halfULA:opBit27|R" is permanently 
 Warning (14026): LATCH primitive "ULAMIPS:ULA|halfULA:opBit28|R" is permanently enabled File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULA.vhd Line: 8
 Warning (14026): LATCH primitive "ULAMIPS:ULA|halfULA:opBit29|R" is permanently enabled File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULA.vhd Line: 8
 Warning (14026): LATCH primitive "ULAMIPS:ULA|halfULA:opBit30|R" is permanently enabled File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULA.vhd Line: 8
-Warning (14026): LATCH primitive "ULAMIPS:ULA|halfULA:opBit31|R" is permanently enabled File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULA.vhd Line: 8
+Warning (14026): LATCH primitive "ULAMIPS:ULA|halfULALastBit:opBit31|R" is permanently enabled File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULALastBit.vhd Line: 8
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DATA_OUT[0]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
     Warning (13410): Pin "DATA_OUT[1]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
@@ -2115,14 +2121,14 @@ Warning (21074): Design contains 13 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 34
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 34
     Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 34
-Info (21057): Implemented 3640 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3638 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 176 output pins
-    Info (21061): Implemented 3449 logic cells
+    Info (21061): Implemented 3447 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 144 warnings
-    Info: Peak virtual memory: 4861 megabytes
-    Info: Processing ended: Thu Nov 24 21:33:31 2022
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 4862 megabytes
+    Info: Processing ended: Fri Nov 25 14:00:36 2022
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:20
 
 
