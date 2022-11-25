@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aula14
-Fri Nov 25 14:00:36 2022
+Fri Nov 25 15:36:46 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,69 +14,70 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |TopLevel
- 12. Parameter Settings for User Entity Instance: registradorGenerico:ProgramCounter
- 13. Parameter Settings for User Entity Instance: somaConstante:incrementaPC
- 14. Parameter Settings for User Entity Instance: somadorGenerico:SOMADOR
- 15. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxBEQ
- 16. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxJMP
- 17. Parameter Settings for User Entity Instance: ROMMIPS:ROM
- 18. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxRtRd
- 19. Parameter Settings for User Entity Instance: estendeSinalGenerico:Estende
- 20. Parameter Settings for User Entity Instance: bancoRegistradores:bancoRegs
- 21. Parameter Settings for User Entity Instance: muxGenerico2x1:MUuxRtImediato
- 22. Parameter Settings for User Entity Instance: ULAMIPS:ULA
- 23. Parameter Settings for User Entity Instance: RAMMIPS:RAM
- 24. Parameter Settings for User Entity Instance: muxGenerico2x1:MUuxULARAM
- 25. Parameter Settings for User Entity Instance: unidadeControle:UC
- 26. Parameter Settings for User Entity Instance: controleULA:UC_ULA
- 27. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxPlaca
- 28. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_5"
- 29. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_4"
- 30. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_3"
- 31. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_2"
- 32. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_1"
- 33. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_0"
- 34. Port Connectivity Checks: "RAMMIPS:RAM"
- 35. Port Connectivity Checks: "ULAMIPS:ULA|halfULALastBit:opBit31"
- 36. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit30"
- 37. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit29"
- 38. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit28"
- 39. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit27"
- 40. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit26"
- 41. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit25"
- 42. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit24"
- 43. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit23"
- 44. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit22"
- 45. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit21"
- 46. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit20"
- 47. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit19"
- 48. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit18"
- 49. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit17"
- 50. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit16"
- 51. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit15"
- 52. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit14"
- 53. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit13"
- 54. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit12"
- 55. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit11"
- 56. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit10"
- 57. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit9"
- 58. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit8"
- 59. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit7"
- 60. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit6"
- 61. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit5"
- 62. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit4"
- 63. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit3"
- 64. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit2"
- 65. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit1"
- 66. Port Connectivity Checks: "muxGenerico2x1:MuxJMP"
- 67. Port Connectivity Checks: "somadorGenerico:SOMADOR"
- 68. Port Connectivity Checks: "registradorGenerico:ProgramCounter"
- 69. Post-Synthesis Netlist Statistics for Top Partition
- 70. Elapsed Time Per Partition
- 71. Analysis & Synthesis Messages
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |TopLevel
+ 13. Parameter Settings for User Entity Instance: registradorGenerico:ProgramCounter
+ 14. Parameter Settings for User Entity Instance: somaConstante:incrementaPC
+ 15. Parameter Settings for User Entity Instance: somadorGenerico:SOMADOR
+ 16. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxBEQ
+ 17. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxJMP
+ 18. Parameter Settings for User Entity Instance: ROMMIPS:ROM
+ 19. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxRtRd
+ 20. Parameter Settings for User Entity Instance: estendeSinalGenerico:Estende
+ 21. Parameter Settings for User Entity Instance: bancoRegistradores:bancoRegs
+ 22. Parameter Settings for User Entity Instance: muxGenerico2x1:MUuxRtImediato
+ 23. Parameter Settings for User Entity Instance: ULAMIPS:ULA
+ 24. Parameter Settings for User Entity Instance: RAMMIPS:RAM
+ 25. Parameter Settings for User Entity Instance: muxGenerico2x1:MUuxULARAM
+ 26. Parameter Settings for User Entity Instance: unidadeControle:UC
+ 27. Parameter Settings for User Entity Instance: controleULA:UC_ULA
+ 28. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxPlaca
+ 29. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_5"
+ 30. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_4"
+ 31. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_3"
+ 32. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_2"
+ 33. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_1"
+ 34. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_0"
+ 35. Port Connectivity Checks: "RAMMIPS:RAM"
+ 36. Port Connectivity Checks: "ULAMIPS:ULA|halfULALastBit:opBit31"
+ 37. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit30"
+ 38. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit29"
+ 39. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit28"
+ 40. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit27"
+ 41. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit26"
+ 42. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit25"
+ 43. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit24"
+ 44. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit23"
+ 45. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit22"
+ 46. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit21"
+ 47. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit20"
+ 48. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit19"
+ 49. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit18"
+ 50. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit17"
+ 51. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit16"
+ 52. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit15"
+ 53. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit14"
+ 54. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit13"
+ 55. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit12"
+ 56. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit11"
+ 57. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit10"
+ 58. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit9"
+ 59. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit8"
+ 60. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit7"
+ 61. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit6"
+ 62. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit5"
+ 63. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit4"
+ 64. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit3"
+ 65. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit2"
+ 66. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit1"
+ 67. Port Connectivity Checks: "muxGenerico2x1:MuxJMP"
+ 68. Port Connectivity Checks: "somadorGenerico:SOMADOR"
+ 69. Port Connectivity Checks: "registradorGenerico:ProgramCounter"
+ 70. Post-Synthesis Netlist Statistics for Top Partition
+ 71. Elapsed Time Per Partition
+ 72. Analysis & Synthesis Messages
 
 
 
@@ -103,14 +104,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Nov 25 14:00:36 2022       ;
+; Analysis & Synthesis Status     ; Successful - Fri Nov 25 15:36:46 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aula14                                      ;
 ; Top-level Entity Name           ; TopLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2206                                        ;
-; Total pins                      ; 191                                         ;
+; Total registers                 ; 2142                                        ;
+; Total pins                      ; 149                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -224,7 +225,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
@@ -258,25 +259,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 1617         ;
+; Estimate of Logic utilization (ALMs needed) ; 1566         ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 1278         ;
-;     -- 7 input functions                    ; 32           ;
-;     -- 6 input functions                    ; 842          ;
-;     -- 5 input functions                    ; 59           ;
-;     -- 4 input functions                    ; 88           ;
-;     -- <=3 input functions                  ; 257          ;
+; Combinational ALUT usage for logic          ; 1316         ;
+;     -- 7 input functions                    ; 0            ;
+;     -- 6 input functions                    ; 847          ;
+;     -- 5 input functions                    ; 57           ;
+;     -- 4 input functions                    ; 162          ;
+;     -- <=3 input functions                  ; 250          ;
 ;                                             ;              ;
-; Dedicated logic registers                   ; 2206         ;
+; Dedicated logic registers                   ; 2142         ;
 ;                                             ;              ;
-; I/O pins                                    ; 191          ;
+; I/O pins                                    ; 149          ;
 ;                                             ;              ;
 ; Total DSP Blocks                            ; 0            ;
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
-; Maximum fan-out                             ; 2206         ;
-; Total fan-out                               ; 13502        ;
-; Average fan-out                             ; 3.49         ;
+; Maximum fan-out                             ; 2142         ;
+; Total fan-out                               ; 13346        ;
+; Average fan-out                             ; 3.55         ;
 +---------------------------------------------+--------------+
 
 
@@ -285,44 +286,44 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name         ; Library Name ;
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
-; |TopLevel                               ; 1278 (9)            ; 2206 (0)                  ; 0                 ; 0          ; 191  ; 0            ; |TopLevel                                    ; TopLevel            ; work         ;
+; |TopLevel                               ; 1316 (9)            ; 2142 (0)                  ; 0                 ; 0          ; 149  ; 0            ; |TopLevel                                    ; TopLevel            ; work         ;
 ;    |RAMMIPS:RAM|                        ; 800 (800)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|RAMMIPS:RAM                        ; RAMMIPS             ; work         ;
-;    |ROMMIPS:ROM|                        ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ROMMIPS:ROM                        ; ROMMIPS             ; work         ;
-;    |ULAMIPS:ULA|                        ; 137 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA                        ; ULAMIPS             ; work         ;
-;       |halfULA:opBit0|                  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit0         ; halfULA             ; work         ;
-;       |halfULA:opBit10|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit10        ; halfULA             ; work         ;
-;       |halfULA:opBit11|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit11        ; halfULA             ; work         ;
-;       |halfULA:opBit12|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit12        ; halfULA             ; work         ;
-;       |halfULA:opBit13|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit13        ; halfULA             ; work         ;
-;       |halfULA:opBit14|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit14        ; halfULA             ; work         ;
-;       |halfULA:opBit15|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit15        ; halfULA             ; work         ;
+;    |ROMMIPS:ROM|                        ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ROMMIPS:ROM                        ; ROMMIPS             ; work         ;
+;    |ULAMIPS:ULA|                        ; 151 (3)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA                        ; ULAMIPS             ; work         ;
+;       |halfULA:opBit0|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit0         ; halfULA             ; work         ;
+;       |halfULA:opBit10|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit10        ; halfULA             ; work         ;
+;       |halfULA:opBit11|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit11        ; halfULA             ; work         ;
+;       |halfULA:opBit12|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit12        ; halfULA             ; work         ;
+;       |halfULA:opBit13|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit13        ; halfULA             ; work         ;
+;       |halfULA:opBit14|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit14        ; halfULA             ; work         ;
+;       |halfULA:opBit15|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit15        ; halfULA             ; work         ;
 ;       |halfULA:opBit16|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit16        ; halfULA             ; work         ;
-;       |halfULA:opBit17|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit17        ; halfULA             ; work         ;
-;       |halfULA:opBit18|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit18        ; halfULA             ; work         ;
-;       |halfULA:opBit19|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit19        ; halfULA             ; work         ;
-;       |halfULA:opBit1|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit1         ; halfULA             ; work         ;
-;       |halfULA:opBit20|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit20        ; halfULA             ; work         ;
-;       |halfULA:opBit21|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit21        ; halfULA             ; work         ;
-;       |halfULA:opBit22|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit22        ; halfULA             ; work         ;
+;       |halfULA:opBit17|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit17        ; halfULA             ; work         ;
+;       |halfULA:opBit18|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit18        ; halfULA             ; work         ;
+;       |halfULA:opBit19|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit19        ; halfULA             ; work         ;
+;       |halfULA:opBit1|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit1         ; halfULA             ; work         ;
+;       |halfULA:opBit20|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit20        ; halfULA             ; work         ;
+;       |halfULA:opBit21|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit21        ; halfULA             ; work         ;
+;       |halfULA:opBit22|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit22        ; halfULA             ; work         ;
 ;       |halfULA:opBit23|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit23        ; halfULA             ; work         ;
-;       |halfULA:opBit24|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit24        ; halfULA             ; work         ;
-;       |halfULA:opBit25|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit25        ; halfULA             ; work         ;
-;       |halfULA:opBit26|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit26        ; halfULA             ; work         ;
-;       |halfULA:opBit27|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit27        ; halfULA             ; work         ;
+;       |halfULA:opBit24|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit24        ; halfULA             ; work         ;
+;       |halfULA:opBit25|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit25        ; halfULA             ; work         ;
+;       |halfULA:opBit26|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit26        ; halfULA             ; work         ;
+;       |halfULA:opBit27|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit27        ; halfULA             ; work         ;
 ;       |halfULA:opBit28|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit28        ; halfULA             ; work         ;
-;       |halfULA:opBit29|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit29        ; halfULA             ; work         ;
-;       |halfULA:opBit2|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit2         ; halfULA             ; work         ;
-;       |halfULA:opBit30|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit30        ; halfULA             ; work         ;
-;       |halfULA:opBit3|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit3         ; halfULA             ; work         ;
-;       |halfULA:opBit4|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit4         ; halfULA             ; work         ;
-;       |halfULA:opBit5|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit5         ; halfULA             ; work         ;
-;       |halfULA:opBit6|                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit6         ; halfULA             ; work         ;
-;       |halfULA:opBit7|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit7         ; halfULA             ; work         ;
-;       |halfULA:opBit8|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit8         ; halfULA             ; work         ;
-;       |halfULA:opBit9|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit9         ; halfULA             ; work         ;
-;       |halfULALastBit:opBit31|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULALastBit:opBit31 ; halfULALastBit      ; work         ;
-;    |bancoRegistradores:bancoRegs|       ; 110 (110)           ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|bancoRegistradores:bancoRegs       ; bancoRegistradores  ; work         ;
-;    |controleULA:UC_ULA|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|controleULA:UC_ULA                 ; controleULA         ; work         ;
+;       |halfULA:opBit29|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit29        ; halfULA             ; work         ;
+;       |halfULA:opBit2|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit2         ; halfULA             ; work         ;
+;       |halfULA:opBit30|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit30        ; halfULA             ; work         ;
+;       |halfULA:opBit3|                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit3         ; halfULA             ; work         ;
+;       |halfULA:opBit4|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit4         ; halfULA             ; work         ;
+;       |halfULA:opBit5|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit5         ; halfULA             ; work         ;
+;       |halfULA:opBit6|                  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit6         ; halfULA             ; work         ;
+;       |halfULA:opBit7|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit7         ; halfULA             ; work         ;
+;       |halfULA:opBit8|                  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit8         ; halfULA             ; work         ;
+;       |halfULA:opBit9|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit9         ; halfULA             ; work         ;
+;       |halfULALastBit:opBit31|          ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULALastBit:opBit31 ; halfULALastBit      ; work         ;
+;    |bancoRegistradores:bancoRegs|       ; 131 (131)           ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|bancoRegistradores:bancoRegs       ; bancoRegistradores  ; work         ;
+;    |controleULA:UC_ULA|                 ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|controleULA:UC_ULA                 ; controleULA         ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_0|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_0    ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_1|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_1    ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_2|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_2    ; conversorHex7Seg    ; work         ;
@@ -335,7 +336,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |registradorGenerico:ProgramCounter| ; 0 (0)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:ProgramCounter ; registradorGenerico ; work         ;
 ;    |somaConstante:incrementaPC|         ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|somaConstante:incrementaPC         ; somaConstante       ; work         ;
 ;    |somadorGenerico:SOMADOR|            ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|somadorGenerico:SOMADOR            ; somadorGenerico     ; work         ;
-;    |unidadeControle:UC|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|unidadeControle:UC                 ; unidadeControle     ; work         ;
+;    |unidadeControle:UC|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|unidadeControle:UC                 ; unidadeControle     ; work         ;
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1115,69 +1116,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoRegistradores:bancoRegs|registrador~1059 ; Lost fanout                                            ;
 ; bancoRegistradores:bancoRegs|registrador~1060 ; Lost fanout                                            ;
 ; bancoRegistradores:bancoRegs|registrador~1061 ; Lost fanout                                            ;
-; bancoRegistradores:bancoRegs|registrador~38   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~70   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~69   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~101  ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~68   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~100  ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~67   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~99   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~66   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~98   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~65   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~97   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~64   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~96   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~63   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~95   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~62   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~94   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~61   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~93   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~60   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~92   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~59   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~91   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~58   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~90   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~57   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~89   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~56   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~88   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~55   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~87   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~54   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~86   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~53   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~85   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~52   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~84   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~51   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~83   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~50   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~82   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~49   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~81   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~48   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~80   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~47   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~79   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~46   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~78   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~45   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~77   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~44   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~76   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~43   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~75   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~42   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~74   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~41   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~73   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~40   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~72   ; Stuck at GND due to stuck port clock_enable            ;
-; bancoRegistradores:bancoRegs|registrador~39   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~71   ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~134  ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~102  ; Stuck at GND due to stuck port clock_enable            ;
@@ -1243,8 +1212,204 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoRegistradores:bancoRegs|registrador~104  ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~135  ; Stuck at GND due to stuck port clock_enable            ;
 ; bancoRegistradores:bancoRegs|registrador~103  ; Stuck at GND due to stuck port clock_enable            ;
-; Total Number of Removed Registers = 898       ;                                                        ;
+; bancoRegistradores:bancoRegs|registrador~357  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~327  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~326  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~328  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~329  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~330  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~331  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~332  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~333  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~334  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~335  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~336  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~337  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~338  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~339  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~340  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~341  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~342  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~343  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~344  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~345  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~346  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~347  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~348  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~349  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~350  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~351  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~352  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~353  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~354  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~355  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~356  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~421  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~389  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~391  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~359  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~390  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~358  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~392  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~360  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~393  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~361  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~394  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~362  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~395  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~363  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~396  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~364  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~397  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~365  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~398  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~366  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~399  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~367  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~400  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~368  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~401  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~369  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~402  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~370  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~403  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~371  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~404  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~372  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~405  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~373  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~406  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~374  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~407  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~375  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~408  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~376  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~409  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~377  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~410  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~378  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~411  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~379  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~412  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~380  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~413  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~381  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~414  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~382  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~415  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~383  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~416  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~384  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~417  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~385  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~418  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~386  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~419  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~387  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~420  ; Stuck at GND due to stuck port clock_enable            ;
+; bancoRegistradores:bancoRegs|registrador~388  ; Stuck at GND due to stuck port clock_enable            ;
+; Total Number of Removed Registers = 962       ;                                                        ;
 +-----------------------------------------------+--------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                   ;
++----------------------------------------------+--------------------------------+-----------------------------------------------+
+; Register name                                ; Reason for Removal             ; Registers Removed due to This Register        ;
++----------------------------------------------+--------------------------------+-----------------------------------------------+
+; bancoRegistradores:bancoRegs|registrador~326 ; Stuck at GND                   ; bancoRegistradores:bancoRegs|registrador~329, ;
+;                                              ; due to stuck port clock_enable ; bancoRegistradores:bancoRegs|registrador~330, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~331, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~332, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~333, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~334, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~335, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~336, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~337, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~338, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~339, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~340, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~341, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~342, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~343, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~344, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~345, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~346, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~347, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~348, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~349, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~350, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~351, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~352, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~353, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~354, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~355, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~356, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~421, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~389, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~391, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~359, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~390, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~358, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~392, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~360, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~393, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~361, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~394, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~362, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~395, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~363, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~396, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~364, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~397, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~365, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~398, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~366, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~399, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~367, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~400, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~368, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~401, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~369, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~402, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~370, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~403, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~371, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~404, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~372, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~405, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~373, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~406, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~374, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~407, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~375, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~408, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~376, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~409, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~377, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~410, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~378, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~411, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~379, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~412, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~380, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~413, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~381, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~414, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~382, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~415, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~383, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~416, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~384, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~417, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~385, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~418, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~386, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~419, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~387, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~420, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~388  ;
++----------------------------------------------+--------------------------------+-----------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1252,12 +1417,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2206  ;
+; Total registers                              ; 2142  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2176  ;
+; Number of registers using Clock Enable       ; 2112  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1267,10 +1432,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[25] ;
-; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[10] ;
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |TopLevel|ULAMIPS:ULA|halfULA:opBit25|R               ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TopLevel|ULAMIPS:ULA|halfULA:opBit22|saida_MUX_B     ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[27] ;
+; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[15] ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |TopLevel|ULAMIPS:ULA|halfULA:opBit22|R               ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TopLevel|ULAMIPS:ULA|halfULA:opBit27|saida_MUX_B     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
 
 
@@ -1856,29 +2021,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 2206                        ;
-;     ENA               ; 2176                        ;
+; arriav_ff             ; 2142                        ;
+;     ENA               ; 2112                        ;
 ;     plain             ; 30                          ;
-; arriav_lcell_comb     ; 1283                        ;
+; arriav_lcell_comb     ; 1323                        ;
 ;     arith             ; 60                          ;
 ;         1 data inputs ; 30                          ;
 ;         2 data inputs ; 25                          ;
 ;         3 data inputs ; 2                           ;
 ;         4 data inputs ; 3                           ;
-;     extend            ; 32                          ;
-;         7 data inputs ; 32                          ;
-;     normal            ; 1191                        ;
+;     normal            ; 1263                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 11                          ;
-;         2 data inputs ; 49                          ;
-;         3 data inputs ; 144                         ;
-;         4 data inputs ; 85                          ;
-;         5 data inputs ; 59                          ;
-;         6 data inputs ; 842                         ;
-; boundary_port         ; 191                         ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 56                          ;
+;         3 data inputs ; 137                         ;
+;         4 data inputs ; 159                         ;
+;         5 data inputs ; 57                          ;
+;         6 data inputs ; 847                         ;
+; boundary_port         ; 149                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 18.00                       ;
-; Average LUT depth     ; 6.90                        ;
+; Max LUT depth         ; 19.00                       ;
+; Average LUT depth     ; 6.94                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1887,7 +2050,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:12     ;
 +----------------+--------------+
 
 
@@ -1897,7 +2060,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 25 14:00:11 2022
+    Info: Processing started: Fri Nov 25 15:36:12 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aula14 -c aula14
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1931,7 +2094,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file estende
 Info (12021): Found 2 design units, including 1 entities, in source file rammips.vhd
     Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/RAMMIPS.vhd Line: 18
     Info (12023): Found entity 1: RAMMIPS File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/RAMMIPS.vhd Line: 5
-Warning (12019): Can't analyze file -- file halfAdder.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1.vhd
     Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/muxGenerico4x1.vhd Line: 14
     Info (12023): Found entity 1: muxGenerico4x1 File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/muxGenerico4x1.vhd Line: 4
@@ -1954,8 +2116,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file halfula
     Info (12022): Found design unit 1: halfULALastBit-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULALastBit.vhd Line: 14
     Info (12023): Found entity 1: halfULALastBit File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULALastBit.vhd Line: 4
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at TopLevel.vhd(30): used implicit default value for signal "DATA_OUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-Warning (10541): VHDL Signal Declaration warning at TopLevel.vhd(44): used implicit default value for signal "inspectControles" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 44
 Warning (10873): Using initial value X (don't care) for net "LEDR[9..8]" at TopLevel.vhd(33) File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 33
 Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:ProgramCounter" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 124
 Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 136
@@ -1970,10 +2130,8 @@ Info (12128): Elaborating entity "ULAMIPS" for hierarchy "ULAMIPS:ULA" File: C:/
 Info (12128): Elaborating entity "halfULA" for hierarchy "ULAMIPS:ULA|halfULA:opBit0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/ULAMIPS.vhd Line: 26
 Info (10041): Inferred latch for "R" at halfULA.vhd(30) File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULA.vhd Line: 30
 Info (12128): Elaborating entity "halfULALastBit" for hierarchy "ULAMIPS:ULA|halfULALastBit:opBit31" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/ULAMIPS.vhd Line: 182
-Info (10041): Inferred latch for "R" at halfULALastBit.vhd(30) File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULALastBit.vhd Line: 30
 Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 240
 Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 263
-Warning (10036): Verilog HDL or VHDL warning at unidadeControle.vhd(39): object "funct" assigned a value but never read File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/unidadeControle.vhd Line: 39
 Info (12128): Elaborating entity "controleULA" for hierarchy "controleULA:UC_ULA" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 278
 Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:DECODER_7SEG_0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 333
 Info (276014): Found 3 instances of uninferred RAM logic
@@ -2044,40 +2202,7 @@ Warning (14026): LATCH primitive "ULAMIPS:ULA|halfULA:opBit27|R" is permanently 
 Warning (14026): LATCH primitive "ULAMIPS:ULA|halfULA:opBit28|R" is permanently enabled File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULA.vhd Line: 8
 Warning (14026): LATCH primitive "ULAMIPS:ULA|halfULA:opBit29|R" is permanently enabled File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULA.vhd Line: 8
 Warning (14026): LATCH primitive "ULAMIPS:ULA|halfULA:opBit30|R" is permanently enabled File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULA.vhd Line: 8
-Warning (14026): LATCH primitive "ULAMIPS:ULA|halfULALastBit:opBit31|R" is permanently enabled File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/halfULALastBit.vhd Line: 8
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "DATA_OUT[0]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[1]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[2]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[3]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[4]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[5]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[6]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[7]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[8]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[9]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[10]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[11]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[12]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[13]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[14]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[15]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[16]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[17]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[18]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[19]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[20]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[21]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[22]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[23]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[24]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[25]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[26]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[27]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[28]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[29]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[30]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
-    Warning (13410): Pin "DATA_OUT[31]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 30
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 33
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 33
     Warning (13410): Pin "inspectEndRS[1]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 38
@@ -2093,16 +2218,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "inspectInstru[30]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 41
     Warning (13410): Pin "inspectPC[0]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 42
     Warning (13410): Pin "inspectPC[1]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 42
-    Warning (13410): Pin "inspectControles[0]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 44
-    Warning (13410): Pin "inspectControles[1]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 44
-    Warning (13410): Pin "inspectControles[2]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 44
-    Warning (13410): Pin "inspectControles[3]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 44
-    Warning (13410): Pin "inspectControles[4]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 44
-    Warning (13410): Pin "inspectControles[5]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 44
-    Warning (13410): Pin "inspectControles[6]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 44
-    Warning (13410): Pin "inspectControles[7]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 44
-    Warning (13410): Pin "inspectControles[8]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 44
-    Warning (13410): Pin "inspectControles[9]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 44
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 768 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -2121,14 +2236,14 @@ Warning (21074): Design contains 13 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 34
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 34
     Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/TopLevel.vhd Line: 34
-Info (21057): Implemented 3638 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3577 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
-    Info (21059): Implemented 176 output pins
-    Info (21061): Implemented 3447 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 144 warnings
-    Info: Peak virtual memory: 4862 megabytes
-    Info: Processing ended: Fri Nov 25 14:00:36 2022
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:20
+    Info (21059): Implemented 134 output pins
+    Info (21061): Implemented 3428 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 97 warnings
+    Info: Peak virtual memory: 4861 megabytes
+    Info: Processing ended: Fri Nov 25 15:36:47 2022
+    Info: Elapsed time: 00:00:35
+    Info: Total CPU time (on all processors): 00:00:33
 
 

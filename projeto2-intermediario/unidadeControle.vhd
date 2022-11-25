@@ -36,29 +36,20 @@ architecture comportamento of unidadeControle is
   constant op_JMP : std_logic_vector(larguraOpCode-1 downto 0) := "000010";
 
   -- aux signals
-  signal funct : std_logic_vector(larguraFunct-1 downto 0);
+  -- signal funct : std_logic_vector(larguraFunct-1 downto 0);
 
   begin
     opcode <= instrucao(larguraInstrucao-1 downto larguraInstrucao - larguraOpCode);
-    funct  <= instrucao(larguraFunct-1 downto 0);
+    -- funct  <= instrucao(larguraFunct-1 downto 0);
 
     tipoR <= '1' when opcode = "000000" else '0';
     
     MUX_PC_4_BEQ_JUMP <= '1' when (opcode = op_JMP) else '0';
 
-    MUX_RT_RD <=  '1' when (opcode = f_AND 
-                  or opcode = f_OR 
-                  or opcode = f_ADD
-                  or opcode = f_SUB 
-                  or opcode = f_SLT) 
+    MUX_RT_RD <=  '1' when (tipoR = '1')
                   else '0';
 
-    HabilitaEscritaRD <='1' when (opcode = f_AND
-                        or opcode = f_OR
-                        or opcode = f_ADD 
-                        or opcode = f_SUB 
-                        or opcode = f_SLT 
-                        or opcode = op_LW) 
+    HabilitaEscritaRD <='1' when (tipoR = '1' or opcode = op_LW) 
                         else '0'; 
 
     MUX_RT_Imediato <= '1' when (opcode = op_LW

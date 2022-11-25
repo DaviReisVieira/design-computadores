@@ -1,5 +1,5 @@
 Archive Project report for aula14
-Thu Nov 10 07:37:28 2022
+Fri Nov 25 15:40:42 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Thu Nov 10 07:37:28 2022 ;
+; Archive Project Status ; Successful - Fri Nov 25 15:40:42 2022 ;
 ; Revision Name          ; aula14                                ;
 ; Top-level Entity Name  ; TopLevel                              ;
 ; Family                 ; Cyclone V                             ;
@@ -54,16 +54,16 @@ Info: Archive will store files relative to the closest common parent directory
 Info (13213): Using common directory C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/aula14.qar'
+Info: Generated archive 'C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-intermediario/projeto2Intermediario.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'aula14.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4821 megabytes
-    Info: Processing ended: Thu Nov 10 07:37:28 2022
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 4829 megabytes
+    Info: Processing ended: Fri Nov 25 15:40:42 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +--------------------------------------------------------------+
@@ -75,17 +75,23 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; aula14.qsf                                                   ;
 ; bancoRegistradores.vhd                                       ;
 ; c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf ;
-; decoderInstru.vhd                                            ;
+; controleULA.vhd                                              ;
+; conversorHex7Seg.vhd                                         ;
 ; estendeSinalGenerico.vhd                                     ;
+; halfULA.vhd                                                  ;
+; halfULALastBit.vhd                                           ;
 ; muxGenerico2x1.vhd                                           ;
+; muxGenerico4x1.vhd                                           ;
 ; RAMMIPS.vhd                                                  ;
 ; registradorGenerico.vhd                                      ;
+; ROMcontent.mif                                               ;
 ; ROMMIPS.vhd                                                  ;
 ; somaConstante.vhd                                            ;
 ; somadorGenerico.vhd                                          ;
 ; TopLevel.vhd                                                 ;
+; ULAMIPS.vhd                                                  ;
 ; ULASomaSubPassa.vhd                                          ;
-; Waveform.vwf                                                 ;
+; unidadeControle.vhd                                          ;
 +--------------------------------------------------------------+
 
 

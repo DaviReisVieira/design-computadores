@@ -27,7 +27,7 @@ entity TopLevel is
   );
   port   (
     CLOCK_50 : 	in std_logic;
-	DATA_OUT:	out std_logic_vector(larguraDados-1 downto 0);
+	-- DATA_OUT:	out std_logic_vector(larguraDados-1 downto 0);
 	KEY:		in	std_logic_vector(3 downto 0);
 	HEX0, HEX1, HEX2, HEX3, HEX4, HEX5:		out std_logic_vector(6 downto 0);
 	LEDR  : 		out std_logic_vector(9 downto 0);
@@ -40,8 +40,8 @@ entity TopLevel is
 	inspectEndRD: out std_logic_vector(larguraEndBancoRegs-1 downto 0);
 	inspectInstru: out std_logic_vector(larguraInstrucao-1 downto 0);
 	inspectPC: out std_logic_vector(larguraDados-1 downto 0);
-	inspectSeletorULA: out std_logic_vector(larguraControleULA-1 downto 0);
-	inspectControles: out std_logic_vector( larguraSinaisControle-1 downto 0)
+	inspectSeletorULA: out std_logic_vector(larguraControleULA-1 downto 0)
+	-- inspectControles: out std_logic_vector( larguraSinaisControle-1 downto 0)
 
   );
 end entity;
