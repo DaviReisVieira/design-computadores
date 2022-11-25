@@ -35,18 +35,22 @@ architecture comportamento of controleULA is
   begin
     opcode_funct <= funct when tipoR = '1' else opcode;
 
-    ULActrl(0) <= '1' when (opcode_funct = f_OR 
+    ULActrl(0) <= '1' when (
+                     opcode_funct = f_OR 
                   or opcode_funct = f_SLT)
                   else '0' ;
-    ULActrl(1) <= '1' when (opcode_funct = op_LW  
+    ULActrl(1) <= '1' when (
+                     opcode_funct = op_LW  
                   or opcode_funct = op_SW 
                   or opcode_funct = op_BEQ 
                   or opcode_funct = f_ADD 
                   or opcode_funct = f_SUB 
                   or opcode_funct = f_SLT)
                   else '0' ;
-    ULActrl(2) <= '1' when (opcode_funct = op_BEQ 
-                  or opcode_funct = f_SUB)
+    ULActrl(2) <= '1' when (
+                     opcode_funct = op_BEQ 
+                  or opcode_funct = f_SUB
+                  or opcode_funct = f_SLT)
                   else '0' ;
 
               
