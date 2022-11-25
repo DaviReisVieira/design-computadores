@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula14 -c aula14 --vector_source="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/Waveform4.vwf" --testbench_file="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/simulation/qsim/Waveform4.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula14 -c aula14 --vector_source="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-intermediario/Waveform4.vwf" --testbench_file="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-intermediario/simulation/qsim/Waveform4.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -27,7 +27,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
     Info: Processing started: Thu Nov 17 22:56:55 2022
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula14 -c aula14 --vector_source=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/Waveform4.vwf --testbench_file=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/simulation/qsim/Waveform4.vwf.vht
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula14 -c aula14 --vector_source=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-intermediario/Waveform4.vwf --testbench_file=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-intermediario/simulation/qsim/Waveform4.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 ning (201005): Ignoring output pin "inspectR2[2]" in vector source file when writing test bench files
@@ -36,7 +36,7 @@ Completed successfully.
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/simulation/qsim/" aula14 -c aula14
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-intermediario/simulation/qsim/" aula14 -c aula14
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -56,9 +56,9 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
     Info: Processing started: Thu Nov 17 22:56:56 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/simulation/qsim/ aula14 -c aula14
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-intermediario/simulation/qsim/ aula14 -c aula14
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file aula14.vho in folder "C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/aula-15/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file aula14.vho in folder "C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-intermediario/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4716 megabytes
     Info: Processing ended: Thu Nov 17 22:56:56 2022

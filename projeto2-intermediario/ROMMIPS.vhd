@@ -35,21 +35,27 @@ architecture assincrona OF ROMMIPS IS
 
   type blocoMemoria IS ARRAY(0 TO 2**memoryAddrWidth - 1) OF std_logic_vector(dataWidth-1 downto 0);
   
-  function initMemory
-        return blocoMemoria is variable tmp : blocoMemoria := (others => (others => '0'));
-  begin
+  -- function initMemory
+  --       return blocoMemoria is variable tmp : blocoMemoria := (others => (others => '0'));
+  -- begin
 
-      -- R[8] = 0 | R[15] = 1
-      -- R[8] = 0
-        tmp(0)  :=    op_tipo_R & "01000" & "01110" & "01000" & "00000" & f_ADD; -- soma 1 em R[8]
-        tmp(1)  :=    op_SW & "01001" & "01000" & "0000000000000000"; -- armazena R[8] em M10 (R[9] = 0x0A)
-        tmp(2) :=    op_LW & "01001" & "10000" & "0000000000000000"; -- carrega conteúdo de M10 em R16
-		    tmp(3) :=    op_J  & "00000000000000000000000000";
+  --     -- R[8] = 0 | R[15] = 1
+  --     -- R[8] = 0
+  --       tmp(0)  :=    op_tipo_R & "01000" & "01110" & "01000" & "00000" & f_ADD; -- soma 1 em R[8]
+  --       tmp(1)  :=    op_SW & "01001" & "01000" & "0000000000000000"; -- armazena R[8] em M10 (R[9] = 0x0A)
+  --       tmp(2) :=    op_LW & "01001" & "10000" & "0000000000000000"; -- carrega conteúdo de M10 em R16
+	-- 	    tmp(3) :=    op_J  & "00000000000000000000000000";
 
-		  return tmp;
-    end initMemory;
+	-- 	  return tmp;
+  --   end initMemory;
 	 
-	signal memROM : blocoMemoria := initMemory;
+	-- signal memROM : blocoMemoria := initMemory;
+
+    signal memROM: blocoMemoria;
+    attribute ram_init_file : string;
+    attribute ram_init_file of memROM:
+    signal is "ROMcontent.mif";
+    
    signal EnderecoLocal : std_logic_vector(memoryAddrWidth-1 downto 0);
 
 begin

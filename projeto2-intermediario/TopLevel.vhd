@@ -29,9 +29,12 @@ entity TopLevel is
     CLOCK_50 : 	in std_logic;
 	DATA_OUT:	out std_logic_vector(larguraDados-1 downto 0);
 	KEY:		in	std_logic_vector(3 downto 0);
-	inspectR0: out std_logic_vector(larguraDados-1 downto 0);
-	inspectR1: out std_logic_vector(larguraDados-1 downto 0);
-	inspectR2: out std_logic_vector(larguraDados-1 downto 0);
+	HEX0, HEX1, HEX2, HEX3, HEX4, HEX5:		out std_logic_vector(6 downto 0);
+	LEDR  : 		out std_logic_vector(9 downto 0);
+	SW:				in std_logic_vector(9 downto 0);
+	-- inspectR0: out std_logic_vector(larguraDados-1 downto 0);
+	-- inspectR1: out std_logic_vector(larguraDados-1 downto 0);
+	-- inspectR2: out std_logic_vector(larguraDados-1 downto 0);
 	inspectEndRS: out std_logic_vector(larguraEndBancoRegs-1 downto 0);
 	inspectEndRT: out std_logic_vector(larguraEndBancoRegs-1 downto 0);
 	inspectEndRD: out std_logic_vector(larguraEndBancoRegs-1 downto 0);
@@ -101,6 +104,10 @@ architecture arquitetura of TopLevel is
 	signal wrReg : 						std_logic;
 	signal muxRtRdSeletor : 			std_logic;
 	signal muxBeqPcSeletor : 			std_logic;
+
+	-- MUX De monitoramento via Placa
+	signal MuxMonitoramentoSeletor : 	std_logic;
+	signal MuxMonitoramentoOut : 		std_logic_vector(larguraDados-1 downto 0);
 
 begin
 	
@@ -300,14 +307,85 @@ UC_ULA: entity work.controleULA
 	inspectEndRT <= enderecoRT;
 	inspectEndRD <= enderecoRD;
 
-	inspectR0 <= ULA_A;
-	inspectR1 <= saidaRT;
-	inspectR2 <= saidaEscritaRD;
+	-- inspectR0 <= ULA_A;
+	-- inspectR1 <= saidaRT;
+	-- inspectR2 <= saidaEscritaRD;
 
 	inspectInstru <= instrucao;
 	
 	inspectPC <= PC_out;
 
 	inspectSeletorULA <= ULActrl;
+
+-- monitoramento
+
+MuxPlaca : entity work.muxGenerico2x1 
+		generic map (
+			larguraDados => larguraEnderecosROM
+		)
+		port map (
+			entradaA_MUX => PC_out, 
+			entradaB_MUX => saidaULA, 
+			seletor_MUX => SW(0), 
+			saida_MUX => MuxMonitoramentoOut 
+		);
+
+DECODER_7SEG_0: entity work.conversorHex7Seg
+				port map (
+					dadoHex => MuxMonitoramentoOut(3 downto 0),
+					apaga => '0',
+					negativo => '0',
+					overflow => '0',
+					saida7seg => HEX0
+				);
+				
+DECODER_7SEG_1: entity work.conversorHex7Seg
+				port map (
+					dadoHex => MuxMonitoramentoOut(7 downto 4),
+					apaga => '0',
+					negativo => '0',
+					overflow => '0',
+					saida7seg => HEX1
+				);
+				
+DECODER_7SEG_2: entity work.conversorHex7Seg
+				port map (
+					dadoHex => MuxMonitoramentoOut(11 downto 8),
+					apaga => '0',
+					negativo => '0',
+					overflow => '0',
+					saida7seg => HEX2
+				);
+				
+DECODER_7SEG_3: entity work.conversorHex7Seg
+				port map (
+					dadoHex => MuxMonitoramentoOut(15 downto 12),
+					apaga => '0',
+					negativo => '0',
+					overflow => '0',
+					saida7seg => HEX3
+				);
+				
+DECODER_7SEG_4: entity work.conversorHex7Seg
+				port map (
+					dadoHex => MuxMonitoramentoOut(19 downto 16),
+					apaga => '0',
+					negativo => '0',
+					overflow => '0',
+					saida7seg => HEX4
+				);
+				
+DECODER_7SEG_5: entity work.conversorHex7Seg
+				port map (
+					dadoHex => MuxMonitoramentoOut(23 downto 20),
+					apaga => '0',
+					negativo => '0',
+					overflow => '0',
+					saida7seg => HEX5
+				);
+
+LEDR(3 downto 0) <= MuxMonitoramentoOut(27 downto 24);
+LEDR(7 downto 4) <= MuxMonitoramentoOut(31 downto 28);
+-- end of monitoramento
 
 end architecture;
