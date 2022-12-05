@@ -1,0 +1,13 @@
+$comment
+	File created using the following command:
+		vcd file aula14.msim.vcd -direction
+$end
+$date
+	Mon Nov 21 22:21:34 2022
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
