@@ -30,6 +30,6 @@ architecture comportamento of halfULA is
     R <= op_AND when sel = "00" else
          op_OR when sel = "01" else
          op_SOMA_SUB when sel = "10" else
-         SLT when sel = "11";
+         SLT when sel = "11" else op_AND;
 
 end architecture;
