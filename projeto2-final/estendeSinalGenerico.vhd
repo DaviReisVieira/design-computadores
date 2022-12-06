@@ -29,6 +29,6 @@ begin
             seletor_MUX => Selector, 
             saida_MUX => Mux_sig );
 
-    estendeSinal_OUT <= (larguraDadoSaida-1 downto larguraDadoEntrada => Selector ) & estendeSinal_IN;
+    estendeSinal_OUT <= (larguraDadoSaida-1 downto larguraDadoEntrada => Mux_sig ) & estendeSinal_IN;
 
 end architecture;

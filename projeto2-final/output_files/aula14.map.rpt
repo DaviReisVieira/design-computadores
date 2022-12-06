@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aula14
-Tue Dec 06 00:42:23 2022
+Tue Dec 06 16:31:24 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -109,7 +109,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Dec 06 00:42:23 2022       ;
+; Analysis & Synthesis Status     ; Successful - Tue Dec 06 16:31:24 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aula14                                      ;
 ; Top-level Entity Name           ; TopLevel                                    ;
@@ -230,35 +230,35 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                         ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
-; TopLevel.vhd                     ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd             ;         ;
-; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/registradorGenerico.vhd  ;         ;
-; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/somaConstante.vhd        ;         ;
-; bancoRegistradores.vhd           ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/bancoRegistradores.vhd   ;         ;
-; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMMIPS.vhd              ;         ;
-; somadorGenerico.vhd              ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/somadorGenerico.vhd      ;         ;
-; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/muxGenerico2x1.vhd       ;         ;
-; estendeSinalGenerico.vhd         ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/estendeSinalGenerico.vhd ;         ;
-; RAMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd              ;         ;
-; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/muxGenerico4x1.vhd       ;         ;
-; halfULA.vhd                      ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/halfULA.vhd              ;         ;
-; ULAMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ULAMIPS.vhd              ;         ;
-; unidadeControle.vhd              ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/unidadeControle.vhd      ;         ;
-; controleULA.vhd                  ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/controleULA.vhd          ;         ;
-; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/conversorHex7Seg.vhd     ;         ;
-; halfULALastBit.vhd               ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/halfULALastBit.vhd       ;         ;
-; MUX2X1.vhd                       ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/MUX2X1.vhd               ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                 ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------+---------+
+; TopLevel.vhd                     ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd             ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/registradorGenerico.vhd  ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/somaConstante.vhd        ;         ;
+; bancoRegistradores.vhd           ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/bancoRegistradores.vhd   ;         ;
+; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMMIPS.vhd              ;         ;
+; somadorGenerico.vhd              ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/somadorGenerico.vhd      ;         ;
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/muxGenerico2x1.vhd       ;         ;
+; estendeSinalGenerico.vhd         ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/estendeSinalGenerico.vhd ;         ;
+; RAMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd              ;         ;
+; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/muxGenerico4x1.vhd       ;         ;
+; halfULA.vhd                      ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/halfULA.vhd              ;         ;
+; ULAMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ULAMIPS.vhd              ;         ;
+; unidadeControle.vhd              ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/unidadeControle.vhd      ;         ;
+; controleULA.vhd                  ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/controleULA.vhd          ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/conversorHex7Seg.vhd     ;         ;
+; halfULALastBit.vhd               ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/halfULALastBit.vhd       ;         ;
+; MUX2X1.vhd                       ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/MUX2X1.vhd               ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -266,14 +266,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 2282         ;
+; Estimate of Logic utilization (ALMs needed) ; 2287         ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 1766         ;
+; Combinational ALUT usage for logic          ; 1768         ;
 ;     -- 7 input functions                    ; 147          ;
 ;     -- 6 input functions                    ; 1184         ;
-;     -- 5 input functions                    ; 80           ;
-;     -- 4 input functions                    ; 115          ;
-;     -- <=3 input functions                  ; 240          ;
+;     -- 5 input functions                    ; 94           ;
+;     -- 4 input functions                    ; 98           ;
+;     -- <=3 input functions                  ; 245          ;
 ;                                             ;              ;
 ; Dedicated logic registers                   ; 2976         ;
 ;                                             ;              ;
@@ -283,8 +283,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
 ; Maximum fan-out                             ; 2976         ;
-; Total fan-out                               ; 18722        ;
-; Average fan-out                             ; 3.71         ;
+; Total fan-out                               ; 18736        ;
+; Average fan-out                             ; 3.72         ;
 +---------------------------------------------+--------------+
 
 
@@ -293,17 +293,17 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name         ; Library Name ;
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
-; |TopLevel                               ; 1766 (2)            ; 2976 (0)                  ; 0                 ; 0          ; 149  ; 0            ; |TopLevel                                    ; TopLevel            ; work         ;
+; |TopLevel                               ; 1768 (2)            ; 2976 (0)                  ; 0                 ; 0          ; 149  ; 0            ; |TopLevel                                    ; TopLevel            ; work         ;
 ;    |RAMMIPS:RAM|                        ; 800 (800)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|RAMMIPS:RAM                        ; RAMMIPS             ; work         ;
-;    |ROMMIPS:ROM|                        ; 31 (31)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ROMMIPS:ROM                        ; ROMMIPS             ; work         ;
-;    |ULAMIPS:ULA|                        ; 165 (10)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA                        ; ULAMIPS             ; work         ;
+;    |ROMMIPS:ROM|                        ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ROMMIPS:ROM                        ; ROMMIPS             ; work         ;
+;    |ULAMIPS:ULA|                        ; 164 (10)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA                        ; ULAMIPS             ; work         ;
 ;       |halfULA:opBit0|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit0         ; halfULA             ; work         ;
 ;       |halfULA:opBit10|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit10        ; halfULA             ; work         ;
-;       |halfULA:opBit11|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit11        ; halfULA             ; work         ;
+;       |halfULA:opBit11|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit11        ; halfULA             ; work         ;
 ;       |halfULA:opBit12|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit12        ; halfULA             ; work         ;
 ;       |halfULA:opBit13|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit13        ; halfULA             ; work         ;
 ;       |halfULA:opBit14|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit14        ; halfULA             ; work         ;
-;       |halfULA:opBit15|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit15        ; halfULA             ; work         ;
+;       |halfULA:opBit15|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit15        ; halfULA             ; work         ;
 ;       |halfULA:opBit16|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit16        ; halfULA             ; work         ;
 ;       |halfULA:opBit17|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit17        ; halfULA             ; work         ;
 ;       |halfULA:opBit18|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit18        ; halfULA             ; work         ;
@@ -328,7 +328,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |halfULA:opBit7|                  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit7         ; halfULA             ; work         ;
 ;       |halfULA:opBit8|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit8         ; halfULA             ; work         ;
 ;       |halfULA:opBit9|                  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit9         ; halfULA             ; work         ;
-;       |halfULALastBit:opBit31|          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULALastBit:opBit31 ; halfULALastBit      ; work         ;
+;       |halfULALastBit:opBit31|          ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULALastBit:opBit31 ; halfULALastBit      ; work         ;
 ;    |bancoRegistradores:bancoRegs|       ; 541 (541)           ; 896 (896)                 ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|bancoRegistradores:bancoRegs       ; bancoRegistradores  ; work         ;
 ;    |controleULA:UC_ULA|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|controleULA:UC_ULA                 ; controleULA         ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_0|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_0    ; conversorHex7Seg    ; work         ;
@@ -343,7 +343,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |muxGenerico4x1:MuxRtRdJal|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico4x1:MuxRtRdJal          ; muxGenerico4x1      ; work         ;
 ;    |registradorGenerico:ProgramCounter| ; 2 (2)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:ProgramCounter ; registradorGenerico ; work         ;
 ;    |somaConstante:incrementaPC|         ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|somaConstante:incrementaPC         ; somaConstante       ; work         ;
-;    |somadorGenerico:SOMADOR|            ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|somadorGenerico:SOMADOR            ; somadorGenerico     ; work         ;
+;    |somadorGenerico:SOMADOR|            ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|somadorGenerico:SOMADOR            ; somadorGenerico     ; work         ;
 ;    |unidadeControle:UC|                 ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|unidadeControle:UC                 ; unidadeControle     ; work         ;
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -506,14 +506,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[1]  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[31] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[0]  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[30] ;
 ; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[4]  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TopLevel|ULAMIPS:ULA|halfULA:opBit8|saida_MUX_B      ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TopLevel|ULAMIPS:ULA|halfULA:opBit10|saida_MUX_B     ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TopLevel|unidadeControle:UC|mux_ULA_Mem[1]           ;
-; 5:1                ; 31 bits   ; 93 LEs        ; 62 LEs               ; 31 LEs                 ; No         ; |TopLevel|ULAMIPS:ULA|halfULA:opBit15|R               ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |TopLevel|muxGenerico4x1:MUuxULARAM|saida_MUX[6]      ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |TopLevel|muxGenerico4x1:MUuxULARAM|saida_MUX[21]     ;
+; 5:1                ; 31 bits   ; 93 LEs        ; 62 LEs               ; 31 LEs                 ; No         ; |TopLevel|ULAMIPS:ULA|halfULA:opBit11|R               ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |TopLevel|muxGenerico4x1:MUuxULARAM|saida_MUX[15]     ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |TopLevel|muxGenerico4x1:MUuxULARAM|saida_MUX[22]     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
 
 
@@ -1105,14 +1105,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "estendeSinalGenerico:Estende|MUX2X1:MuxSeletor"                                             ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                             ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; entradab_mux ; Input  ; Info     ; Stuck at GND                                                                        ;
-; saida_mux    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "estendeSinalGenerico:Estende|MUX2X1:MuxSeletor" ;
++--------------+-------+----------+------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                  ;
++--------------+-------+----------+------------------------------------------+
+; entradab_mux ; Input ; Info     ; Stuck at GND                             ;
++--------------+-------+----------+------------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -1161,25 +1160,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 2976                        ;
 ;     ENA               ; 2946                        ;
 ;     plain             ; 30                          ;
-; arriav_lcell_comb     ; 1770                        ;
-;     arith             ; 60                          ;
-;         1 data inputs ; 30                          ;
-;         3 data inputs ; 15                          ;
+; arriav_lcell_comb     ; 1772                        ;
+;     arith             ; 62                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 31                          ;
+;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 15                          ;
+;         5 data inputs ; 14                          ;
 ;     extend            ; 147                         ;
 ;         7 data inputs ; 147                         ;
 ;     normal            ; 1563                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 16                          ;
 ;         2 data inputs ; 141                         ;
-;         3 data inputs ; 41                          ;
-;         4 data inputs ; 100                         ;
+;         3 data inputs ; 58                          ;
+;         4 data inputs ; 83                          ;
 ;         5 data inputs ; 80                          ;
 ;         6 data inputs ; 1184                        ;
 ; boundary_port         ; 149                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 19.00                       ;
-; Average LUT depth     ; 8.89                        ;
+; Average LUT depth     ; 8.88                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1188,7 +1189,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:08     ;
 +----------------+--------------+
 
 
@@ -1198,154 +1199,153 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Dec 06 00:42:07 2022
+    Info: Processing started: Tue Dec 06 16:30:54 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aula14 -c aula14
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file toplevel.vhd
-    Info (12022): Found design unit 1: TopLevel-arquitetura File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 50
-    Info (12023): Found entity 1: TopLevel File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 5
+    Info (12022): Found design unit 1: TopLevel-arquitetura File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 50
+    Info (12023): Found entity 1: TopLevel File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/registradorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: registradorGenerico File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/registradorGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradores.vhd
-    Info (12022): Found design unit 1: bancoRegistradores-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/bancoRegistradores.vhd Line: 30
-    Info (12023): Found entity 1: bancoRegistradores File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/bancoRegistradores.vhd Line: 7
+    Info (12022): Found design unit 1: bancoRegistradores-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/bancoRegistradores.vhd Line: 30
+    Info (12023): Found entity 1: bancoRegistradores File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/bancoRegistradores.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file rommips.vhd
-    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMMIPS.vhd Line: 19
-    Info (12023): Found entity 1: ROMMIPS File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMMIPS.vhd Line: 5
+    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMMIPS.vhd Line: 19
+    Info (12023): Found entity 1: ROMMIPS File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ulasomasubpassa.vhd
-    Info (12022): Found design unit 1: ULASomaSubPassa-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ULASomaSubPassa.vhd Line: 18
-    Info (12023): Found entity 1: ULASomaSubPassa File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ULASomaSubPassa.vhd Line: 5
+    Info (12022): Found design unit 1: ULASomaSubPassa-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ULASomaSubPassa.vhd Line: 18
+    Info (12023): Found entity 1: ULASomaSubPassa File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ULASomaSubPassa.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somadorgenerico.vhd
-    Info (12022): Found design unit 1: somadorGenerico-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/somadorGenerico.vhd Line: 17
-    Info (12023): Found entity 1: somadorGenerico File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/somadorGenerico.vhd Line: 5
+    Info (12022): Found design unit 1: somadorGenerico-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/somadorGenerico.vhd Line: 17
+    Info (12023): Found entity 1: somadorGenerico File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/somadorGenerico.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file estendesinalgenerico.vhd
-    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/estendeSinalGenerico.vhd Line: 21
-    Info (12023): Found entity 1: estendeSinalGenerico File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/estendeSinalGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/estendeSinalGenerico.vhd Line: 21
+    Info (12023): Found entity 1: estendeSinalGenerico File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/estendeSinalGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file rammips.vhd
-    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 18
-    Info (12023): Found entity 1: RAMMIPS File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 5
+    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 18
+    Info (12023): Found entity 1: RAMMIPS File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1.vhd
-    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/muxGenerico4x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/muxGenerico4x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/muxGenerico4x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/muxGenerico4x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file halfula.vhd
-    Info (12022): Found design unit 1: halfULA-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/halfULA.vhd Line: 13
-    Info (12023): Found entity 1: halfULA File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/halfULA.vhd Line: 4
+    Info (12022): Found design unit 1: halfULA-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/halfULA.vhd Line: 13
+    Info (12023): Found entity 1: halfULA File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/halfULA.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ulamips.vhd
-    Info (12022): Found design unit 1: ULAMIPS-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ULAMIPS.vhd Line: 17
-    Info (12023): Found entity 1: ULAMIPS File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ULAMIPS.vhd Line: 4
+    Info (12022): Found design unit 1: ULAMIPS-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ULAMIPS.vhd Line: 18
+    Info (12023): Found entity 1: ULAMIPS File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ULAMIPS.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file unidadecontrole.vhd
-    Info (12022): Found design unit 1: unidadeControle-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/unidadeControle.vhd Line: 25
-    Info (12023): Found entity 1: unidadeControle File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/unidadeControle.vhd Line: 4
+    Info (12022): Found design unit 1: unidadeControle-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/unidadeControle.vhd Line: 35
+    Info (12023): Found entity 1: unidadeControle File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/unidadeControle.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file controleula.vhd
-    Info (12022): Found design unit 1: controleULA-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/controleULA.vhd Line: 19
-    Info (12023): Found entity 1: controleULA File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/controleULA.vhd Line: 4
+    Info (12022): Found design unit 1: controleULA-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/controleULA.vhd Line: 19
+    Info (12023): Found entity 1: controleULA File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/controleULA.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/conversorHex7Seg.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/conversorHex7Seg.vhd Line: 4
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/conversorHex7Seg.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/conversorHex7Seg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file halfulalastbit.vhd
-    Info (12022): Found design unit 1: halfULALastBit-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/halfULALastBit.vhd Line: 14
-    Info (12023): Found entity 1: halfULALastBit File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/halfULALastBit.vhd Line: 4
+    Info (12022): Found design unit 1: halfULALastBit-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/halfULALastBit.vhd Line: 14
+    Info (12023): Found entity 1: halfULALastBit File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/halfULALastBit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux2x1.vhd
-    Info (12022): Found design unit 1: MUX2X1-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/MUX2X1.vhd Line: 14
-    Info (12023): Found entity 1: MUX2X1 File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/MUX2X1.vhd Line: 4
+    Info (12022): Found design unit 1: MUX2X1-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/MUX2X1.vhd Line: 14
+    Info (12023): Found entity 1: MUX2X1 File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/MUX2X1.vhd Line: 4
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:ProgramCounter" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 131
-Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 143
-Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 154
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MuxBEQ" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 164
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 197
-Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(54): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMMIPS.vhd Line: 54
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MuxRtRdJal" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 203
-Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:Estende" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 217
-Warning (10036): Verilog HDL or VHDL warning at estendeSinalGenerico.vhd(22): object "Mux_sig" assigned a value but never read File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/estendeSinalGenerico.vhd Line: 22
-Info (12128): Elaborating entity "MUX2X1" for hierarchy "estendeSinalGenerico:Estende|MUX2X1:MuxSeletor" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/estendeSinalGenerico.vhd Line: 25
-Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:bancoRegs" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 232
-Info (12128): Elaborating entity "ULAMIPS" for hierarchy "ULAMIPS:ULA" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 252
-Info (12128): Elaborating entity "halfULA" for hierarchy "ULAMIPS:ULA|halfULA:opBit0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ULAMIPS.vhd Line: 26
-Info (12128): Elaborating entity "halfULALastBit" for hierarchy "ULAMIPS:ULA|halfULALastBit:opBit31" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ULAMIPS.vhd Line: 182
-Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 272
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MUuxULARAM" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 287
-Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 300
-Info (12128): Elaborating entity "controleULA" for hierarchy "controleULA:UC_ULA" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 318
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:DECODER_7SEG_0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 374
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:ProgramCounter" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 131
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 143
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 154
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MuxBEQ" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 164
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 198
+Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(54): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMMIPS.vhd Line: 54
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MuxRtRdJal" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 205
+Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:Estende" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 219
+Info (12128): Elaborating entity "MUX2X1" for hierarchy "estendeSinalGenerico:Estende|MUX2X1:MuxSeletor" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/estendeSinalGenerico.vhd Line: 25
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:bancoRegs" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 234
+Info (12128): Elaborating entity "ULAMIPS" for hierarchy "ULAMIPS:ULA" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 254
+Info (12128): Elaborating entity "halfULA" for hierarchy "ULAMIPS:ULA|halfULA:opBit0" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ULAMIPS.vhd Line: 27
+Info (12128): Elaborating entity "halfULALastBit" for hierarchy "ULAMIPS:ULA|halfULALastBit:opBit31" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ULAMIPS.vhd Line: 183
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 274
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MUuxULARAM" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 289
+Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 302
+Info (12128): Elaborating entity "controleULA" for hierarchy "controleULA:UC_ULA" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 320
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:DECODER_7SEG_0" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 376
 Info (276014): Found 3 instances of uninferred RAM logic
-    Info (276007): RAM logic "RAMMIPS:RAM|memRAM" is uninferred due to asynchronous read logic File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 21
-    Info (276007): RAM logic "bancoRegistradores:bancoRegs|registrador" is uninferred due to asynchronous read logic File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/bancoRegistradores.vhd Line: 50
-    Info (276004): RAM logic "ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMMIPS.vhd Line: 54
-Warning (113028): 46 out of 64 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 3 warnings found, and 3 warnings are reported. File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMcontent.mif Line: 1
-    Warning (113026): Memory Initialization File Address 16 is not initialized File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMcontent.mif Line: 1
-    Warning (113027): Addresses ranging from 18 to 30 are not initialized File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMcontent.mif Line: 1
-    Warning (113027): Addresses ranging from 32 to 63 are not initialized File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMcontent.mif Line: 1
+    Info (276007): RAM logic "RAMMIPS:RAM|memRAM" is uninferred due to asynchronous read logic File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 21
+    Info (276007): RAM logic "bancoRegistradores:bancoRegs|registrador" is uninferred due to asynchronous read logic File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/bancoRegistradores.vhd Line: 50
+    Info (276004): RAM logic "ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMMIPS.vhd Line: 54
+Warning (113028): 46 out of 64 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 3 warnings found, and 3 warnings are reported. File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMcontent.mif Line: 1
+    Warning (113026): Memory Initialization File Address 16 is not initialized File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMcontent.mif Line: 1
+    Warning (113027): Addresses ranging from 18 to 30 are not initialized File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMcontent.mif Line: 1
+    Warning (113027): Addresses ranging from 32 to 63 are not initialized File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMcontent.mif Line: 1
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[12]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[11]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[10]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[9]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[8]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[7]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[6]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[5]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[4]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[3]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[2]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[1]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[0]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[13]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[14]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[15]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[16]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[17]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[18]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[19]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[20]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[21]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[22]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[23]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[24]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[25]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[26]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[27]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[28]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[29]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[30]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[31]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[12]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[11]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[10]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[9]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[8]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[7]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[6]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[5]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[4]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[3]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[2]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[1]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[0]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[13]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[14]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[15]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[16]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[17]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[18]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[19]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[20]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[21]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[22]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[23]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[24]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[25]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[26]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[27]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[28]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[29]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[30]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[31]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "inspectEndRT[4]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 39
-    Warning (13410): Pin "inspectInstru[20]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 41
-    Warning (13410): Pin "inspectInstru[30]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 41
+    Warning (13410): Pin "inspectEndRT[4]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 39
+    Warning (13410): Pin "inspectInstru[20]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 41
+    Warning (13410): Pin "inspectInstru[30]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 41
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 13 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 29
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 31
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 31
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 31
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-Info (21057): Implemented 4846 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 29
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 31
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 31
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 31
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+Info (21057): Implemented 4848 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 134 output pins
-    Info (21061): Implemented 4697 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 58 warnings
-    Info: Peak virtual memory: 4870 megabytes
-    Info: Processing ended: Tue Dec 06 00:42:23 2022
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:18
+    Info (21061): Implemented 4699 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 57 warnings
+    Info: Peak virtual memory: 4866 megabytes
+    Info: Processing ended: Tue Dec 06 16:31:24 2022
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:27
 
 

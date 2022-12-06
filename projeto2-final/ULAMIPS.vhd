@@ -8,9 +8,10 @@ entity ULAMIPS is
     port (
       A, B: in std_logic_vector(larguraDados-1 downto 0);
       inverteB: in std_logic;
+      sel: in std_logic_vector(1 downto 0);
+      
       R: out std_logic_vector(larguraDados-1 downto 0);
-      ZERO: out std_logic;
-      sel: in std_logic_vector(1 downto 0)
+      ZERO: out std_logic
     );
 end entity;
 

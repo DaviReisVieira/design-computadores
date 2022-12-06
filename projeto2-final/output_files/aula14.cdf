@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEBA4F23) Path("C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/output_files/") File("aula14.sof") MfrSpec(OpMask(1));
+		Device PartName(5CEBA4F23) Path("C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/output_files/") File("aula14.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -183,6 +183,7 @@ MuxJMP : entity work.muxGenerico2x1
 			saida_MUX => Mux_BEQ_JMP_out 
 		);
 
+
 MuxJR : entity work.muxGenerico2x1 
 		generic map (
 			larguraDados => larguraEnderecosROM
@@ -199,6 +200,7 @@ ROM : entity work.ROMMIPS
 			Endereco => PC_out,
 			Dado => instrucao
 			);
+
 
 MuxRtRdJal : entity work.muxGenerico4x1  
 		generic map (
@@ -280,8 +282,8 @@ RAM : entity work.RAMMIPS
 			Dado_in => saidaRT,
 			Dado_out => saidaRAM,
 			we => wrRAM,
-		re => rdRAM,
-		habilita => '1'
+			re => rdRAM,
+			habilita => '1'
 		);
 
 MUuxULARAM : entity work.muxGenerico4x1  
@@ -302,17 +304,17 @@ UC: entity work.unidadeControle
 			instrucao => instrucao,
 			wr => wrRAM,
 			rd => rdRAM,
-			BEQ => BEQ,
 			BNE => BNE,
+			BEQ => BEQ,
 			mux_ULA_Mem => MuxULARAMSeletor,
 			tipoR => tipoR,
 			opcode => opCode,
 			mux_RT_Imediato => MUuxRtImediatoSeletor ,
 			habilitaEscritaRD => wrReg,
+			ORiAndI => ORiAndI,
 			mux_RT_RD_JAL => muxRtRdJalSeletor, 
 			mux_PC_4_BEQ_JUMP => muxBeqPcSeletor,
-			mux_JR_PC => muxJRPcSeletor,
-			ORiAndI => ORiAndI
+			mux_JR_PC => muxJRPcSeletor
 		);
 		
 UC_ULA: entity work.controleULA 

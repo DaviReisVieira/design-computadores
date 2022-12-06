@@ -10,15 +10,25 @@ entity unidadeControle is
 
   port ( 
     instrucao : in std_logic_vector(larguraInstrucao-1 downto 0);
+
+    mux_JR_PC:          out std_logic;
+    mux_PC_4_BEQ_JUMP:  out std_logic;       
+    mux_RT_RD_JAL:      out std_logic_vector(1 downto 0);
+    ORiAndI:            out std_logic;
+    habilitaEscritaRD:  out std_logic;
+    mux_RT_Imediato:    out std_logic; 
+
+    tipoR:              out std_logic; 
+
+    mux_ULA_Mem:        out std_logic_vector(1 downto 0);
+    BEQ:                out std_logic; 
+    BNE:                out std_logic;
+
+    rd:                 out std_logic; 
+    wr:                 out std_logic; 
     
 
-    mux_PC_4_BEQ_JUMP, BNE, habilitaEscritaRD,
-    mux_RT_Imediato, tipoR, BEQ, mux_JR_PC,
-    rd, wr, ORiAndI: out std_logic;
-    
-    mux_RT_RD_JAL, mux_ULA_Mem: out std_logic_vector(1 downto 0);
-
-	 opcode: out std_logic_vector(larguraOpCode-1 downto 0)
+	  opcode: out std_logic_vector(larguraOpCode-1 downto 0)
   );
 end entity;
 
