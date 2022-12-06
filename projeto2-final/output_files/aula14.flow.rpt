@@ -1,5 +1,5 @@
 Flow report for aula14
-Tue Dec 06 16:34:23 2022
+Tue Dec 06 17:57:47 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Dec 06 16:34:03 2022       ;
+; Flow Status                     ; Successful - Tue Dec 06 17:57:27 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aula14                                      ;
 ; Top-level Entity Name           ; TopLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1,819 / 18,480 ( 10 % )                     ;
-; Total registers                 ; 3110                                        ;
+; Logic utilization (in ALMs)     ; 1,526 / 18,480 ( 8 % )                      ;
+; Total registers                 ; 2679                                        ;
 ; Total pins                      ; 149 / 224 ( 67 % )                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/06/2022 16:30:56 ;
+; Start date & time ; 12/06/2022 17:54:35 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; aula14              ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 110073161869767.167035505550532        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 110073162874169.167036007502308        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; TopLevel    ; Top        ;
@@ -99,11 +99,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:29     ; 1.0                     ; 4866 MB             ; 00:00:26                           ;
-; Fitter               ; 00:02:29     ; 1.2                     ; 6229 MB             ; 00:03:23                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4857 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:19     ; 2.5                     ; 5165 MB             ; 00:00:29                           ;
-; Total                ; 00:03:23     ; --                      ; --                  ; 00:04:23                           ;
+; Analysis & Synthesis ; 00:00:25     ; 1.0                     ; 4865 MB             ; 00:00:26                           ;
+; Fitter               ; 00:02:14     ; 1.1                     ; 6299 MB             ; 00:02:03                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4850 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:19     ; 2.1                     ; 5151 MB             ; 00:00:17                           ;
+; Total                ; 00:03:04     ; --                      ; --                  ; 00:02:50                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -112,10 +112,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; GUILHERME-E14    ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; GUILHERME-E14    ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; GUILHERME-E14    ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; GUILHERME-E14    ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-KVEN14R  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-KVEN14R  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-KVEN14R  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-KVEN14R  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

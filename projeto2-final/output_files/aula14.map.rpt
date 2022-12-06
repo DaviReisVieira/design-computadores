@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aula14
-Tue Dec 06 16:31:24 2022
+Tue Dec 06 17:55:01 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,75 +14,76 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |TopLevel
- 12. Parameter Settings for User Entity Instance: registradorGenerico:ProgramCounter
- 13. Parameter Settings for User Entity Instance: somaConstante:incrementaPC
- 14. Parameter Settings for User Entity Instance: somadorGenerico:SOMADOR
- 15. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxBEQ
- 16. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxJMP
- 17. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxJR
- 18. Parameter Settings for User Entity Instance: ROMMIPS:ROM
- 19. Parameter Settings for User Entity Instance: muxGenerico4x1:MuxRtRdJal
- 20. Parameter Settings for User Entity Instance: estendeSinalGenerico:Estende
- 21. Parameter Settings for User Entity Instance: estendeSinalGenerico:Estende|MUX2X1:MuxSeletor
- 22. Parameter Settings for User Entity Instance: bancoRegistradores:bancoRegs
- 23. Parameter Settings for User Entity Instance: muxGenerico2x1:MUuxRtImediato
- 24. Parameter Settings for User Entity Instance: ULAMIPS:ULA
- 25. Parameter Settings for User Entity Instance: MUX2X1:MuxFlagZero
- 26. Parameter Settings for User Entity Instance: RAMMIPS:RAM
- 27. Parameter Settings for User Entity Instance: muxGenerico4x1:MUuxULARAM
- 28. Parameter Settings for User Entity Instance: unidadeControle:UC
- 29. Parameter Settings for User Entity Instance: controleULA:UC_ULA
- 30. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxPlaca
- 31. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_5"
- 32. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_4"
- 33. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_3"
- 34. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_2"
- 35. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_1"
- 36. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_0"
- 37. Port Connectivity Checks: "muxGenerico4x1:MUuxULARAM"
- 38. Port Connectivity Checks: "RAMMIPS:RAM"
- 39. Port Connectivity Checks: "ULAMIPS:ULA|halfULALastBit:opBit31"
- 40. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit30"
- 41. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit29"
- 42. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit28"
- 43. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit27"
- 44. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit26"
- 45. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit25"
- 46. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit24"
- 47. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit23"
- 48. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit22"
- 49. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit21"
- 50. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit20"
- 51. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit19"
- 52. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit18"
- 53. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit17"
- 54. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit16"
- 55. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit15"
- 56. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit14"
- 57. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit13"
- 58. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit12"
- 59. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit11"
- 60. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit10"
- 61. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit9"
- 62. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit8"
- 63. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit7"
- 64. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit6"
- 65. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit5"
- 66. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit4"
- 67. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit3"
- 68. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit2"
- 69. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit1"
- 70. Port Connectivity Checks: "estendeSinalGenerico:Estende|MUX2X1:MuxSeletor"
- 71. Port Connectivity Checks: "muxGenerico4x1:MuxRtRdJal"
- 72. Port Connectivity Checks: "muxGenerico2x1:MuxJMP"
- 73. Port Connectivity Checks: "somadorGenerico:SOMADOR"
- 74. Port Connectivity Checks: "registradorGenerico:ProgramCounter"
- 75. Post-Synthesis Netlist Statistics for Top Partition
- 76. Elapsed Time Per Partition
- 77. Analysis & Synthesis Messages
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |TopLevel
+ 13. Parameter Settings for User Entity Instance: registradorGenerico:ProgramCounter
+ 14. Parameter Settings for User Entity Instance: somaConstante:incrementaPC
+ 15. Parameter Settings for User Entity Instance: somadorGenerico:SOMADOR
+ 16. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxBEQ
+ 17. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxJMP
+ 18. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxJR
+ 19. Parameter Settings for User Entity Instance: ROMMIPS:ROM
+ 20. Parameter Settings for User Entity Instance: muxGenerico4x1:MuxRtRdJal
+ 21. Parameter Settings for User Entity Instance: estendeSinalGenerico:Estende
+ 22. Parameter Settings for User Entity Instance: estendeSinalGenerico:Estende|MUX2X1:MuxSeletor
+ 23. Parameter Settings for User Entity Instance: bancoRegistradores:bancoRegs
+ 24. Parameter Settings for User Entity Instance: muxGenerico2x1:MUuxRtImediato
+ 25. Parameter Settings for User Entity Instance: ULAMIPS:ULA
+ 26. Parameter Settings for User Entity Instance: MUX2X1:MuxFlagZero
+ 27. Parameter Settings for User Entity Instance: RAMMIPS:RAM
+ 28. Parameter Settings for User Entity Instance: muxGenerico4x1:MUuxULARAM
+ 29. Parameter Settings for User Entity Instance: unidadeControle:UC
+ 30. Parameter Settings for User Entity Instance: controleULA:UC_ULA
+ 31. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxPlaca
+ 32. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_5"
+ 33. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_4"
+ 34. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_3"
+ 35. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_2"
+ 36. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_1"
+ 37. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_0"
+ 38. Port Connectivity Checks: "muxGenerico4x1:MUuxULARAM"
+ 39. Port Connectivity Checks: "RAMMIPS:RAM"
+ 40. Port Connectivity Checks: "ULAMIPS:ULA|halfULALastBit:opBit31"
+ 41. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit30"
+ 42. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit29"
+ 43. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit28"
+ 44. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit27"
+ 45. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit26"
+ 46. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit25"
+ 47. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit24"
+ 48. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit23"
+ 49. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit22"
+ 50. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit21"
+ 51. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit20"
+ 52. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit19"
+ 53. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit18"
+ 54. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit17"
+ 55. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit16"
+ 56. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit15"
+ 57. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit14"
+ 58. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit13"
+ 59. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit12"
+ 60. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit11"
+ 61. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit10"
+ 62. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit9"
+ 63. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit8"
+ 64. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit7"
+ 65. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit6"
+ 66. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit5"
+ 67. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit4"
+ 68. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit3"
+ 69. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit2"
+ 70. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit1"
+ 71. Port Connectivity Checks: "estendeSinalGenerico:Estende|MUX2X1:MuxSeletor"
+ 72. Port Connectivity Checks: "muxGenerico4x1:MuxRtRdJal"
+ 73. Port Connectivity Checks: "muxGenerico2x1:MuxJMP"
+ 74. Port Connectivity Checks: "somadorGenerico:SOMADOR"
+ 75. Port Connectivity Checks: "registradorGenerico:ProgramCounter"
+ 76. Post-Synthesis Netlist Statistics for Top Partition
+ 77. Elapsed Time Per Partition
+ 78. Analysis & Synthesis Messages
 
 
 
@@ -109,13 +110,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Dec 06 16:31:24 2022       ;
+; Analysis & Synthesis Status     ; Successful - Tue Dec 06 17:55:01 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aula14                                      ;
 ; Top-level Entity Name           ; TopLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2976                                        ;
+; Total registers                 ; 2592                                        ;
 ; Total pins                      ; 149                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -236,29 +237,29 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                 ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------+---------+
-; TopLevel.vhd                     ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd             ;         ;
-; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/registradorGenerico.vhd  ;         ;
-; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/somaConstante.vhd        ;         ;
-; bancoRegistradores.vhd           ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/bancoRegistradores.vhd   ;         ;
-; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMMIPS.vhd              ;         ;
-; somadorGenerico.vhd              ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/somadorGenerico.vhd      ;         ;
-; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/muxGenerico2x1.vhd       ;         ;
-; estendeSinalGenerico.vhd         ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/estendeSinalGenerico.vhd ;         ;
-; RAMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd              ;         ;
-; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/muxGenerico4x1.vhd       ;         ;
-; halfULA.vhd                      ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/halfULA.vhd              ;         ;
-; ULAMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ULAMIPS.vhd              ;         ;
-; unidadeControle.vhd              ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/unidadeControle.vhd      ;         ;
-; controleULA.vhd                  ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/controleULA.vhd          ;         ;
-; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/conversorHex7Seg.vhd     ;         ;
-; halfULALastBit.vhd               ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/halfULALastBit.vhd       ;         ;
-; MUX2X1.vhd                       ; yes             ; User VHDL File  ; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/MUX2X1.vhd               ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                         ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
+; TopLevel.vhd                     ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd             ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/registradorGenerico.vhd  ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/somaConstante.vhd        ;         ;
+; bancoRegistradores.vhd           ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/bancoRegistradores.vhd   ;         ;
+; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMMIPS.vhd              ;         ;
+; somadorGenerico.vhd              ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/somadorGenerico.vhd      ;         ;
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/muxGenerico2x1.vhd       ;         ;
+; estendeSinalGenerico.vhd         ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/estendeSinalGenerico.vhd ;         ;
+; RAMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd              ;         ;
+; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/muxGenerico4x1.vhd       ;         ;
+; halfULA.vhd                      ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/halfULA.vhd              ;         ;
+; ULAMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ULAMIPS.vhd              ;         ;
+; unidadeControle.vhd              ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/unidadeControle.vhd      ;         ;
+; controleULA.vhd                  ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/controleULA.vhd          ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/conversorHex7Seg.vhd     ;         ;
+; halfULALastBit.vhd               ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/halfULALastBit.vhd       ;         ;
+; MUX2X1.vhd                       ; yes             ; User VHDL File  ; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/MUX2X1.vhd               ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -266,25 +267,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 2287         ;
+; Estimate of Logic utilization (ALMs needed) ; 1986         ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 1768         ;
-;     -- 7 input functions                    ; 147          ;
-;     -- 6 input functions                    ; 1184         ;
-;     -- 5 input functions                    ; 94           ;
-;     -- 4 input functions                    ; 98           ;
-;     -- <=3 input functions                  ; 245          ;
+; Combinational ALUT usage for logic          ; 1714         ;
+;     -- 7 input functions                    ; 10           ;
+;     -- 6 input functions                    ; 957          ;
+;     -- 5 input functions                    ; 359          ;
+;     -- 4 input functions                    ; 164          ;
+;     -- <=3 input functions                  ; 224          ;
 ;                                             ;              ;
-; Dedicated logic registers                   ; 2976         ;
+; Dedicated logic registers                   ; 2592         ;
 ;                                             ;              ;
 ; I/O pins                                    ; 149          ;
 ;                                             ;              ;
 ; Total DSP Blocks                            ; 0            ;
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
-; Maximum fan-out                             ; 2976         ;
-; Total fan-out                               ; 18736        ;
-; Average fan-out                             ; 3.72         ;
+; Maximum fan-out                             ; 2592         ;
+; Total fan-out                               ; 16805        ;
+; Average fan-out                             ; 3.65         ;
 +---------------------------------------------+--------------+
 
 
@@ -293,9 +294,9 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name         ; Library Name ;
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
-; |TopLevel                               ; 1768 (2)            ; 2976 (0)                  ; 0                 ; 0          ; 149  ; 0            ; |TopLevel                                    ; TopLevel            ; work         ;
+; |TopLevel                               ; 1714 (2)            ; 2592 (0)                  ; 0                 ; 0          ; 149  ; 0            ; |TopLevel                                    ; TopLevel            ; work         ;
 ;    |RAMMIPS:RAM|                        ; 800 (800)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|RAMMIPS:RAM                        ; RAMMIPS             ; work         ;
-;    |ROMMIPS:ROM|                        ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ROMMIPS:ROM                        ; ROMMIPS             ; work         ;
+;    |ROMMIPS:ROM|                        ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ROMMIPS:ROM                        ; ROMMIPS             ; work         ;
 ;    |ULAMIPS:ULA|                        ; 164 (10)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA                        ; ULAMIPS             ; work         ;
 ;       |halfULA:opBit0|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit0         ; halfULA             ; work         ;
 ;       |halfULA:opBit10|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit10        ; halfULA             ; work         ;
@@ -329,7 +330,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |halfULA:opBit8|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit8         ; halfULA             ; work         ;
 ;       |halfULA:opBit9|                  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit9         ; halfULA             ; work         ;
 ;       |halfULALastBit:opBit31|          ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULALastBit:opBit31 ; halfULALastBit      ; work         ;
-;    |bancoRegistradores:bancoRegs|       ; 541 (541)           ; 896 (896)                 ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|bancoRegistradores:bancoRegs       ; bancoRegistradores  ; work         ;
+;    |bancoRegistradores:bancoRegs|       ; 489 (489)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|bancoRegistradores:bancoRegs       ; bancoRegistradores  ; work         ;
 ;    |controleULA:UC_ULA|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|controleULA:UC_ULA                 ; controleULA         ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_0|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_0    ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_1|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_1    ; conversorHex7Seg    ; work         ;
@@ -339,151 +340,679 @@ https://fpgasoftware.intel.com/eula.
 ;    |conversorHex7Seg:DECODER_7SEG_5|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_5    ; conversorHex7Seg    ; work         ;
 ;    |muxGenerico2x1:MuxJR|               ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico2x1:MuxJR               ; muxGenerico2x1      ; work         ;
 ;    |muxGenerico2x1:MuxPlaca|            ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico2x1:MuxPlaca            ; muxGenerico2x1      ; work         ;
-;    |muxGenerico4x1:MUuxULARAM|          ; 34 (34)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico4x1:MUuxULARAM          ; muxGenerico4x1      ; work         ;
-;    |muxGenerico4x1:MuxRtRdJal|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico4x1:MuxRtRdJal          ; muxGenerico4x1      ; work         ;
+;    |muxGenerico4x1:MUuxULARAM|          ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico4x1:MUuxULARAM          ; muxGenerico4x1      ; work         ;
+;    |muxGenerico4x1:MuxRtRdJal|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico4x1:MuxRtRdJal          ; muxGenerico4x1      ; work         ;
 ;    |registradorGenerico:ProgramCounter| ; 2 (2)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:ProgramCounter ; registradorGenerico ; work         ;
 ;    |somaConstante:incrementaPC|         ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|somaConstante:incrementaPC         ; somaConstante       ; work         ;
 ;    |somadorGenerico:SOMADOR|            ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|somadorGenerico:SOMADOR            ; somadorGenerico     ; work         ;
-;    |unidadeControle:UC|                 ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|unidadeControle:UC                 ; unidadeControle     ; work         ;
+;    |unidadeControle:UC|                 ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|unidadeControle:UC                 ; unidadeControle     ; work         ;
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                         ;
-+----------------------------------------------+---------------------------------------------+
-; Register name                                ; Reason for Removal                          ;
-+----------------------------------------------+---------------------------------------------+
-; bancoRegistradores:bancoRegs|registrador~710 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~966 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~741 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~997 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~711 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~967 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~712 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~968 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~713 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~969 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~714 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~970 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~715 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~971 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~716 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~972 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~717 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~973 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~718 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~974 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~719 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~975 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~720 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~976 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~721 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~977 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~722 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~978 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~723 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~979 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~724 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~980 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~725 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~981 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~726 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~982 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~727 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~983 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~728 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~984 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~729 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~985 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~730 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~986 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~731 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~987 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~732 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~988 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~733 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~989 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~734 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~990 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~735 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~991 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~736 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~992 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~737 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~993 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~738 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~994 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~739 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~995 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~740 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~996 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~582 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~838 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~613 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~869 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~583 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~839 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~584 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~840 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~585 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~841 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~586 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~842 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~587 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~843 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~588 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~844 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~589 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~845 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~590 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~846 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~591 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~847 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~592 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~848 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~593 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~849 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~594 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~850 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~595 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~851 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~596 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~852 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~597 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~853 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~598 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~854 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~599 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~855 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~600 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~856 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~601 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~857 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~602 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~858 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~603 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~859 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~604 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~860 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~605 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~861 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~606 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~862 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~607 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~863 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~608 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~864 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~609 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~865 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~610 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~866 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~611 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~867 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~612 ; Stuck at GND due to stuck port clock_enable ;
-; bancoRegistradores:bancoRegs|registrador~868 ; Stuck at GND due to stuck port clock_enable ;
-; Total Number of Removed Registers = 128      ;                                             ;
-+----------------------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                          ;
++-----------------------------------------------+---------------------------------------------+
+; Register name                                 ; Reason for Removal                          ;
++-----------------------------------------------+---------------------------------------------+
+; bancoRegistradores:bancoRegs|registrador~326  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~454  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~70   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~198  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~390  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~518  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~134  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~262  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~357  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~101  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~421  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~165  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~485  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~229  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~549  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~293  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~327  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~71   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~391  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~135  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~455  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~199  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~519  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~263  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~328  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~72   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~392  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~136  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~456  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~200  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~520  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~264  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~329  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~457  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~73   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~201  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~393  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~521  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~137  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~265  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~330  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~458  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~74   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~202  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~394  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~522  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~138  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~266  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~331  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~75   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~395  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~139  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~459  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~203  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~523  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~267  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~332  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~460  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~76   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~204  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~396  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~524  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~140  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~268  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~333  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~77   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~397  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~141  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~461  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~205  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~525  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~269  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~334  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~462  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~78   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~206  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~398  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~526  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~142  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~270  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~335  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~79   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~399  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~143  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~463  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~207  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~527  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~271  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~336  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~464  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~80   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~208  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~400  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~528  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~144  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~272  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~337  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~81   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~401  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~145  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~465  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~209  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~529  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~273  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~338  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~466  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~82   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~210  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~402  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~530  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~146  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~274  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~339  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~83   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~403  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~147  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~467  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~211  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~531  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~275  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~340  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~468  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~84   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~212  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~404  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~532  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~148  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~276  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~341  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~85   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~405  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~149  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~469  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~213  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~533  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~277  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~342  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~470  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~86   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~214  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~406  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~534  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~150  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~278  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~343  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~87   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~407  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~151  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~471  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~215  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~535  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~279  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~344  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~472  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~88   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~216  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~408  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~536  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~152  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~280  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~345  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~89   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~409  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~153  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~473  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~217  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~537  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~281  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~346  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~474  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~90   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~218  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~410  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~538  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~154  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~282  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~347  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~91   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~411  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~155  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~475  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~219  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~539  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~283  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~348  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~476  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~92   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~220  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~412  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~540  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~156  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~284  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~349  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~93   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~413  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~157  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~477  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~221  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~541  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~285  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~350  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~478  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~94   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~222  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~414  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~542  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~158  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~286  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~351  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~95   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~415  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~159  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~479  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~223  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~543  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~287  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~352  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~480  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~96   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~224  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~416  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~544  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~160  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~288  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~353  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~97   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~417  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~161  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~481  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~225  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~545  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~289  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~354  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~482  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~98   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~226  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~418  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~546  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~162  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~290  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~355  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~99   ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~419  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~163  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~483  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~227  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~547  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~291  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~356  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~484  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~100  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~228  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~420  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~548  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~164  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~292  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~678  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~742  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~934  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~998  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~709  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~773  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~965  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1029 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~679  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~743  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~935  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~999  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~680  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~744  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~936  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1000 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~681  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~745  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~937  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1001 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~682  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~746  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~938  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1002 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~683  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~747  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~939  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1003 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~684  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~748  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~940  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1004 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~685  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~749  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~941  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1005 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~686  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~750  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~942  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1006 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~687  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~751  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~943  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1007 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~688  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~752  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~944  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1008 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~689  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~753  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~945  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1009 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~690  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~754  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~946  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1010 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~691  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~755  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~947  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1011 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~692  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~756  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~948  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1012 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~693  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~757  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~949  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1013 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~694  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~758  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~950  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1014 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~695  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~759  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~951  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1015 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~696  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~760  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~952  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1016 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~697  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~761  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~953  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1017 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~698  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~762  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~954  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1018 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~699  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~763  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~955  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1019 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~700  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~764  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~956  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1020 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~701  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~765  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~957  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1021 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~702  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~766  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~958  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1022 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~703  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~767  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~959  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1023 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~704  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~768  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~960  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1024 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~705  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~769  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~961  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1025 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~706  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~770  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~962  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1026 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~707  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~771  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~963  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1027 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~708  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~772  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~964  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~1028 ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~550  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~614  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~806  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~870  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~581  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~645  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~837  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~901  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~551  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~615  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~807  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~871  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~552  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~616  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~808  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~872  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~553  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~617  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~809  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~873  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~554  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~618  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~810  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~874  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~555  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~619  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~811  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~875  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~556  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~620  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~812  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~876  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~557  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~621  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~813  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~877  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~558  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~622  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~814  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~878  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~559  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~623  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~815  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~879  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~560  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~624  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~816  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~880  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~561  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~625  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~817  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~881  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~562  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~626  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~818  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~882  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~563  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~627  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~819  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~883  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~564  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~628  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~820  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~884  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~565  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~629  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~821  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~885  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~566  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~630  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~822  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~886  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~567  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~631  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~823  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~887  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~568  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~632  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~824  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~888  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~569  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~633  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~825  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~889  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~570  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~634  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~826  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~890  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~571  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~635  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~827  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~891  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~572  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~636  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~828  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~892  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~573  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~637  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~829  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~893  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~574  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~638  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~830  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~894  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~575  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~639  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~831  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~895  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~576  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~640  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~832  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~896  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~577  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~641  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~833  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~897  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~578  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~642  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~834  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~898  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~579  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~643  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~835  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~899  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~580  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~644  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~836  ; Stuck at GND due to stuck port clock_enable ;
+; bancoRegistradores:bancoRegs|registrador~900  ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 512       ;                                             ;
++-----------------------------------------------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                    ;
++----------------------------------------------+--------------------------------+------------------------------------------------+
+; Register name                                ; Reason for Removal             ; Registers Removed due to This Register         ;
++----------------------------------------------+--------------------------------+------------------------------------------------+
+; bancoRegistradores:bancoRegs|registrador~351 ; Stuck at GND                   ; bancoRegistradores:bancoRegs|registrador~352,  ;
+;                                              ; due to stuck port clock_enable ; bancoRegistradores:bancoRegs|registrador~480,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~96,   ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~224,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~416,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~544,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~160,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~288,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~353,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~97,   ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~417,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~161,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~481,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~225,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~545,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~289,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~356,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~484,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~100,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~228,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~420,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~548,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~164,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~292,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~678,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~742,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~934,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~998,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~704,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~768,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~960,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~1024, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~705,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~769,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~961,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~1025, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~708,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~772,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~964,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~1028, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~550,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~614,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~806,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~870,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~576,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~640,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~832,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~896,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~577,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~641,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~833,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~897,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~580,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~644,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~836,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~900   ;
+; bancoRegistradores:bancoRegs|registrador~342 ; Stuck at GND                   ; bancoRegistradores:bancoRegs|registrador~343,  ;
+;                                              ; due to stuck port clock_enable ; bancoRegistradores:bancoRegs|registrador~87,   ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~407,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~151,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~471,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~215,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~535,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~279,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~345,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~89,   ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~409,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~153,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~473,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~217,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~537,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~281,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~695,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~759,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~951,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~1015, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~697,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~761,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~953,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~1017, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~567,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~631,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~823,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~887,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~569,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~633,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~825,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~889   ;
+; bancoRegistradores:bancoRegs|registrador~346 ; Stuck at GND                   ; bancoRegistradores:bancoRegs|registrador~347,  ;
+;                                              ; due to stuck port clock_enable ; bancoRegistradores:bancoRegs|registrador~91,   ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~411,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~155,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~475,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~219,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~539,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~283,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~699,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~763,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~955,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~1019, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~571,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~635,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~827,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~891   ;
+; bancoRegistradores:bancoRegs|registrador~349 ; Stuck at GND                   ; bancoRegistradores:bancoRegs|registrador~350,  ;
+;                                              ; due to stuck port clock_enable ; bancoRegistradores:bancoRegs|registrador~478,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~94,   ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~222,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~414,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~542,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~158,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~286,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~702,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~766,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~958,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~1022, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~574,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~638,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~830,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~894   ;
+; bancoRegistradores:bancoRegs|registrador~354 ; Stuck at GND                   ; bancoRegistradores:bancoRegs|registrador~355,  ;
+;                                              ; due to stuck port clock_enable ; bancoRegistradores:bancoRegs|registrador~99,   ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~419,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~163,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~483,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~227,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~547,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~291,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~707,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~771,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~963,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~1027, ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~579,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~643,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~835,  ;
+;                                              ;                                ; bancoRegistradores:bancoRegs|registrador~899   ;
++----------------------------------------------+--------------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -491,12 +1020,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2976  ;
+; Total registers                              ; 2592  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2946  ;
+; Number of registers using Clock Enable       ; 2562  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1157,30 +1686,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 2976                        ;
-;     ENA               ; 2946                        ;
+; arriav_ff             ; 2592                        ;
+;     ENA               ; 2562                        ;
 ;     plain             ; 30                          ;
-; arriav_lcell_comb     ; 1772                        ;
+; arriav_lcell_comb     ; 1719                        ;
 ;     arith             ; 62                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 31                          ;
 ;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 15                          ;
 ;         5 data inputs ; 14                          ;
-;     extend            ; 147                         ;
-;         7 data inputs ; 147                         ;
-;     normal            ; 1563                        ;
+;     extend            ; 10                          ;
+;         7 data inputs ; 10                          ;
+;     normal            ; 1647                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 16                          ;
-;         2 data inputs ; 141                         ;
-;         3 data inputs ; 58                          ;
-;         4 data inputs ; 83                          ;
-;         5 data inputs ; 80                          ;
-;         6 data inputs ; 1184                        ;
+;         1 data inputs ; 10                          ;
+;         2 data inputs ; 139                         ;
+;         3 data inputs ; 46                          ;
+;         4 data inputs ; 149                         ;
+;         5 data inputs ; 345                         ;
+;         6 data inputs ; 957                         ;
 ; boundary_port         ; 149                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 19.00                       ;
-; Average LUT depth     ; 8.88                        ;
+; Average LUT depth     ; 8.46                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1189,7 +1718,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:08     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -1199,153 +1728,153 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Dec 06 16:30:54 2022
+    Info: Processing started: Tue Dec 06 17:54:35 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aula14 -c aula14
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file toplevel.vhd
-    Info (12022): Found design unit 1: TopLevel-arquitetura File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 50
-    Info (12023): Found entity 1: TopLevel File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 5
+    Info (12022): Found design unit 1: TopLevel-arquitetura File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 50
+    Info (12023): Found entity 1: TopLevel File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/registradorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: registradorGenerico File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/registradorGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradores.vhd
-    Info (12022): Found design unit 1: bancoRegistradores-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/bancoRegistradores.vhd Line: 30
-    Info (12023): Found entity 1: bancoRegistradores File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/bancoRegistradores.vhd Line: 7
+    Info (12022): Found design unit 1: bancoRegistradores-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/bancoRegistradores.vhd Line: 30
+    Info (12023): Found entity 1: bancoRegistradores File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/bancoRegistradores.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file rommips.vhd
-    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMMIPS.vhd Line: 19
-    Info (12023): Found entity 1: ROMMIPS File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMMIPS.vhd Line: 5
+    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMMIPS.vhd Line: 19
+    Info (12023): Found entity 1: ROMMIPS File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ulasomasubpassa.vhd
-    Info (12022): Found design unit 1: ULASomaSubPassa-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ULASomaSubPassa.vhd Line: 18
-    Info (12023): Found entity 1: ULASomaSubPassa File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ULASomaSubPassa.vhd Line: 5
+    Info (12022): Found design unit 1: ULASomaSubPassa-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ULASomaSubPassa.vhd Line: 18
+    Info (12023): Found entity 1: ULASomaSubPassa File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ULASomaSubPassa.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somadorgenerico.vhd
-    Info (12022): Found design unit 1: somadorGenerico-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/somadorGenerico.vhd Line: 17
-    Info (12023): Found entity 1: somadorGenerico File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/somadorGenerico.vhd Line: 5
+    Info (12022): Found design unit 1: somadorGenerico-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/somadorGenerico.vhd Line: 17
+    Info (12023): Found entity 1: somadorGenerico File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/somadorGenerico.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file estendesinalgenerico.vhd
-    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/estendeSinalGenerico.vhd Line: 21
-    Info (12023): Found entity 1: estendeSinalGenerico File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/estendeSinalGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/estendeSinalGenerico.vhd Line: 21
+    Info (12023): Found entity 1: estendeSinalGenerico File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/estendeSinalGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file rammips.vhd
-    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 18
-    Info (12023): Found entity 1: RAMMIPS File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 5
+    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 18
+    Info (12023): Found entity 1: RAMMIPS File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1.vhd
-    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/muxGenerico4x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/muxGenerico4x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/muxGenerico4x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/muxGenerico4x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file halfula.vhd
-    Info (12022): Found design unit 1: halfULA-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/halfULA.vhd Line: 13
-    Info (12023): Found entity 1: halfULA File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/halfULA.vhd Line: 4
+    Info (12022): Found design unit 1: halfULA-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/halfULA.vhd Line: 13
+    Info (12023): Found entity 1: halfULA File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/halfULA.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ulamips.vhd
-    Info (12022): Found design unit 1: ULAMIPS-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ULAMIPS.vhd Line: 18
-    Info (12023): Found entity 1: ULAMIPS File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ULAMIPS.vhd Line: 4
+    Info (12022): Found design unit 1: ULAMIPS-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ULAMIPS.vhd Line: 18
+    Info (12023): Found entity 1: ULAMIPS File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ULAMIPS.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file unidadecontrole.vhd
-    Info (12022): Found design unit 1: unidadeControle-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/unidadeControle.vhd Line: 35
-    Info (12023): Found entity 1: unidadeControle File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/unidadeControle.vhd Line: 4
+    Info (12022): Found design unit 1: unidadeControle-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/unidadeControle.vhd Line: 35
+    Info (12023): Found entity 1: unidadeControle File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/unidadeControle.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file controleula.vhd
-    Info (12022): Found design unit 1: controleULA-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/controleULA.vhd Line: 19
-    Info (12023): Found entity 1: controleULA File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/controleULA.vhd Line: 4
+    Info (12022): Found design unit 1: controleULA-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/controleULA.vhd Line: 19
+    Info (12023): Found entity 1: controleULA File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/controleULA.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/conversorHex7Seg.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/conversorHex7Seg.vhd Line: 4
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/conversorHex7Seg.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/conversorHex7Seg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file halfulalastbit.vhd
-    Info (12022): Found design unit 1: halfULALastBit-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/halfULALastBit.vhd Line: 14
-    Info (12023): Found entity 1: halfULALastBit File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/halfULALastBit.vhd Line: 4
+    Info (12022): Found design unit 1: halfULALastBit-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/halfULALastBit.vhd Line: 14
+    Info (12023): Found entity 1: halfULALastBit File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/halfULALastBit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux2x1.vhd
-    Info (12022): Found design unit 1: MUX2X1-comportamento File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/MUX2X1.vhd Line: 14
-    Info (12023): Found entity 1: MUX2X1 File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/MUX2X1.vhd Line: 4
+    Info (12022): Found design unit 1: MUX2X1-comportamento File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/MUX2X1.vhd Line: 14
+    Info (12023): Found entity 1: MUX2X1 File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/MUX2X1.vhd Line: 4
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:ProgramCounter" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 131
-Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 143
-Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 154
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MuxBEQ" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 164
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 198
-Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(54): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMMIPS.vhd Line: 54
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MuxRtRdJal" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 205
-Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:Estende" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 219
-Info (12128): Elaborating entity "MUX2X1" for hierarchy "estendeSinalGenerico:Estende|MUX2X1:MuxSeletor" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/estendeSinalGenerico.vhd Line: 25
-Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:bancoRegs" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 234
-Info (12128): Elaborating entity "ULAMIPS" for hierarchy "ULAMIPS:ULA" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 254
-Info (12128): Elaborating entity "halfULA" for hierarchy "ULAMIPS:ULA|halfULA:opBit0" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ULAMIPS.vhd Line: 27
-Info (12128): Elaborating entity "halfULALastBit" for hierarchy "ULAMIPS:ULA|halfULALastBit:opBit31" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ULAMIPS.vhd Line: 183
-Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 274
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MUuxULARAM" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 289
-Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 302
-Info (12128): Elaborating entity "controleULA" for hierarchy "controleULA:UC_ULA" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 320
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:DECODER_7SEG_0" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 376
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:ProgramCounter" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 131
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 143
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 154
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MuxBEQ" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 164
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 198
+Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(54): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMMIPS.vhd Line: 54
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MuxRtRdJal" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 205
+Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:Estende" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 219
+Info (12128): Elaborating entity "MUX2X1" for hierarchy "estendeSinalGenerico:Estende|MUX2X1:MuxSeletor" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/estendeSinalGenerico.vhd Line: 25
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:bancoRegs" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 234
+Info (12128): Elaborating entity "ULAMIPS" for hierarchy "ULAMIPS:ULA" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 254
+Info (12128): Elaborating entity "halfULA" for hierarchy "ULAMIPS:ULA|halfULA:opBit0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ULAMIPS.vhd Line: 27
+Info (12128): Elaborating entity "halfULALastBit" for hierarchy "ULAMIPS:ULA|halfULALastBit:opBit31" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ULAMIPS.vhd Line: 183
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 274
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MUuxULARAM" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 289
+Info (12128): Elaborating entity "unidadeControle" for hierarchy "unidadeControle:UC" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 302
+Info (12128): Elaborating entity "controleULA" for hierarchy "controleULA:UC_ULA" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 320
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:DECODER_7SEG_0" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 376
 Info (276014): Found 3 instances of uninferred RAM logic
-    Info (276007): RAM logic "RAMMIPS:RAM|memRAM" is uninferred due to asynchronous read logic File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 21
-    Info (276007): RAM logic "bancoRegistradores:bancoRegs|registrador" is uninferred due to asynchronous read logic File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/bancoRegistradores.vhd Line: 50
-    Info (276004): RAM logic "ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMMIPS.vhd Line: 54
-Warning (113028): 46 out of 64 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 3 warnings found, and 3 warnings are reported. File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMcontent.mif Line: 1
-    Warning (113026): Memory Initialization File Address 16 is not initialized File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMcontent.mif Line: 1
-    Warning (113027): Addresses ranging from 18 to 30 are not initialized File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMcontent.mif Line: 1
-    Warning (113027): Addresses ranging from 32 to 63 are not initialized File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/ROMcontent.mif Line: 1
+    Info (276007): RAM logic "RAMMIPS:RAM|memRAM" is uninferred due to asynchronous read logic File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 21
+    Info (276007): RAM logic "bancoRegistradores:bancoRegs|registrador" is uninferred due to asynchronous read logic File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/bancoRegistradores.vhd Line: 50
+    Info (276004): RAM logic "ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMMIPS.vhd Line: 54
+Warning (113028): 46 out of 64 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 3 warnings found, and 3 warnings are reported. File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMcontent.mif Line: 1
+    Warning (113026): Memory Initialization File Address 16 is not initialized File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMcontent.mif Line: 1
+    Warning (113027): Addresses ranging from 18 to 30 are not initialized File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMcontent.mif Line: 1
+    Warning (113027): Addresses ranging from 32 to 63 are not initialized File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMcontent.mif Line: 1
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[12]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[11]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[10]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[9]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[8]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[7]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[6]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[5]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[4]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[3]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[2]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[1]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[0]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[13]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[14]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[15]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[16]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[17]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[18]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[19]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[20]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[21]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[22]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[23]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[24]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[25]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[26]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[27]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[28]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[29]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[30]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[31]" feeding internal logic into a wire File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[12]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[11]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[10]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[9]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[8]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[7]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[6]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[5]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[4]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[3]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[2]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[1]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[0]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[13]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[14]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[15]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[16]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[17]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[18]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[19]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[20]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[21]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[22]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[23]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[24]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[25]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[26]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[27]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[28]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[29]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[30]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[31]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "inspectEndRT[4]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 39
-    Warning (13410): Pin "inspectInstru[20]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 41
-    Warning (13410): Pin "inspectInstru[30]" is stuck at GND File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 41
+    Warning (13410): Pin "inspectEndRT[4]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 39
+    Warning (13410): Pin "inspectInstru[20]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 41
+    Warning (13410): Pin "inspectInstru[30]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 41
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 13 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 29
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 31
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 31
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 31
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-Info (21057): Implemented 4848 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 29
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 31
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 31
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 31
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
+Info (21057): Implemented 4417 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 134 output pins
-    Info (21061): Implemented 4699 logic cells
+    Info (21061): Implemented 4268 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 57 warnings
-    Info: Peak virtual memory: 4866 megabytes
-    Info: Processing ended: Tue Dec 06 16:31:24 2022
-    Info: Elapsed time: 00:00:30
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Peak virtual memory: 4865 megabytes
+    Info: Processing ended: Tue Dec 06 17:55:01 2022
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:26
 
 

@@ -1,5 +1,5 @@
 Assembler report for aula14
-Tue Dec 06 16:34:03 2022
+Tue Dec 06 17:57:27 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/output_files/aula14.sof
+  5. Assembler Device Options: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/output_files/aula14.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Dec 06 16:34:03 2022 ;
+; Assembler Status      ; Successful - Tue Dec 06 17:57:27 2022 ;
 ; Revision Name         ; aula14                                ;
 ; Top-level Entity Name ; TopLevel                              ;
 ; Family                ; Cyclone V                             ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                   ;
-+-------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                   ;
-+-------------------------------------------------------------------------------------------------------------+
-; C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/output_files/aula14.sof ;
-+-------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                           ;
++-----------------------------------------------------------------------------------------------------+
+; File Name                                                                                           ;
++-----------------------------------------------------------------------------------------------------+
+; C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/output_files/aula14.sof ;
++-----------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/gui_r/OneDrive/Documentos/GitHub/Insper/design-computadores/projeto2-final/output_files/aula14.sof ;
-+----------------+----------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                              ;
-+----------------+----------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x0098B3E2                                                                                                           ;
-; Checksum       ; 0x0098B3E2                                                                                                           ;
-+----------------+----------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/output_files/aula14.sof ;
++----------------+--------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                      ;
++----------------+--------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00903807                                                                                                   ;
+; Checksum       ; 0x00903807                                                                                                   ;
++----------------+--------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Dec 06 16:33:57 2022
+    Info: Processing started: Tue Dec 06 17:57:21 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off aula14 -c aula14
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4857 megabytes
-    Info: Processing ended: Tue Dec 06 16:34:03 2022
+    Info: Peak virtual memory: 4850 megabytes
+    Info: Processing ended: Tue Dec 06 17:57:27 2022
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
 
 
