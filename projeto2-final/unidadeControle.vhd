@@ -12,10 +12,12 @@ entity unidadeControle is
     instrucao : in std_logic_vector(larguraInstrucao-1 downto 0);
     
 
-    mux_PC_4_BEQ_JUMP, mux_RT_RD, habilitaEscritaRD,
-    mux_RT_Imediato, tipoR, mux_ULA_Mem, BEQ,
-    rd, wr: out std_logic;
+    mux_PC_4_BEQ_JUMP, BNE, habilitaEscritaRD,
+    mux_RT_Imediato, tipoR, BEQ, mux_JR_PC,
+    rd, wr, ORiAndI: out std_logic;
     
+    mux_RT_RD_JAL, mux_ULA_Mem: out std_logic_vector(1 downto 0);
+
 	 opcode: out std_logic_vector(larguraOpCode-1 downto 0)
   );
 end entity;
@@ -28,41 +30,61 @@ architecture comportamento of unidadeControle is
   constant f_ADD : std_logic_vector(larguraFunct-1 downto 0) := "100000";
   constant f_SUB : std_logic_vector(larguraFunct-1 downto 0) := "100010";
   constant f_SLT : std_logic_vector(larguraFunct-1 downto 0) := "101010";
+  constant f_JR : std_logic_vector(larguraFunct-1 downto 0) := "001000";
 
   -- opcode
   constant op_LW  : std_logic_vector(larguraOpCode-1 downto 0) := "100011";
   constant op_SW  : std_logic_vector(larguraOpCode-1 downto 0) := "101011";
   constant op_BEQ : std_logic_vector(larguraOpCode-1 downto 0) := "000100";
+  constant op_BNE : std_logic_vector(larguraOpCode-1 downto 0) := "000101";
   constant op_JMP : std_logic_vector(larguraOpCode-1 downto 0) := "000010";
+  constant op_JAL : std_logic_vector(larguraOpCode-1 downto 0) := "000011";
+  constant op_ORI : std_logic_vector(larguraOpCode-1 downto 0) := "001101";
+  constant op_ANDI : std_logic_vector(larguraOpCode-1 downto 0) := "001100";
+  constant op_LUI : std_logic_vector(larguraOpCode-1 downto 0) := "001111";
 
   -- aux signals
-  -- signal funct : std_logic_vector(larguraFunct-1 downto 0);
+  signal funct : std_logic_vector(larguraFunct-1 downto 0);
 
   begin
     opcode <= instrucao(larguraInstrucao-1 downto larguraInstrucao - larguraOpCode);
-    -- funct  <= instrucao(larguraFunct-1 downto 0);
+    funct  <= instrucao(larguraFunct-1 downto 0);
 
     tipoR <= '1' when opcode = "000000" else '0';
     
     MUX_PC_4_BEQ_JUMP <= '1' when (opcode = op_JMP) else '0';
 
-    MUX_RT_RD <=  '1' when (tipoR = '1')
-                  else '0';
+    MUX_RT_RD_JAL <=  "10" when (opcode = op_JAL) or (funct = f_JR and tipoR = '1') else
+				"01" when (tipoR = '1') else 
+				"00";
 
-    HabilitaEscritaRD <='1' when (tipoR = '1' or opcode = op_LW) 
+    HabilitaEscritaRD <='1' when (tipoR = '1' )
+                        or (opcode = op_LW)
+                        or (opcode = op_JAL)
+                        or (opcode = op_ORI)
+                        or (opcode = op_ANDI)
+                        or (opcode = op_LUI) 
                         else '0'; 
 
-    MUX_RT_Imediato <= '1' when (opcode = op_LW
-                      or opcode = op_SW)
+    MUX_RT_Imediato <= '1' when (opcode = op_LW)
+                      or (opcode = op_SW)
                       else '0';
                       
-    mux_ULA_Mem     <= '1' when (opcode = op_LW) else '0';
+    mux_ULA_Mem     <= "00" when (tipoR = '1') or (opcode = op_ORI) or (opcode = op_ANDI) else
+                       "11" when (opcode = op_LUI) else
+                       "10" when (opcode = op_JAL) else
+                       "01";
+
+    mux_JR_PC       <= '1' when (tipoR = '1' AND funct = f_JR) else '0';
 
     BEQ <= '1' when (opcode = op_BEQ) else '0';
+
+    BNE <= '1' when (opcode = op_BNE) else '0';
 
     rd <=  '1' when (opcode = op_LW) else '0';
 
     wr <= '1' when (opcode = op_SW) else '0';
 
+    ORiAndI <= '1' when (opcode = op_ORI or opcode = op_ANDI) else '0';
               
 end architecture;

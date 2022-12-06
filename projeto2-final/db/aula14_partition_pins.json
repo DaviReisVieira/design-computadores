@@ -204,11 +204,31 @@
 					"strict" : false
 				},
 				{
+					"name" : "LEDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[9]",
+					"strict" : false
+				},
+				{
 					"name" : "inspectEndRS[0]",
 					"strict" : false
 				},
 				{
+					"name" : "inspectEndRS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inspectEndRS[2]",
+					"strict" : false
+				},
+				{
 					"name" : "inspectEndRS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "inspectEndRS[4]",
 					"strict" : false
 				},
 				{
@@ -217,6 +237,10 @@
 				},
 				{
 					"name" : "inspectEndRT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inspectEndRT[2]",
 					"strict" : false
 				},
 				{
@@ -316,6 +340,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "inspectInstru[18]",
+					"strict" : false
+				},
+				{
 					"name" : "inspectInstru[19]",
 					"strict" : false
 				},
@@ -324,7 +352,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "inspectInstru[22]",
+					"strict" : false
+				},
+				{
+					"name" : "inspectInstru[23]",
+					"strict" : false
+				},
+				{
 					"name" : "inspectInstru[24]",
+					"strict" : false
+				},
+				{
+					"name" : "inspectInstru[25]",
 					"strict" : false
 				},
 				{
@@ -345,6 +385,14 @@
 				},
 				{
 					"name" : "inspectInstru[31]",
+					"strict" : false
+				},
+				{
+					"name" : "inspectPC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inspectPC[1]",
 					"strict" : false
 				},
 				{

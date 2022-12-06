@@ -29,6 +29,7 @@ architecture comportamento of controleULA is
   constant op_LW  : std_logic_vector(larguraOpCode-1 downto 0) := "100011";
   constant op_SW  : std_logic_vector(larguraOpCode-1 downto 0) := "101011";
   constant op_BEQ : std_logic_vector(larguraOpCode-1 downto 0) := "000100";
+  constant op_ORI : std_logic_vector(larguraOpCode-1 downto 0) := "001101";
 
   signal opcode_funct: std_logic_vector(larguraFunct-1 downto 0);
 
@@ -37,7 +38,8 @@ architecture comportamento of controleULA is
 
     ULActrl(0) <= '1' when (
                      opcode_funct = f_OR 
-                  or opcode_funct = f_SLT)
+                  or opcode_funct = f_SLT
+                  or opcode_funct = op_ORI)
                   else '0' ;
     ULActrl(1) <= '1' when (
                      opcode_funct = op_LW  
