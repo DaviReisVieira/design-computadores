@@ -416,7 +416,7 @@ MuxPlaca : entity work.muxGenerico2x1
 		)
 		port map (
 			entradaA_MUX => PC_out, 
-			entradaB_MUX => saidaULA, 
+			entradaB_MUX => saidaULAMuxOrNor, 
 			seletor_MUX => SW(0), 
 			saida_MUX => MuxMonitoramentoOut 
 		);
