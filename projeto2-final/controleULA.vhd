@@ -35,6 +35,7 @@ architecture comportamento of controleULA is
   constant op_ANDI : std_logic_vector(larguraOpCode-1 downto 0) := "001100";
   constant op_ADDI: std_logic_vector(larguraOpCode-1 downto 0) := "001000";
   constant op_SLTI : std_logic_vector(larguraOpCode-1 downto 0) := "001010";
+  constant op_SLTIU: std_logic_vector(larguraOpCode-1 downto 0) := "001011";
   constant op_LBU  : std_logic_vector(larguraOpCode-1 downto 0) := "010100";
   constant op_SB   : std_logic_vector(larguraOpCode-1 downto 0) := "011000";
 
@@ -49,6 +50,7 @@ architecture comportamento of controleULA is
                   or opcode_funct = f_NOR
                   or opcode_funct = f_SLT
                   or opcode_funct = op_SLTI
+                  or opcode_funct = op_SLTIU
                   or opcode_funct = op_ORI)
                   else '0' ;
     ULActrl(1) <= '1' when (
@@ -60,6 +62,7 @@ architecture comportamento of controleULA is
                   or opcode_funct = f_ADD 
                   or opcode_funct = op_ADDI 
                   or opcode_funct = op_SLTI 
+                  or opcode_funct = op_SLTIU 
                   or opcode_funct = f_SUB 
                   or opcode_funct = op_BNE 
                   or opcode_funct = f_SLT)
@@ -67,6 +70,7 @@ architecture comportamento of controleULA is
     ULActrl(2) <= '1' when (
                      opcode_funct = op_BEQ 
                   or opcode_funct = op_SLTI
+                  or opcode_funct = op_SLTIU
                   or opcode_funct = f_SUB
                   or opcode_funct = op_BNE
                   or opcode_funct = f_SLT)

@@ -119,7 +119,7 @@ architecture arquitetura of TopLevel is
 	signal muxRtRdJalSeletor : 			std_logic_vector(1 downto 0);
 	signal muxBeqPcSeletor : 			std_logic;
 	signal muxJRPcSeletor : 			std_logic;
-	signal ORiAndI : 					std_logic;
+	signal ORiAndIUnsigned : 					std_logic;
 
 	-- MUX De monitoramento via Placa
 	signal MuxMonitoramentoSeletor : 	std_logic;
@@ -232,7 +232,7 @@ Estende : entity work.estendeSinalGenerico
 			)
 			port map (
 			estendeSinal_IN => imediatoI, 
-			Selector => ORiAndI,
+			Selector => ORiAndIUnsigned,
 			estendeSinal_OUT => sigExt 
 		);
 
@@ -358,7 +358,7 @@ UC: entity work.unidadeControle
 			opcode => opCode,
 			mux_RT_Imediato => MUuxRtImediatoSeletor ,
 			habilitaEscritaRD => wrReg,
-			ORiAndI => ORiAndI,
+			ORiAndIUnsigned => ORiAndIUnsigned,
 			mux_RT_RD_JAL => muxRtRdJalSeletor, 
 			mux_PC_4_BEQ_JUMP => muxBeqPcSeletor,
 			mux_JR_PC => muxJRPcSeletor,
