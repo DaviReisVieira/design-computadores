@@ -35,14 +35,12 @@ architecture comportamento of bancoRegistradores is
     function initRegisters
         return memoria_t is variable tmp : memoria_t := (others => (others => '0'));
         begin
-            -- tmp(0) := x"AAAAAAAA";  -- Nao deve ter efeito.
             tmp(8)  := 32x"00"; 
             tmp(9)  := 32x"0A"; 
             tmp(10) := 32x"0B"; 
             tmp(11) := 32x"0C"; 
             tmp(12) := 32x"0D"; 
             tmp(13) := 32x"16"; 
-            -- tmp(14) := 32x"01"; 
         return tmp;
     end initRegisters;
 
