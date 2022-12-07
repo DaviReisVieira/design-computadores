@@ -1,0 +1,55 @@
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions
+-- and other software and tools, and its AMPP partner logic
+-- functions, and any output files from any of the foregoing
+-- (including device programming or simulation files), and any
+-- associated documentation or information are expressly subject
+-- to the terms and conditions of the Intel Program License
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+WIDTH=32;
+DEPTH=64;
+ADDRESS_RADIX=DEC;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+      -- Valores iniciais no banco de registradores:
+      -- $t0   (#8) := 0x00
+      -- $t1   (#9) := 0x0A
+      -- $t2  (#10) := 0x0B
+      -- $t3  (#11) := 0x0C
+      -- $t4  (#12) := 0x0D
+      -- $t5  (#13) := 0x16
+
+    0    :   AC090008; --sw $t1 8($zero)     (m(8) := 0x0000000A)
+    1    :   8C080008; --lw $t0 8($zero)     ($t0 := 0x0000000A)
+    
+    -- teste nor (nor)
+    2    :   014C4027; --nor $t0 $t2 $t4     ($t0 := 0xFFFFFFF0)
+    
+    -- teste store byte (sb)
+    3  : 3C09FFFF; --lui $t1 0x00FF
+    4  : 012A4025; --or $t1 $t1 $t2         ($t1 := 0x00FF000B)
+    5  : AC090008; --sw $t1 8($zero)        (m(8) := 0x00FF000B)
+    6  : A0080008; --sb $t0 8($zero)        (m(8) := 0x00FF000A)
+    7  : 8C080008; --lw $t0 8($zero)        ($t0 := 0x00FF000A)
+    8  : 01004020; --add $t0 $t0 $zero      ($t0 := 0x00000014)
+
+    -- teste load byte unsigned (lbu)
+    9  : 3C09FFFF; -- lui $t1 0xFFFF      ($t1 :=0xFFFF0000)
+    10 : 012A4025; -- or $t0 $t1 $t2        ($t0 :=  0xFFFF000B)
+    11 : AC080008 ; -- sw $t0 8($zero)      ($t0 := FFFF000B)
+    12 : 90080008; -- lbu $t0 8($zero)      ($t0 := 0000000B)
+    13 : 01004020; -- add $t0 $t0 $zero     ($t0 := 0000000B)
+    
+    -- teste Set Less Than Immediate unsigned (ltiu)
+    14 : 2DA8FFFF; -- sltiu $t0 $t5 0xFFFF   ($t0 := 0x00000001)
+    
+    15 :   08000000; --j 0x000000          (pc := #0)
+    [26..31]  : 00000000;
+END;
