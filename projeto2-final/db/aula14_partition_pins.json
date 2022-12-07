@@ -224,10 +224,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "inspectEndRS[4]",
-					"strict" : false
-				},
-				{
 					"name" : "inspectEndRT[0]",
 					"strict" : false
 				},
@@ -360,10 +356,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "inspectInstru[25]",
-					"strict" : false
-				},
-				{
 					"name" : "inspectInstru[26]",
 					"strict" : false
 				},
@@ -381,14 +373,6 @@
 				},
 				{
 					"name" : "inspectInstru[31]",
-					"strict" : false
-				},
-				{
-					"name" : "inspectPC[0]",
-					"strict" : false
-				},
-				{
-					"name" : "inspectPC[1]",
 					"strict" : false
 				},
 				{

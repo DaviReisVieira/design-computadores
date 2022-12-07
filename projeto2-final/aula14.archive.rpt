@@ -1,5 +1,5 @@
 Archive Project report for aula14
-Fri Nov 25 15:40:42 2022
+Wed Dec 07 12:44:06 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Fri Nov 25 15:40:42 2022 ;
+; Archive Project Status ; Successful - Wed Dec 07 12:44:06 2022 ;
 ; Revision Name          ; aula14                                ;
 ; Top-level Entity Name  ; TopLevel                              ;
 ; Family                 ; Cyclone V                             ;
@@ -54,14 +54,14 @@ Info: Archive will store files relative to the closest common parent directory
 Info (13213): Using common directory C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/projeto2Intermediario.qar'
+Info: Generated archive 'C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/Projeto2Final.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'aula14.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4829 megabytes
-    Info: Processing ended: Fri Nov 25 15:40:42 2022
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Wed Dec 07 12:44:06 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -78,14 +78,17 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; controleULA.vhd                                              ;
 ; conversorHex7Seg.vhd                                         ;
 ; estendeSinalGenerico.vhd                                     ;
+; extraiByte.vhd                                               ;
 ; halfULA.vhd                                                  ;
 ; halfULALastBit.vhd                                           ;
+; MUX2X1.vhd                                                   ;
 ; muxGenerico2x1.vhd                                           ;
 ; muxGenerico4x1.vhd                                           ;
 ; RAMMIPS.vhd                                                  ;
 ; registradorGenerico.vhd                                      ;
 ; ROMcontent.mif                                               ;
 ; ROMMIPS.vhd                                                  ;
+; ROMTestContent.mif                                           ;
 ; somaConstante.vhd                                            ;
 ; somadorGenerico.vhd                                          ;
 ; TopLevel.vhd                                                 ;

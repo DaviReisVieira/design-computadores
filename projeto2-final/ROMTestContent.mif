@@ -29,27 +29,26 @@ CONTENT BEGIN
     0    :   AC090008; --sw $t1 8($zero)     (m(8) := 0x0000000A)
     1    :   8C080008; --lw $t0 8($zero)     ($t0 := 0x0000000A)
     
-    -- teste nor (nor)
+    -- teste nor (nor) OK
     2    :   014C4027; --nor $t0 $t2 $t4     ($t0 := 0xFFFFFFF0)
     
     -- teste store byte (sb)
-    3  : 3C09FFFF; --lui $t1 0x00FF
-    4  : 012A4025; --or $t1 $t1 $t2         ($t1 := 0x00FF000B)
-    5  : AC090008; --sw $t1 8($zero)        (m(8) := 0x00FF000B)
-    6  : A0080008; --sb $t0 8($zero)        (m(8) := 0x00FF000A)
-    7  : 8C080008; --lw $t0 8($zero)        ($t0 := 0x00FF000A)
-    8  : 01004020; --add $t0 $t0 $zero      ($t0 := 0x00000014)
+    3  : 3C09FFFF; --lui $t1 0xFFFF
+    4  : 012A4025; --or $t0 $t1 $t2         ($t0 := 0xFFFF000B)
+    5  : A0080000; --sb $t0 0($zero)        (m(0) := 0xFFFF000B) -- tava apontando para 0 ao invés de 8
+    6  : 8C080000; --lw $t0 0($zero)        ($t0 := 0x0000000B)
+    7  : 01004020; --add $t0 $t0 $zero      ($t0 := 0x0000000B) -- está recebendo A
 
     -- teste load byte unsigned (lbu)
-    9  : 3C09FFFF; -- lui $t1 0xFFFF      ($t1 :=0xFFFF0000)
-    10 : 012A4025; -- or $t0 $t1 $t2        ($t0 :=  0xFFFF000B)
-    11 : AC080008 ; -- sw $t0 8($zero)      ($t0 := FFFF000B)
-    12 : 90080008; -- lbu $t0 8($zero)      ($t0 := 0000000B)
-    13 : 01004020; -- add $t0 $t0 $zero     ($t0 := 0000000B)
+    8  : 3C09FFFF; -- lui $t1 0xFFFF      ($t1 :=0xFFFF0000)
+    9  : 012A4025; -- or $t0 $t1 $t2        ($t0 :=  0xFFFF000B)
+    10 : AC080000 ; -- sw $t0 0($zero)      ($t0 := FFFF000B)
+    11 : 90080000; -- lbu $t0 0($zero)      ($t0 := 0000000B) -- aponta para 0 ao invés de 8
+    12 : 01004020; -- add $t0 $t0 $zero     ($t0 := 0000000B)
     
-    -- teste Set Less Than Immediate unsigned (ltiu)
-    14 : 2DA8FFFF; -- sltiu $t0 $t5 0xFFFF   ($t0 := 0x00000001)
+    -- teste Set Less Than Immediate unsigned (ltiu) OK
+    13 : 2DA8FFFF; -- sltiu $t0 $t5 0xFFFF   ($t0 := 0x00000001)
     
-    15 :   08000000; --j 0x000000          (pc := #0)
-    [26..31]  : 00000000;
+    14 :   08000000; --j 0x000000          (pc := #0)
+    [15..31]  : 00000000;
 END;
