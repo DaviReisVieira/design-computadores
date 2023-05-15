@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aula14
-Wed Dec 07 12:48:27 2022
+Thu Dec 08 13:22:30 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,81 +13,80 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |TopLevel
- 12. Parameter Settings for User Entity Instance: registradorGenerico:ProgramCounter
- 13. Parameter Settings for User Entity Instance: somaConstante:incrementaPC
- 14. Parameter Settings for User Entity Instance: somadorGenerico:SOMADOR
- 15. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxBEQ
- 16. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxJMP
- 17. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxJR
- 18. Parameter Settings for User Entity Instance: ROMMIPS:ROM
- 19. Parameter Settings for User Entity Instance: muxGenerico4x1:MuxRtRdJal
- 20. Parameter Settings for User Entity Instance: estendeSinalGenerico:Estende
- 21. Parameter Settings for User Entity Instance: estendeSinalGenerico:Estende|MUX2X1:MuxSeletor
- 22. Parameter Settings for User Entity Instance: bancoRegistradores:bancoRegs
- 23. Parameter Settings for User Entity Instance: muxGenerico2x1:MUuxRtImediato
- 24. Parameter Settings for User Entity Instance: ULAMIPS:ULA
- 25. Parameter Settings for User Entity Instance: MUX2X1:MuxFlagZero
- 26. Parameter Settings for User Entity Instance: extraiByte:extraiByte1
- 27. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxExtraiByte_RT
- 28. Parameter Settings for User Entity Instance: extraiByte:extraiByte2
- 29. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxExtraiByte_RAM
- 30. Parameter Settings for User Entity Instance: RAMMIPS:RAM
- 31. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxUlaNor
- 32. Parameter Settings for User Entity Instance: muxGenerico4x1:MUuxULARAMPcLui
- 33. Parameter Settings for User Entity Instance: unidadeControle:UC
- 34. Parameter Settings for User Entity Instance: controleULA:UC_ULA
- 35. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxPlaca
- 36. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_5"
- 37. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_4"
- 38. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_3"
- 39. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_2"
- 40. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_1"
- 41. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_0"
- 42. Port Connectivity Checks: "muxGenerico4x1:MUuxULARAMPcLui"
- 43. Port Connectivity Checks: "RAMMIPS:RAM"
- 44. Port Connectivity Checks: "ULAMIPS:ULA|halfULALastBit:opBit31"
- 45. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit30"
- 46. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit29"
- 47. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit28"
- 48. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit27"
- 49. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit26"
- 50. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit25"
- 51. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit24"
- 52. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit23"
- 53. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit22"
- 54. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit21"
- 55. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit20"
- 56. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit19"
- 57. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit18"
- 58. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit17"
- 59. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit16"
- 60. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit15"
- 61. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit14"
- 62. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit13"
- 63. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit12"
- 64. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit11"
- 65. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit10"
- 66. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit9"
- 67. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit8"
- 68. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit7"
- 69. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit6"
- 70. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit5"
- 71. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit4"
- 72. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit3"
- 73. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit2"
- 74. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit1"
- 75. Port Connectivity Checks: "estendeSinalGenerico:Estende|MUX2X1:MuxSeletor"
- 76. Port Connectivity Checks: "muxGenerico4x1:MuxRtRdJal"
- 77. Port Connectivity Checks: "muxGenerico2x1:MuxJMP"
- 78. Port Connectivity Checks: "somadorGenerico:SOMADOR"
- 79. Port Connectivity Checks: "registradorGenerico:ProgramCounter"
- 80. Post-Synthesis Netlist Statistics for Top Partition
- 81. Elapsed Time Per Partition
- 82. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |TopLevel
+ 11. Parameter Settings for User Entity Instance: registradorGenerico:ProgramCounter
+ 12. Parameter Settings for User Entity Instance: somaConstante:incrementaPC
+ 13. Parameter Settings for User Entity Instance: somadorGenerico:SOMADOR
+ 14. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxBEQ
+ 15. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxJMP
+ 16. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxJR
+ 17. Parameter Settings for User Entity Instance: ROMMIPS:ROM
+ 18. Parameter Settings for User Entity Instance: muxGenerico4x1:MuxRtRdJal
+ 19. Parameter Settings for User Entity Instance: estendeSinalGenerico:Estende
+ 20. Parameter Settings for User Entity Instance: estendeSinalGenerico:Estende|MUX2X1:MuxSeletor
+ 21. Parameter Settings for User Entity Instance: bancoRegistradores:bancoRegs
+ 22. Parameter Settings for User Entity Instance: muxGenerico2x1:MUuxRtImediato
+ 23. Parameter Settings for User Entity Instance: ULAMIPS:ULA
+ 24. Parameter Settings for User Entity Instance: MUX2X1:MuxFlagZero
+ 25. Parameter Settings for User Entity Instance: extraiByte:extraiByte1
+ 26. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxExtraiByte_RT
+ 27. Parameter Settings for User Entity Instance: extraiByte:extraiByte2
+ 28. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxExtraiByte_RAM
+ 29. Parameter Settings for User Entity Instance: RAMMIPS:RAM
+ 30. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxUlaNor
+ 31. Parameter Settings for User Entity Instance: muxGenerico4x1:MUuxULARAMPcLui
+ 32. Parameter Settings for User Entity Instance: unidadeControle:UC
+ 33. Parameter Settings for User Entity Instance: controleULA:UC_ULA
+ 34. Parameter Settings for User Entity Instance: muxGenerico2x1:MuxPlaca
+ 35. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_5"
+ 36. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_4"
+ 37. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_3"
+ 38. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_2"
+ 39. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_1"
+ 40. Port Connectivity Checks: "conversorHex7Seg:DECODER_7SEG_0"
+ 41. Port Connectivity Checks: "muxGenerico4x1:MUuxULARAMPcLui"
+ 42. Port Connectivity Checks: "RAMMIPS:RAM"
+ 43. Port Connectivity Checks: "ULAMIPS:ULA|halfULALastBit:opBit31"
+ 44. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit30"
+ 45. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit29"
+ 46. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit28"
+ 47. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit27"
+ 48. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit26"
+ 49. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit25"
+ 50. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit24"
+ 51. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit23"
+ 52. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit22"
+ 53. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit21"
+ 54. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit20"
+ 55. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit19"
+ 56. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit18"
+ 57. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit17"
+ 58. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit16"
+ 59. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit15"
+ 60. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit14"
+ 61. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit13"
+ 62. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit12"
+ 63. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit11"
+ 64. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit10"
+ 65. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit9"
+ 66. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit8"
+ 67. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit7"
+ 68. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit6"
+ 69. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit5"
+ 70. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit4"
+ 71. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit3"
+ 72. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit2"
+ 73. Port Connectivity Checks: "ULAMIPS:ULA|halfULA:opBit1"
+ 74. Port Connectivity Checks: "estendeSinalGenerico:Estende|MUX2X1:MuxSeletor"
+ 75. Port Connectivity Checks: "muxGenerico4x1:MuxRtRdJal"
+ 76. Port Connectivity Checks: "muxGenerico2x1:MuxJMP"
+ 77. Port Connectivity Checks: "somadorGenerico:SOMADOR"
+ 78. Port Connectivity Checks: "registradorGenerico:ProgramCounter"
+ 79. Post-Synthesis Netlist Statistics for Top Partition
+ 80. Elapsed Time Per Partition
+ 81. Analysis & Synthesis Messages
 
 
 
@@ -114,13 +113,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Dec 07 12:48:27 2022       ;
+; Analysis & Synthesis Status     ; Successful - Thu Dec 08 13:22:30 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aula14                                      ;
 ; Top-level Entity Name           ; TopLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2590                                        ;
+; Total registers                 ; 3104                                        ;
 ; Total pins                      ; 149                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -235,9 +234,9 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -272,25 +271,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 1971         ;
+; Estimate of Logic utilization (ALMs needed) ; 2412         ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 1595         ;
-;     -- 7 input functions                    ; 52           ;
-;     -- 6 input functions                    ; 1154         ;
-;     -- 5 input functions                    ; 74           ;
-;     -- 4 input functions                    ; 108          ;
-;     -- <=3 input functions                  ; 207          ;
+; Combinational ALUT usage for logic          ; 1765         ;
+;     -- 7 input functions                    ; 273          ;
+;     -- 6 input functions                    ; 1039         ;
+;     -- 5 input functions                    ; 107          ;
+;     -- 4 input functions                    ; 105          ;
+;     -- <=3 input functions                  ; 241          ;
 ;                                             ;              ;
-; Dedicated logic registers                   ; 2590         ;
+; Dedicated logic registers                   ; 3104         ;
 ;                                             ;              ;
 ; I/O pins                                    ; 149          ;
 ;                                             ;              ;
 ; Total DSP Blocks                            ; 0            ;
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
-; Maximum fan-out                             ; 2590         ;
-; Total fan-out                               ; 16564        ;
-; Average fan-out                             ; 3.69         ;
+; Maximum fan-out                             ; 3104         ;
+; Total fan-out                               ; 19216        ;
+; Average fan-out                             ; 3.72         ;
 +---------------------------------------------+--------------+
 
 
@@ -299,583 +298,61 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name         ; Library Name ;
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
-; |TopLevel                               ; 1595 (2)            ; 2590 (0)                  ; 0                 ; 0          ; 149  ; 0            ; |TopLevel                                    ; TopLevel            ; work         ;
+; |TopLevel                               ; 1765 (2)            ; 3104 (0)                  ; 0                 ; 0          ; 149  ; 0            ; |TopLevel                                    ; TopLevel            ; work         ;
 ;    |RAMMIPS:RAM|                        ; 800 (800)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|RAMMIPS:RAM                        ; RAMMIPS             ; work         ;
-;    |ROMMIPS:ROM|                        ; 28 (28)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ROMMIPS:ROM                        ; ROMMIPS             ; work         ;
-;    |ULAMIPS:ULA|                        ; 144 (13)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA                        ; ULAMIPS             ; work         ;
+;    |ROMMIPS:ROM|                        ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ROMMIPS:ROM                        ; ROMMIPS             ; work         ;
+;    |ULAMIPS:ULA|                        ; 147 (11)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA                        ; ULAMIPS             ; work         ;
 ;       |halfULA:opBit0|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit0         ; halfULA             ; work         ;
 ;       |halfULA:opBit10|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit10        ; halfULA             ; work         ;
 ;       |halfULA:opBit11|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit11        ; halfULA             ; work         ;
 ;       |halfULA:opBit12|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit12        ; halfULA             ; work         ;
-;       |halfULA:opBit13|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit13        ; halfULA             ; work         ;
+;       |halfULA:opBit13|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit13        ; halfULA             ; work         ;
 ;       |halfULA:opBit14|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit14        ; halfULA             ; work         ;
 ;       |halfULA:opBit15|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit15        ; halfULA             ; work         ;
 ;       |halfULA:opBit16|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit16        ; halfULA             ; work         ;
 ;       |halfULA:opBit17|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit17        ; halfULA             ; work         ;
-;       |halfULA:opBit18|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit18        ; halfULA             ; work         ;
+;       |halfULA:opBit18|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit18        ; halfULA             ; work         ;
 ;       |halfULA:opBit19|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit19        ; halfULA             ; work         ;
 ;       |halfULA:opBit1|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit1         ; halfULA             ; work         ;
 ;       |halfULA:opBit20|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit20        ; halfULA             ; work         ;
 ;       |halfULA:opBit21|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit21        ; halfULA             ; work         ;
-;       |halfULA:opBit22|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit22        ; halfULA             ; work         ;
+;       |halfULA:opBit22|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit22        ; halfULA             ; work         ;
 ;       |halfULA:opBit23|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit23        ; halfULA             ; work         ;
 ;       |halfULA:opBit24|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit24        ; halfULA             ; work         ;
 ;       |halfULA:opBit25|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit25        ; halfULA             ; work         ;
 ;       |halfULA:opBit26|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit26        ; halfULA             ; work         ;
-;       |halfULA:opBit27|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit27        ; halfULA             ; work         ;
-;       |halfULA:opBit28|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit28        ; halfULA             ; work         ;
+;       |halfULA:opBit27|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit27        ; halfULA             ; work         ;
+;       |halfULA:opBit28|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit28        ; halfULA             ; work         ;
 ;       |halfULA:opBit29|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit29        ; halfULA             ; work         ;
 ;       |halfULA:opBit2|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit2         ; halfULA             ; work         ;
-;       |halfULA:opBit30|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit30        ; halfULA             ; work         ;
+;       |halfULA:opBit30|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit30        ; halfULA             ; work         ;
 ;       |halfULA:opBit3|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit3         ; halfULA             ; work         ;
 ;       |halfULA:opBit4|                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit4         ; halfULA             ; work         ;
 ;       |halfULA:opBit5|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit5         ; halfULA             ; work         ;
 ;       |halfULA:opBit6|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit6         ; halfULA             ; work         ;
 ;       |halfULA:opBit7|                  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit7         ; halfULA             ; work         ;
-;       |halfULA:opBit8|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit8         ; halfULA             ; work         ;
+;       |halfULA:opBit8|                  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit8         ; halfULA             ; work         ;
 ;       |halfULA:opBit9|                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULA:opBit9         ; halfULA             ; work         ;
 ;       |halfULALastBit:opBit31|          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ULAMIPS:ULA|halfULALastBit:opBit31 ; halfULALastBit      ; work         ;
-;    |bancoRegistradores:bancoRegs|       ; 377 (377)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|bancoRegistradores:bancoRegs       ; bancoRegistradores  ; work         ;
-;    |controleULA:UC_ULA|                 ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|controleULA:UC_ULA                 ; controleULA         ; work         ;
+;    |bancoRegistradores:bancoRegs|       ; 548 (548)           ; 1024 (1024)               ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|bancoRegistradores:bancoRegs       ; bancoRegistradores  ; work         ;
+;    |controleULA:UC_ULA|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|controleULA:UC_ULA                 ; controleULA         ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_0|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_0    ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_1|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_1    ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_2|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_2    ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_3|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_3    ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_4|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_4    ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:DECODER_7SEG_5|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|conversorHex7Seg:DECODER_7SEG_5    ; conversorHex7Seg    ; work         ;
-;    |muxGenerico2x1:MuxJR|               ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico2x1:MuxJR               ; muxGenerico2x1      ; work         ;
+;    |muxGenerico2x1:MuxJR|               ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico2x1:MuxJR               ; muxGenerico2x1      ; work         ;
 ;    |muxGenerico2x1:MuxPlaca|            ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico2x1:MuxPlaca            ; muxGenerico2x1      ; work         ;
-;    |muxGenerico2x1:MuxUlaNor|           ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico2x1:MuxUlaNor           ; muxGenerico2x1      ; work         ;
+;    |muxGenerico2x1:MuxUlaNor|           ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico2x1:MuxUlaNor           ; muxGenerico2x1      ; work         ;
 ;    |muxGenerico4x1:MUuxULARAMPcLui|     ; 35 (35)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico4x1:MUuxULARAMPcLui     ; muxGenerico4x1      ; work         ;
-;    |muxGenerico4x1:MuxRtRdJal|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico4x1:MuxRtRdJal          ; muxGenerico4x1      ; work         ;
-;    |registradorGenerico:ProgramCounter| ; 3 (3)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:ProgramCounter ; registradorGenerico ; work         ;
+;    |muxGenerico4x1:MuxRtRdJal|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|muxGenerico4x1:MuxRtRdJal          ; muxGenerico4x1      ; work         ;
+;    |registradorGenerico:ProgramCounter| ; 3 (3)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|registradorGenerico:ProgramCounter ; registradorGenerico ; work         ;
 ;    |somaConstante:incrementaPC|         ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|somaConstante:incrementaPC         ; somaConstante       ; work         ;
 ;    |somadorGenerico:SOMADOR|            ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|somadorGenerico:SOMADOR            ; somadorGenerico     ; work         ;
-;    |unidadeControle:UC|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|unidadeControle:UC                 ; unidadeControle     ; work         ;
+;    |unidadeControle:UC|                 ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|unidadeControle:UC                 ; unidadeControle     ; work         ;
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+----------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                     ;
-+-----------------------------------------------+----------------------------------------+
-; Register name                                 ; Reason for Removal                     ;
-+-----------------------------------------------+----------------------------------------+
-; bancoRegistradores:bancoRegs|registrador~550  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~551  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~552  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~553  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~554  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~555  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~556  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~557  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~558  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~559  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~560  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~561  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~562  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~563  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~564  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~565  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~566  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~567  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~568  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~569  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~570  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~571  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~572  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~573  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~574  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~575  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~576  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~577  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~578  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~579  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~580  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~581  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~582  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~583  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~584  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~585  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~586  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~587  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~588  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~589  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~590  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~591  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~592  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~593  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~594  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~595  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~596  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~597  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~598  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~599  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~600  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~601  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~602  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~603  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~604  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~605  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~606  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~607  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~608  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~609  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~610  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~611  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~612  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~613  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~614  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~615  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~616  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~617  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~618  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~619  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~620  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~621  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~622  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~623  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~624  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~625  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~626  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~627  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~628  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~629  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~630  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~631  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~632  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~633  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~634  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~635  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~636  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~637  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~638  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~639  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~640  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~641  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~642  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~643  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~644  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~645  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~646  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~647  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~648  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~649  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~650  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~651  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~652  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~653  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~654  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~655  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~656  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~657  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~658  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~659  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~660  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~661  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~662  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~663  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~664  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~665  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~666  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~667  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~668  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~669  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~670  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~671  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~672  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~673  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~674  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~675  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~676  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~677  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~678  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~679  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~680  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~681  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~682  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~683  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~684  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~685  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~686  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~687  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~688  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~689  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~690  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~691  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~692  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~693  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~694  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~695  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~696  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~697  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~698  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~699  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~700  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~701  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~702  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~703  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~704  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~705  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~706  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~707  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~708  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~709  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~710  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~711  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~712  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~713  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~714  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~715  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~716  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~717  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~718  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~719  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~720  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~721  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~722  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~723  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~724  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~725  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~726  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~727  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~728  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~729  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~730  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~731  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~732  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~733  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~734  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~735  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~736  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~737  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~738  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~739  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~740  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~741  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~742  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~743  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~744  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~745  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~746  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~747  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~748  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~749  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~750  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~751  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~752  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~753  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~754  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~755  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~756  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~757  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~758  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~759  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~760  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~761  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~762  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~763  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~764  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~765  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~766  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~767  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~768  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~769  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~770  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~771  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~772  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~773  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~774  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~775  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~776  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~777  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~778  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~779  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~780  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~781  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~782  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~783  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~784  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~785  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~786  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~787  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~788  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~789  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~790  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~791  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~792  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~793  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~794  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~795  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~796  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~797  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~798  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~799  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~800  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~801  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~802  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~803  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~804  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~805  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~806  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~807  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~808  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~809  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~810  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~811  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~812  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~813  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~814  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~815  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~816  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~817  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~818  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~819  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~820  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~821  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~822  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~823  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~824  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~825  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~826  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~827  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~828  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~829  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~830  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~831  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~832  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~833  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~834  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~835  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~836  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~837  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~838  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~839  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~840  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~841  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~842  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~843  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~844  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~845  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~846  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~847  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~848  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~849  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~850  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~851  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~852  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~853  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~854  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~855  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~856  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~857  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~858  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~859  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~860  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~861  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~862  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~863  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~864  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~865  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~866  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~867  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~868  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~869  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~870  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~871  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~872  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~873  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~874  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~875  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~876  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~877  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~878  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~879  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~880  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~881  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~882  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~883  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~884  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~885  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~886  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~887  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~888  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~889  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~890  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~891  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~892  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~893  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~894  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~895  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~896  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~897  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~898  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~899  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~900  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~901  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~902  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~903  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~904  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~905  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~906  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~907  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~908  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~909  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~910  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~911  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~912  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~913  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~914  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~915  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~916  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~917  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~918  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~919  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~920  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~921  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~922  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~923  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~924  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~925  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~926  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~927  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~928  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~929  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~930  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~931  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~932  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~933  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~934  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~935  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~936  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~937  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~938  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~939  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~940  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~941  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~942  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~943  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~944  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~945  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~946  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~947  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~948  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~949  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~950  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~951  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~952  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~953  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~954  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~955  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~956  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~957  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~958  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~959  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~960  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~961  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~962  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~963  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~964  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~965  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~966  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~967  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~968  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~969  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~970  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~971  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~972  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~973  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~974  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~975  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~976  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~977  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~978  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~979  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~980  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~981  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~982  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~983  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~984  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~985  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~986  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~987  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~988  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~989  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~990  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~991  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~992  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~993  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~994  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~995  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~996  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~997  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~998  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~999  ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1000 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1001 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1002 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1003 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1004 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1005 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1006 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1007 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1008 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1009 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1010 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1011 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1012 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1013 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1014 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1015 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1016 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1017 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1018 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1019 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1020 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1021 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1022 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1023 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1024 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1025 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1026 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1027 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1028 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1029 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1030 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1031 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1032 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1033 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1034 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1035 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1036 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1037 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1038 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1039 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1040 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1041 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1042 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1043 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1044 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1045 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1046 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1047 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1048 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1049 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1050 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1051 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1052 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1053 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1054 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1055 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1056 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1057 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1058 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1059 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1060 ; Lost fanout                            ;
-; bancoRegistradores:bancoRegs|registrador~1061 ; Lost fanout                            ;
-; registradorGenerico:ProgramCounter|DOUT[0,1]  ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 514       ;                                        ;
-+-----------------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -883,12 +360,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2590  ;
+; Total registers                              ; 3104  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2560  ;
+; Number of registers using Clock Enable       ; 3074  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -898,10 +375,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[0]   ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[30]  ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[27]  ;
-; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[16]  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[1]   ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[28]  ;
+; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|registradorGenerico:ProgramCounter|DOUT[16]  ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TopLevel|ULAMIPS:ULA|halfULA:opBit12|saida_MUX_B      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TopLevel|unidadeControle:UC|mux_ULA_Mem[1]            ;
 ; 5:1                ; 31 bits   ; 93 LEs        ; 62 LEs               ; 31 LEs                 ; No         ; |TopLevel|ULAMIPS:ULA|halfULA:opBit9|R                 ;
@@ -1602,28 +1078,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 2590                        ;
-;     ENA               ; 2560                        ;
+; arriav_ff             ; 3104                        ;
+;     ENA               ; 3074                        ;
 ;     plain             ; 30                          ;
-; arriav_lcell_comb     ; 1603                        ;
+; arriav_lcell_comb     ; 1771                        ;
 ;     arith             ; 60                          ;
 ;         1 data inputs ; 30                          ;
-;         4 data inputs ; 16                          ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 15                          ;
 ;         5 data inputs ; 14                          ;
-;     extend            ; 52                          ;
-;         7 data inputs ; 52                          ;
-;     normal            ; 1491                        ;
+;     extend            ; 273                         ;
+;         7 data inputs ; 273                         ;
+;     normal            ; 1438                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 20                          ;
-;         2 data inputs ; 134                         ;
-;         3 data inputs ; 30                          ;
-;         4 data inputs ; 92                          ;
-;         5 data inputs ; 60                          ;
-;         6 data inputs ; 1154                        ;
+;         1 data inputs ; 18                          ;
+;         2 data inputs ; 140                         ;
+;         3 data inputs ; 57                          ;
+;         4 data inputs ; 90                          ;
+;         5 data inputs ; 93                          ;
+;         6 data inputs ; 1039                        ;
 ; boundary_port         ; 149                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 20.00                       ;
-; Average LUT depth     ; 8.27                        ;
+; Average LUT depth     ; 9.14                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1642,7 +1119,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Dec 07 12:48:07 2022
+    Info: Processing started: Thu Dec 08 13:22:07 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aula14 -c aula14
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1728,8 +1205,10 @@ Info (276014): Found 3 instances of uninferred RAM logic
     Info (276007): RAM logic "RAMMIPS:RAM|memRAM" is uninferred due to asynchronous read logic File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 21
     Info (276007): RAM logic "bancoRegistradores:bancoRegs|registrador" is uninferred due to asynchronous read logic File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/bancoRegistradores.vhd Line: 48
     Info (276004): RAM logic "ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMMIPS.vhd Line: 54
-Warning (113028): 32 out of 64 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMTestContent.mif Line: 1
-    Warning (113027): Addresses ranging from 32 to 63 are not initialized File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMTestContent.mif Line: 1
+Warning (113028): 46 out of 64 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 3 warnings found, and 3 warnings are reported. File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMcontent.mif Line: 1
+    Warning (113026): Memory Initialization File Address 16 is not initialized File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMcontent.mif Line: 1
+    Warning (113027): Addresses ranging from 18 to 30 are not initialized File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMcontent.mif Line: 1
+    Warning (113027): Addresses ranging from 32 to 63 are not initialized File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/ROMcontent.mif Line: 1
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[12]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
     Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[11]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
@@ -1765,13 +1244,10 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[31]" feeding internal logic into a wire File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/RAMMIPS.vhd Line: 13
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 33
-    Warning (13410): Pin "inspectEndRS[4]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 38
     Warning (13410): Pin "inspectEndRT[4]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 39
     Warning (13410): Pin "inspectInstru[20]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 41
-    Warning (13410): Pin "inspectInstru[25]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 41
     Warning (13410): Pin "inspectInstru[30]" is stuck at GND File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 41
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 512 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 13 input pin(s) that do not drive logic
@@ -1788,14 +1264,14 @@ Warning (21074): Design contains 13 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
     Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/vieir/Desktop/Insper/6-semestre/design-computadores/projeto2-final/TopLevel.vhd Line: 34
-Info (21057): Implemented 4291 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4973 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 134 output pins
-    Info (21061): Implemented 4142 logic cells
+    Info (21061): Implemented 4824 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 59 warnings
-    Info: Peak virtual memory: 4863 megabytes
-    Info: Processing ended: Wed Dec 07 12:48:27 2022
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4864 megabytes
+    Info: Processing ended: Thu Dec 08 13:22:30 2022
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:25
 
 
